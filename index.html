@@ -55,6 +55,13 @@
     padding:6px 12px;border-radius:999px;transition:.18s;
   }
   .nav-links a:hover{color:var(--txt);background:var(--bg-soft);text-decoration:none;}
+  .nav-links a.active{color:#fff;background:var(--accent);}
+  .nav-links a.active:hover{color:#fff;background:var(--accent);}
+
+  /* 탭: 선택된 섹션만 표시 */
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block;animation:fade .25s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
 
   /* ===== Layout ===== */
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
@@ -154,10 +161,10 @@
   <div class="nav-inner">
     <div class="nav-name">모지혜 <span>게임 사업 PM</span></div>
     <div class="nav-links">
-      <a href="#resume">이력서</a>
-      <a href="#career">경력기술서</a>
-      <a href="#cover">자기소개서</a>
-      <a href="#portfolio">포트폴리오</a>
+      <a href="#resume" data-tab="resume">이력서</a>
+      <a href="#career" data-tab="career">경력기술서</a>
+      <a href="#cover" data-tab="cover">자기소개서</a>
+      <a href="#portfolio" data-tab="portfolio">포트폴리오</a>
     </div>
   </div>
 </nav>
@@ -188,7 +195,7 @@
 </header>
 
 <!-- ===== 이력서 ===== -->
-<section id="resume">
+<section id="resume" class="tab-panel">
   <div class="wrap">
     <p class="sec-title">Resume</p>
     <h2 class="sec-head">📄 이력서</h2>
@@ -319,7 +326,7 @@
 </section>
 
 <!-- ===== 경력기술서 ===== -->
-<section id="career">
+<section id="career" class="tab-panel">
   <div class="wrap">
     <p class="sec-title">Work Experience</p>
     <h2 class="sec-head">📝 경력기술서</h2>
@@ -554,7 +561,7 @@
 </section>
 
 <!-- ===== 자기소개서 ===== -->
-<section id="cover">
+<section id="cover" class="tab-panel">
   <div class="wrap">
     <p class="sec-title">Cover Letter</p>
     <h2 class="sec-head">💬 자기소개서</h2>
@@ -614,7 +621,7 @@
 </section>
 
 <!-- ===== 포트폴리오 ===== -->
-<section id="portfolio">
+<section id="portfolio" class="tab-panel">
   <div class="wrap">
     <p class="sec-title">Portfolio</p>
     <h2 class="sec-head">🖼️ 포트폴리오</h2>
@@ -694,6 +701,31 @@
     <p style="opacity:.6;margin-top:6px">© 2026 Mo Jihye. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+  (function(){
+    var links  = document.querySelectorAll('.nav-links a[data-tab]');
+    var panels = document.querySelectorAll('.tab-panel');
+    function show(id, scroll){
+      panels.forEach(function(p){ p.classList.toggle('active', p.id === id); });
+      links.forEach(function(a){ a.classList.toggle('active', a.dataset.tab === id); });
+      if(scroll){
+        var el = document.getElementById(id);
+        if(el){ el.scrollIntoView({behavior:'smooth'}); }
+      }
+    }
+    links.forEach(function(a){
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        show(a.dataset.tab, true);
+      });
+    });
+    // 주소창에 #career 등이 있으면 해당 탭으로, 없으면 이력서부터
+    var start = (location.hash || '').replace('#','');
+    var valid = ['resume','career','cover','portfolio'];
+    show(valid.indexOf(start) >= 0 ? start : 'resume', false);
+  })();
+</script>
 
 </body>
 </html>
