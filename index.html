@@ -27,7 +27,7 @@
   body{
     margin:0;display:flex;min-height:100vh;
     font-family:"Pretendard",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
-    background:var(--bg);color:var(--txt);line-height:1.7;-webkit-font-smoothing:antialiased;
+    background:var(--bg);color:var(--txt);line-height:1.8;-webkit-font-smoothing:antialiased;
   }
   a{color:var(--accent);text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -58,21 +58,21 @@
   .s-contact div{margin:4px 0;word-break:break-all;}
 
   /* ===== Main ===== */
-  .main{flex:1;min-width:0;padding:44px 40px 80px;}
+  .main{flex:1;min-width:0;padding:52px 48px 96px;}
   .main-inner{max-width:760px;margin:0 auto;}
   .tab-panel{display:none;}
   .tab-panel.active{display:block;animation:fade .25s ease;}
   @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
 
   .sec-title{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin:0 0 4px;}
-  .sec-head{font-size:25px;font-weight:800;margin:0 0 22px;}
+  .sec-head{font-size:25px;font-weight:800;margin:0 0 30px;}
 
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 22px;}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 30px;}
   .stat{background:linear-gradient(160deg,var(--card),var(--bg-soft));border:1px solid var(--line);border-radius:var(--radius);padding:16px 14px;text-align:center;box-shadow:var(--shadow);}
   .stat .num{font-size:clamp(20px,3.5vw,26px);font-weight:900;color:var(--accent);line-height:1.2;}
   .stat .lbl{font-size:12px;color:var(--txt-dim);margin-top:4px;font-weight:600;}
 
-  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:16px;box-shadow:var(--shadow);}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;margin-bottom:24px;box-shadow:var(--shadow);}
   .card h3{margin:0 0 4px;font-size:18px;font-weight:800;}
   .card .sub{color:var(--txt-dim);font-size:13.5px;margin:0 0 14px;font-weight:600;}
   .card .sub .pin{color:var(--accent);}
@@ -80,9 +80,9 @@
   .callout{background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.22);border-radius:var(--radius);padding:16px 18px;margin-bottom:16px;}
   .callout.purple{background:rgba(124,58,237,.06);border-color:rgba(124,58,237,.22);}
 
-  ul.clean{margin:8px 0 0;padding-left:18px;}
-  ul.clean li{margin:5px 0;}
-  .block-label{font-weight:800;color:var(--accent);font-size:13px;margin:14px 0 4px;letter-spacing:.3px;}
+  ul.clean{margin:10px 0 0;padding-left:18px;}
+  ul.clean li{margin:8px 0;}
+  .block-label{font-weight:800;color:var(--accent);font-size:13px;margin:22px 0 6px;letter-spacing:.3px;}
   .result li{color:var(--good);}
   .result li span{color:var(--txt);}
 
@@ -100,13 +100,13 @@
   th{background:var(--bg-soft);color:var(--txt-dim);font-weight:700;white-space:nowrap;}
   tr:last-child td{border-bottom:none;}
 
-  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
-  .mini{background:var(--bg-soft);border:1px solid var(--line);border-radius:11px;padding:15px;}
-  .mini h4{margin:0 0 8px;font-size:14.5px;color:var(--accent);}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .mini{background:var(--bg-soft);border:1px solid var(--line);border-radius:11px;padding:18px;}
+  .mini h4{margin:0 0 10px;font-size:14.5px;color:var(--accent);}
   .mini ul{margin:0;padding-left:16px;font-size:13.5px;color:var(--txt-dim);}
-  .mini ul li{margin:4px 0;}
-  .tag{display:inline-block;background:var(--bg-soft);border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-size:12.5px;color:var(--txt-dim);margin:3px 4px 0 0;}
-  h4.proj{color:var(--accent-2);margin:20px 0 6px;font-size:15.5px;}
+  .mini ul li{margin:7px 0;}
+  .tag{display:inline-block;background:var(--bg-soft);border:1px solid var(--line);border-radius:8px;padding:7px 14px;font-size:12.5px;color:var(--txt-dim);margin:6px 7px 0 0;}
+  h4.proj{color:var(--accent-2);margin:28px 0 8px;font-size:15.5px;}
 
   /* ===== Mobile ===== */
   @media(max-width:860px){
@@ -228,14 +228,14 @@
       <div class="mini"><h4>🤝 파트너십·협업</h4><ul><li>프랜차이즈 콜라보 성사</li><li>크리에이터 OST 협업</li><li>개발사·퍼블리셔 경험</li></ul></div>
     </div>
 
-    <div class="block-label" style="margin-top:20px">🛠 사용 툴</div>
+    <div class="block-label" style="margin-top:32px">🛠 사용 툴</div>
     <div>
       <span class="tag">Firebase</span><span class="tag">Adjust</span><span class="tag">GA</span>
       <span class="tag">Kibana</span><span class="tag">Play Console</span><span class="tag">App Store Connect</span>
       <span class="tag">Slack</span><span class="tag">Jira</span><span class="tag">Confluence</span>
       <span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">Claude</span><span class="tag">ChatGPT</span>
     </div>
-    <div class="block-label" style="margin-top:18px">🎓 학력</div>
+    <div class="block-label" style="margin-top:32px">🎓 학력</div>
     <p style="margin:0;color:var(--txt-dim)">대전보건대학교 — 작업치료학과 · 2019</p>
   </section>
 
