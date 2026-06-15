@@ -131,6 +131,16 @@
   @media(max-width:480px){.tool-row{grid-template-columns:1fr;gap:2px;}.tool-cat{padding-top:10px;}}
   h4.proj{color:var(--accent-2);margin:28px 0 8px;font-size:15.5px;}
 
+  /* 증빙 이미지 */
+  .shots{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:14px 0 0;}
+  .shot-link{display:block;position:relative;border-radius:11px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);}
+  .shot{display:block;width:100%;height:auto;}
+  .shot-link.video::after{content:"▶";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-size:38px;color:#fff;background:rgba(16,24,40,.28);transition:.15s;}
+  .shot-link.video:hover::after{background:rgba(16,24,40,.12);}
+  .shot-cap{font-size:12px;color:var(--txt-dim);margin:7px 0 0;}
+  @media(max-width:520px){.shots{grid-template-columns:1fr;}}
+
   /* ===== Mobile ===== */
   @media(max-width:860px){
     body{flex-direction:column;}
@@ -480,7 +490,10 @@
       <div class="block-label">내가 한 일</div>
       <ul class="clean"><li>세계관 핏 기준 크리에이터 선정(구독자보다 방향성 우선), 제작 협의 주도</li><li>라이선스(저작권·상업적 이용 범위) 계약 조율, 유튜브·애니맥스 플러스 등 배포 전 과정</li></ul>
       <div class="block-label">결과</div><ul class="clean result"><li><span>유튜브 7.3만 뷰 / 애니맥스 플러스 2.5천 뷰 / 채널 구독자 10%+ 증가</span></li></ul>
-      <p class="ctx" style="margin-top:10px">▶ <a href="https://youtu.be/2LEsm-gsTxg" target="_blank" rel="noopener"><b>음율 OST 영상 보기 (YouTube)</b></a></p>
+      <a class="shot-link video" href="https://youtu.be/2LEsm-gsTxg" target="_blank" rel="noopener" style="margin-top:12px">
+        <img class="shot" src="https://img.youtube.com/vi/2LEsm-gsTxg/maxresdefault.jpg" alt="음율 OST 영상 썸네일" loading="lazy" />
+      </a>
+      <p class="shot-cap">▶ 음율 게임 전용 OST 영상 보기 (YouTube · 7.3만 뷰)</p>
       <p class="ctx"><b>회고</b> — 구독자 수보다 세계관 방향성 일치를 우선 기준으로 삼은 것이 콘텐츠 반응률에 직결. 단순 협찬보다 세계관 연계 콘텐츠가 몰입도를 높임을 확인.</p>
     </div>
     <div class="card">
