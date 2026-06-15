@@ -4,7 +4,24 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>모지혜 | 게임 사업 PM 포트폴리오</title>
-<meta name="description" content="게임 사업 PM 모지혜 — 런칭·수익화·파트너십. 퍼블리셔·개발사 양 포지션에서 15종 이상 타이틀 담당." />
+<meta name="description" content="게임 사업 PM 모지혜 — 런칭·수익화·파트너십. 퍼블리셔(모비릭스)·개발사(나트리스) 양 포지션에서 15종 이상 타이틀 담당. D7 인앱 매출 5.1억, 피크 DAU 138만, 전국 3,000개 매장 브랜드 콜라보." />
+
+<!-- ===== Open Graph / 링크 공유 미리보기 카드 ===== -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="모지혜 | 게임 사업 PM" />
+<meta property="og:title" content="모지혜 | 게임 사업 PM 포트폴리오" />
+<meta property="og:description" content="런칭 · 수익화 · 파트너십 — 퍼블리셔·개발사 양 포지션 15종+ 타이틀. D7 인앱 매출 5.1억 / 피크 DAU 138만 / 전국 3,000개 매장 콜라보." />
+<meta property="og:url" content="https://ahahdkdlel121.github.io/ahah_resume/" />
+<meta property="og:image" content="https://ahahdkdlel121.github.io/ahah_resume/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="모지혜 | 게임 사업 PM 포트폴리오" />
+<meta name="twitter:description" content="런칭 · 수익화 · 파트너십 — 퍼블리셔·개발사 양 포지션 15종+ 타이틀." />
+<meta name="twitter:image" content="https://ahahdkdlel121.github.io/ahah_resume/og.png" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>" />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
 <style>
@@ -60,6 +77,7 @@
   /* ===== Main ===== */
   .main{flex:1;min-width:0;padding:52px 48px 96px;}
   .main-inner{max-width:760px;margin:0 auto;}
+  .print-head{display:none;}
   .tab-panel{display:none;}
   .tab-panel.active{display:block;animation:fade .25s ease;}
   @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
@@ -83,6 +101,7 @@
   ul.clean{margin:10px 0 0;padding-left:18px;}
   ul.clean li{margin:8px 0;}
   .block-label{font-weight:800;color:var(--accent);font-size:13px;margin:22px 0 6px;letter-spacing:.3px;}
+  .ctx{margin:4px 0 0;color:var(--txt-dim);font-size:13.5px;}
   .result li{color:var(--good);}
   .result li span{color:var(--txt);}
 
@@ -126,6 +145,28 @@
     .stats{grid-template-columns:1fr 1fr;}
     .grid3{grid-template-columns:1fr;}
   }
+
+  /* ===== Print / PDF — 4개 탭 모두 펼쳐서 출력 ===== */
+  @media print{
+    @page{margin:14mm;}
+    body{display:block;background:#fff;color:#000;font-size:11pt;line-height:1.55;}
+    .sidebar{display:none !important;}
+    .main{padding:0;}
+    .main-inner{max-width:none;}
+    .print-head{display:block;margin:0 0 14px;padding-bottom:12px;border-bottom:2px solid var(--accent);}
+    .print-head .ph-name{font-size:22pt;font-weight:900;margin:0;}
+    .print-head .ph-role{font-size:11pt;color:var(--accent);font-weight:700;margin:2px 0 0;}
+    .print-head .ph-meta{font-size:9.5pt;color:#444;margin:6px 0 0;}
+    .tab-panel{display:block !important;animation:none;}
+    .tab-panel + .tab-panel{page-break-before:always;}
+    details{border-color:#ccc;background:#fff;}
+    details summary::after{display:none;}
+    details > *:not(summary){display:block !important;}
+    .det-body{display:block !important;}
+    .card,.stat,.mini,.callout{box-shadow:none;break-inside:avoid;}
+    .tbl-scroll{overflow:visible;}
+    a{color:#000;text-decoration:none;}
+  }
 </style>
 </head>
 <body>
@@ -152,13 +193,20 @@
     <div><b>Email</b></div>
     <div><a href="mailto:ahahdkdlel121@gmail.com">ahahdkdlel121@gmail.com</a></div>
     <div style="margin-top:8px"><b>직군</b> 사업 PM (게임)</div>
-    <div><b>경력</b> 3년 4개월</div>
+    <div><b>경력</b> 3년 1개월 (공백 제외)</div>
   </div>
 </aside>
 
 <!-- ===== MAIN ===== -->
 <main class="main">
 <div class="main-inner">
+
+  <!-- 인쇄/PDF 전용 헤더 -->
+  <div class="print-head">
+    <p class="ph-name">모지혜</p>
+    <p class="ph-role">게임 사업 PM · 런칭 · 수익화 · 파트너십</p>
+    <p class="ph-meta">Email ahahdkdlel121@gmail.com &nbsp;|&nbsp; 직군 사업 PM(게임) &nbsp;|&nbsp; 경력 3년 1개월(공백 제외)</p>
+  </div>
 
   <!-- 이력서 -->
   <section id="resume" class="tab-panel">
@@ -174,14 +222,14 @@
 
     <div class="callout">
       모바일 게임 사업 PM으로 퍼블리셔(모비릭스)·개발사(나트리스) 양 포지션에서 <b>총 15종 이상</b>의
-      타이틀의 글로벌 런칭부터 라이브 운영까지 담당했습니다. 스토어 피처링 확보, BM 기획·수익화,
+      타이틀을 글로벌 런칭부터 라이브 운영까지 담당했습니다. 스토어 피처링 확보, BM 기획·수익화,
       데이터 기반 개선 업무를 주도하며, 싱어송라이터 <b>음율</b> 및 대규모 카페 프랜차이즈
       <b>컴포즈커피</b>와의 협업에 기여했습니다.
     </div>
 
     <div class="card">
       <h3>(주)나트리스 · 사업 PM</h3>
-      <p class="sub"><span class="pin">●</span> 2024.12 ~ 현재 · 사업팀 &nbsp;|&nbsp; 방치형 RPG 2종 · 웹 게임 플랫폼 1종 담당</p>
+      <p class="sub"><span class="pin">●</span> 2024.12 ~ 현재 (1년 6개월) · 사업팀 &nbsp;|&nbsp; 방치형 RPG 2종 · 웹 게임 플랫폼 1종 담당</p>
       <div class="tbl-scroll">
         <table>
           <tr><th>타이틀명</th><th>장르</th><th>플랫폼</th><th>국가</th><th>기간</th></tr>
@@ -197,20 +245,21 @@
         <li><b>데이터 분석·대응</b> — 이탈 퍼널·코호트·BM 개선 분석, 업데이트 전후 지표 비교 보고서</li>
         <li><b>브랜드 콜라보</b> — 전국 3,000개 매장 '컴포즈커피' 콜라보 기획·성사 (약 3개월 운영)</li>
         <li><b>FGT 기획·운영</b> — 비공개 초청형 FGT End-to-End, 출시 전 개선사항 80% 반영</li>
+        <li><b>파트너 커뮤니케이션</b> — 게임 전용 OST 크리에이터 협업 기획·계약·음원 플랫폼 배포 전 과정</li>
       </ul>
       <div class="block-label">성과</div>
       <ul class="clean result">
         <li>아이러브커피 — <span>양대 마켓 피처링 / 사전예약 15만 / 1주차 DAU 4.5만 / D7 매출 5.1억 / ARPPU 3만원대</span></li>
-        <li>아이돌 키우기 — <span>구글플레이 피처링 / 사전등록 5.2만 / 음율 OST 협업(유튜브 7.3만회)</span></li>
+        <li>아이돌 키우기 — <span>구글플레이 피처링 / 사전등록 5.2만 / 1주차 DAU 1.2만 / 음율 OST 협업(유튜브 7.3만회)</span></li>
       </ul>
     </div>
 
     <div class="card">
       <h3>(주)모비릭스 · 사업 PM</h3>
-      <p class="sub"><span class="pin">●</span> 2022.12 ~ 2024.07 · 사업팀 &nbsp;|&nbsp; 캐주얼·방치형 13개 타이틀 담당</p>
+      <p class="sub"><span class="pin">●</span> 2022.12 ~ 2024.07 (1년 7개월) · 사업팀 &nbsp;|&nbsp; 캐주얼·방치형 13개 타이틀 담당</p>
       <div class="block-label">주요 업무</div>
       <ul class="clean">
-        <li><b>다타이틀 글로벌 런칭 관리</b> — 9종 글로벌 런칭 전 과정 (소프트 런칭 및 글로벌 오픈)</li>
+        <li><b>다타이틀 글로벌 런칭 관리</b> — 10종 글로벌 런칭 전 과정 (소프트 런칭 및 글로벌 오픈)</li>
         <li><b>런칭 마일스톤 관리</b> — 킥오프~글로벌 오픈 일정 수립 및 유관 부서 조율</li>
         <li><b>라이브 운영·데이터 분석</b> — D14·이탈 퍼널·피처드 성과 분석, 수익화 모니터링 대시보드 운영</li>
         <li><b>품질·스토어 관리</b> — QA 다차수 관리, Google/Apple 스토어 등록·ASO·번역 관리</li>
@@ -218,12 +267,12 @@
       <div class="block-label">성과</div>
       <ul class="clean result">
         <li>담당 전 타이틀 Google 글로벌 피처드 획득</li>
-        <li>Water Sort Quest — <span>피크 DAU 138만 / 피크 월매출 2.3억 / 재직기간 누적 다운로드 1,621만</span></li>
+        <li>Water Sort Quest — <span>피크 DAU 138만 / 피크 월매출 2.3억 / 런칭 1개월 누적 다운로드 425만 / 재직기간 누적 1,621만</span></li>
       </ul>
     </div>
 
     <div class="grid3">
-      <div class="mini"><h4>🚀 런칭·운영</h4><ul><li>런칭 전 과정 (iOS/AOS)</li><li>스토어 등록·심의·피처링</li><li>다타이틀 동시 운영(12종)</li></ul></div>
+      <div class="mini"><h4>🚀 런칭·운영</h4><ul><li>런칭 전 과정 (iOS/AOS)</li><li>스토어 등록·심의·피처링</li><li>다타이틀 동시 운영(13종)</li></ul></div>
       <div class="mini"><h4>💰 수익화·기획</h4><ul><li>BM 구조·인앱 상품 기획</li><li>재화 가치 산정·BM 개선</li><li>FGT 기획·운영·반영</li></ul></div>
       <div class="mini"><h4>🤝 파트너십·협업</h4><ul><li>프랜차이즈 콜라보 성사</li><li>크리에이터 OST 협업</li><li>개발사·퍼블리셔 경험</li></ul></div>
     </div>
@@ -233,7 +282,7 @@
       <span class="tag">Firebase</span><span class="tag">Adjust</span><span class="tag">GA</span>
       <span class="tag">Kibana</span><span class="tag">Play Console</span><span class="tag">App Store Connect</span>
       <span class="tag">Slack</span><span class="tag">Jira</span><span class="tag">Confluence</span>
-      <span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">Claude</span><span class="tag">ChatGPT</span>
+      <span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">Claude</span><span class="tag">ChatGPT</span><span class="tag">Gemini</span>
     </div>
     <div class="block-label" style="margin-top:32px">🎓 학력</div>
     <p style="margin:0;color:var(--txt-dim)">대전보건대학교 — 작업치료학과 · 2019</p>
@@ -246,58 +295,75 @@
 
     <div class="card">
       <h3>(주)나트리스 · 사업 PM</h3>
-      <p class="sub"><span class="pin">●</span> 2024.12 ~ 현재 (1년 4개월) · 개발사 사업팀</p>
+      <p class="sub"><span class="pin">●</span> 2024.12 ~ 현재 (1년 6개월) · 개발사 사업팀 — 방치형 RPG 2종 · 웹 플랫폼 1종</p>
 
       <h4 class="proj">프로젝트 1 — LinkPlay (웹 게임 플랫폼 · 런칭 준비 PM · 2026.02~)</h4>
       <details><summary>📐 런칭 관리</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — 웹 게임 플랫폼 출시를 위해 게임물등급심의와 결제 인프라 구축이 필요. 법적 요건 충족과 안정적 결제 시스템 확보가 핵심 과제.</p>
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>게임콘텐츠등급위원회 심사 서류 준비·제출, 심사 커뮤니케이션 전 과정</li><li>PG사 비교 검토·계약 협상·체결을 통한 결제 인프라 구축</li></ul>
+        <ul class="clean"><li>게임콘텐츠등급위원회 심사 서류 준비·제출, 심사 커뮤니케이션 전 과정 담당</li><li>PG사 비교 검토·계약 협상·체결을 통한 결제 인프라 구축</li></ul>
         <div class="block-label">결과</div><ul class="clean result"><li><span>게임등급심의 서류 준비 중 / PG사 계약 검토 진행 중</span></li></ul>
       </div></details>
-      <details><summary>📊 사업 기획 / 💰 수익화</summary><div class="det-body">
+      <details><summary>📊 사업 기획</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — MVP 출시를 위한 사업 방향 정립과 경영진 의사결정 지원이 필요. 한정된 리소스 내 타겟 파트너 효율적 선별이 과제.</p>
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>사업 계획 경영진 보고, 타겟 BJ·플랫폼 후보군 선정</li><li>BJ 사이즈별 예상 매출 시뮬레이션(Sales Projection) 작성, BM 구조 검토</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li><span>Sales Projection 기반 내부 투자 검토 진행 중 / MVP 타겟 BJ 제안 진행 중</span></li></ul>
+        <ul class="clean"><li>사업 계획 경영진 보고 완료, 방향 수립 진행</li><li>타겟 BJ·플랫폼 후보군 선정 완료</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li><span>경영진 보고 완료 / MVP 타겟 BJ 제안 진행 중</span></li></ul>
+      </div></details>
+      <details><summary>💰 수익화 기획</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — BJ 플랫폼 BM 설계를 위해 수익 구조·정산 비율의 데이터 기반 검토와 투자용 매출 예측 자료가 필요.</p>
+        <div class="block-label">내가 한 일</div>
+        <ul class="clean"><li>BJ 사이즈(구독자·시청자 규모)별 예상 매출 시뮬레이션(Sales Projection) 작성</li><li>플랫폼 BM 구조 검토 및 수익화 전략 방향 수립</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li><span>Sales Projection 기반 내부 투자 검토 진행 중</span></li></ul>
+      </div></details>
+      <details><summary>🤝 파트너 커뮤니케이션</summary><div class="det-body">
+        <div class="block-label">내가 한 일</div>
+        <ul class="clean"><li>영업 목적의 게임 소개서 기획·제작</li><li>협업 제안서 작성 및 파트너사 제안 진행</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li><span>게임 소개서 제작 완료 / 일부 파트너사 파일럿 준비 중</span></li></ul>
       </div></details>
 
       <h4 class="proj">프로젝트 2 — 아이러브커피 키우기 (방치형 RPG·SNG · 런칭/라이브 PM · 2025.06~)</h4>
       <details><summary>📐 런칭 관리</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — GPS 기능 탑재로 위치 기반 서비스 신고 등 추가 심의·행정 절차 필요. 초반 유입 극대화를 위한 스토어 피처링 확보가 핵심 목표.</p>
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>구글플레이·앱스토어 출시 설정·피처링 제안·커뮤니케이션 전 과정</li><li>위치 기반 서비스 심사 서류 작성, 스토어 마켓 데이터 시트 제작 코디네이션</li><li>사전예약 홈페이지 구축 및 SNS 참여형 이벤트 기획·운영</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li>사전 예약 약 15만명(부스팅 제외) / 런칭 주 양대 마켓 피처링 / 1주차 DAU 4.5만</li></ul>
+        <ul class="clean"><li>구글플레이·앱스토어 출시 설정·피처링 제안·커뮤니케이션 전 과정 담당</li><li>위치 기반 서비스 심사 서류 작성, 스토어 마켓 데이터 시트 제작 코디네이션</li><li>사전예약 홈페이지 구축 및 SNS 참여형 퀘스트·미니게임 연동 이벤트 기획·운영</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li>사전 예약 약 15만명(부스팅 제외) / 런칭 주 양대 마켓 피처링 / 1주차 평균 DAU 4.5만 / 인스타·유튜브 팔로워 합산 1.5만 돌파</li></ul>
       </div></details>
       <details><summary>🤝 컴포즈커피 콜라보</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — 카페 테마 게임 특성을 활용해 전국 프랜차이즈 카페 브랜드와 콜라보를 직접 제안·성사. 런칭 동시 전개로 초반 인지도·자연 유입 확보 목표.</p>
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>브랜드 협업 제안용 소개서·기획서·제안서 작성 및 예상 성과 시뮬레이션</li><li>담당자 커뮤니케이션 주도, 콜라보 이벤트 3종 기획·실행</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li>전국 약 3,000개 매장 포스터·키오스크·DID 동시 적용(약 3개월) / 사전등록 전환율·검색량 상승</li></ul>
+        <ul class="clean"><li>브랜드 제안용 소개서·기획서·제안서 작성 및 예상 성과 시뮬레이션</li><li>담당자 커뮤니케이션 주도, 콜라보 이벤트 3종 기획·실행(콜라보 음료 쿠폰→스킨 / GPS 매장 방문 보상 / 기프티콘 사전등록 이벤트)</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li>전국 약 3,000개 매장 포스터·키오스크·DID 동시 적용(약 3개월) / 양사 3채널 동시 홍보 / 사전등록 전환율·검색량 상승</li><li><span>운영 중 매장 지침 미전달·GPS 인식 오류 이슈 파악 → 차기 콜라보 운영 체계 개선안 도출</span></li></ul>
       </div></details>
       <details><summary>🔬 FGT 기획·운영</summary><div class="det-body">
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>FGT 기획안·설문지 작성, 지원자 약 35명 선별(성별·연령·OS·과금 균등)</li><li>현장 진행(약 4시간) 및 결과 보고서·개선 제안</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li><span>UX·콘텐츠·BM 개선 도출 → 출시 전 80% 반영</span></li></ul>
+        <ul class="clean"><li>FGT 기획안·설문지 작성, 장소 대관, 지원자 약 35명 선별(성별·연령·OS·과금 경험 균등 분배)</li><li>현장 진행(게임성·UX·BM 순 약 4시간) 및 결과 보고서·개선 제안</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li><span>UX·콘텐츠·BM 개선 도출 → 출시 전 80% 반영, 일부는 라이브에서 추가 개선</span></li></ul>
       </div></details>
       <details><summary>💰 수익화 기획·운영</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — 방치형 특성상 런칭 초기 자연 유입 하락이 예상되어, 장기 리텐션과 연동한 수익화 구조 사전 설계와 유저층별 패키지 전략이 핵심 과제.</p>
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>메인 BM·월정액 패키지 기획, 조건부/데일리 한정 패키지 설계·운영</li><li>가격대 9,900·14,900원, 효율 400~500%로 심리적 장벽 최소화</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li>D7 인앱 매출 5.1억 / ARPPU 3만원대 / 한정 패키지가 정기 업데이트 표준 구조로 정착</li></ul>
+        <ul class="clean"><li>메인 BM·월정액 패키지 기획, 조건부/데일리 한정 패키지(24시간 노출·주간 변주) 설계·운영</li><li>가격대 9,900·14,900원, 효율 400~500%로 설계해 심리적 장벽 최소화, 업데이트 연동 패키지 운영</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li>D7 인앱 매출 5.1억 / ARPPU 3만원대 유지 / 한정 패키지가 정기 업데이트 표준 구조로 정착</li></ul>
       </div></details>
       <details><summary>📊 데이터 분석·대응</summary><div class="det-body">
-        <div class="block-label">맥락</div><p style="margin:4px 0;color:var(--txt-dim)">런칭 W3 이후 DAU 33%·매출 41% 감소, NPU 35%→19% 급감.</p>
+        <p class="ctx"><b>맥락</b> — 런칭 W3 이후 DAU 33%·매출 41% 감소, NPU 비중 35%→19% 급감. 신규 과금 유입 회복과 이탈 구조 파악이 과제.</p>
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>이탈 퍼널 분석(꾸미기 해금 전 37.87% 집중), 과금 코호트 분석(고과금 28.7%→43.8%)</li><li>BM 개선 To-Do 9종 도출, 유저 지원 업데이트 전후 Retention 비교</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li>튜토리얼 개선 → 초반 이탈률 50%+ 감소 / 개선 이벤트 5종 반영 / D3 Retention 0.4%p 개선</li></ul>
+        <ul class="clean"><li>이탈 퍼널 분석 — 꾸미기 해금 이전 37.87% 이탈 집중 구간 특정 및 개선 제안</li><li>과금 코호트 분석 — 전체 PU 감소 속 고과금 비중 28.7%→43.8% 확인, 소·중과금 이탈 원인 파악</li><li>BM 개선 To-Do 9종 도출(NPU 회복·캐시 소모 촉진·중→고과금 전환), 유저 지원 업데이트 전후 Retention 교차 검증</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li>튜토리얼 개선 제안 → 초반 주요 이탈 구간 이탈률 50%+ 감소</li><li>개선 이벤트 5종(출석·레벨 달성·데일리 패스·타임딜·복귀) 기획·반영 / 무료광고 제거 3일권으로 D3 Retention 0.4%p 개선</li></ul>
       </div></details>
 
       <h4 class="proj">프로젝트 3 — 같은 돌이니 아이돌 하겠습니다 (방치형 RPG · 2024.12~2026.03)</h4>
       <details><summary>📐 런칭 관리 / 🤝 음율 OST</summary><div class="det-body">
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>출시 설정·피처링 제안 전 과정, 사전예약 마일스톤 이벤트(50만/70만) 기획</li><li>싱어송라이터 음율 서칭·계약, 음원 저작권 등록 및 스트리밍 플랫폼 배포</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li>사전등록 5.2만 / 구글플레이 피처링 / OST 유튜브 7.3만회 · 구독자 10%+ 증가</li></ul>
+        <ul class="clean"><li>출시 설정·피처링 제안 전 과정, 사전예약 마일스톤 이벤트(50만/70만) 기획</li><li>세계관 핏 기준 싱어송라이터 음율 서칭·계약, 음원 저작권 등록 및 유튜브뮤직·스포티파이·플로 배포</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li>사전등록 5.2만 / 1주차 평균 DAU 1.2만 / 구글플레이 피처링</li><li>OST 유튜브 7.3만회(평균 시청 2분 이상, 영상의 75%) · 애니맥스 플러스 2.5천회 · 구독자 10%+ 증가</li></ul>
       </div></details>
       <details><summary>💰 수익화 / 📊 데이터 분석 → 신서버</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — 런칭 후 PUR 대비 매출 저조. 재화 가치 과다·허들 후위 등 구조적 원인을 분석해 기존 서버 개선 후 신서버(2025.05) 오픈 전략으로 전환.</p>
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>전투력 시뮬레이션 기반 재화 가치 재산정·허들 조정, 달성·시즌 경쟁 보상 테이블 설계</li><li>성과 부진 원인 분석 후 신서버(시즌2·경쟁·성장) 오픈 전략 수립·실행</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li>분석 데이터를 신서버 BM 기반으로 활용 → 신서버 오픈 1주차 DAU 약 2배 회복</li></ul>
+        <ul class="clean"><li>전투력 시뮬레이션 기반 재화 가치 재산정·허들 조정, 달성·시즌 경쟁 보상 테이블 설계</li><li>신서버 오픈 전략 수립(시즌2·경쟁·성장) — 서버 이전 리워드(과금액 10% 환급)·LMS 쿠폰(6,680명)·출석/달성/커뮤니티 이벤트·UA 협업</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li>신서버 오픈 2일차 DAU 1,305명 — 오픈 전일(401명) 대비 약 3배 회복(Organic 기준)</li><li>안정화 구간(D8~) PUR 4~5%대 — 기존 서버 초기 평균(약 3.5%) 대비 개선</li><li><span>반등 효과가 일시적이라 마케팅 조기 종료·전략 재검토 → 런칭 1주년까지 운영 후 종료</span></li></ul>
       </div></details>
     </div>
 
@@ -305,11 +371,13 @@
       <h3>(주)모비릭스 · 사업 PM</h3>
       <p class="sub"><span class="pin">●</span> 2022.12 ~ 2024.07 (1년 7개월) · 퍼블리셔 사업팀 — 캐주얼/방치형 13개 타이틀</p>
       <details><summary>📐 런칭 관리 (다타이틀)</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — 자사·외부 개발사 게임 10종의 글로벌 런칭 전 과정 담당. 개발사·운영·QA·마케팅과 협업해 킥오프부터 글로벌 오픈까지 일정·품질 조율.</p>
         <div class="block-label">내가 한 일</div>
-        <ul class="clean"><li>마스터 플랜 수립 — 국가 티어별 소프트 런칭 → 밸런스 분석 → 글로벌 전체 런칭</li><li>품질 개선 관리·QA 다차수, 스토어 등록·ASO·번역, Adjust/Firebase 연동·UA 협의</li></ul>
-        <div class="block-label">결과</div><ul class="clean result"><li>10종 글로벌 런칭 / 전체 타이틀 구글 글로벌 피처드 / Water Sort Quest 피크 DAU 138만</li></ul>
+        <ul class="clean"><li>마스터 플랜 수립 — 국가 티어별 소프트 런칭 → 밸런스 분석·개선 → 글로벌 전체 런칭</li><li>품질 개선 관리·QA 다차수, 스토어 등록·ASO·번역, Adjust/Firebase 연동·UA 협의</li></ul>
+        <div class="block-label">결과</div><ul class="clean result"><li>10종 글로벌 런칭 / 담당 전 타이틀 구글 글로벌 피처드</li><li>Water Sort Quest 피크 DAU 138만 / 런칭 1개월 누적 다운로드 425만 / 피크 월매출 2.3억</li></ul>
       </div></details>
       <details><summary>📊 라이브 운영·데이터 분석</summary><div class="det-body">
+        <p class="ctx"><b>맥락</b> — 런칭~라이브 10종 외 라이브 인수인계 3종 포함, 총 13종 동시 운영. 지표 모니터링·분석으로 업데이트 방향 결정 지원.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean"><li>런칭 성과 분석(D14·이탈 퍼널·피처드), 상품 판매 대시보드 운영, 주간 업데이트 비교 보고서</li></ul>
         <div class="block-label">결과</div><ul class="clean result"><li>총 13종 동시 운영 / Water Sort Quest 재직기간 누적 다운로드 1,621만</li></ul>
@@ -324,34 +392,39 @@
 
     <div class="card">
       <h3>1. 지원 동기</h3>
-      <p style="color:var(--txt-dim)">레퍼 게임을 직접 플레이하며 개선점을 찾는 것이 저의 습관입니다. 장르와 플랫폼마다 다른 답이 나오고
+      <p style="color:var(--txt-dim)">레퍼 게임을 직접 플레이하며 우리 게임에 맞는 개선점을 찾는 것이 저의 습관입니다. 장르와 플랫폼마다 다른 답이 나오고
         정해진 정답이 없는 환경에서 직접 판단을 내리는 것이 게임 사업 PM을 선택한 이유였습니다. 퍼블리셔와 개발사 양측에서
-        15종 이상의 타이틀을 담당하며, 장르마다 사업을 다르게 설계하는 일이 제가 가장 잘하고 재미있게 해내는 일임을 확인했습니다.</p>
+        15종 이상의 타이틀을 담당하며, 장르마다 사업을 다르게 설계하는 일이 제가 가장 잘하고 재미있게 해내는 일임을 확인했습니다.
+        그 경험이 쌓일수록 더 다양한 장르, 더 큰 규모의 라이브 서비스에서 같은 방식으로 부딪혀보고 싶다는 방향이 분명해졌습니다.</p>
     </div>
     <div class="card">
       <h3>2. 직무 역량 및 주요 성과</h3>
       <div class="block-label">■ 신규 타이틀 End-to-End 런칭 기획 역량</div>
-      <p style="color:var(--txt-dim)">아이러브커피 한국 런칭 전 과정을 담당해 사전 예약 15만, 양대 마켓 피처링 동시 확보, 런칭 당일 DAU 7만·1주차 평균 4.5만,
-        D7 인앱 매출 5.1억원을 달성했습니다. 비공개 FGT로 출시 전 개선 80%를 반영하고, SNS 사전 예약 이벤트·브랜드 콜라보·피처링까지 병행했습니다.</p>
+      <p style="color:var(--txt-dim)">아이러브커피 키우기 한국 런칭 전 과정을 직접 담당해 사전 예약 15만, 양대 마켓 피처링 동시 확보, 런칭 당일 DAU 7만·1주차 평균 4.5만,
+        D7 인앱 매출 5.1억원을 달성했습니다. 기존 IP와 완전히 다른 장르(방치형 RPG)로 출시된 만큼 기존 팬 유입과 신규 유저 리텐션을 동시에 잡는 것이 핵심 과제였고,
+        비공개 초청형 FGT로 출시 전 개선 80%를 반영하고 SNS 참여형 사전 예약 이벤트·브랜드 콜라보·피처링 제안까지 병행해 런칭 유입 전략을 다각화했습니다.</p>
       <div class="block-label">■ 데이터로 수익화 구조를 재설계하는 역량</div>
-      <p style="color:var(--txt-dim)">아이돌 키우기 매출 부진의 원인을 재화·허들 구조 설계 오류로 특정하고 8일 내 1차 개선 후, 신서버 오픈으로 전략을 전환했습니다.
-        시즌 경쟁·달성·출석 이벤트를 신규 기획해 신서버 2일차 DAU 약 3배, 안정화 구간 PUR 3%대→4~5%대로 개선했습니다.</p>
+      <p style="color:var(--txt-dim)">아이돌 키우기 매출 부진의 원인을 재화·허들 구조의 설계 오류로 특정했습니다. 스테이지 보상량 누락으로 재화 가치가 과다 책정되고,
+        무과금으로도 주요 구간을 돌파해 허들이 의도보다 뒤로 밀린 구조가 핵심이었습니다. 전투력 시뮬레이션 기반 재화 재산정·허들 재설계를 8일 내 반영했으나
+        누적 이슈까지는 해소되지 않아, 신서버 오픈으로 전략을 전환했습니다. 시즌 경쟁·달성·출석·커뮤니티 이벤트를 신규 기획한 결과 신서버 2일차 DAU 약 3배(1,305명),
+        안정화 구간 PUR은 기존 약 3.5%대에서 4~5%대로 개선했습니다. 다만 반등이 일시적이어서 마케팅 조기 종료로 이어졌고, "구조 개선만으로는 닿지 않는 시장·유입 요인의 비중"을 실무로 체감해 이후 타이틀의 사전 설계 기준으로 삼았습니다.</p>
       <div class="block-label">■ 세계관을 연결고리로 만드는 파트너십 기획 역량</div>
-      <p style="color:var(--txt-dim)">전국 3,000개 매장 브랜드 콜라보, 유튜브 7.3만뷰 게임 전용 OST. 게임 세계관과 파트너 브랜드를 연결하는 방식으로
-        두 건의 외부 협업을 제안 단계부터 직접 성사시켰습니다.</p>
+      <p style="color:var(--txt-dim)">전국 3,000개 매장 규모 브랜드 콜라보, 유튜브 7.3만뷰 게임 전용 OST. 단순 광고가 아니라 게임 세계관과 파트너 브랜드를 연결하는 방식으로
+        두 건의 외부 협업을 제안 단계부터 직접 성사시켰습니다. 컴포즈커피는 카페 테마라는 세계관 접점을 핵심 논거로 삼아 전국 온·오프라인 동시 운영과 양사 3채널 홍보로 사전등록 전환율·검색량 상승을 확인했고,
+        음율 OST는 크리에이터 탐색부터 계약·음원 배포까지 주도해 채널 구독자 10%+ 증가로 이어졌습니다.</p>
     </div>
     <div class="card">
       <h3>3. 나는 이런 사람입니다</h3>
-      <p style="margin:0 0 10px"><b>제대로 실행하기 위해 "왜?"를 먼저 생각하는 사람입니다.</b><br><span style="color:var(--txt-dim)">왜 해야 하는지, 왜 이 방식이어야 하는지 확인하고, 답이 명확해지면 지체 없이 실행합니다.</span></p>
-      <p style="margin:0 0 10px"><b>목적을 먼저 정리한 뒤 실행합니다.</b><br><span style="color:var(--txt-dim)">LinkPlay 경영진 보고도 '투자·방향 결정에 필요한 정보 제공'이 목적임을 정리한 뒤 Sales Projection과 타겟 후보군을 함께 준비했습니다.</span></p>
-      <p style="margin:0 0 10px"><b>표면이 아니라 근본 원인까지 짚습니다.</b><br><span style="color:var(--txt-dim)">'DAU가 왜 빠지는가'에서 멈추지 않고 NPU 급감·고과금 편중 원인을 되물어 이탈·편중 구조를 특정했습니다.</span></p>
-      <p style="margin:0"><b>한 프로젝트의 결과를 다음에 반영합니다.</b><br><span style="color:var(--txt-dim)">성과든 실패든 '왜 이런 결과가 나왔는가'로 정리해 다음 프로젝트의 사전 설계에 적용합니다.</span></p>
+      <p style="margin:0 0 10px"><b>제대로 실행하기 위해 "왜?"를 먼저 생각하는 사람입니다.</b><br><span style="color:var(--txt-dim)">왜 해야 하는지, 왜 이 방식이어야 하는지, 왜 이런 결과가 나왔는지를 확인합니다. 더 정확하게 실행하기 위한 질문이고, 답이 명확해지면 지체 없이 실행합니다.</span></p>
+      <p style="margin:0 0 10px"><b>목적을 먼저 정리한 뒤 실행합니다.</b><br><span style="color:var(--txt-dim)">LinkPlay 경영진 보고도 '보고' 자체가 아니라 '투자·방향 결정에 필요한 정보 제공'이 목적임을 정리한 뒤 Sales Projection과 타겟 스트리머 후보군을 함께 준비했습니다.</span></p>
+      <p style="margin:0 0 10px"><b>표면의 증상이 아니라 근본 원인까지 짚습니다.</b><br><span style="color:var(--txt-dim)">'DAU가 왜 빠지는가'에서 멈추지 않고 NPU 급감·고과금 편중 원인을 층층이 되물어 이탈 구간과 구매 편중 구조를 특정했습니다.</span></p>
+      <p style="margin:0"><b>한 프로젝트의 결과를 다음에 반영합니다.</b><br><span style="color:var(--txt-dim)">성과든 실패든 '왜 이런 결과가 나왔는가'로 정리해 다음 프로젝트의 사전 설계에 적용합니다. 아이돌 키우기의 반등 한계 경험을 이후 타이틀 설계에 반영한 것이 대표 사례입니다.</span></p>
     </div>
     <div class="card">
       <h3>4. 입사 후 포부</h3>
-      <p style="margin:0 0 10px"><b>단기(0~3개월)</b> — <span style="color:var(--txt-dim)">이탈 퍼널·과금 코호트·패키지 효율을 분석해 현황 리포트를 작성하고, 빠르게 개선 가능한 지점 3가지를 제안하겠습니다.</span></p>
-      <p style="margin:0 0 10px"><b>중기(3~6개월)</b> — <span style="color:var(--txt-dim)">분석을 BM·이벤트·패키지 리뉴얼로 옮겨 '분석 → 구조 재설계 → 신규 기획' 루틴을 라이브 서비스에 적용하겠습니다.</span></p>
-      <p style="margin:0"><b>장기(1년 이후)</b> — <span style="color:var(--txt-dim)">장르와 규모가 달라질 때마다 새로운 판단 기준을 만드는 사업 PM으로 성장하겠습니다.</span></p>
+      <p style="margin:0 0 10px"><b>단기(0~3개월)</b> — <span style="color:var(--txt-dim)">담당 타이틀의 이탈 퍼널·과금 코호트·패키지 효율·이벤트 참여율을 직접 분석해 현황 리포트를 작성하고, 빠르게 개선 가능한 지점 3가지를 첫 기여로 제안하겠습니다.</span></p>
+      <p style="margin:0 0 10px"><b>중기(3~6개월)</b> — <span style="color:var(--txt-dim)">분석을 BM·이벤트·패키지 리뉴얼로 옮기고, 업데이트 전후 지표 비교로 다음 의사결정 근거를 제공하는 '분석 → 구조 재설계 → 신규 기획' 데이터 루틴을 라이브 서비스에 적용하겠습니다.</span></p>
+      <p style="margin:0"><b>장기(1년 이후)</b> — <span style="color:var(--txt-dim)">15종 이상에서 장르별로 사업을 다르게 설계해온 경험을 바탕으로 글로벌 확장·신규 IP·라이브 고도화에 기여하고, 장르와 규모가 달라질 때마다 새로운 판단 기준을 만드는 사업 PM으로 성장하겠습니다.</span></p>
     </div>
   </section>
 
@@ -367,30 +440,38 @@
     <div class="card">
       <h3>🌟 케이스 1 — 아이러브커피 키우기 런칭</h3>
       <p class="sub">방치형 RPG×SNG 신규 타이틀 런칭 End-to-End</p>
+      <p class="ctx"><b>배경·목표</b> — 각인된 SNG 이미지를 벗어나 완전히 다른 장르(방치형 RPG)로 출시. '같은 IP인데 다른 게임'이라는 점에서 기존 팬 유입과 초반 리텐션 확보가 핵심 과제.</p>
       <div class="block-label">내가 한 일</div>
-      <ul class="clean"><li>스토어 등록·심의·일정 관리, SNS 참여형 사전 예약 이벤트 기획·운영</li><li>양대 마켓 한국 피처드 제안, 비공개 FGT 모집·구성·진행 → BM/콘텐츠/UI-UX 구조화 전달(80% 반영)</li></ul>
+      <ul class="clean"><li>스토어 등록·심의·일정 관리, SNS 참여형(퀘스트·미니게임 연동) 사전 예약 이벤트 기획·운영</li><li>양대 마켓 한국 피처드 제안, 비공개 FGT 모집·구성·진행 → 피드백을 BM/콘텐츠/UI-UX로 구조화 전달(80% 반영)</li></ul>
       <div class="block-label">결과</div><ul class="clean result"><li><span>사전예약 15만 / 양대 마켓 피처드 / 1주차 DAU 4.5만 / D7 매출 5.1억 / ARPPU 3만원대</span></li></ul>
+      <p class="ctx"><b>회고</b> — FGT 피드백을 BM/콘텐츠/UI-UX로 구조화해 전달한 것이 개발팀 반영 속도를 높임. 다음엔 코어(과금)·라이트 유저를 분리하면 더 세분화된 인사이트 확보 가능.</p>
     </div>
     <div class="card">
       <h3>🌟 케이스 2 — 컴포즈커피 브랜드 콜라보</h3>
       <p class="sub">카페 세계관 활용 대형 프랜차이즈 콜라보</p>
+      <p class="ctx"><b>배경·목표</b> — 자체 채널만으로는 인지도 확보에 한계. 세계관(카페 운영 테마)과 시너지 있는 외부 브랜드로 사전등록 시기 유입 채널을 다각화하는 것이 목표.</p>
       <div class="block-label">내가 한 일</div>
-      <ul class="clean"><li>카페 세계관 연계 브랜드 분석, 컴포즈커피 공식 제안·협의 주도</li><li>전국 온·오프라인 포스터·키오스크·DID 동시 노출 기획, 인게임 이벤트 연동</li></ul>
-      <div class="block-label">결과</div><ul class="clean result"><li><span>전국 3,000개 매장 동시 적용(약 3개월) / 양사 3채널 동시 홍보 / 전환율·검색량 상승</span></li></ul>
+      <ul class="clean"><li>카페 세계관 연계 브랜드 리스트업·적합성 분석, 컴포즈커피 공식 제안·협의 주도</li><li>전국 온·오프라인 포스터·키오스크·DID 동시 노출 기획, 인게임 이벤트 연동·일정 조율</li></ul>
+      <div class="block-label">결과</div><ul class="clean result"><li><span>전국 3,000개 매장 동시 적용(약 3개월) / 양사 3채널 동시 홍보 / 사전등록 전환율·검색량 상승</span></li></ul>
+      <p class="ctx"><b>회고</b> — 세계관·GPS 콘텐츠 연계성을 제안 핵심 기준으로 삼은 것이 파트너사 승인 속도를 높임. 다음엔 콜라보 전 유저 선호 브랜드 설문을 선행하면 반응률 향상 기대.</p>
     </div>
     <div class="card">
       <h3>🌟 케이스 3 — 음율 OST 협업</h3>
       <p class="sub">아이돌 육성 게임 세계관 크리에이터 OST 협업</p>
+      <p class="ctx"><b>배경·목표</b> — 신규 IP 특성상 광고만으로 '아이돌 육성' 세계관 전달이 어려움. 음악으로 세계관을 체험시켜 강화·바이럴·팬덤 유입 3가지를 동시 달성하는 것이 목표.</p>
       <div class="block-label">내가 한 일</div>
-      <ul class="clean"><li>세계관 핏 기준 크리에이터 선정(구독자보다 방향성 우선), 제작 협의 주도</li><li>라이선스 계약 조율, 유튜브·애니맥스 플러스 등 배포 전 과정</li></ul>
+      <ul class="clean"><li>세계관 핏 기준 크리에이터 선정(구독자보다 방향성 우선), 제작 협의 주도</li><li>라이선스(저작권·상업적 이용 범위) 계약 조율, 유튜브·애니맥스 플러스 등 배포 전 과정</li></ul>
       <div class="block-label">결과</div><ul class="clean result"><li><span>유튜브 7.3만 뷰 / 애니맥스 플러스 2.5천 뷰 / 채널 구독자 10%+ 증가</span></li></ul>
+      <p class="ctx"><b>회고</b> — 구독자 수보다 세계관 방향성 일치를 우선 기준으로 삼은 것이 콘텐츠 반응률에 직결. 단순 협찬보다 세계관 연계 콘텐츠가 몰입도를 높임을 확인.</p>
     </div>
     <div class="card">
       <h3>🌟 케이스 4 — 아이돌 키우기 BM 분석·개선·신서버</h3>
       <p class="sub">데이터 기반 수익화 구조 재설계 End-to-End</p>
+      <p class="ctx"><b>배경·목표</b> — 런칭 후 PUR 대비 매출 저조, 낮은 D+1 Retention, 소액 상품 편중. 구조적 원인 파악·즉각 개선부터 신서버(2025.05) 설계까지 연결이 목표.</p>
       <div class="block-label">내가 한 일</div>
       <ul class="clean"><li>스테이지 보상량 누락 → 재화 가치 과다 / 무과금 돌파 → 허들 후위 원인 특정</li><li>상품 리뉴얼+밸런스 조정 D+8 내 반영, 신서버 이벤트(달성·시즌 경쟁·출석·커뮤니티) 설계</li></ul>
-      <div class="block-label">결과</div><ul class="clean result"><li>신서버 안정화 PUR 4~5%대(기존 약 3.5%) / 오픈 D2 DAU 1,305명, 오픈 전일 대비 약 3배</li></ul>
+      <div class="block-label">결과</div><ul class="clean result"><li>신서버 안정화 구간(D8~) PUR 4~5%대(기존 약 3.5%) / 오픈 2일차 DAU 1,305명 — 오픈 전일(401명) 대비 약 3배</li></ul>
+      <p class="ctx"><b>회고</b> — 런칭 전 스테이지 보상량 시뮬레이션 부재가 근본 원인. '분석 → 즉시 반영 → 신서버 설계' 사이클을 경험하며 무과금 진행도 시뮬레이션을 필수 프로세스로 정립.</p>
     </div>
   </section>
 
@@ -401,7 +482,10 @@
   (function(){
     var links  = document.querySelectorAll('.s-nav a[data-tab]');
     var panels = document.querySelectorAll('.tab-panel');
+    var valid  = ['resume','career','cover','portfolio'];
+    var current = 'resume';
     function show(id, scroll){
+      current = id;
       panels.forEach(function(p){ p.classList.toggle('active', p.id === id); });
       links.forEach(function(a){ a.classList.toggle('active', a.dataset.tab === id); });
       if(scroll){ window.scrollTo({top:0,behavior:'smooth'}); }
@@ -410,8 +494,21 @@
       a.addEventListener('click', function(e){ e.preventDefault(); show(a.dataset.tab, true); });
     });
     var start = (location.hash || '').replace('#','');
-    var valid = ['resume','career','cover','portfolio'];
     show(valid.indexOf(start) >= 0 ? start : 'resume', false);
+
+    // ===== 인쇄/PDF 저장 시 4개 탭 + 접힌 토글을 모두 펼침 =====
+    window.addEventListener('beforeprint', function(){
+      panels.forEach(function(p){ p.classList.add('active'); });
+      document.querySelectorAll('details').forEach(function(d){
+        if(!d.open){ d.setAttribute('data-reopen','1'); d.open = true; }
+      });
+    });
+    window.addEventListener('afterprint', function(){
+      panels.forEach(function(p){ p.classList.toggle('active', p.id === current); });
+      document.querySelectorAll('details[data-reopen]').forEach(function(d){
+        d.open = false; d.removeAttribute('data-reopen');
+      });
+    });
   })();
 </script>
 

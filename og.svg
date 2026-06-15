@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Pretendard, 'Apple SD Gothic Neo', sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#f6f8fb"/>
+  <rect x="0" y="0" width="14" height="630" fill="url(#g)"/>
+
+  <!-- avatar -->
+  <rect x="84" y="96" width="118" height="118" rx="28" fill="url(#g)"/>
+  <text x="143" y="178" font-size="62" font-weight="900" fill="#ffffff" text-anchor="middle">모</text>
+
+  <!-- name / role -->
+  <text x="228" y="156" font-size="66" font-weight="900" fill="#1a2433">모지혜</text>
+  <text x="231" y="205" font-size="33" font-weight="700" fill="#2563eb">게임 사업 PM · 런칭 · 수익화 · 파트너십</text>
+
+  <!-- tagline -->
+  <text x="86" y="298" font-size="30" fill="#5b6b7e">퍼블리셔(모비릭스)·개발사(나트리스) 양 포지션에서 15종 이상 타이틀 담당</text>
+
+  <!-- stat chips -->
+  <g>
+    <rect x="86" y="350" width="245" height="150" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="208" y="425" font-size="46" font-weight="900" fill="#2563eb" text-anchor="middle">15종+</text>
+    <text x="208" y="465" font-size="25" fill="#5b6b7e" text-anchor="middle">담당 타이틀</text>
+
+    <rect x="346" y="350" width="245" height="150" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="468" y="425" font-size="46" font-weight="900" fill="#2563eb" text-anchor="middle">5.1억</text>
+    <text x="468" y="465" font-size="25" fill="#5b6b7e" text-anchor="middle">D7 인앱 매출</text>
+
+    <rect x="606" y="350" width="245" height="150" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="728" y="425" font-size="46" font-weight="900" fill="#2563eb" text-anchor="middle">138만</text>
+    <text x="728" y="465" font-size="25" fill="#5b6b7e" text-anchor="middle">피크 DAU</text>
+
+    <rect x="866" y="350" width="245" height="150" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="988" y="425" font-size="46" font-weight="900" fill="#2563eb" text-anchor="middle">3,000개</text>
+    <text x="988" y="465" font-size="25" fill="#5b6b7e" text-anchor="middle">매장 콜라보</text>
+  </g>
+
+  <text x="86" y="565" font-size="24" fill="#94a3b8">모바일 게임 런칭 · BM 수익화 · 브랜드 콜라보 · 데이터 기반 개선</text>
+</svg>
