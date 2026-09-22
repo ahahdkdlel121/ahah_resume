@@ -84,6 +84,11 @@
   .main-inner{max-width:780px;margin:0 auto;}
   .print-head{display:none;}
   .tab-panel{display:none;}
+  .deck-wrap{position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#070B14;box-shadow:var(--shadow);}
+  .deck-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+  .deck-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+  .deck-links a{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border:1px solid var(--line);border-radius:9px;background:var(--card);color:var(--txt);font-size:13px;font-weight:700;text-decoration:none;}
+  .deck-links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
   .tab-panel.active{display:block;animation:fade .25s ease;}
   @keyframes fade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
 
@@ -240,6 +245,7 @@
     .metrics{grid-template-columns:repeat(3,1fr);}
     .tool-row{grid-template-columns:96px 1fr;}
     .tab-panel + .tab-panel{page-break-before:always;}
+    #portfolio{display:none !important;}
     details{border-color:#ccc;background:#fff;}
     details summary::after{display:none;}
     details > *:not(summary){display:block !important;}
@@ -276,6 +282,7 @@
     <a href="#fit" data-tab="fit"><span class="ico">🧭</span> 직무 적합성</a>
     <a href="#career" data-tab="career"><span class="ico">📝</span> 경력기술서</a>
     <a href="#cover" data-tab="cover"><span class="ico">💬</span> 자기소개서</a>
+    <a href="#portfolio" data-tab="portfolio"><span class="ico">🎞</span> 포트폴리오</a>
   </nav>
 
   <div class="s-contact">
@@ -591,6 +598,17 @@
   </section>
 
   <!-- ===================== 자기소개서 ===================== -->
+  <section id="portfolio" class="tab-panel">
+    <p class="sec-title">Portfolio</p>
+    <h2 class="sec-head">🎞 포트폴리오</h2>
+    <p class="ctx" style="margin:-18px 0 14px">슬라이드 15장 — 화살표 키, 스와이프, 하단 점으로 넘깁니다.</p>
+    <div class="deck-wrap"><iframe id="deckFrame" data-src="portfolio.html" title="모지혜 게임 사업 PM 포트폴리오 슬라이드" allowfullscreen></iframe></div>
+    <div class="deck-links">
+      <a href="portfolio.html" target="_blank" rel="noopener">⛶ 전체 화면으로 보기</a>
+      <a href="모지혜_포트폴리오_PM_슬라이드.pdf" target="_blank" rel="noopener">📄 PDF로 보기</a>
+    </div>
+  </section>
+
   <section id="cover" class="tab-panel">
     <p class="sec-title">Cover Letter</p>
     <h2 class="sec-head">💬 자기소개서</h2>
@@ -638,10 +656,11 @@
   (function(){
     var links  = document.querySelectorAll('.s-nav a[data-tab]');
     var panels = document.querySelectorAll('.tab-panel');
-    var valid  = ['resume','fit','career','cover'];
+    var valid  = ['resume','fit','career','cover','portfolio'];
     var current = 'resume';
     function show(id, scroll){
       current = id;
+      if(id === 'portfolio'){ var f = document.getElementById('deckFrame'); if(f && !f.src){ f.src = f.dataset.src; } }
       panels.forEach(function(p){ p.classList.toggle('active', p.id === id); });
       links.forEach(function(a){ a.classList.toggle('active', a.dataset.tab === id); });
       if(scroll){ window.scrollTo({top:0,behavior:'smooth'}); }

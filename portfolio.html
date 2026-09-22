@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>모지혜 | 게임 사업 PM 포트폴리오</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --blue:#2563EB; --blue-deep:#1D4ED8; --blue-ink:#1E3A8A; --wash:#EFF4FF; --wash-deep:#DCE7FE;
+  --ink:#0F172A; --text:#1E293B; --muted:#64748B; --faint:#94A3B8; --border:#E2E8F0; --bg:#FFFFFF; --bg-subtle:#F8FAFC;
+  --shadow:0 1px 2px rgba(15,23,42,.05),0 8px 24px rgba(37,99,235,.06);
+  --f-kr:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --f-dsp:"Manrope","Pretendard Variable",Pretendard,system-ui,sans-serif;
+  --r:14px; --r-sm:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#070B14}
+body{font-family:var(--f-kr);color:var(--text);letter-spacing:-.012em;word-break:keep-all;font-feature-settings:"tnum";-webkit-font-smoothing:antialiased}
+.dsp{font-family:var(--f-dsp);font-variant-numeric:tabular-nums}
+
+/* ---------- Stage ---------- */
+.presentation{width:1280px;height:720px;position:absolute;transform-origin:top left;background:var(--bg);overflow:hidden}
+.slide{position:absolute;inset:0;padding:46px 84px 78px;display:none;flex-direction:column;background:var(--bg);transition:transform .5s cubic-bezier(.22,.61,.36,1),opacity .5s ease-out}
+.slide.active,.slide.anim-stage{display:flex}
+
+/* ---------- Type ---------- */
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--blue);margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--blue);border-radius:2px;flex:none}
+.s-title{font-size:34px;font-weight:800;letter-spacing:-.035em;line-height:1.24;color:var(--ink);text-wrap:balance}
+.s-title .hl{color:var(--blue);position:relative;display:inline-block}
+.s-title .hl::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.28em;background:var(--wash-deep);border-radius:3px;z-index:-1}
+.s-sub{font-size:14.5px;color:var(--muted);margin-top:9px;line-height:1.55}
+.s-head{flex:none}
+.s-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:16px;padding-top:18px}
+.insight{text-align:center;font-size:14.5px;color:var(--text);background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--r);padding:12px 24px;line-height:1.6}
+.insight strong{color:var(--blue-ink);font-weight:700}
+.card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;color:var(--blue-ink);background:var(--wash);border:1px solid var(--wash-deep);border-radius:999px;padding:4px 11px}
+b.n{color:var(--blue);font-weight:800}
+
+/* ---------- Cover ---------- */
+.slide-cover{padding:0;flex-direction:row}
+.cover-l{width:460px;background:linear-gradient(160deg,#0B1220 0%,#0F1B33 55%,#0B1220 100%);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:22px;padding:60px 44px}
+.cover-l img{width:168px;height:168px;border-radius:50%;object-fit:cover;border:4px solid rgba(255,255,255,.14);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.cover-nm{font-size:40px;font-weight:800;color:#F8FAFC;letter-spacing:-.03em;line-height:1.1}
+.cover-role{font-size:15px;color:#93B4FC;font-weight:700;margin-top:6px;letter-spacing:.02em}
+.cover-meta{display:flex;flex-direction:column;gap:6px;font-size:12.5px;color:#94A3B8;text-align:center;margin-top:8px}
+.cover-meta strong{color:#E2E8F0;font-weight:600}
+.cover-r{flex:1;padding:70px 76px 60px;display:flex;flex-direction:column;justify-content:center}
+.cover-eyebrow{font-size:11px;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--blue);margin-bottom:22px}
+.cover-msg{font-size:40px;font-weight:800;letter-spacing:-.035em;line-height:1.26;color:var(--ink)}
+.cover-msg .hl{color:var(--blue)}
+.cover-tag{font-size:16px;color:var(--muted);margin-top:20px;line-height:1.6}
+.cover-kv{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}
+.cover-kv div{background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--r-sm);padding:12px 14px;font-size:12px;color:var(--muted)}
+.cover-kv strong{display:block;font-size:14.5px;color:var(--ink);font-weight:800;margin-top:3px}
+
+/* ---------- Metrics ---------- */
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.kpi{padding:20px 22px;border-left:4px solid var(--blue)}
+.kpi .v{font-size:34px;font-weight:800;color:var(--ink);letter-spacing:-.03em;line-height:1.1}
+.kpi .l{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.5}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.tl{padding:14px 18px;border-right:1px solid var(--border);background:var(--bg-subtle)}
+.tl:last-child{border-right:0}
+.tl .co{font-size:15px;font-weight:800;color:var(--ink)}
+.tl .dt{font-size:11.5px;color:var(--blue);font-weight:700;margin-top:2px}
+.tl .ds{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+
+/* ---------- Strength cards ---------- */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fc{padding:18px 20px;display:flex;flex-direction:column}
+.fc .tag{font-size:10.5px;font-weight:800;color:var(--blue);letter-spacing:.04em}
+.fc h4{font-size:15.5px;font-weight:800;color:var(--ink);margin-top:6px;line-height:1.4}
+.fc p{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.6;flex:1}
+.fc .r{font-size:12.5px;color:var(--text);font-weight:600;margin-top:12px;padding-top:10px;border-top:1px dashed var(--border);line-height:1.5}
+.grid4 .fc h4{font-size:14px}
+.grid4 .fc p{font-size:12px}
+.grid4 .fc .r{font-size:12px}
+
+/* ---------- Case layouts ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.step{padding:14px 16px;position:relative}
+.step .n{font-size:10.5px;font-weight:800;color:var(--blue);letter-spacing:.14em}
+.step h5{font-size:14.5px;font-weight:800;color:var(--ink);margin-top:4px}
+.step p{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.55}
+.flow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:stretch}
+.fbox{padding:16px 18px}
+.fbox h5{font-size:12px;font-weight:800;color:var(--blue);letter-spacing:.06em;text-transform:uppercase}
+.fbox ul{list-style:none;margin-top:10px;display:flex;flex-direction:column;gap:7px}
+.fbox li{font-size:13px;color:var(--text);line-height:1.5;padding-left:14px;position:relative}
+.fbox li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.fbox.res{background:var(--wash);border-color:var(--wash-deep)}
+.stat4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{padding:14px 16px;background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--r-sm)}
+.stat .l{font-size:11.5px;color:var(--muted)}
+.stat .v{font-size:24px;font-weight:800;color:var(--ink);margin-top:4px;letter-spacing:-.02em}
+.stat.hi{background:var(--wash);border-color:var(--wash-deep)}
+.stat.hi .v{color:var(--blue)}
+.split{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;align-items:stretch}
+.photo{border-radius:var(--r);overflow:hidden;border:1px solid var(--border);background:#eee;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo .cap{position:absolute;left:0;right:0;bottom:0;background:rgba(15,23,42,.72);color:#fff;font-size:11.5px;padding:7px 12px}
+.bul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.bul li{font-size:13.5px;line-height:1.55;color:var(--text);padding-left:16px;position:relative}
+.bul li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
+.bul li b{color:var(--ink)}
+.lbl{font-size:11.5px;font-weight:800;color:var(--blue);letter-spacing:.06em;margin-bottom:8px}
+
+/* ---------- Tables ---------- */
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{padding:8px 11px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
+th{background:var(--ink);color:#fff;font-weight:700;font-size:11.5px;white-space:nowrap}
+tr:nth-child(even) td{background:var(--bg-subtle)}
+td.k{font-weight:800;color:var(--ink);white-space:nowrap}
+.tbl-note{font-size:11px;color:var(--muted);margin-top:8px}
+
+/* ---------- Closing ---------- */
+.slide-dark{background:linear-gradient(160deg,#0B1220 0%,#0F1B33 55%,#0B1220 100%);color:#E2E8F0}
+.slide-dark .s-title{color:#F8FAFC}
+.slide-dark .s-sub{color:#94A3B8}
+.slide-dark .eyebrow{color:#93B4FC}.slide-dark .eyebrow::before{background:#93B4FC}
+.close-info{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:900px}
+.ci{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:16px 18px}
+.ci .l{font-size:11px;color:#94A3B8;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.ci .v{font-size:15px;color:#F8FAFC;font-weight:700;margin-top:6px}
+.close-note{font-size:12px;color:#94A3B8;line-height:1.6;max-width:900px;margin-top:6px}
+
+/* ---------- Chrome ---------- */
+.progress{position:absolute;left:0;bottom:0;height:4px;background:var(--blue);width:0;transition:width .4s ease;z-index:10}
+.dots{position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center;gap:7px;z-index:10}
+.dot{width:8px;height:8px;border-radius:50%;border:0;background:var(--border);cursor:pointer;padding:0;transition:all .2s}
+.dot.active{background:var(--blue);width:22px;border-radius:5px}
+.dark-chrome .dot{background:rgba(255,255,255,.22)}.dark-chrome .dot.active{background:#93B4FC}
+.arrows{position:absolute;right:28px;bottom:14px;display:flex;gap:6px;z-index:10}
+.arrow{width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:#fff;cursor:pointer;font-size:16px;color:var(--ink);display:flex;align-items:center;justify-content:center}
+.arrow:hover{background:var(--wash);border-color:var(--wash-deep)}
+.dark-chrome .arrow{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#fff}
+.pgnum{position:absolute;left:84px;bottom:22px;font-size:12px;color:var(--faint);z-index:10}
+.pgnum strong{color:var(--ink);font-weight:800}
+.dark-chrome .pgnum{color:#94A3B8}.dark-chrome .pgnum strong{color:#fff}
+.kbd{position:absolute;right:84px;bottom:26px;font-size:11.5px;color:var(--faint);transition:opacity 1s;z-index:10}
+.a-up{animation:aUp .58s cubic-bezier(.22,.61,.36,1) both}
+.d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.35s}.d5{animation-delay:.45s}
+@keyframes aUp{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+
+/* ---------- Print: one slide per page ---------- */
+@media print{
+  @page{size:1280px 720px;margin:0}
+  html,body{overflow:visible;background:#fff;height:auto}
+  .presentation{position:static;transform:none !important;width:1280px;height:auto;overflow:visible}
+  .slide{position:relative;display:flex !important;width:1280px;height:720px;page-break-after:always;break-after:page;transform:none !important;opacity:1 !important}
+  .slide:last-of-type{page-break-after:auto;break-after:auto}
+  .progress,.dots,.arrows,.pgnum,.kbd{display:none !important}
+  .a-up{animation:none !important;opacity:1 !important;transform:none !important}
+  .slide::after{content:attr(data-n);position:absolute;right:40px;bottom:22px;font-size:11px;color:var(--faint)}
+  .slide-dark::after{color:#94A3B8}
+}
+</style>
+</head>
+<body>
+<div class="presentation" id="presentation">
+
+  <!-- ==================== 1 · Cover ==================== -->
+  <section class="slide slide-cover active" id="slide-1" data-n="1">
+    <div class="cover-l">
+      <img class="a-up d1" src="image/profile.jpg" alt="모지혜">
+      <div class="a-up d2" style="text-align:center">
+        <div class="cover-nm">모지혜</div>
+        <div class="cover-role">게임 사업 PM</div>
+      </div>
+      <div class="cover-meta a-up d3">
+        <div>경력 <strong>3년 5개월</strong> · 퍼블리셔 · 개발사 · 플랫폼 3사</div>
+        <div><strong>010-8476-0121</strong></div>
+        <div><strong>ahahdkdlel121@gmail.com</strong></div>
+      </div>
+    </div>
+    <div class="cover-r">
+      <div class="cover-eyebrow a-up d2">Portfolio · Business PM</div>
+      <h1 class="cover-msg a-up d3">런칭 첫 달의 매출과 리텐션을 지키고,<br>지표가 빠지면 <span class="hl">원인을 찾아 고치는</span><br>게임 사업 PM입니다.</h1>
+      <p class="cover-tag a-up d4">퍼블리셔에서 캐주얼 13종을 글로벌 런칭·운영하고, 개발사에서 신규 IP 2종의 런칭과 수익화를 맡았으며,<br>지금은 웹 게임 플랫폼의 심의·결제·정산·POC까지 오픈 요건을 직접 만들고 있습니다.</p>
+      <div class="cover-kv a-up d5">
+        <div>분석력<strong>지표가 빠지면 원인을 찾아 고칩니다</strong></div>
+        <div>추진력<strong>제안부터 계약·운영까지 직접 끝냅니다</strong></div>
+        <div>기획력<strong>런칭과 BM을 구조로 설계합니다</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 2 · At a glance ==================== -->
+  <section class="slide" id="slide-2" data-n="2">
+    <header class="s-head">
+      <div class="eyebrow">At a Glance</div>
+      <h2 class="s-title">제가 만든 <span class="hl">변화</span>, 숫자로 먼저 보여드립니다</h2>
+      <p class="s-sub">숫자마다 기간·모수·정의는 마지막 장의 수치 기준에 적어 두었습니다</p>
+    </header>
+    <div class="s-body">
+      <div class="kpis">
+        <div class="card kpi a-up d1"><div class="v dsp">5.1억</div><div class="l">런칭 후 7일 인앱 매출 · 아이러브커피 키우기 (2025)</div></div>
+        <div class="card kpi a-up d1"><div class="v dsp">3,000개 매장</div><div class="l">컴포즈커피 온·오프라인 콜라보 · 이벤트 참여 14.6만명</div></div>
+        <div class="card kpi a-up d2"><div class="v dsp">26.5 → 8.6%</div><div class="l">온보딩 구간 이탈률 · 원인 분석 → 튜토리얼 개선</div></div>
+        <div class="card kpi a-up d2"><div class="v dsp">138만</div><div class="l">피크 DAU · Water Sort Quest 런칭 주도 (2024)</div></div>
+        <div class="card kpi a-up d3"><div class="v dsp">15만</div><div class="l">사전예약 · SNS 참여형 캠페인 + 브랜드 콜라보</div></div>
+        <div class="card kpi a-up d3"><div class="v dsp">대회 26회</div><div class="l">온·오프라인 포커 대회 기획·운영 · 참여 2,000명+</div></div>
+      </div>
+      <div class="timeline a-up d4">
+        <div class="tl"><div class="co">오지스 · 웹 플랫폼</div><div class="dt">2026.06 ~ 현재</div><div class="ds">웹 게임·플랫폼 5종의 오픈 요건(심의·결제·정산)·파트너·대회 운영</div></div>
+        <div class="tl"><div class="co">(주)나트리스 · 개발사</div><div class="dt">2024.12 ~ 2026.05</div><div class="ds">신규 IP 2종 한국 런칭·수익화·브랜드 콜라보</div></div>
+        <div class="tl"><div class="co">(주)모비릭스 · 퍼블리셔</div><div class="dt">2022.12 ~ 2024.07</div><div class="ds">캐주얼·방치형 13종 글로벌 런칭·라이브 운영, Water Sort Quest 런칭 주도</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3 · Strength 1 ==================== -->
+  <section class="slide" id="slide-3" data-n="3">
+    <header class="s-head">
+      <div class="eyebrow">Strength 01 · 분석력</div>
+      <h2 class="s-title">지표가 빠지면 <span class="hl">원인을 찾아</span> 고칩니다</h2>
+      <p class="s-sub">표면 지표에서 멈추지 않고 이탈 구간·과금 코호트까지 파고들어, 개발팀이 실행할 수 있는 과제로 바꿔 넘깁니다</p>
+    </header>
+    <div class="s-body">
+      <div class="grid3">
+        <div class="card fc a-up d1">
+          <div class="tag">아이러브커피 키우기 · 2025.10</div>
+          <h4>매출 −41%의 원인을 이탈 구간과 과금 구조로 특정</h4>
+          <p>런칭 3주차 DAU −33%·매출 −41%, 신규 결제 비중 35→19%. 이탈 퍼널에서 꾸미기 해금 전 구간의 37.87% 이탈을, 과금 코호트에서 고과금 편중(28.7→43.8%)을 확인해 개선 과제 9종 설계.</p>
+          <div class="r">튜토리얼 개선 → 온보딩 이탈률 <b class="n">26.5% → 8.6%</b></div>
+        </div>
+        <div class="card fc a-up d2">
+          <div class="tag">아이돌 키우기 · 2025.03</div>
+          <h4>"PUR은 나오는데 매출이 안 나오는" 이유를 설계 오류로 규명</h4>
+          <p>스테이지 보상 누락으로 재화 가치가 과다 책정되고, 무과금으로 주요 구간을 돌파해 과금 허들이 뒤로 밀린 구조를 전투력 시뮬레이션으로 확인.</p>
+          <div class="r">재화 재산정·허들 재설계 <b class="n">8일 내 반영</b> → PUR <b class="n">3.5% → 4~5%</b></div>
+        </div>
+        <div class="card fc a-up d3">
+          <div class="tag">Water Sort Quest · 2023.12~2024.01</div>
+          <h4>단계 런칭을 결정하고 7일 이탈 분석으로 개선을 결정</h4>
+          <p>마케팅 없이 먼저 오픈하기로 결정하고, 첫 7일 리텐션·이탈 구간을 분석해 50스테이지 이내 주요 이탈 5구역(컬러 수 증가 구간·호환성)을 특정. 난이도·안정성 개선을 결정해 v1.0.4에 반영.</p>
+          <div class="r">반영 후 D+1 리텐션 <b class="n">39.7% → 48.4%</b> · 피크 DAU <b class="n">138만</b></div>
+        </div>
+      </div>
+      <div class="insight a-up d4">라이브 매출이 흔들릴 때 원인을 데이터로 규명하고, <strong>개선안을 개발팀이 실행할 수 있는 형태로</strong> 넘깁니다.</div>
+    </div>
+  </section>
+
+  <!-- ==================== 4 · Strength 2 ==================== -->
+  <section class="slide" id="slide-4" data-n="4">
+    <header class="s-head">
+      <div class="eyebrow">Strength 02 · 추진력</div>
+      <h2 class="s-title">제안부터 <span class="hl">계약·운영까지</span> 직접 끝냅니다</h2>
+      <p class="s-sub">아이디어를 내는 데서 멈추지 않고 파트너를 찾아 설득하고 계약해 성과로 잇습니다</p>
+    </header>
+    <div class="s-body">
+      <div class="grid4">
+        <div class="card fc a-up d1">
+          <div class="tag">컴포즈커피 × 아이러브커피 · 2025.08~10</div>
+          <h4>브랜드 콜라보를 제안서로 시작해 성사</h4>
+          <p>카페 세계관과 맞는 브랜드를 리스트업하고 "왜 우리와 협업해야 하는가"를 세계관 접점으로 논증한 제안서로 공식 제안, 협의 주도.</p>
+          <div class="r">전국 <b class="n">3,000개 매장</b> + 공식 홈페이지·앱 3개월 동시 전개 · 참여 <b class="n">14.6만명</b></div>
+        </div>
+        <div class="card fc a-up d2">
+          <div class="tag">음율 OST × 아이돌 키우기 · 2025</div>
+          <h4>크리에이터 탐색부터 계약·음원 배포까지 단독 진행</h4>
+          <p>구독자 수보다 세계관 방향성 일치를 기준으로 싱어송라이터를 선정·제안. 저작권·상업적 이용 범위 계약을 조율하고 음원 저작권 등록, 유튜브뮤직·스포티파이·플로 배포까지 담당.</p>
+          <div class="r">유튜브 <b class="n">7.8만 뷰</b> · OST 공개 후 채널 구독자 <b class="n">10%+ 증가</b></div>
+        </div>
+        <div class="card fc a-up d3">
+          <div class="tag">프로젝트 L · TubeLuLu · 2026</div>
+          <h4>스트리머·인플루언서를 직접 섭외해 예산과 POC를 확보</h4>
+          <p>서비스 소개서·제안서를 직접 제작하고 섭외 미팅에서 제안·활용 가이드를 진행. 경영진 보고로 기존안보다 큰 지원 예산을 승인받고 실방송 POC를 설계·실행.</p>
+          <div class="r">인스타그램 40만·유튜브 69만 인플루언서 섭외 · 예산 기존안 대비 <b class="n">1.8배</b> 확대 승인 · POC 90분 <b class="n">58회</b> 플레이</div>
+        </div>
+        <div class="card fc a-up d4">
+          <div class="tag">프로젝트 L 오픈 요건 · 프로젝트 S 검증 · 2026</div>
+          <h4>절차가 없으면 정의하고, 검증이 필요하면 직접 대회를 엽니다</h4>
+          <p>웹 플랫폼의 게임물 심의·PG 계약·정산 정책을 처음부터 정의해 확보. 프로젝트 S 검증을 위해 홀덤펍을 대관해 실운영 프리롤 대회를 직접 열고 결과 보고서를 작성.</p>
+          <div class="r">전체이용가 등급 · PG 심사 통과 · 프리롤 POC 엔트리 <b class="n">101 · 퍼널 손실 0</b></div>
+        </div>
+      </div>
+      <div class="insight a-up d5">마케팅 예산 없이 외부 파트너로 유입 채널을 만들고, <strong>정해진 절차가 없는 일(심의·결제·정산)도 스스로 정의해</strong> 끝냅니다.</div>
+    </div>
+  </section>
+
+  <!-- ==================== 5 · Strength 3 ==================== -->
+  <section class="slide" id="slide-5" data-n="5">
+    <header class="s-head">
+      <div class="eyebrow">Strength 03 · 기획력</div>
+      <h2 class="s-title">런칭과 BM을 <span class="hl">구조로</span> 설계합니다</h2>
+      <p class="s-sub">런칭 전 과정과 수익화·이벤트를 목적 → 대상 → 설계 → 검증 지표의 구조로 만듭니다</p>
+    </header>
+    <div class="s-body">
+      <div class="grid4">
+        <div class="card fc a-up d1">
+          <div class="tag">아이러브커피 키우기 · 2025.06~09</div>
+          <h4>기존 IP와 다른 장르의 런칭을 전 과정 설계</h4>
+          <p>SNG IP를 방치형 RPG로 출시하는 리스크를 FGT → 사전예약 캠페인 → 피처링 제안 → 콜라보 동시 전개로 분산. 위치기반서비스 심사까지 직접 처리.</p>
+          <div class="r">사전예약 <b class="n">15만</b> · 양대 마켓 피처링 · 런칭 당일 DAU <b class="n">7만</b></div>
+        </div>
+        <div class="card fc a-up d2">
+          <div class="tag">아이러브커피 키우기 BM · 2025</div>
+          <h4>첫 결제 장벽을 낮추는 패키지 구조 설계</h4>
+          <p>메인 BM·월정액 위에 조건부 한정(진행도 달성 시 24시간 노출)·데일리 한정(주간 변주)·업데이트 연동 패키지를 층으로 설계. 9,900·14,900원, 효율 400~500%.</p>
+          <div class="r">D7 인앱 매출 <b class="n">5.1억</b> · ARPPU 3만원대 · 한정 패키지가 정기 업데이트 표준 구조로 정착</div>
+        </div>
+        <div class="card fc a-up d3">
+          <div class="tag">아이러브커피 · 아이돌 키우기 이벤트 · 2025</div>
+          <h4>이벤트마다 목적과 검증 지표를 붙여 설계</h4>
+          <p>진단 과제(NPU 회복·재화 소모·중→고과금 전환)별로 출석·레벨 달성·데일리 패스·타임딜·복귀 5종을 설계. 신서버 오픈은 이전 리워드·LMS 쿠폰 6,680명·시즌 경쟁으로 구성.</p>
+          <div class="r">온보딩 이탈률 <b class="n">26.5 → 8.6%</b> · 신서버 2일차 DAU <b class="n">401 → 1,305</b></div>
+        </div>
+        <div class="card fc a-up d4">
+          <div class="tag">프로젝트 L · 2026</div>
+          <h4>신규 플랫폼의 수익 구조·정산·Sales Projection 설계</h4>
+          <p>스트리머 규모별 참여율·결제 전환 가정으로 예상 매출을 시뮬레이션하고 플랫폼 요율·정산 정책을 수립. 심의 등급 유지를 위해 사행성 오해 요소를 설계 단계에서 배제.</p>
+          <div class="r">경영진 보고 → 내부 투자 검토 진행 · 정산 기능 요건 확정</div>
+        </div>
+      </div>
+      <div class="insight a-up d5">심의·스토어·피처링·사전예약·FGT를 신규 IP 2종의 한국 런칭과 13종의 글로벌 런칭에서 반복했고, <strong>패키지·이벤트를 "왜 이 구조인지" 설명 가능한 형태로</strong> 설계합니다.</div>
+    </div>
+  </section>
+
+  <!-- ==================== 6 · Case 1 Launch ==================== -->
+  <section class="slide" id="slide-6" data-n="6">
+    <header class="s-head">
+      <div class="eyebrow">Case 01 · 아이러브커피 키우기 런칭</div>
+      <h2 class="s-title">IP 장르 전환 리스크를 <span class="hl">FGT·피처링·콜라보</span>로 돌파</h2>
+      <p class="s-sub">'아이러브커피' SNG IP를 방치형 RPG로 출시 — 기존 팬 유입과 초반 리텐션 확보가 핵심 과제, GPS 기능으로 위치기반서비스 심사까지 추가</p>
+    </header>
+    <div class="s-body">
+      <div class="steps">
+        <div class="card step a-up d1"><div class="n">STEP 1</div><h5>FGT 검증</h5><p>성별·연령·OS·과금 경험 균등 35명, 4시간 현장 진행. 피드백을 BM/콘텐츠/UI-UX로 구조화 → 출시 전 80% 반영</p></div>
+        <div class="card step a-up d2"><div class="n">STEP 2</div><h5>사전예약</h5><p>사전예약 페이지 구축, SNS 참여형 퀘스트·미니게임 이벤트를 컴포즈커피 콜라보와 동시 전개 → 15만</p></div>
+        <div class="card step a-up d3"><div class="n">STEP 3</div><h5>피처링·심의</h5><p>양대 마켓 출시 설정·피처링 제안 전 과정, 위치기반서비스 심사 서류 직접 작성</p></div>
+        <div class="card step a-up d4"><div class="n">STEP 4</div><h5>수익화</h5><p>메인 BM·월정액·조건부/데일리 한정 패키지 → D7 인앱 매출 5.1억</p></div>
+      </div>
+      <div class="stat4 a-up d5">
+        <div class="stat hi"><div class="l">사전예약 (순 등록)</div><div class="v dsp">15만</div></div>
+        <div class="stat hi"><div class="l">런칭 주 피처링</div><div class="v dsp">양대 마켓</div></div>
+        <div class="stat hi"><div class="l">런칭 당일 DAU · 1주 평균</div><div class="v dsp">7만 · 4.1만</div></div>
+        <div class="stat hi"><div class="l">D7 인앱 매출 · ARPPU</div><div class="v dsp">5.1억 · 3만원대</div></div>
+      </div>
+      <div class="insight a-up d5">FGT 피드백을 BM / 콘텐츠 / UI-UX로 구조화해 전달한 것이 개발팀 반영률을 높였습니다. <strong>다음 FGT는 대상자를 코어(과금)·라이트로 분리해 설문을 다르게 설계</strong>하는 것을 기준으로 남겼습니다.</div>
+    </div>
+  </section>
+
+  <!-- ==================== 7 · Case 1 Drop ==================== -->
+  <section class="slide" id="slide-7" data-n="7">
+    <header class="s-head">
+      <div class="eyebrow">Case 01 · 런칭 3주차 하락 대응</div>
+      <h2 class="s-title">매출 −41%를 <span class="hl">이탈 퍼널·과금 코호트</span>로 진단해 방어</h2>
+      <p class="s-sub">런칭 3주 후 DAU −33%·매출 −41%, 신규 결제 유저(NPU) 비중 35% → 19%. 표면 지표가 아니라 구조를 찾아야 했습니다</p>
+    </header>
+    <div class="s-body">
+      <div class="stat4 a-up d1">
+        <div class="stat"><div class="l">DAU (런칭 주 대비)</div><div class="v dsp">−33%</div></div>
+        <div class="stat"><div class="l">매출 (런칭 주 대비)</div><div class="v dsp">−41%</div></div>
+        <div class="stat"><div class="l">이탈 집중 구간 (꾸미기 해금 전)</div><div class="v dsp">37.87%</div></div>
+        <div class="stat"><div class="l">고과금 매출 비중 편중</div><div class="v dsp">28.7 → 43.8%</div></div>
+      </div>
+      <div class="flow">
+        <div class="card fbox a-up d2"><h5>진단</h5><ul>
+          <li>이탈 퍼널 — 꾸미기 콘텐츠 해금 전 구간에 이탈 집중, 온보딩 퍼널 '플레이어 생성 → 튜토리얼 시작' 이탈 26.5%</li>
+          <li>과금 코호트 — 고과금 편중, 소·중과금 이탈로 NPU 급감</li>
+        </ul></div>
+        <div class="card fbox a-up d3"><h5>조치</h5><ul>
+          <li>개선 과제 9종 — NPU 회복 · 재화 소모 · 중→고과금 전환</li>
+          <li>튜토리얼 개선 제안 → 개발 반영</li>
+          <li>이벤트 5종 — 출석 · 레벨 달성 · 데일리 패스 · 타임딜 · 복귀</li>
+        </ul></div>
+        <div class="card fbox res a-up d4"><h5>결과</h5><ul>
+          <li>온보딩 이탈률 <b class="n">26.5% → 8.6%</b> (10월 신규 유저 기준)</li>
+          <li>꾸미기 해금 전 누적 이탈 54.3% → 44.3% · 30스테이지 도달률 24.5% → 28.8%</li>
+          <li>무료 광고 제거 3일권 → D3 Retention +0.4%p · 업데이트 전후 Retention 교차 검증</li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8 · Case 2 ==================== -->
+  <section class="slide" id="slide-8" data-n="8">
+    <header class="s-head">
+      <div class="eyebrow">Case 02 · 아이돌 키우기</div>
+      <h2 class="s-title">데이터로 <span class="hl">수익화 구조를 재설계</span>하고 신서버로 전환</h2>
+      <p class="s-sub">런칭 후 결제 전환율(PUR) 대비 매출 저조 — 문제 정의 → 원인 분석 → 재설계 → 검증</p>
+    </header>
+    <div class="s-body">
+      <div class="flow">
+        <div class="card fbox a-up d1"><h5>As-Is · 문제</h5><ul>
+          <li>결제 전환율 대비 매출 저조, 소액 상품 편중</li>
+          <li>낮은 재방문율(D+1 Retention)</li>
+          <li>스테이지 보상 누락으로 재화 가치 과다 책정</li>
+          <li>무과금으로 주요 구간 돌파 → 과금 허들이 뒤로 밀림</li>
+        </ul></div>
+        <div class="card fbox a-up d2"><h5>To-Be · 설계</h5><ul>
+          <li>전투력 시뮬레이션 기반 재화 가치 재산정</li>
+          <li>난이도·과금 구간(허들) 재설계 + 상품 리뉴얼</li>
+          <li>신서버 전환 — 이전 리워드(과금액 10% 환급) · LMS 쿠폰 6,680명 · 시즌 경쟁·커뮤니티 이벤트 · UA 협업</li>
+        </ul></div>
+        <div class="card fbox res a-up d3"><h5>결과</h5><ul>
+          <li>개선안 <b class="n">8일 내 반영</b></li>
+          <li>신서버 오픈 2일차 DAU <b class="n">401 → 1,305명</b> (Organic 기준 약 3배)</li>
+          <li>안정화 구간 PUR <b class="n">3.5% → 4~5%대</b></li>
+        </ul></div>
+      </div>
+      <div class="insight a-up d4">반등이 일시적이라 마케팅을 조기 종료하고 1주년까지 운영 후 종료했습니다. <strong>"구조 개선만으로 닿지 않는 시장·유입 요인"을 확인한 경험</strong>을 이후 타이틀의 사전 설계 기준으로 남겼습니다.</div>
+    </div>
+  </section>
+
+  <!-- ==================== 9 · Case 3 Partnership ==================== -->
+  <section class="slide" id="slide-9" data-n="9">
+    <header class="s-head">
+      <div class="eyebrow">Case 03 · 파트너십</div>
+      <h2 class="s-title">세계관을 연결고리로 만든 <span class="hl">브랜드 콜라보와 OST</span></h2>
+      <p class="s-sub">단순 광고가 아니라 게임 세계관과 파트너를 연결하는 방식으로, 두 건의 외부 협업을 제안 단계부터 직접 성사</p>
+    </header>
+    <div class="s-body">
+      <div class="split">
+        <div class="photo a-up d1">
+          <img src="image/compose.jpg" alt="컴포즈커피 × 아이러브커피 키우기 콜라보 현장">
+          <div class="cap">컴포즈커피 × 아이러브커피 키우기 — 전국 매장 키오스크·DID·메뉴판 적용</div>
+        </div>
+        <div>
+          <div class="lbl">① 컴포즈커피 온·오프라인 콜라보 · 2025.08~10</div>
+          <ul class="bul a-up d2">
+            <li><b>탐색·제안</b> — 연계 가능한 브랜드 리스트업, 세계관 접점을 핵심 논거로 제안서·기대효과 시뮬레이션 작성, 공식 제안·협의 주도</li>
+            <li><b>운영</b> — 이벤트 3종(음료 쿠폰 → 스킨 / GPS 매장 방문 보상 / 기프티콘 사전등록), 전국 매장 포스터·키오스크·DID 노출 조율</li>
+            <li><b>성과</b> — 전국 <b class="n">3,000개 매장</b> + 홈페이지·앱 3개월 동시 전개 · 참여자 <b class="n">14.6만명</b> · 사전예약 전환율·검색량 상승</li>
+          </ul>
+          <div class="lbl" style="margin-top:16px">② 음율 OST 크리에이터 협업 · 아이돌 키우기</div>
+          <ul class="bul a-up d3">
+            <li><b>세계관 핏 기준</b>으로 싱어송라이터 선정·제안 → 라이선스 계약(저작권·상업적 이용 범위) 조율 → 음원 저작권 등록·유튜브뮤직·스포티파이·플로 배포</li>
+            <li><b>성과</b> — 유튜브 <b class="n">7.8만 뷰</b> · OST 공개 후 채널 구독자 <b class="n">10%+ 증가</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="insight a-up d4">매장 지침 미전달·GPS 인식 오류 이슈를 정리해 <strong>차기 콜라보 운영 체계 개선안</strong>으로 남겼습니다.</div>
+    </div>
+  </section>
+
+  <!-- ==================== 10 · Case 4 Platform ==================== -->
+  <section class="slide" id="slide-10" data-n="10">
+    <header class="s-head">
+      <div class="eyebrow">Case 04 · 프로젝트 L 웹 게임 플랫폼</div>
+      <h2 class="s-title">정해진 절차가 없는 신규 플랫폼의 <span class="hl">오픈 요건을 직접 정의</span></h2>
+      <p class="s-sub">스트리머·시청자 참여형 웹 미니게임 플랫폼 — 앱 마켓이 아닌 웹 서비스라 심의·결제·정산을 처음부터 설계</p>
+    </header>
+    <div class="s-body">
+      <div class="steps">
+        <div class="card step a-up d1"><div class="n">STEP 1</div><h5>오픈 요건</h5><p>게임물 등급 심의 서류·심사 대응 전 과정 · PG사 비교·계약·연동 심사 · 스트리머 정산 정책(요율·주기·기준)</p></div>
+        <div class="card step a-up d2"><div class="n">STEP 2</div><h5>사업 기획</h5><p>스트리머 규모별 Sales Projection · 수익 구조(요율) · 타깃 스트리머·플랫폼(치지직·SOOP) 후보군 → 경영진 보고</p></div>
+        <div class="card step a-up d3"><div class="n">STEP 3</div><h5>제안·섭외</h5><p>서비스 소개서·제안서 직접 제작 · 섭외 미팅에서 제안·활용 가이드 진행</p></div>
+        <div class="card step a-up d4"><div class="n">STEP 4</div><h5>POC 검증</h5><p>스트리머 2명 실방송 POC 시나리오·설문 설계·진행 → 개선점 도출·반영</p></div>
+      </div>
+      <div class="stat4 a-up d5">
+        <div class="stat hi"><div class="l">게임물 등급</div><div class="v dsp">전체이용가</div></div>
+        <div class="stat hi"><div class="l">결제·정산</div><div class="v dsp">PG 심사 통과</div></div>
+        <div class="stat hi"><div class="l">POC 1차</div><div class="v dsp">90분 58회 플레이</div></div>
+        <div class="stat hi"><div class="l">POC 2차 섭외</div><div class="v dsp">스트리머 5명</div></div>
+      </div>
+      <div class="insight a-up d5">법적 요건(심의·결제)을 설계 단계에서 먼저 반영해 뒤늦은 수정 비용을 줄였고, <strong>파트너에게는 소개서 → 제안 → POC → 온보딩의 일관된 흐름</strong>이 효과적임을 확인했습니다.</div>
+    </div>
+  </section>
+
+  <!-- ==================== 11 · Poker services ==================== -->
+  <section class="slide" id="slide-11" data-n="11">
+    <header class="s-head">
+      <div class="eyebrow">Case 05 · 포커 서비스 3종</div>
+      <h2 class="s-title">런칭 전에 <span class="hl">유저 풀과 운영 신뢰성</span>을 실전으로 검증</h2>
+      <p class="s-sub">온라인 포커 게임 · 오프라인 대회 운영 시스템 · 대회 일정 다이어리 웹을 동시에 런칭 단계로</p>
+    </header>
+    <div class="s-body">
+      <div class="grid3">
+        <div class="card fc a-up d1">
+          <div class="tag">포커룰루 · 온라인 포커 게임</div>
+          <h4>런칭 전 온·오프라인 포커 대회 26회 기획·운영</h4>
+          <p>온라인 새틀라이트 + 오프라인 본선 페스티벌(440명), 프리롤, 투어 8회로 런칭 전 유저 풀을 먼저 확보. 런칭 이벤트는 사전 결제 → 오픈 새틀라이트 → 데일리 프리롤 순으로 설계.</p>
+          <div class="r">대회 <b class="n">26회</b> · 누적 참여 <b class="n">2,000명+</b> · 9/21 소프트 런칭 (9/28 정식)</div>
+        </div>
+        <div class="card fc a-up d2">
+          <div class="tag">프로젝트 S · 오프라인 대회 운영 시스템</div>
+          <h4>홀덤펍 대관 실운영 프리롤 POC 직접 개최</h4>
+          <p>5테이블 50석 실전 환경에서 사전 리허설 → 현장 운영 → 역할별 피드백 31건 → 퍼널·소요시간 실측 결과 보고서 작성.</p>
+          <div class="r">엔트리 <b class="n">101</b> · 퍼널 손실 <b class="n">0건</b> · 결함 18건 → 개선 18건 · 런칭 준비 착수</div>
+        </div>
+        <div class="card fc a-up d3">
+          <div class="tag">마이포커트립스 · 대회 일정 다이어리 웹</div>
+          <h4>요건 정리부터 광고 사업까지</h4>
+          <p>B2B/B2C 요건 정리와 런칭 일정 관리, 광고 구좌·통합 광고 관리자 기획, 대회사 광고주 영업·계약. 웹 서비스 4종 SEO·GEO 오픈 요건 적용.</p>
+          <div class="r"><b class="n">9/21 런칭</b> · 광고 사업 진행 중</div>
+        </div>
+      </div>
+      <div class="stat4 a-up d4">
+        <div class="stat"><div class="l">프리롤 POC 엔트리 (유니크 61명)</div><div class="v dsp">101</div></div>
+        <div class="stat"><div class="l">등록 → 순위 확정 퍼널 손실</div><div class="v dsp">0건</div></div>
+        <div class="stat"><div class="l">체크인 피크 (10분)</div><div class="v dsp">22건</div></div>
+        <div class="stat"><div class="l">결함 발견 → 개선 항목</div><div class="v dsp">18 → 18</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 12 · BM & Events ==================== -->
+  <section class="slide" id="slide-12" data-n="12">
+    <header class="s-head">
+      <div class="eyebrow">Docs · BM · Events</div>
+      <h2 class="s-title">패키지와 이벤트는 <span class="hl">"왜 이 구조인지"</span> 설명 가능한 형태로</h2>
+      <p class="s-sub">직접 작성한 수익화·이벤트 기획의 구조와 설계 의도 — 원문·수치 상세는 대외비로 제외</p>
+    </header>
+    <div class="s-body">
+      <div class="grid2">
+        <div>
+          <div class="lbl">아이러브커피 키우기 — 한정 BM · 패키지 구조 (2025.06)</div>
+          <table class="a-up d1">
+            <tr><th>상품 유형</th><th>노출·운영 방식</th><th>설계 의도</th></tr>
+            <tr><td class="k">메인 BM · 월정액</td><td>상시 노출, 장기 리텐션 연동</td><td>방치형 특성상 초기 자연 유입 하락 대비 — 안정 매출 기반</td></tr>
+            <tr><td class="k">조건부 한정</td><td>진행도 달성 시 24시간 노출</td><td>진행 구간별 필요 재화를 정확히 맞춰 첫 결제 장벽 최소화</td></tr>
+            <tr><td class="k">데일리 한정</td><td>매일 갱신, 주간 변주</td><td>매일 접속 동기 + 소액 결제 습관화</td></tr>
+            <tr><td class="k">업데이트 연동</td><td>정기 업데이트마다 신규 구성</td><td>업데이트 콘텐츠와 결제 동기를 한 묶음으로 — 표준 구조로 정착</td></tr>
+          </table>
+          <div class="tbl-note">가격대 9,900·14,900원 · 효율 400~500% → D7 인앱 매출 5.1억 · ARPPU 3만원대</div>
+        </div>
+        <div>
+          <div class="lbl">아이러브커피 키우기 — 런칭 3주차 지표 하락 대응 이벤트 5종 (2025.10)</div>
+          <table class="a-up d2">
+            <tr><th>이벤트</th><th>목적 (진단 과제)</th><th>대상</th><th>검증 지표</th></tr>
+            <tr><td class="k">출석</td><td>재방문 유도 · 이탈 완화</td><td>전체</td><td>D3·D7 Retention</td></tr>
+            <tr><td class="k">레벨 달성</td><td>이탈 집중 구간 돌파 유도</td><td>초반 유저</td><td>구간별 이탈률</td></tr>
+            <tr><td class="k">데일리 패스</td><td>신규 결제 유저(NPU) 회복</td><td>무과금</td><td>NPU 비중 · PUR</td></tr>
+            <tr><td class="k">타임딜</td><td>재화 소모 촉진 · 중→고과금 전환</td><td>소·중과금</td><td>ARPPU · 상품별 판매</td></tr>
+            <tr><td class="k">복귀</td><td>이탈 유저 재유입</td><td>휴면</td><td>복귀율 · 복귀 후 잔존</td></tr>
+          </table>
+          <div class="tbl-note">결과 — 튜토리얼 개선과 병행해 온보딩 이탈률 26.5% → 8.6% · 무료 광고 제거 3일권으로 D3 Retention +0.4%p</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 13 · Projects ==================== -->
+  <section class="slide" id="slide-13" data-n="13">
+    <header class="s-head">
+      <div class="eyebrow">Appendix · Projects</div>
+      <h2 class="s-title">참여 프로젝트 <span class="hl">3사 15종+</span> — 역할과 핵심 성과</h2>
+    </header>
+    <div class="s-body" style="justify-content:flex-start">
+      <table class="a-up d1">
+        <tr><th>프로젝트</th><th>회사 · 장르 · 기간</th><th>역할 · 기여 범위</th><th>핵심 성과</th></tr>
+        <tr><td class="k">Water Sort Quest</td><td>모비릭스 · 캐주얼 퍼즐 · 글로벌 · 2023.12~2024.07</td><td>런칭 주도 — 단계 런칭·UA 개시 시점·이탈 분석에 따른 개선을 결정, 스토어·ASO·UA 협의 실행</td><td>피크 DAU 138만 · 1개월 425만 DL · 피크 월매출 2.3억 · 누적 1,621만 DL</td></tr>
+        <tr><td class="k">캐주얼·방치형 12종</td><td>모비릭스 · 글로벌 · 2022.12~2024.07</td><td>런칭·라이브 담당 PM — 9종 글로벌 런칭 + 라이브 인수 3종, QA·스토어·번역·D14 퍼널 분석·주간 보고</td><td>담당 전 타이틀 Google 글로벌 피처링 · 13종 동시 운영</td></tr>
+        <tr><td class="k">같은 돌이니 아이돌 하겠습니다</td><td>나트리스 · 방치형 RPG · 한국 · 2024.12~2026.03</td><td>런칭·라이브 메인 PM — 출시·피처링, BM 분석·재화 재산정, 신서버 전환, OST 계약·배포</td><td>구글 피처링 · 사전등록 5.2만 · 신서버 2일차 DAU 3배 · PUR 3.5→4~5%</td></tr>
+        <tr><td class="k">아이러브커피 키우기</td><td>나트리스 · 방치형 RPG·SNG · 한국 · 2025.06~2026.05</td><td>런칭·라이브 메인 PM — 심의·피처링·사전예약·FGT·BM·이탈/코호트 분석·컴포즈커피 콜라보 실무 전 과정</td><td>사전예약 15만 · 양대 마켓 피처링 · D7 매출 5.1억 · 콜라보 3,000개 매장</td></tr>
+        <tr><td class="k">프로젝트 L</td><td>나트리스→오지스 · 웹 미니게임 플랫폼 · 2026.02~</td><td>오픈 준비 PM — 게임물 심의·PG 계약·정산 정책·Sales Projection·제안서·스트리머 POC</td><td>전체이용가 등급 · PG 심사 통과 · POC 1차 완료, 2차 5명 섭외</td></tr>
+        <tr><td class="k">TubeLuLu</td><td>오지스 · 팬 후원 플랫폼 · 2026.06~</td><td>메인 PM — 소개서, 인플루언서 섭외·계약, POC 총괄, 정산·PG, 광고 사업 설계·영업</td><td>인플루언서 섭외 · 예산 1.8배 확대 승인 · POC 진행 중</td></tr>
+        <tr><td class="k">포커룰루 · 프로젝트 S · 마이포커트립스</td><td>오지스 · 포커 서비스 3종 · 2026.02~</td><td>메인 PM — 대회 26회 운영, 프리롤 POC 개최, B2B/B2C 요건·런칭 일정, 광고 구좌·영업</td><td>9/21 런칭 2종 · POC 엔트리 101 · 퍼널 손실 0</td></tr>
+      </table>
+      <div class="tbl-note">그 외 — 사내 PMO 툴(오지스 · 2026~): AI 코딩으로 기획·제작·배포 단독, 9개 프로젝트 교차 관리 · PM 팀 메인 도구로 정착</div>
+    </div>
+  </section>
+
+  <!-- ==================== 14 · Data basis ==================== -->
+  <section class="slide" id="slide-14" data-n="14">
+    <header class="s-head">
+      <div class="eyebrow">Appendix · Data Basis</div>
+      <h2 class="s-title">본문 숫자의 <span class="hl">기간 · 모수 · 정의</span></h2>
+      <p class="s-sub">내부 BI(키바나 · Game BI) · Adjust 데일리 리포트에서 재구성 · 원본 대시보드 미제시 · 매출은 스토어 수수료 차감 전 Gross 기준</p>
+    </header>
+    <div class="s-body" style="justify-content:flex-start">
+      <table class="a-up d1">
+        <tr><th>본문 숫자</th><th>기간 · 모수 · 정의</th><th>함께 보는 값</th></tr>
+        <tr><td class="k">사전예약 15만</td><td>2025.08.12~09.22 사전등록 캠페인 순 등록 153,740명. 부스팅 유입 36.9만은 제외한 값(총 등록 52.3만)</td><td>컴포즈 기프티콘 사전등록 지급 5,992건</td></tr>
+        <tr><td class="k">런칭 당일 DAU 7만 · 1주 평균 4.1만</td><td>9/23 NRU+DAU 70,143 · 9/23~29 일 평균 DAU 41,012. 1주차 NRU 합 153,178</td><td>D+1 Retention 31.8% · D+3 20.2% · D+7 13.1%</td></tr>
+        <tr><td class="k">D7 인앱 매출 5.1억 · ARPPU 3만원대</td><td>9/23~29 7일 IAP 합계 5.14억(IAA 포함 총매출 5.53억). 일 결제 유저 합 17,470명 · 일 ARPPU 2.97만~3.30만원</td><td>라이브 UA 대비 IAP 3.6배 · 사전예약 UA 포함 1.1배(집행 금액 비공개)</td></tr>
+        <tr><td class="k">DAU −33% · 매출 −41%</td><td>런칭 1주차(9/23~29) 대비 3주차(10/7~13) 일 평균. 신규 결제 유저(NPU) 비중 35% → 19%</td><td>고과금 매출 비중 28.7% → 43.8%</td></tr>
+        <tr><td class="k">온보딩 이탈률 26.5% → 8.6%</td><td>'플레이어 생성 → 튜토리얼 시작' 구간. 런칭 후 누적(플레이어 생성 202,974명) 26.5% → 10월 신규 유저(43,769명) 8.6%</td><td>꾸미기 해금 전 누적 이탈 54.3% → 44.3% · 30스테이지 도달률 24.5% → 28.8%</td></tr>
+        <tr><td class="k">피크 DAU 138만 · 1개월 425만 DL</td><td>Water Sort Quest 2024.01.21 DAU 1,380,918 · 2023.12.12~2024.01.12 신규 유저(Game BI NRU) 누적 4,254,386</td><td>런칭 D+1 Retention 35.6% (같은 해 사내 런칭 3종 대비 +3.8~10.3%p) · 피처드 기간 D+1 39.7 → 48.4%</td></tr>
+        <tr><td class="k">피크 월매출 2.3억 · 누적 1,621만 DL</td><td>2024.01 월 매출 $167K(광고 + 인앱), 당시 환율 ₩1,380 기준 · 2023.12~2024.07 신규 유저 누적 16,210,849</td><td>재직 기간 기준(~2024.07)</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ==================== 15 · Closing ==================== -->
+  <section class="slide slide-dark" id="slide-15" data-n="15">
+    <header class="s-head">
+      <div class="eyebrow">Thank you</div>
+      <h2 class="s-title">런칭 첫 달의 매출과 리텐션을 지키고,<br>지표가 빠지면 원인을 찾아 고치는 게임 사업 PM</h2>
+      <p class="s-sub">런칭 직후 지표가 흔들리는 구간에서 원인을 찾아 매출을 방어하고, 마케팅 예산에 기대지 않는 유입 채널을 만들고, 런칭·BM을 설명 가능한 구조로 설계하는 세 가지로 담당 타이틀의 숫자를 바꾸겠습니다.</p>
+    </header>
+    <div class="s-body" style="justify-content:flex-end;gap:14px">
+      <div class="close-info a-up d2">
+        <div class="ci"><div class="l">이름</div><div class="v">모지혜 · 게임 사업 PM</div></div>
+        <div class="ci"><div class="l">Phone</div><div class="v">010-8476-0121</div></div>
+        <div class="ci"><div class="l">Email</div><div class="v">ahahdkdlel121@gmail.com</div></div>
+      </div>
+      <p class="close-note a-up d3">자료 범위 안내 — 이 포트폴리오의 기획·분석 자료는 회사 비밀유지 의무에 따라 원문 문서·내부 대시보드 캡처·비용 금액을 제외하고, 기획 구조와 결과 수치만 재구성해 수록했습니다. 프로젝트별 상세 기획서·분석 리포트는 면접 시 비시각 자료로 설명드릴 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- ==================== Nav chrome ==================== -->
+  <div class="progress" id="progress"></div>
+  <div class="dots" id="dots"></div>
+  <div class="arrows">
+    <button class="arrow" id="prevBtn" aria-label="이전 슬라이드">‹</button>
+    <button class="arrow" id="nextBtn" aria-label="다음 슬라이드">›</button>
+  </div>
+  <div class="pgnum" id="pgnum"><strong>1</strong> / 15</div>
+  <div class="kbd" id="kbd">← → 또는 스와이프로 이동</div>
+</div>
+
+<script>
+(function(){
+  var total=15,current=1,animating=false;
+  var titles=['표지','한눈에','분석력','추진력','기획력','케이스 1 런칭','케이스 1 하락 대응','케이스 2 수익화','케이스 3 파트너십','케이스 4 플랫폼','케이스 5 포커','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
+  var stage=document.getElementById('presentation'),progress=document.getElementById('progress'),pgnum=document.getElementById('pgnum'),dots=document.getElementById('dots'),kbd=document.getElementById('kbd');
+  for(var i=1;i<=total;i++){var d=document.createElement('button');d.className='dot'+(i===1?' active':'');d.title=titles[i-1];d.setAttribute('aria-label',i+'. '+titles[i-1]);(function(n){d.addEventListener('click',function(){go(n);});})(i);dots.appendChild(d);}
+  function chrome(){progress.style.width=(current/total*100)+'%';pgnum.innerHTML='<strong>'+current+'</strong> / '+total;var ds=dots.children;for(var i=0;i<ds.length;i++)ds[i].classList.toggle('active',i+1===current);var act=document.getElementById('slide-'+current);stage.classList.toggle('dark-chrome',act.classList.contains('slide-dark')||act.classList.contains('slide-cover'));}
+  function go(n){if(animating||n===current||n<1||n>total)return;animating=true;var from=document.getElementById('slide-'+current),to=document.getElementById('slide-'+n),dir=n>current?1:-1;
+    to.classList.add('anim-stage');to.style.transition='none';to.style.transform='translateX('+(dir*100)+'%)';to.style.opacity='0';void to.offsetWidth;to.style.transition='';to.classList.add('active');to.style.transform='translateX(0)';to.style.opacity='1';
+    from.style.transform='translateX('+(-dir*100)+'%)';from.style.opacity='0';current=n;chrome();
+    setTimeout(function(){from.classList.remove('active');from.style.transform='';from.style.opacity='';to.classList.remove('anim-stage');to.style.transform='';to.style.opacity='';animating=false;},520);}
+  function next(){go(current+1);}function prev(){go(current-1);}
+  document.getElementById('nextBtn').addEventListener('click',next);document.getElementById('prevBtn').addEventListener('click',prev);
+  document.addEventListener('keydown',function(e){if(e.key===' '&&e.target&&e.target.closest&&e.target.closest('button, a'))return;
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();next();}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev();}else if(e.key==='Home'){e.preventDefault();go(1);}else if(e.key==='End'){e.preventDefault();go(total);}});
+  var tx=null,ty=null;document.addEventListener('touchstart',function(e){if(e.touches.length>1){tx=ty=null;return;}tx=e.changedTouches[0].clientX;ty=e.changedTouches[0].clientY;},{passive:true});
+  document.addEventListener('touchend',function(e){if(tx===null)return;var t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty;if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>50){if(dx<0)next();else prev();}tx=ty=null;},{passive:true});
+  function scale(){var s=Math.min(window.innerWidth/1280,window.innerHeight/720);stage.style.transform='scale('+s+')';stage.style.left=((window.innerWidth-1280*s)/2)+'px';stage.style.top=((window.innerHeight-720*s)/2)+'px';}
+  window.addEventListener('resize',scale);window.addEventListener('load',scale);scale();
+  setTimeout(function(){kbd.style.opacity='0';},4500);
+  chrome();
+})();
+</script>
+</body>
+</html>
