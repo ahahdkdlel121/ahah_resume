@@ -144,7 +144,15 @@
   details summary::after{content:"+";color:var(--accent);font-size:18px;font-weight:800;}
   details[open] summary::after{content:"−";}
   details summary:hover{background:#e4e9f2;}
-  .det-body{padding:4px 15px 15px;}
+  .det-body{padding:2px 15px 15px;}
+  .det-body .block-label{margin:16px 0 4px;}
+  .det-body .ctx{margin:0;}
+  .det-body ul.clean{margin:4px 0 0;}
+  .det-body ul.clean li{margin:6px 0;}
+  .res-box{background:#fff;border:1px solid #cfdcf8;border-left:4px solid var(--accent);border-radius:9px;padding:9px 14px 10px 12px;margin:6px 0 2px;}
+  .res-box .res-label{font-weight:800;color:var(--accent);font-size:12px;letter-spacing:.3px;margin:0 0 2px;}
+  .res-box ul.clean{margin:0;padding-left:18px;}
+  .res-box ul.clean li{margin:4px 0;}
 
   .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
   .mini{background:var(--bg-soft);border:1px solid var(--line);border-radius:11px;padding:18px;}
@@ -452,9 +460,9 @@
 
       <h4 class="proj">프로젝트 1 — 프로젝트 L · TubeLuLu (웹 플랫폼 2종 오픈 준비 · 2026.02~)</h4>
       <details open><summary>📐 오픈 요건 확보 — 심의 · 결제 · 정산 · 사업 기획</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result"><li>프로젝트 L <span>전체이용가 등급 획득(2026.05)</span> · 두 서비스 PG 심사 통과 · 정산 정책·기능 요건 확정 · Sales Projection 기반 내부 투자 검토</li></ul>
-        <p class="ctx"><b>맥락</b> — 앱 마켓이 아닌 웹 서비스라 게임물 등급 심의, 결제 인프라, 스트리머·인플루언서 정산 체계를 처음부터 정의해야 했습니다.</p>
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result"><li>프로젝트 L <span>전체이용가 등급 획득(2026.05)</span> · 두 서비스 PG 심사 통과 · 정산 정책·기능 요건 확정 · Sales Projection 기반 내부 투자 검토</li></ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">앱 마켓이 아닌 웹 서비스라 게임물 등급 심의, 결제 인프라, 스트리머·인플루언서 정산 체계를 처음부터 정의해야 했습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>게임물 등급 심의 서류·심사 대응 전 과정 담당, 등급 유지를 위해 사행성 오해 문구를 서비스 전반에서 배제</li>
@@ -463,12 +471,12 @@
         </ul>
       </div></details>
       <details><summary>🤝 파트너 유치 — 제안서 · 스트리머·인플루언서 섭외 · POC</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result">
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result">
           <li>프로젝트 L POC 1차 완료 — <span>90분간 58회 플레이</span>, 개선점 도출·반영 / 2차 POC 스트리머 5명 섭외 확정</li>
           <li>TubeLuLu 인플루언서 <span>지원 예산을 기존안 대비 1.8배로 확대 승인(3개월)</span> · POC 진행 중(2026.08~)</li>
-        </ul>
-        <p class="ctx"><b>맥락</b> — 두 플랫폼 모두 스트리머·인플루언서가 유입의 핵심 키라, 설득할 자료와 실사용 검증 절차가 필요했습니다.</p>
+        </ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">두 플랫폼 모두 스트리머·인플루언서가 유입의 핵심 키라, 설득할 자료와 실사용 검증 절차가 필요했습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>소개서·제안서 직접 제작, 섭외 미팅 진행, 스트리머 2명 실방송 POC 시나리오·설문 설계·진행</li>
@@ -478,12 +486,12 @@
 
       <h4 class="proj">프로젝트 2 — 포커 서비스 3종 런칭 (포커룰루 · 프로젝트 S · 마이포커트립스 · 2026.02~)</h4>
       <details><summary>🏆 대회 운영 · 프리롤 POC · 런칭 이벤트</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result">
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result">
           <li>대회 <span>26회 · 누적 참여자 2,000명+</span> / 프로젝트 S POC 엔트리 <span>101건 · 퍼널 손실 0건</span> → 런칭 준비 착수</li>
           <li>포커룰루 9/21 소프트 런칭 완료(9/28 정식) · 마이포커트립스 9/21 런칭 완료</li>
-        </ul>
-        <p class="ctx"><b>맥락</b> — 온라인 포커 게임, 오프라인 대회 운영 시스템, 대회 일정 다이어리 웹을 동시에 런칭 단계로 끌고 가야 했고, 런칭 전에 유저 풀과 운영 신뢰성을 실전으로 검증해야 했습니다.</p>
+        </ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">온라인 포커 게임, 오프라인 대회 운영 시스템, 대회 일정 다이어리 웹을 동시에 런칭 단계로 끌고 가야 했고, 런칭 전에 유저 풀과 운영 신뢰성을 실전으로 검증해야 했습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>포커룰루 — 런칭 전 온·오프라인 포커 대회 26회 기획·운영(온라인 새틀라이트·오프라인 본선 440명 페스티벌, 프리롤, 투어 8회)</li>
@@ -501,9 +509,9 @@
 
       <h4 class="proj">프로젝트 1 — 아이러브커피 키우기 (방치형 RPG·SNG · 2025.09.23 런칭)</h4>
       <details open><summary>📐 런칭 관리 — FGT · 심의 · 피처링 · 사전예약</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result"><li>사전예약 <span>15만명</span>(순 등록, 부스팅 제외) / 런칭 주 <span>양대 마켓 피처링</span> / 런칭일 DAU 7만 · 1주차 평균 DAU 4.1만</li></ul>
-        <p class="ctx"><b>맥락</b> — 기존 IP(SNG)와 완전히 다른 장르로 출시하는 만큼 출시 전 검증이 필요했고, GPS 기능으로 위치기반서비스 심사까지 더해진 상태에서 초반 유입을 최대로 끌어올려야 했습니다.</p>
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result"><li>사전예약 <span>15만명</span>(순 등록, 부스팅 제외) / 런칭 주 <span>양대 마켓 피처링</span> / 런칭일 DAU 7만 · 1주차 평균 DAU 4.1만</li></ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">기존 IP(SNG)와 완전히 다른 장르로 출시하는 만큼 출시 전 검증이 필요했고, GPS 기능으로 위치기반서비스 심사까지 더해진 상태에서 초반 유입을 최대로 끌어올려야 했습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>비공개 FGT 35명(성별·연령·OS·과금 경험 균등) 기획·현장 진행, 피드백을 BM/콘텐츠/UI-UX로 구조화해 개발팀 전달 → 출시 전 80% 반영</li>
@@ -512,9 +520,9 @@
         </ul>
       </div></details>
       <details><summary>💰 수익화 설계 — 첫 결제 장벽을 낮추는 패키지 구조</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result"><li><span>D7 인앱 매출 5.1억</span> · ARPPU 3만원대 유지 · 한정 패키지가 정기 업데이트 표준 구조로 정착</li></ul>
-        <p class="ctx"><b>맥락</b> — 방치형 특성상 초기 자연 유입 하락이 예상되어, 장기 리텐션과 연동한 수익화 구조를 런칭 전에 설계해야 했습니다.</p>
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result"><li><span>D7 인앱 매출 5.1억</span> · ARPPU 3만원대 유지 · 한정 패키지가 정기 업데이트 표준 구조로 정착</li></ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">방치형 특성상 초기 자연 유입 하락이 예상되어, 장기 리텐션과 연동한 수익화 구조를 런칭 전에 설계해야 했습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>메인 BM·월정액 위에 조건부 한정(진행도 달성 시 24시간 노출)·데일리 한정(주간 변주)·업데이트 연동 패키지를 층으로 설계</li>
@@ -522,9 +530,9 @@
         </ul>
       </div></details>
       <details><summary>📊 런칭 3주차 하락 대응 — 이탈 퍼널·과금 코호트 분석</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result"><li>튜토리얼 개선 → 온보딩 이탈률 <span>26.5% → 8.6%</span>(플레이어 생성→튜토리얼 시작 구간) · 업데이트 전후 Retention 교차 검증</li></ul>
-        <p class="ctx"><b>맥락</b> — 런칭 3주 후 DAU −33%·매출 −41%, 신규 결제 유저(NPU) 비중 35%→19%. 표면 지표가 아니라 구조를 찾아야 했습니다.</p>
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result"><li>튜토리얼 개선 → 온보딩 이탈률 <span>26.5% → 8.6%</span>(플레이어 생성→튜토리얼 시작 구간) · 업데이트 전후 Retention 교차 검증</li></ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">런칭 3주 후 DAU −33%·매출 −41%, 신규 결제 유저(NPU) 비중 35%→19%. 표면 지표가 아니라 구조를 찾아야 했습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>이탈 퍼널 분석 — 꾸미기 콘텐츠 해금 전 구간에 이탈 집중(37.87%)을 특정해 튜토리얼 개선 제안</li>
@@ -532,12 +540,12 @@
         </ul>
       </div></details>
       <details><summary>🤝 컴포즈커피 브랜드 온·오프라인 콜라보</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result">
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result">
           <li>전국 <span>3,000개 매장</span> + 공식 홈페이지·앱 이벤트 페이지 약 3개월 동시 전개 · 콜라보 이벤트 참여자 <span>약 14.6만명</span></li>
           <li>매장 지침 미전달·GPS 인식 오류 이슈를 정리해 차기 콜라보 운영 체계 개선안 도출</li>
-        </ul>
-        <p class="ctx"><b>맥락</b> — 자체 채널만으로는 인지도 확보에 한계가 있어, 게임 세계관(카페 운영)과 맞는 외부 브랜드로 유입 채널을 넓혀야 했습니다.</p>
+        </ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">자체 채널만으로는 인지도 확보에 한계가 있어, 게임 세계관(카페 운영)과 맞는 외부 브랜드로 유입 채널을 넓혀야 했습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>연계 가능한 브랜드 리스트업, 세계관 접점을 핵심 논거로 제안서·기대효과 시뮬레이션 작성, 공식 제안·협의 주도</li>
@@ -547,12 +555,12 @@
 
       <h4 class="proj">프로젝트 2 — 같은 돌이니 아이돌 하겠습니다 : 아이돌 키우기 (방치형 RPG · 2024.12~2026.03)</h4>
       <details><summary>💰 수익화 분석 → 구조 재설계 → 신서버 전환</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result">
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result">
           <li>신서버 오픈 2일차 DAU 401 → 1,305명 / 안정화 구간 PUR <span>3.5% → 4~5%대</span></li>
           <li>반등이 일시적이라 마케팅 조기 종료 후 1주년까지 운영 — 시장·유입 한계를 이후 타이틀 사전 설계 기준으로 반영</li>
-        </ul>
-        <p class="ctx"><b>맥락</b> — 런칭 후 결제 전환율(PUR) 대비 매출 저조. 스테이지 보상 누락으로 재화 가치가 과다 책정되고, 무과금으로 주요 구간을 돌파해 과금 허들이 의도보다 뒤로 밀린 구조가 원인이었습니다.</p>
+        </ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">런칭 후 결제 전환율(PUR) 대비 매출 저조. 스테이지 보상 누락으로 재화 가치가 과다 책정되고, 무과금으로 주요 구간을 돌파해 과금 허들이 의도보다 뒤로 밀린 구조가 원인이었습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>전투력 시뮬레이션으로 재화 가치 재산정·허들 조정·상품 리뉴얼을 설계해 개발팀 전달, 8일 내 반영</li>
@@ -560,8 +568,7 @@
         </ul>
       </div></details>
       <details><summary>🎵 런칭 관리 · 음율 OST 크리에이터 협업</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result"><li>사전등록 5.2만 · 구글플레이 피처링 · <a href="https://youtu.be/2LEsm-gsTxg" target="_blank" rel="noopener">OST 유튜브 7.8만 뷰 ▶</a> · OST 공개 후 채널 <span>구독자 10%+ 증가</span></li></ul>
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result"><li>사전등록 5.2만 · 구글플레이 피처링 · <a href="https://youtu.be/2LEsm-gsTxg" target="_blank" rel="noopener">OST 유튜브 7.8만 뷰 ▶</a> · OST 공개 후 채널 <span>구독자 10%+ 증가</span></li></ul></div>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>출시 설정·피처링 제안 전 과정, 사전예약 마일스톤 이벤트(50만/70만) 기획</li>
@@ -574,12 +581,12 @@
       <h3>(주)모비릭스 · 사업 PM</h3>
       <p class="sub"><span class="pin">●</span> 2022.12 ~ 2024.07 (1년 7개월) · 퍼블리셔 사업팀 — 캐주얼·방치형 13종 글로벌 런칭·운영</p>
       <details open><summary>🌍 Water Sort Quest 런칭 주도 — 단계 런칭 결정 → UA 개시 → 이탈 분석으로 개선 결정</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result">
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result">
           <li><span>피크 DAU 138만</span>(2024.01.21) · 런칭 1개월 다운로드 425만 · 피크 월매출 2.3억 · 재직기간 누적 1,621만</li>
           <li>런칭 D+1 리텐션 35.6%로 같은 해 사내 런칭 3종 대비 +3.8~10.3%p · 개선 반영 후 피처드 기간 D+1 39.7% → 48.4%</li>
-        </ul>
-        <p class="ctx"><b>맥락</b> — 캐주얼 타이틀 특성상 런칭 전략 재량을 받아, 마케팅 없이 오픈한 뒤 지표를 검증하고 국가 티어별 UA로 확장하는 단계 런칭을 설계했습니다.</p>
+        </ul></div>
+        <div class="block-label">맥락</div>
+        <p class="ctx">캐주얼 타이틀 특성상 런칭 전략 재량을 받아, 마케팅 없이 오픈한 뒤 지표를 검증하고 국가 티어별 UA로 확장하는 단계 런칭을 설계했습니다.</p>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>마케팅 없이 먼저 오픈하는 단계 런칭 결정(2023.12.12, Google 사전등록 7만) → 첫 주 지표로 국가 티어별(T1~T4) UA 개시 결정(12/20 구글·서치애즈, 12/22 메타)</li>
@@ -588,8 +595,7 @@
         </ul>
       </div></details>
       <details><summary>📐 13종 글로벌 런칭·라이브 운영</summary><div class="det-body">
-        <div class="block-label">성과</div>
-        <ul class="clean result"><li>10종 글로벌 런칭 · 담당 전 타이틀 <span>Google 글로벌 피처링</span> · 13종 동시 라이브 운영</li></ul>
+        <div class="res-box"><div class="res-label">성과</div><ul class="clean result"><li>10종 글로벌 런칭 · 담당 전 타이틀 <span>Google 글로벌 피처링</span> · 13종 동시 라이브 운영</li></ul></div>
         <div class="block-label">내가 한 일</div>
         <ul class="clean">
           <li>자사·외부 개발사 10종의 킥오프~글로벌 오픈 마스터플랜 수립, 개발사·QA·마케팅·스토어 조율, 라이브 인수인계 3종 포함 13종 동시 운영</li>
