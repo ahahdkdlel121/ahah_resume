@@ -36,8 +36,10 @@ body{font-family:var(--f-kr);color:var(--text);letter-spacing:-.012em;word-break
 .s-title .hl::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.28em;background:var(--wash-deep);border-radius:3px;z-index:-1}
 .s-sub{font-size:14.5px;color:var(--muted);margin-top:9px;line-height:1.55}
 .s-head{flex:none}
-.s-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:16px;padding-top:18px}
-.insight{text-align:center;font-size:14.5px;color:var(--text);background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--r);padding:12px 24px;line-height:1.6}
+.s-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:18px;padding-top:16px}
+.fill{flex:0 0 auto}
+.split.fill{flex:1;min-height:0}
+.insight{text-align:center;font-size:15px;color:var(--text);background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--r);padding:12px 24px;line-height:1.6}
 .insight strong{color:var(--blue-ink);font-weight:700}
 .card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow)}
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:700;color:var(--blue-ink);background:var(--wash);border:1px solid var(--wash-deep);border-radius:999px;padding:4px 11px}
@@ -76,32 +78,32 @@ b.n{color:var(--blue);font-weight:800}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.fc{padding:18px 20px;display:flex;flex-direction:column}
+.fc{padding:22px 24px;display:flex;flex-direction:column}
 .fc .tag{font-size:10.5px;font-weight:800;color:var(--blue);letter-spacing:.04em}
-.fc h4{font-size:15.5px;font-weight:800;color:var(--ink);margin-top:6px;line-height:1.4}
-.fc p{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.6;flex:1}
-.fc .r{font-size:12.5px;color:var(--text);font-weight:600;margin-top:12px;padding-top:10px;border-top:1px dashed var(--border);line-height:1.5}
-.grid4 .fc h4{font-size:14px}
-.grid4 .fc p{font-size:12px}
-.grid4 .fc .r{font-size:12px}
+.fc h4{font-size:18.5px;font-weight:800;color:var(--ink);margin-top:6px;line-height:1.4}
+.fc p{font-size:15px;color:var(--muted);margin-top:12px;line-height:1.7;flex:1}
+.fc .r{font-size:15px;color:var(--text);font-weight:600;margin-top:12px;padding-top:10px;border-top:1px dashed var(--border);line-height:1.5}
+.grid4 .fc h4{font-size:16px}
+.grid4 .fc p{font-size:13.5px}
+.grid4 .fc .r{font-size:13.5px}
 
 /* ---------- Case layouts ---------- */
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.step{padding:14px 16px;position:relative}
+.step{padding:18px 18px;position:relative}
 .step .n{font-size:10.5px;font-weight:800;color:var(--blue);letter-spacing:.14em}
-.step h5{font-size:14.5px;font-weight:800;color:var(--ink);margin-top:4px}
-.step p{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.55}
+.step h5{font-size:16px;font-weight:800;color:var(--ink);margin-top:4px}
+.step p{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.6}
 .flow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;align-items:stretch}
-.fbox{padding:16px 18px}
-.fbox h5{font-size:12px;font-weight:800;color:var(--blue);letter-spacing:.06em;text-transform:uppercase}
-.fbox ul{list-style:none;margin-top:10px;display:flex;flex-direction:column;gap:7px}
-.fbox li{font-size:13px;color:var(--text);line-height:1.5;padding-left:14px;position:relative}
+.fbox{padding:20px 22px;display:flex;flex-direction:column}
+.fbox h5{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:.06em;text-transform:uppercase}
+.fbox ul{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:11px}
+.fbox li{font-size:15.5px;color:var(--text);line-height:1.55;padding-left:16px;position:relative}
 .fbox li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
 .fbox.res{background:var(--wash);border-color:var(--wash-deep)}
 .stat4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.stat{padding:14px 16px;background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--r-sm)}
-.stat .l{font-size:11.5px;color:var(--muted)}
-.stat .v{font-size:24px;font-weight:800;color:var(--ink);margin-top:4px;letter-spacing:-.02em}
+.stat{padding:18px 20px;background:var(--bg-subtle);border:1px solid var(--border);border-radius:var(--r-sm)}
+.stat .l{font-size:12.5px;color:var(--muted)}
+.stat .v{font-size:30px;font-weight:800;color:var(--ink);margin-top:4px;letter-spacing:-.02em}
 .stat.hi{background:var(--wash);border-color:var(--wash-deep)}
 .stat.hi .v{color:var(--blue)}
 .split{display:grid;grid-template-columns:1.15fr 1fr;gap:20px;align-items:stretch}
@@ -109,15 +111,15 @@ b.n{color:var(--blue);font-weight:800}
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
 .photo .cap{position:absolute;left:0;right:0;bottom:0;background:rgba(15,23,42,.72);color:#fff;font-size:11.5px;padding:7px 12px}
 .bul{list-style:none;display:flex;flex-direction:column;gap:9px}
-.bul li{font-size:13.5px;line-height:1.55;color:var(--text);padding-left:16px;position:relative}
+.bul li{font-size:14.5px;line-height:1.6;color:var(--text);padding-left:16px;position:relative}
 .bul li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--blue)}
 .bul li b{color:var(--ink)}
 .lbl{font-size:11.5px;font-weight:800;color:var(--blue);letter-spacing:.06em;margin-bottom:8px}
 
 /* ---------- Tables ---------- */
-table{width:100%;border-collapse:collapse;font-size:12px}
-th,td{padding:8px 11px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
-th{background:var(--ink);color:#fff;font-weight:700;font-size:11.5px;white-space:nowrap}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
+th{background:var(--ink);color:#fff;font-weight:700;font-size:12.5px;white-space:nowrap}
 tr:nth-child(even) td{background:var(--bg-subtle)}
 td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 .tbl-note{font-size:11px;color:var(--muted);margin-top:8px}
@@ -226,7 +228,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <p class="s-sub">표면 지표에서 멈추지 않고 이탈 구간·과금 코호트까지 파고들어, 개발팀이 실행할 수 있는 과제로 바꿔 넘깁니다</p>
     </header>
     <div class="s-body">
-      <div class="grid3">
+      <div class="grid3 fill">
         <div class="card fc a-up d1">
           <div class="tag">아이러브커피 키우기 · 2025.10</div>
           <h4>매출 −41%의 원인을 이탈 구간과 과금 구조로 특정</h4>
@@ -258,7 +260,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <p class="s-sub">아이디어를 내는 데서 멈추지 않고 파트너를 찾아 설득하고 계약해 성과로 잇습니다</p>
     </header>
     <div class="s-body">
-      <div class="grid4">
+      <div class="grid4 fill">
         <div class="card fc a-up d1">
           <div class="tag">컴포즈커피 × 아이러브커피 · 2025.08~10</div>
           <h4>브랜드 콜라보를 제안서로 시작해 성사</h4>
@@ -296,7 +298,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <p class="s-sub">런칭 전 과정과 수익화·이벤트를 목적 → 대상 → 설계 → 검증 지표의 구조로 만듭니다</p>
     </header>
     <div class="s-body">
-      <div class="grid4">
+      <div class="grid4 fill">
         <div class="card fc a-up d1">
           <div class="tag">아이러브커피 키우기 · 2025.06~09</div>
           <h4>기존 IP와 다른 장르의 런칭을 전 과정 설계</h4>
@@ -334,7 +336,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <p class="s-sub">'아이러브커피' SNG IP를 방치형 RPG로 출시 — 기존 팬 유입과 초반 리텐션 확보가 핵심 과제, GPS 기능으로 위치기반서비스 심사까지 추가</p>
     </header>
     <div class="s-body">
-      <div class="steps">
+      <div class="steps fill">
         <div class="card step a-up d1"><div class="n">STEP 1</div><h5>FGT 검증</h5><p>성별·연령·OS·과금 경험 균등 35명, 4시간 현장 진행. 피드백을 BM/콘텐츠/UI-UX로 구조화 → 출시 전 80% 반영</p></div>
         <div class="card step a-up d2"><div class="n">STEP 2</div><h5>사전예약</h5><p>사전예약 페이지 구축, SNS 참여형 퀘스트·미니게임 이벤트를 컴포즈커피 콜라보와 동시 전개 → 15만</p></div>
         <div class="card step a-up d3"><div class="n">STEP 3</div><h5>피처링·심의</h5><p>양대 마켓 출시 설정·피처링 제안 전 과정, 위치기반서비스 심사 서류 직접 작성</p></div>
@@ -364,7 +366,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="stat"><div class="l">이탈 집중 구간 (꾸미기 해금 전)</div><div class="v dsp">37.87%</div></div>
         <div class="stat"><div class="l">고과금 매출 비중 편중</div><div class="v dsp">28.7 → 43.8%</div></div>
       </div>
-      <div class="flow">
+      <div class="flow fill">
         <div class="card fbox a-up d2"><h5>진단</h5><ul>
           <li>이탈 퍼널 — 꾸미기 콘텐츠 해금 전 구간에 이탈 집중, 온보딩 퍼널 '플레이어 생성 → 튜토리얼 시작' 이탈 26.5%</li>
           <li>과금 코호트 — 고과금 편중, 소·중과금 이탈로 NPU 급감</li>
@@ -391,7 +393,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <p class="s-sub">런칭 후 결제 전환율(PUR) 대비 매출 저조 — 문제 정의 → 원인 분석 → 재설계 → 검증</p>
     </header>
     <div class="s-body">
-      <div class="flow">
+      <div class="flow fill">
         <div class="card fbox a-up d1"><h5>As-Is · 문제</h5><ul>
           <li>결제 전환율 대비 매출 저조, 소액 상품 편중</li>
           <li>낮은 재방문율(D+1 Retention)</li>
@@ -421,23 +423,21 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <p class="s-sub">단순 광고가 아니라 게임 세계관과 파트너를 연결하는 방식으로, 두 건의 외부 협업을 제안 단계부터 직접 성사</p>
     </header>
     <div class="s-body">
-      <div class="split">
+      <div class="split fill">
         <div class="photo a-up d1">
           <img src="image/compose.jpg" alt="컴포즈커피 × 아이러브커피 키우기 콜라보 현장">
           <div class="cap">컴포즈커피 × 아이러브커피 키우기 — 전국 매장 키오스크·DID·메뉴판 적용</div>
         </div>
-        <div>
-          <div class="lbl">① 컴포즈커피 온·오프라인 콜라보 · 2025.08~10</div>
-          <ul class="bul a-up d2">
-            <li><b>탐색·제안</b> — 연계 가능한 브랜드 리스트업, 세계관 접점을 핵심 논거로 제안서·기대효과 시뮬레이션 작성, 공식 제안·협의 주도</li>
+        <div class="col">
+          <div class="card fbox a-up d2"><h5>① 컴포즈커피 온·오프라인 콜라보 · 2025.08~10</h5><ul>
+            <li><b>탐색·제안</b> — 세계관 접점을 핵심 논거로 제안서·기대효과 시뮬레이션을 작성해 공식 제안, 협의 주도</li>
             <li><b>운영</b> — 이벤트 3종(음료 쿠폰 → 스킨 / GPS 매장 방문 보상 / 기프티콘 사전등록), 전국 매장 포스터·키오스크·DID 노출 조율</li>
-            <li><b>성과</b> — 전국 <b class="n">3,000개 매장</b> + 홈페이지·앱 3개월 동시 전개 · 참여자 <b class="n">14.6만명</b> · 사전예약 전환율·검색량 상승</li>
-          </ul>
-          <div class="lbl" style="margin-top:16px">② 음율 OST 크리에이터 협업 · 아이돌 키우기</div>
-          <ul class="bul a-up d3">
-            <li><b>세계관 핏 기준</b>으로 싱어송라이터 선정·제안 → 라이선스 계약(저작권·상업적 이용 범위) 조율 → 음원 저작권 등록·유튜브뮤직·스포티파이·플로 배포</li>
+            <li><b>성과</b> — 전국 <b class="n">3,000개 매장</b> + 홈페이지·앱 3개월 동시 전개 · 참여자 <b class="n">14.6만명</b></li>
+          </ul></div>
+          <div class="card fbox a-up d3"><h5>② 음율 OST 크리에이터 협업 · 아이돌 키우기</h5><ul>
+            <li><b>세계관 핏 기준</b>으로 싱어송라이터 선정·제안 → 라이선스 계약 조율 → 음원 저작권 등록·유튜브뮤직·스포티파이·플로 배포까지 단독 진행</li>
             <li><b>성과</b> — 유튜브 <b class="n">7.8만 뷰</b> · OST 공개 후 채널 구독자 <b class="n">10%+ 증가</b></li>
-          </ul>
+          </ul></div>
         </div>
       </div>
       <div class="insight a-up d4">매장 지침 미전달·GPS 인식 오류 이슈를 정리해 <strong>차기 콜라보 운영 체계 개선안</strong>으로 남겼습니다.</div>
@@ -452,7 +452,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <p class="s-sub">스트리머·시청자 참여형 웹 미니게임 플랫폼 — 앱 마켓이 아닌 웹 서비스라 심의·결제·정산을 처음부터 설계</p>
     </header>
     <div class="s-body">
-      <div class="steps">
+      <div class="steps fill">
         <div class="card step a-up d1"><div class="n">STEP 1</div><h5>오픈 요건</h5><p>게임물 등급 심의 서류·심사 대응 전 과정 · PG사 비교·계약·연동 심사 · 스트리머 정산 정책(요율·주기·기준)</p></div>
         <div class="card step a-up d2"><div class="n">STEP 2</div><h5>사업 기획</h5><p>스트리머 규모별 Sales Projection · 수익 구조(요율) · 타깃 스트리머·플랫폼(치지직·SOOP) 후보군 → 경영진 보고</p></div>
         <div class="card step a-up d3"><div class="n">STEP 3</div><h5>제안·섭외</h5><p>서비스 소개서·제안서 직접 제작 · 섭외 미팅에서 제안·활용 가이드 진행</p></div>
@@ -476,7 +476,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <p class="s-sub">온라인 포커 게임 · 오프라인 대회 운영 시스템 · 대회 일정 다이어리 웹을 동시에 런칭 단계로</p>
     </header>
     <div class="s-body">
-      <div class="grid3">
+      <div class="grid3 fill">
         <div class="card fc a-up d1">
           <div class="tag">포커룰루 · 온라인 포커 게임</div>
           <h4>런칭 전 온·오프라인 포커 대회 26회 기획·운영</h4>
