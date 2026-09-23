@@ -365,11 +365,42 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 
 /* slide 4 vertical rhythm */
 #slide-4 .s-body{gap:26px;padding-top:10px}
-#slide-4 .tline{padding:16px 0 20px}
 #slide-4 .tl-i b{font-size:14px}#slide-4 .tl-i span{font-size:12px}
-#slide-4 .stat4 .stat{padding:24px 26px}
+#slide-4 .stat4 .stat{padding:20px 22px}
 #slide-4 .stat4 .stat .l{font-size:13px}
 #slide-4 .grid2.grow{gap:22px}
+/* slide 4 bottom cards natural height */
+#slide-4 .s4b{gap:20px}
+#slide-4 .s4b .fc{padding:24px 28px}
+#slide-4 .s4b .fc h4{font-size:19px;line-height:1.4}
+#slide-4 .s4b .fc p{font-size:15px;line-height:1.7;margin-top:10px;flex:0}
+/* slide 7: 2 big + 4 compact */
+.jbig{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.jsm{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.jrep{font-size:11px;font-weight:800;color:var(--blue);letter-spacing:.06em}
+.cs .jc.big{padding:24px 26px;background:var(--wash);border-color:var(--wash-deep)}
+.cs .jc.big h4{font-size:20px;margin-top:10px}
+.cs .jc.big .ab{margin-top:12px;gap:6px}
+.cs .jc.big .ab span{font-size:13.5px;padding:8px 12px;background:#fff}
+.cs .jc.big .ab .x{background:#fff;color:var(--muted)}
+.cs .jc.big p{font-size:14px;margin-top:12px}
+.cs .jc.sm{padding:18px 18px}
+.cs .jc.sm .jtag{align-self:flex-start}
+.cs .jc.sm h4{font-size:15px;margin-top:10px;line-height:1.45}
+.cs .jc.sm p{font-size:12.5px;margin-top:8px;line-height:1.55}
+/* slide 8: issuance bars + channel icons */
+.cs .vbars.v5{height:150px;padding-top:22px}
+.vbars b em{font-style:normal;font-size:11px;color:var(--muted);font-weight:600}
+.chan{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;flex:1;align-items:start}
+.cn{text-align:center;background:var(--bg-subtle);border:1px solid var(--border);border-radius:10px;padding:14px 8px 12px;min-height:150px}
+.cn svg{width:30px;height:30px;fill:none;stroke:var(--blue);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:block;margin:0 auto 8px}
+.cn b{display:block;font-size:14px;color:var(--ink)}
+.cn b i{font-style:normal;color:var(--blue);font-weight:800}
+.cn span{display:block;font-size:11px;color:var(--muted);margin-top:6px;line-height:1.45}
+.s8g{gap:16px}
+
+#slide-10 .iss{flex:1;min-height:0;gap:12px}
+#slide-10 .iss div{flex:1;align-items:center;padding:14px 16px}
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -502,7 +533,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="stat"><div class="l">이벤트 3종 · 홍보물 규격</div><div class="v dsp">3종 · 10종</div></div>
         <div class="stat"><div class="l">함께 움직인 조직</div><div class="v dsp">내부 4 · 외부 5</div></div>
       </div>
-      <div class="grid2 a-up d3 fill grow">
+      <div class="grid2 a-up d3 fill s4b">
         <div class="card fc"><div class="tag">서비스 맥락</div><h4>IP 리부트 신작, 첫 달 NRU 40만이 목표</h4><p>'아이러브커피'(누적 1,000만 DL)를 방치형 RPG로 재해석. 위치기반(GPS) 소셜 기능이 다른 게임에 없는 차별점.</p></div>
         <div class="card fc"><div class="tag">내 역할</div><h4>기획 → 컴포즈 실무 창구 → 라이브 대응</h4><p>브랜드 선정·제안서·시뮬레이션·이벤트 기획. 7월 중순부터 컴포즈 담당자와 1:1로 홍보물·음료·쿠폰·계약·데이터·이슈를 맡음. 초기 제안과 1·2차 미팅은 사업팀장.</p></div>
       </div>
@@ -590,13 +621,15 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <h2 class="s-title">선택지가 있었던 <span class="hl">여섯 번의 판단</span></h2>
     </header>
     <div class="s-body">
-      <div class="jgrid fill">
-        <div class="card jc a-up d1"><div class="jtop"><span class="jn">01</span><span class="jtag">차별화 판단</span></div><h4>굿즈 콜라보가 아니라 <em>위치기반 상호작용</em>을 축으로</h4><div class="ab"><span class="x">A 캐릭터 음료·스킨 판매</span><span class="o">B 매장 방문 자체를 게임 콘텐츠로</span></div><p>GPS는 우리만 줄 수 있는 차별점, 방문이 보상으로 이어져야 컴포즈 매출 기여가 생김</p></div>
-        <div class="card jc a-up d1"><div class="jtop"><span class="jn">02</span><span class="jtag">일정 리스크 관리</span></div><h4>사전예약 6주 + 라이브 4주, <em>지류는 런칭에만</em></h4><div class="ab"><span class="x">A 런칭 후 4주만</span><span class="o">B 8주 연속 + 사전예약은 디지털만</span></div><p>지류 포스터는 발주까지 4주. 프로모션 전 2주는 컴포즈 없이 돌려 효과 분리 측정</p></div>
-        <div class="card jc a-up d2"><div class="jtop"><span class="jn">03</span><span class="jtag">협상 · 교환 설계</span></div><h4>상대가 망설인 <em>MG와 리소스</em>를 우리가 떠안기</h4><div class="ab"><span class="o">우리: 홍보물 10종 제작 · 기프티콘 선구매 · 단독 노출</span><span class="o">받은 것: 앱·홈페이지·SNS·전국 매장 노출</span></div><p>상대의 리스크를 흡수하고 우리가 가장 필요한 것을 받는 교환</p></div>
-        <div class="card jc a-up d2"><div class="jtop"><span class="jn">04</span><span class="jtag">우선순위 판단</span></div><h4>프리퀀시 시기를 <em>10월 말 → 10월 초</em>로</h4><div class="ab"><span class="x">10월 말: 마케팅 예산 소진 후</span><span class="o">10월 2일: UA·매장 전환과 맞물림</span></div><p>앱 메인 노출을 동시에 못 받는 조건은 수용, 추석 연휴를 피해 날짜 확정</p></div>
-        <div class="card jc a-up d3"><div class="jtop"><span class="jn">05</span><span class="jtag">이해관계자 조율</span></div><h4>스탬프를 쿠폰으로, 지급 로직은 <em>3 · 4 · 1</em></h4><div class="ab"><span class="x">상대안: 랜덤 지급</span><span class="o">1~9잔 3장 · 10잔 4장(도감 완성) · 이후 1장</span></div><p>쿠폰 CSV 100만 장을 우리가 넘겨 상대 개발 부담 최소화. 랜덤안은 확률 표기 의무를 근거로 반박</p></div>
-        <div class="card jc a-up d3"><div class="jtop"><span class="jn">06</span><span class="jtag">지표 기반 의사결정</span></div><h4>라이브 중 <em>확률·수량</em>을 지표 보며 조정</h4><div class="ab"><span class="x">GPS 기프티콘 당첨률 0.1%</span><span class="o">10%로 상향 → 쿠폰 → 매장 → 게임 순환</span></div><p>사전예약은 추첨 → 100% 지급, 일일 상한은 집행량에 맞춰 매일 조정. 운영툴에서 총량을 바꾸게 미리 세팅</p></div>
+      <div class="jbig a-up d1">
+        <div class="card jc big"><div class="jtop"><span class="jtag">협상 · 교환 설계</span><span class="jrep">대표 판단</span></div><h4>상대가 망설인 <em>MG와 리소스</em>를 우리가 떠안기</h4><div class="ab"><span class="o">우리: 홍보물 10종 제작 · 기프티콘 선구매 · 단독 노출</span><span class="o">받은 것: 앱 · 홈페이지 · SNS · 전국 매장 노출</span></div><p>상대의 리스크를 흡수하고 우리가 가장 필요한 것을 받는 교환. 6/13 회신에서 6/20 확정까지 7일</p></div>
+        <div class="card jc big"><div class="jtop"><span class="jtag">이해관계자 조율</span><span class="jrep">대표 판단</span></div><h4>스탬프를 쿠폰으로, 지급 로직은 <em>3 · 4 · 1</em></h4><div class="ab"><span class="x">상대안: 랜덤 지급</span><span class="o">1~9잔 3장 · 10잔 4장(도감 완성) · 이후 1장</span></div><p>쿠폰 CSV 100만 장을 우리가 넘겨 상대 개발 부담 최소화. 랜덤안은 확률 표기 의무를 근거로 반박</p></div>
+      </div>
+      <div class="jsm a-up d2">
+        <div class="card jc sm"><span class="jtag">차별화 판단</span><h4>굿즈가 아니라 <em>위치기반 상호작용</em>을 축으로</h4><p>방문이 보상으로 이어져야 컴포즈 매출 기여가 생김</p></div>
+        <div class="card jc sm"><span class="jtag">일정 리스크 관리</span><h4>사전예약 6주 + 라이브 4주, <em>지류는 런칭에만</em></h4><p>지류 발주 4주 · 프로모션 전 2주는 효과 분리 측정</p></div>
+        <div class="card jc sm"><span class="jtag">우선순위 판단</span><h4>프리퀀시 <em>10월 말 → 10월 초</em>로</h4><p>UA·매장 전환과 맞물리도록, 앱 메인 노출 포기는 수용</p></div>
+        <div class="card jc sm"><span class="jtag">지표 기반 의사결정</span><h4>라이브 중 <em>확률 · 수량</em>을 보며 조정</h4><p>당첨률 0.1% → 10%, 사전예약 추첨 → 100% 지급</p></div>
       </div>
     </div>
   </section>
@@ -613,27 +646,31 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
           <div class="ln"><b>사전등록</b><span>08.12~09.22<br>SNS 미션 → 기프티콘</span></div><i></i>
           <div class="ln"><b>런칭</b><span>09.23<br>앱·홈 배너 · 매장 DID</span></div><i></i>
           <div class="ln hi"><b>걸어서 컴포즈 투어</b><span>GPS 매장 근처 → 행운 상자<br>일 10개 · 매장당 1개</span></div><i></i>
-          <div class="ln"><b>콜라보 음료 구매</b><span>10.02~ 커피밀크쉐이크 · 돌체라떼 · 더블초코라떼</span></div><i></i>
+          <div class="ln"><b>콜라보 음료 구매</b><span>10.02~10.31<br>콜라보 음료 3종 중 1잔</span></div><i></i>
           <div class="ln"><b>쿠폰 → 게임 복귀</b><span>컴포즈 앱 발급 → 게임 입력<br>가구·코스튬 도감 31종</span></div>
         </div>
         <div class="loop-back">기프티콘 사용 → 다시 매장 방문 → 다시 게임</div>
       </div>
-      <div class="grid2">
+      <div class="grid2 s8g">
         <div class="card ig a-up d2">
-          <div class="ig-h">기프티콘 일일 상한 — 런칭 초반 14일에 집중</div>
-          <div class="vbars">
-            <div><i style="height:100%"></i><b>8,967</b><span>D1</span></div>
-            <div><i style="height:24%"></i><b>2,179</b><span>D2</span></div>
-            <div><i style="height:10%"></i><b>864</b><span>D3~15</span></div>
-            <div><i style="height:5%"></i><b>435</b><span>D16</span></div>
-            <div><i style="height:4%"></i><b>370</b><span>D17~30</span></div>
+          <div class="ig-h">기프티콘 일일 발급 — 런칭 D1~D39 (9/23~10/31) · 발행사 발급 기록</div>
+          <div class="vbars v5">
+            <div><i style="height:100%"></i><b>2,163</b><span>D1</span></div>
+            <div><i style="height:85%"></i><b>1,838</b><span>D2</span></div>
+            <div><i style="height:34%"></i><b>731<em>/일</em></b><span>D3~9</span></div>
+            <div><i style="height:43%"></i><b>925<em>/일</em></b><span>D10~20</span></div>
+            <div><i style="height:15%"></i><b>333<em>/일</em></b><span>D21~39</span></div>
           </div>
-          <p class="ig-n">초도 5만 장 선구매 · 소진 후 인게임 재화로 자동 대체</p>
+          <p class="ig-n">런칭 기간 25,624장 + 사전예약 기간 5,715장 · 상한은 운영툴에서 집행량에 맞춰 매일 조정</p>
         </div>
         <div class="card ig a-up d3">
-          <div class="ig-h">노출 채널 — 컴포즈 쪽 구좌</div>
-          <div class="chips">
-            <span>앱 히어로 배너</span><span>앱 새소식</span><span>앱 기프트샵</span><span>앱 제휴</span><span>웹 배너 2종</span><span>키오스크</span><span>듀얼모니터</span><span>DID 영상</span><span>지류 포스터</span><span>인스타 스토리·하이라이트</span><span>X</span>
+          <div class="ig-h">노출 채널 — 컴포즈 쪽 5개 매체 · 12개 구좌</div>
+          <div class="chan">
+            <div class="cn"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg><b>앱 <i>4</i></b><span>히어로 배너 · 새소식<br>기프트샵 · 제휴</span></div>
+            <div class="cn"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="16" x2="12" y2="20"/></svg><b>웹 <i>2</i></b><span>홈페이지 배너 2종</span></div>
+            <div class="cn"><svg viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><rect x="4" y="9" width="16" height="11"/><rect x="10" y="13" width="4" height="7"/></svg><b>매장 <i>3</i></b><span>키오스크 · 듀얼모니터<br>DID 영상</span></div>
+            <div class="cn"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg><b>지류 <i>1</i></b><span>포스터<br>2,957개 매장</span></div>
+            <div class="cn"><svg viewBox="0 0 24 24"><path d="M3 10v4l11 4V6L3 10z"/><path d="M17 9a3.5 3.5 0 010 6"/><line x1="6" y1="14" x2="7" y2="19"/></svg><b>SNS <i>2</i></b><span>인스타 스토리·하이라이트<br>X</span></div>
           </div>
           <p class="ig-n">SNS 3단계 게시: 8/26 Coming Soon → 9/23 콜라보 → 10/2 음료</p>
         </div>
@@ -652,12 +689,12 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card ig a-up d1">
           <div class="spoke">
             <div class="sp c"><b>사업 PM</b><span>컴포즈 실무 창구</span></div>
-            <div class="sp p1"><b>컴포즈 마케팅</b><span>노출·메뉴·매장 데이터</span></div>
+            <div class="sp p1"><b>컴포즈 마케팅</b><span>노출 구좌 · 매장 데이터</span></div>
             <div class="sp p2"><b>컴포즈 앱 개발사</b><span>쿠폰 발급 · CSV 100만</span></div>
-            <div class="sp p3"><b>기프티콘 발행사 · 물류 · 인쇄</b><span>발행 API · 2,957개 매장 출고</span></div>
-            <div class="sp p4"><b>개발팀</b><span>GPS POI · 쿠폰 · 운영툴 총량</span></div>
-            <div class="sp p5"><b>디자인팀</b><span>홍보물 10종 · 영상 · 도감 31종</span></div>
-            <div class="sp p6"><b>운영/CS · 마케팅</b><span>점주 공지 · CS 답변서 · SNS</span></div>
+            <div class="sp p3"><b>발행사 · 물류 · 인쇄</b><span>기프티콘 발행 · 포스터 출고</span></div>
+            <div class="sp p4"><b>개발팀</b><span>GPS POI · 쿠폰 · 운영툴</span></div>
+            <div class="sp p5"><b>디자인팀</b><span>홍보물 10종 · 도감 31종</span></div>
+            <div class="sp p6"><b>운영/CS · 마케팅</b><span>점주 공지 · CS · SNS</span></div>
             <div class="sp-lab l1">▲ 외부 5개 사</div>
             <div class="sp-lab l2">내부 4개 팀 ▼</div>
           </div>
@@ -665,10 +702,9 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card ig a-up d2">
           <div class="ig-h">협의 방식</div>
           <div class="kv3 v tight">
-            <div><b>미팅 3 + 2회</b><span>대면 6/17 · 7/1 · 8/7, 앱 개발사 화상 8/13 · 8/20 — 끝나면 결정 사항을 우리가 먼저 메일로 정리</span></div>
-            <div><b>요구 6건 수용 + 역조건 1건</b><span>일정 연기·CS 경로·로고·리드타임·SNS 사전 확인·비용 명문화 ← 기간이 밀리면 프로모션도 연장</span></div>
-            <div><b>음료 3종 확정까지 4번</b><span>컴보 3종 → 단일 요청 → 6종 재제안 → 확정 → 판매량 기준 2종 교체를 당일 반영</span></div>
-            <div><b>계약·데이터</b><span>업무 협약서를 먼저 제안해 초안 작성 · 매장 데이터 4항목 요청, 갱신본 3회</span></div>
+            <div><b>미팅 5회, 결정은 우리가 먼저 메일로</b><span>대면 3회 · 앱 개발사 화상 2회 — 끝나면 결정 사항을 당일 정리해 발송, 이후 논쟁 없음</span></div>
+            <div><b>요구 6건 수용 + 역조건 1건</b><span>일정 연기 · CS 경로 · 로고 · 리드타임 · SNS 사전 확인 · 비용 명문화 ← 기간이 밀리면 프로모션도 연장</span></div>
+            <div><b>협약서 초안은 우리가 작성</b><span>업무 협약서를 먼저 제안 · 매장 데이터 4항목(명·주소·좌표·ID) 요청, 갱신본 3회</span></div>
           </div>
         </div>
       </div>
@@ -683,24 +719,23 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </header>
     <div class="s-body">
       <div class="stat4 a-up d1">
-        <div class="stat hi"><div class="l">콜라보 이벤트 참여자 (고유)</div><div class="v dsp">14.6만 명</div></div>
+        <div class="stat hi"><div class="l">이벤트 참여자 (기간별 고유 합산)</div><div class="v dsp">14.6만 명</div></div>
         <div class="stat hi"><div class="l">GPS 투어 참여 · 음료 미션</div><div class="v dsp">27.9만 회 · 4.98만 잔</div></div>
         <div class="stat hi"><div class="l">기프티콘 누적 발급 · 사용률</div><div class="v dsp">33,464장 · 59%</div></div>
         <div class="stat hi"><div class="l">사전예약 순 등록 (부스팅 제외)</div><div class="v dsp">15.3만 명</div></div>
       </div>
       <div class="grid2 fill" style="grid-template-columns:1.15fr 1fr">
         <div class="card ig a-up d2">
-          <div class="ig-h">컴포즈 앱 쿠폰 발급 코드 — 10/2~10/31 일별 (합계 51,561건)</div>
+          <div class="ig-h">컴포즈 앱 쿠폰 발급 51,561건 · 앱 오더 음료 11,333잔 — 10/2~10/31 일별</div>
           <div class="spark">
             <i style="height:100%"></i><i style="height:75%"></i><i style="height:72%"></i><i style="height:63%"></i><i style="height:48%"></i><i style="height:57%"></i><i style="height:58%"></i><i style="height:51%"></i><i style="height:54%"></i><i style="height:56%"></i><i style="height:47%"></i><i style="height:50%"></i><i style="height:45%"></i><i style="height:45%"></i><i style="height:46%"></i><i style="height:36%"></i><i style="height:40%"></i><i style="height:37%"></i><i style="height:36%"></i><i style="height:35%"></i><i style="height:33%"></i><i style="height:35%"></i><i style="height:36%"></i><i style="height:30%"></i><i style="height:28%"></i><i style="height:31%"></i><i style="height:27%"></i><i style="height:32%"></i><i style="height:31%"></i><i style="height:29%"></i>
           </div>
           <div class="spark-ax"><span>10/2 첫날 3,784</span><span>10/31 1,089</span></div>
-          <p class="ig-n">앱 오더 콜라보 음료 11,333잔(매장 판매 제외) · 컴포즈 일 매장 방문자 약 10만 명 기준 81일간 노출 약 810만 회(내부 추정)</p>
+          <p class="ig-n">매장 방문자 일 10만 명 기준 81일 노출 약 810만 회 (내부 추정)</p>
         </div>
         <div class="card ig a-up d3">
           <div class="ig-h">이슈 → 대응</div>
           <div class="iss">
-            <div><b>9/23 시작일 없는 포스터</b><span>유저가 10/2 전 매장 방문 → 날짜 수정본 당일 전 구좌 반영</span></div>
             <div><b>10/2 품절 미해제</b><span>POS 기본 '품절' → 오전 재안내, 15:10 전 가맹점 재공지, 제보 매장 3차 전달, 반경 3km 20개점 직접 확인</span></div>
             <div><b>매장 위치 오차</b><span>엑셀·홈페이지·지도 불일치 → 홈페이지 데이터 + 네이버 좌표 갱신, 누락 매장 별도 관리</span></div>
             <div><b>쿠폰 미지급</b><span>복합결제·번호 불일치 → 운영팀과 건별 확인 절차</span></div>
