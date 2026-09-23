@@ -238,7 +238,10 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .hbar.lg .hb-f span{color:#fff;font-size:13px;font-weight:700}
 .hbar.lg .hb-v{font-size:20px}
 .hb-foot{display:grid;grid-template-columns:1fr 1.4fr;gap:14px;font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:4px}
-.goal-row{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;align-items:stretch}
+.goal-row{display:grid;grid-template-columns:1.1fr 1fr;gap:0;align-items:stretch}
+.goal-row>.chev{padding-right:22px}
+.goal-row>.kvwrap{padding-left:22px;border-left:2px solid var(--wash-deep)}
+.gl{font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.08em;margin-bottom:8px}
 .goal-row .ch{padding:14px 14px}
 .goal-row .ch b{font-size:16px}
 .goal-row .ch span{font-size:12.5px}
@@ -401,16 +404,16 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="card ig wide a-up d2">
         <div class="ig-h">목표 — 끊기지 않는 세 단계와 성공 기준</div>
         <div class="goal-row">
-          <div class="chev">
+          <div><div class="gl">유입 흐름</div><div class="chev">
             <div class="ch"><b>인식</b><span>매장·앱·SNS에서 반복 노출</span></div>
             <div class="ch"><b>각인</b><span>사전예약 + 기프티콘</span></div>
             <div class="ch"><b>실전환</b><span>GPS 매장 방문 · 음료 구매</span></div>
-          </div>
-          <div class="kv3">
+          </div></div>
+          <div class="kvwrap"><div class="gl">성공 기준</div><div class="kv3">
             <div><b>NRU 40만</b><span>UA 단독 대비 낮은 예산으로</span></div>
             <div><b>참여 · 사용률</b><span>사전예약 순등록 · 이벤트 참여 · 기프티콘 사용률</span></div>
             <div><b>잔존 6~7%+</b><span>기프티콘 유입 유저의 핵심 콘텐츠 이후 잔존</span></div>
-          </div>
+          </div></div>
         </div>
       </div>
     </div>
