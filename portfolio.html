@@ -140,6 +140,96 @@ b.n{color:var(--blue);font-weight:800}
 .chap{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
 .chap span{font-size:12.5px;font-weight:700;color:#93B4FC;border:1px solid rgba(147,180,252,.35);border-radius:999px;padding:6px 14px}
 
+
+/* ---------- Infographic components ---------- */
+.ig{padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.ig-h{font-size:12.5px;font-weight:800;color:var(--blue);letter-spacing:.04em}
+.ig-n{font-size:12px;color:var(--muted);line-height:1.55;margin-top:auto}
+.hbar{display:grid;grid-template-columns:150px 1fr 48px;align-items:center;gap:10px;font-size:13px}
+.hb-l{color:var(--text);font-weight:600}
+.hb-t{height:22px;background:var(--bg-subtle);border-radius:6px;overflow:hidden}
+.hb-f{height:100%;background:var(--blue);border-radius:6px}
+.hb-f.warn{background:var(--ink)}
+.hb-v{font-weight:800;color:var(--ink);text-align:right}
+.chev{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.ch{background:var(--wash);border:1px solid var(--wash-deep);border-radius:8px;padding:10px 12px;position:relative}
+.ch b{display:block;font-size:14.5px;color:var(--blue-ink)}
+.ch span{display:block;font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.45}
+.ch:not(:last-child)::after{content:"›";position:absolute;right:-9px;top:50%;transform:translateY(-55%);font-size:20px;font-weight:800;color:var(--blue);background:#fff;line-height:1}
+.kv3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.kv3.v{grid-template-columns:1fr}
+.kv3 div{background:var(--bg-subtle);border:1px solid var(--border);border-radius:8px;padding:9px 11px}
+.kv3 b{display:block;font-size:14px;color:var(--ink)}
+.kv3 span{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.45}
+.kv3.tight div{padding:8px 11px}
+.kv3.tight b{font-size:13.5px}
+table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
+.mx th{background:var(--bg-subtle);color:var(--muted);font-weight:700;font-size:11px;padding:6px 8px;border-bottom:1px solid var(--border);white-space:nowrap;text-align:center}
+.mx th:first-child,.mx td:first-child{text-align:left}
+.mx td{padding:7px 8px;border-bottom:1px solid var(--border-soft,#F1F5F9);text-align:center;color:var(--text)}
+.mx td:nth-child(2){text-align:left;font-weight:700;color:var(--ink);min-width:120px;white-space:nowrap}
+.mx td:nth-child(2) span{display:inline-block;width:44px}
+.mx td:nth-child(2) i{display:inline-block;height:8px;background:var(--wash-deep);border-radius:4px;vertical-align:middle}
+.mx tr.on td{background:var(--wash);color:var(--blue-ink);font-weight:800}
+.mx tr.on td:nth-child(2) i{background:var(--blue)}
+.mx td:nth-child(n+3){font-size:13px;color:var(--blue)}
+.venn{position:relative;height:150px;margin:2px 0}
+.vc{position:absolute;top:8px;width:132px;height:132px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px}
+.vc.a{left:8%;background:rgba(37,99,235,.14);border:1.5px solid rgba(37,99,235,.35)}
+.vc.b{right:8%;background:rgba(15,23,42,.08);border:1.5px solid rgba(15,23,42,.25)}
+.vc b{font-size:12px;color:var(--ink)}
+.vc span{font-size:11px;color:var(--muted);margin-top:2px;line-height:1.35}
+.vc.a b{margin-left:-20px}.vc.a span{margin-left:-20px}.vc.b b{margin-right:-20px}.vc.b span{margin-right:-20px}
+.vm{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;border:1.5px solid var(--blue);color:var(--blue-ink);font-size:11px;font-weight:800;border-radius:999px;padding:6px 10px;text-align:center;line-height:1.3;box-shadow:var(--shadow)}
+.mini-tl{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--muted);margin-top:auto;flex-wrap:wrap}
+.mini-tl i{flex:1;height:2px;background:var(--wash-deep);min-width:10px}
+.mini-tl b{color:var(--blue);font-weight:800;font-size:12px}
+.jtop{display:flex;justify-content:space-between;align-items:center}
+.jtag{font-size:10.5px;font-weight:800;color:var(--blue-ink);background:var(--wash);border:1px solid var(--wash-deep);border-radius:999px;padding:3px 9px}
+.jc h4 em{font-style:normal;color:var(--blue)}
+.ab{display:flex;flex-direction:column;gap:4px;margin-top:8px}
+.ab span{font-size:11.5px;border-radius:6px;padding:5px 8px;line-height:1.4}
+.ab .x{background:var(--bg-subtle);color:var(--muted)}
+.ab .x::before{content:"✕ ";font-weight:800;color:var(--faint)}
+.ab .o::before{content:"✓ ";font-weight:800}
+.ab .o{background:var(--wash);color:var(--blue-ink);font-weight:700}
+.jc p{margin-top:8px;font-size:12px}
+.loop{display:grid;grid-template-columns:1fr 18px 1fr 18px 1.2fr 18px 1fr 18px 1fr;align-items:center;gap:0}
+.ln{background:var(--bg-subtle);border:1px solid var(--border);border-radius:10px;padding:12px 12px;min-height:88px}
+.ln.hi{background:var(--wash);border-color:var(--wash-deep)}
+.ln b{display:block;font-size:14px;color:var(--ink)}
+.ln.hi b{color:var(--blue-ink)}
+.ln span{display:block;font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.45}
+.loop>i{height:2px;background:var(--blue);position:relative;margin:0 2px}
+.loop>i::after{content:"";position:absolute;right:-1px;top:-4px;border:5px solid transparent;border-left:7px solid var(--blue)}
+.loop-back{font-size:12px;color:var(--blue-ink);font-weight:700;text-align:center;border-top:2px dashed var(--wash-deep);padding-top:8px;margin-top:4px;position:relative}
+.loop-back::before{content:"↺";margin-right:6px;font-size:15px}
+.vbars{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:end;height:120px;padding-top:18px}
+.vbars div{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative}
+.vbars i{display:block;width:70%;background:var(--blue);border-radius:6px 6px 0 0;min-height:4px;order:2}
+.vbars b{font-size:12px;color:var(--ink);order:1;margin-bottom:4px}
+.vbars span{font-size:11px;color:var(--muted);order:3;margin-top:5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:11.5px;font-weight:700;color:var(--blue-ink);background:var(--wash);border:1px solid var(--wash-deep);border-radius:999px;padding:5px 10px}
+.spoke{position:relative;height:100%;min-height:330px}
+.sp{position:absolute;width:190px;background:var(--bg-subtle);border:1px solid var(--border);border-radius:10px;padding:9px 12px;text-align:center}
+.sp b{display:block;font-size:13px;color:var(--ink)}
+.sp span{display:block;font-size:11px;color:var(--muted);margin-top:2px;line-height:1.4}
+.sp.c{left:50%;top:50%;transform:translate(-50%,-50%);width:150px;background:var(--blue);border-color:var(--blue);box-shadow:var(--shadow-l,var(--shadow))}
+.sp.c b{color:#fff;font-size:15px}.sp.c span{color:#DCE7FE}
+.sp.p1{left:0;top:0}.sp.p2{left:50%;transform:translateX(-50%);top:0}.sp.p3{right:0;top:0}
+.sp.p4{left:0;bottom:0}.sp.p5{left:50%;transform:translateX(-50%);bottom:0}.sp.p6{right:0;bottom:0}
+.spoke::before{content:"";position:absolute;left:50%;top:14%;bottom:14%;width:2px;background:var(--wash-deep);transform:translateX(-50%)}
+.spoke::after{content:"";position:absolute;top:50%;left:12%;right:12%;height:2px;background:var(--wash-deep);transform:translateY(-50%)}
+.spark{display:flex;align-items:flex-end;gap:3px;height:120px;padding-top:6px}
+.spark i{flex:1;background:var(--blue);border-radius:3px 3px 0 0;opacity:.85}
+.spark i:first-child{background:var(--ink);opacity:1}
+.spark-ax{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:4px}
+.iss{display:flex;flex-direction:column;gap:8px}
+.iss div{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:start;padding:8px 10px;background:var(--bg-subtle);border-radius:8px}
+.iss b{font-size:12.5px;color:var(--ink);line-height:1.4}
+.iss span{font-size:11.5px;color:var(--muted);line-height:1.45}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -261,23 +351,20 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 컴포즈커피 × 아이러브커피 키우기 · 개요</div>
       <h2 class="s-title">4월 제안부터 10월 종료까지 — <span class="hl">81일</span>의 콜라보 운영</h2>
-      <p class="s-sub">2025.04 제안 → 06.20 확정 → 08.12 사전예약 → 09.23 런칭 → 10.02 콜라보 음료 → 10.31 종료 · 사전예약 포함 81일</p>
     </header>
     <div class="s-body">
       <div class="tline a-up d1">
-        <div class="tl-i"><b>04.09</b><span>커피 브랜드 4곳 제안</span></div><div class="tl-i"><b>06.13</b><span>컴포즈 첫 회신</span></div>
-        <div class="tl-i"><b>06.20</b><span>협업 확정 (7일)</span></div>
-        <div class="tl-i"><b>07~08</b><span>대면 3회 · 앱사 회의 2회</span></div>
-        <div class="tl-i"><b>08.12</b><span>사전예약 시작</span></div>
-        <div class="tl-i"><b>09.03</b><span>매장 디지털 송출</span></div>
-        <div class="tl-i"><b>09.23</b><span>런칭 · GPS 투어</span></div>
-        <div class="tl-i"><b>10.02</b><span>콜라보 음료 판매</span></div>
-        <div class="tl-i"><b>10.31</b><span>종료</span></div>
+        <div class="tl-i"><b>04.09</b><span>커피 브랜드 4곳 제안</span></div><div class="tl-i"><b>06.13</b><span>컴포즈 회신</span></div><div class="tl-i"><b>06.20</b><span>협업 확정</span></div><div class="tl-i"><b>07~08</b><span>미팅 3회 · 앱사 2회</span></div><div class="tl-i"><b>08.12</b><span>사전예약</span></div><div class="tl-i"><b>09.03</b><span>매장 디지털 송출</span></div><div class="tl-i"><b>09.23</b><span>런칭 · GPS 투어</span></div><div class="tl-i"><b>10.02</b><span>콜라보 음료</span></div><div class="tl-i"><b>10.31</b><span>종료</span></div>
       </div>
-      <div class="grid3">
-        <div class="card fc a-up d2"><div class="tag">서비스 맥락</div><h4>IP 리부트 신작의 첫 달 NRU 40만이 목표</h4><p>'아이러브커피'(누적 1,000만 DL) IP를 방치형 RPG로 재해석한 신작. 다른 게임에 없는 위치기반(GPS) 소셜 기능이 차별점이었습니다.</p></div>
-        <div class="card fc a-up d3"><div class="tag">역할 · 팀</div><h4>사업 PM — 기획부터 컴포즈 실무 창구까지</h4><p>브랜드 선정·제안서·시뮬레이션·이벤트 기획, 7월 중순부터 컴포즈 담당자와 1:1 실무 협의, 홍보물 10종·협약서·매장 데이터·라이브 이슈 대응. 초기 제안과 1·2차 미팅은 사업팀장 주도.</p></div>
-        <div class="card fc a-up d4"><div class="tag">함께 움직인 조직</div><h4>내부 4개 팀 + 외부 5개 사</h4><p>개발·디자인·운영/CS·마케팅 대행 / 컴포즈 마케팅팀, 컴포즈 앱 개발사, 기프티콘 발행사, 물류·인쇄 업체.</p></div>
+      <div class="stat4 a-up d2">
+        <div class="stat"><div class="l">회신 → 협업 확정</div><div class="v dsp">7일</div></div>
+        <div class="stat"><div class="l">노출 매장 (홍보물 출고)</div><div class="v dsp">2,957개</div></div>
+        <div class="stat"><div class="l">이벤트 3종 · 홍보물 규격</div><div class="v dsp">3종 · 10종</div></div>
+        <div class="stat"><div class="l">함께 움직인 조직</div><div class="v dsp">내부 4 · 외부 5</div></div>
+      </div>
+      <div class="grid2 a-up d3">
+        <div class="card fc"><div class="tag">서비스 맥락</div><h4>IP 리부트 신작, 첫 달 NRU 40만이 목표</h4><p>'아이러브커피'(누적 1,000만 DL)를 방치형 RPG로 재해석. 위치기반(GPS) 소셜 기능이 다른 게임에 없는 차별점.</p></div>
+        <div class="card fc"><div class="tag">내 역할</div><h4>기획 → 컴포즈 실무 창구 → 라이브 대응</h4><p>브랜드 선정·제안서·시뮬레이션·이벤트 기획. 7월 중순부터 컴포즈 담당자와 1:1로 홍보물·음료·쿠폰·계약·데이터·이슈를 맡음. 초기 제안과 1·2차 미팅은 사업팀장.</p></div>
       </div>
     </div>
   </section>
@@ -286,21 +373,30 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <section class="slide" id="slide-5" data-n="5">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 문제 정의 · 목표</div>
-      <h2 class="s-title">UA만으로는 예산의 <span class="hl">1.4배</span>가 필요했습니다</h2>
+      <h2 class="s-title">UA만으로 40만 명을 채우면 예산의 <span class="hl">1.4배</span></h2>
       <p class="s-sub">"유료 광고에 기대지 않고, 유저가 스스로 찾아오는 확산 구조를 런칭 전에 만들어야 한다"</p>
     </header>
     <div class="s-body">
       <div class="grid2 fill">
-        <div class="card fbox a-up d1"><h5>문제 정의</h5><ul>
-          <li><b>현상</b> — 1년 목표 매출을 달성하려면 사전예약과 첫 달에 NRU 40만 명이 필요했습니다. UA만으로 채우면 배정 예산을 크게 넘었습니다.</li>
-          <li><b>근거</b> — 직전작 UA 성과(Non-Organic NRU 2.6만, 평균 CPI)로 40만 명 모객 비용을 산출하니 배정 예산의 약 1.4배.</li>
-          <li><b>왜 중요한가</b> — 메인 DAU는 2030 여성, 결제 코어는 2030 남성으로 갈려 UA만으로는 타깃과 ROAS가 함께 어긋납니다. 브랜드 인지 없이 UA를 늘리면 비용만 커지는 구조였습니다.</li>
-        </ul></div>
-        <div class="card fbox res a-up d2"><h5>목표 · 성공 기준</h5><ul>
-          <li><b>정량</b> — 총 NRU 40만 명을 UA 단독 대비 낮은 예산으로 확보. 브랜딩·바이럴로 채울 몫을 별도 계획으로.</li>
-          <li><b>정성</b> — 런칭 전 오프라인에서 게임 이름을 반복 노출해 "인식 → 각인 → 실전환"이 끊기지 않는 흐름.</li>
-          <li><b>성공 기준</b> — 사전예약 순 등록 수, 콜라보 이벤트 참여자 수, 기프티콘 사용률, 런칭 후 GPS 매장 방문 참여. 기프티콘 유입 유저의 6~7% 이상을 핵심 콘텐츠 이후까지 잔존시키는 것을 내부 기준으로.</li>
-        </ul></div>
+        <div class="card ig a-up d1">
+          <div class="ig-h">문제 — 필요 예산 vs 배정 예산</div>
+          <div class="hbar"><div class="hb-l">UA만으로 NRU 40만</div><div class="hb-t"><div class="hb-f warn" style="width:100%"></div></div><div class="hb-v">1.4배</div></div>
+          <div class="hbar"><div class="hb-l">배정 예산</div><div class="hb-t"><div class="hb-f" style="width:71%"></div></div><div class="hb-v">1.0</div></div>
+          <p class="ig-n">직전작 UA 성과(Non-Organic NRU 2.6만·평균 CPI)로 산출. 메인 DAU는 2030 여성, 결제 코어는 2030 남성이라 UA만으로는 타깃과 ROAS가 함께 어긋납니다.</p>
+        </div>
+        <div class="card ig a-up d2">
+          <div class="ig-h">목표 — 끊기지 않는 세 단계</div>
+          <div class="chev">
+            <div class="ch"><b>인식</b><span>매장·앱·SNS에서 반복 노출</span></div>
+            <div class="ch"><b>각인</b><span>사전예약 + 기프티콘</span></div>
+            <div class="ch"><b>실전환</b><span>GPS 매장 방문 · 음료 구매</span></div>
+          </div>
+          <div class="kv3">
+            <div><b>NRU 40만</b><span>UA 단독 대비 낮은 예산으로</span></div>
+            <div><b>참여 · 사용률</b><span>사전예약 순등록, 이벤트 참여, 기프티콘 사용률</span></div>
+            <div><b>잔존 6~7%+</b><span>기프티콘 유입 유저의 핵심 콘텐츠 이후 잔존</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -309,14 +405,38 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <section class="slide" id="slide-6" data-n="6">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 분석</div>
-      <h2 class="s-title">왜 컴포즈였나 — <span class="hl">세 가지 기준</span>과 겹치지 않는 타깃</h2>
-      <p class="s-sub">상대가 받을 가치를 먼저 숫자로 계산해 제안했고, 첫 접촉부터 확정까지 7일이 걸렸습니다</p>
+      <h2 class="s-title">왜 컴포즈였나 — 4곳에 제안, <span class="hl">세 기준</span>으로 압축</h2>
     </header>
     <div class="s-body">
-      <div class="grid3 fill">
-        <div class="card fc a-up d1"><div class="tag">① 후보 브랜드 탐색</div><h4>매장 수 상위 브랜드 4곳에 제안, 세 기준으로 압축</h4><p>4/9 메가커피·컴포즈·스타벅스·투썸플레이스에 협업을 요청하고, 1) 저가형 — 구매 부담이 낮아 '음료 → 게임 보상' 전환이 쉬움 2) 매장 수 — GPS와 결합할 접점 3) 기존 콜라보 밀도 — 많으면 우리 제안이 묻힘, 세 기준으로 우선순위를 정했습니다.</p><div class="r">매장 수 2위 컴포즈(<b class="n">2,901개</b>, 1위 메가 3,718)가 세 기준을 모두 충족 · 앱 가입자 <b class="n">1,758만</b> · 8월 모델 프로모션 시기</div></div>
-        <div class="card fc a-up d2"><div class="tag">② 타깃 겹침</div><h4>겹치지 않으면서 인접한 두 고객층</h4><p>컴포즈 고객은 2030 55%·여성 69%. 게임의 결제 코어는 3040 남성, 꾸미기·수집을 즐기는 2050 여성은 커피를 마시지 않아도 게임 유저. 각자 상대의 새 고객층을 얻는 구조가 가능했습니다.</p><div class="r">제안 논리 — "컴포즈는 게임 유저에게 인식과 구매력을, 우리는 방문자에게 브랜드 노출을 얻는다"</div></div>
-        <div class="card fc a-up d3"><div class="tag">③ 기대효과 시뮬레이션</div><h4>상대가 받을 가치를 먼저 계산</h4><p>매장 방문자 인지율 70%·유동 인구 인지율 2% 가정으로 월 약 2,230만 회 인지 노출, 리텐션 곡선(D0 60% → D7 20%)으로 인게임 매장 노출 D+7 누적 약 150만 회를 산출해 제안서에 넣었습니다.</p><div class="r">4/9 제안 → 6/13 컴포즈 회신 → 6/17 미팅·시뮬 전달 → <b class="n">6/20 협업 확정</b></div></div>
+      <div class="grid3 fill" style="grid-template-columns:1.25fr 1fr 1fr">
+        <div class="card ig a-up d1">
+          <div class="ig-h">① 후보 브랜드 × 세 기준 (4/9 협업 요청)</div>
+          <table class="mx">
+            <tr><th>브랜드</th><th>매장 수</th><th>저가형</th><th>매장 수</th><th>콜라보 밀도 낮음</th></tr>
+            <tr class="on"><td>컴포즈</td><td><span>2,901</span><i style="width:55px"></i></td><td>●</td><td>●</td><td>●</td></tr>
+            <tr><td>메가커피</td><td><span>3,718</span><i style="width:70px"></i></td><td>●</td><td>●</td><td>○</td></tr>
+            <tr><td>스타벅스</td><td><span>2,009</span><i style="width:38px"></i></td><td>○</td><td>●</td><td>○</td></tr>
+            <tr><td>투썸플레이스</td><td><span>1,670</span><i style="width:31px"></i></td><td>○</td><td>△</td><td>△</td></tr>
+          </table>
+          <p class="ig-n">앱 가입자 1,758만 · 8월 모델 프로모션 시기와 겹치는 타이밍도 컴포즈에 유리</p>
+        </div>
+        <div class="card ig a-up d2">
+          <div class="ig-h">② 겹치지 않고 인접한 타깃</div>
+          <div class="venn">
+            <div class="vc a"><b>컴포즈 고객</b><span>2030 55%<br>여성 69%</span></div>
+            <div class="vc b"><b>게임 결제 코어</b><span>3040 남성</span></div>
+            <div class="vm">꾸미기·수집<br>2050 여성</div>
+          </div>
+          <p class="ig-n">서로 상대의 새 고객층을 얻는 구조. "컴포즈는 인식과 구매력을, 우리는 노출을"</p>
+        </div>
+        <div class="card ig a-up d3">
+          <div class="ig-h">③ 상대가 받을 가치를 먼저 계산</div>
+          <div class="kv3 v">
+            <div><b>2,230만 회/월</b><span>매장 방문자 인지율 70%·유동 인구 2% 가정</span></div>
+            <div><b>150만 회</b><span>D+7 누적 인게임 매장 노출 (D0 60% → D7 20%)</span></div>
+          </div>
+          <div class="mini-tl"><span>4/9 제안</span><i></i><span>6/13 회신</span><i></i><span>6/17 미팅·시뮬</span><i></i><b>6/20 확정</b></div>
+        </div>
       </div>
     </div>
   </section>
@@ -329,12 +449,12 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </header>
     <div class="s-body">
       <div class="jgrid fill">
-        <div class="card jc a-up d1"><div class="jn">01</div><h4>굿즈 콜라보가 아니라 위치기반 상호작용을 축으로</h4><p>캐릭터 음료·스킨 판매(A) vs 매장 방문 자체를 게임 콘텐츠로(B). GPS는 우리만 줄 수 있는 차별점이고, 방문이 보상으로 이어져야 컴포즈 매출 기여가 생깁니다. A는 컴포즈가 이미 여러 번 해 본 방식.</p></div>
-        <div class="card jc a-up d1"><div class="jn">02</div><h4>사전예약 6주 + 라이브 4주를 한 흐름으로, 지류는 런칭에만</h4><p>기프티콘으로 등록을 모으고 같은 유저가 매장을 방문하게 연결. 프로모션 전 2주는 컴포즈 없이 돌려 효과를 분리 측정. 지류 포스터는 발주까지 4주라 사전예약은 디지털만.</p></div>
-        <div class="card jc a-up d2"><div class="jn">03</div><h4>상대가 망설인 MG와 리소스를 우리가 떠안기</h4><p>홍보물 10종 전량 내부 제작, 기프티콘 선구매, 인게임 단독 노출을 제시하고 대신 앱·홈페이지·SNS·전국 매장 노출을 받았습니다. 상대의 리스크를 흡수하고 우리가 가장 필요한 것을 받는 교환.</p></div>
-        <div class="card jc a-up d2"><div class="jn">04</div><h4>프리퀀시 시기를 10월 말 → 10월 초로</h4><p>10월 말이면 런칭 마케팅 예산이 소진돼 UA와 맞물리지 않습니다. 매장 전환 효과를 근거로 설득하고, 앱 메인 노출을 동시에 못 받는 조건은 수용해 10/2 시작으로 합의.</p></div>
-        <div class="card jc a-up d3"><div class="jn">05</div><h4>스탬프를 쿠폰으로, 지급 로직은 3·4·1</h4><p>컴포즈 앱 개발 부담을 줄이려 난수 쿠폰 CSV 100만 장을 우리가 넘기는 방식으로 변경. 1~9잔 3장, 10잔째 4장(도감 31종 완성), 이후 1장. 상대의 랜덤 지급안은 전자상거래법 확률 표기 부담을 근거로 반박.</p></div>
-        <div class="card jc a-up d3"><div class="jn">06</div><h4>라이브 중 확률·수량을 지표 보며 조정</h4><p>사전예약 기프티콘은 추첨 → 100% 지급, 일일 상한은 마케팅 집행량에 맞춰 매일 조정. GPS 투어는 참여 대비 당첨률(0.1%)이 낮아 10%로 올려 "쿠폰 → 매장 → 게임" 순환을 만들었습니다. 운영툴에서 총량을 바꿀 수 있게 미리 세팅해 둔 덕분.</p></div>
+        <div class="card jc a-up d1"><div class="jtop"><span class="jn">01</span><span class="jtag">차별화 판단</span></div><h4>굿즈 콜라보가 아니라 <em>위치기반 상호작용</em>을 축으로</h4><div class="ab"><span class="x">A 캐릭터 음료·스킨 판매</span><span class="o">B 매장 방문 자체를 게임 콘텐츠로</span></div><p>GPS는 우리만 줄 수 있는 차별점, 방문이 보상으로 이어져야 컴포즈 매출 기여가 생김</p></div>
+        <div class="card jc a-up d1"><div class="jtop"><span class="jn">02</span><span class="jtag">일정 리스크 관리</span></div><h4>사전예약 6주 + 라이브 4주, <em>지류는 런칭에만</em></h4><div class="ab"><span class="x">A 런칭 후 4주만</span><span class="o">B 8주 연속 + 사전예약은 디지털만</span></div><p>지류 포스터는 발주까지 4주. 프로모션 전 2주는 컴포즈 없이 돌려 효과 분리 측정</p></div>
+        <div class="card jc a-up d2"><div class="jtop"><span class="jn">03</span><span class="jtag">협상 · 교환 설계</span></div><h4>상대가 망설인 <em>MG와 리소스</em>를 우리가 떠안기</h4><div class="ab"><span class="o">우리: 홍보물 10종 제작 · 기프티콘 선구매 · 단독 노출</span><span class="o">받은 것: 앱·홈페이지·SNS·전국 매장 노출</span></div><p>상대의 리스크를 흡수하고 우리가 가장 필요한 것을 받는 교환</p></div>
+        <div class="card jc a-up d2"><div class="jtop"><span class="jn">04</span><span class="jtag">우선순위 판단</span></div><h4>프리퀀시 시기를 <em>10월 말 → 10월 초</em>로</h4><div class="ab"><span class="x">10월 말: 마케팅 예산 소진 후</span><span class="o">10월 2일: UA·매장 전환과 맞물림</span></div><p>앱 메인 노출을 동시에 못 받는 조건은 수용, 추석 연휴를 피해 날짜 확정</p></div>
+        <div class="card jc a-up d3"><div class="jtop"><span class="jn">05</span><span class="jtag">이해관계자 조율</span></div><h4>스탬프를 쿠폰으로, 지급 로직은 <em>3 · 4 · 1</em></h4><div class="ab"><span class="x">상대안: 랜덤 지급</span><span class="o">1~9잔 3장 · 10잔 4장(도감 완성) · 이후 1장</span></div><p>쿠폰 CSV 100만 장을 우리가 넘겨 상대 개발 부담 최소화. 랜덤안은 확률 표기 의무를 근거로 반박</p></div>
+        <div class="card jc a-up d3"><div class="jtop"><span class="jn">06</span><span class="jtag">지표 기반 의사결정</span></div><h4>라이브 중 <em>확률·수량</em>을 지표 보며 조정</h4><div class="ab"><span class="x">GPS 기프티콘 당첨률 0.1%</span><span class="o">10%로 상향 → 쿠폰 → 매장 → 게임 순환</span></div><p>사전예약은 추첨 → 100% 지급, 일일 상한은 집행량에 맞춰 매일 조정. 운영툴에서 총량을 바꾸게 미리 세팅</p></div>
       </div>
     </div>
   </section>
@@ -343,17 +463,38 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <section class="slide" id="slide-8" data-n="8">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 실행</div>
-      <h2 class="s-title">사전예약 → GPS 투어 → 콜라보 음료, <span class="hl">이벤트 3종</span>으로 잇기</h2>
+      <h2 class="s-title">사전예약에서 매장까지, <span class="hl">한 바퀴 도는 순환</span>으로 설계</h2>
     </header>
     <div class="s-body">
-      <div class="grid3 fill">
-        <div class="card fc a-up d1"><div class="tag">사전등록 기프티콘 · 08.12~09.22</div><h4>등록 → SNS 미션 → 익일 지급</h4><p>휴대폰 등록 → 인스타 팔로우·친구 멘션 → 마켓 사전등록 인증 → 익일 일괄 지급. 보상은 코어층(직원 뽑기권·가속권)과 감성층(인테리어 뽑기권·염료)으로 나누고, 퀘스트 완료까지 해야 의상 세트가 완성되게 해 바이럴 단계까지 유도.</p></div>
-        <div class="card fc a-up d2"><div class="tag">걸어서 컴포즈 투어 · 09.23~10.31 · GPS</div><h4>매장 근처에서 행운 상자 획득</h4><p>월드맵 해금 유저가 컴포즈 매장 근처로 이동하면 상자 획득. 황금 원두(이벤트 재화)와 아메리카노 기프티콘, 일일 10개·매장당 1개 제한으로 매일 다른 매장을 돌게 설계. 원두는 이벤트 상점에서 교환, 한정 테두리 지급.</p></div>
-        <div class="card fc a-up d3"><div class="tag">내 마음대로 플레이 컴포즈 · 10.02~10.31</div><h4>콜라보 음료 3종 → 쿠폰 → 도감 31종</h4><p>커피밀크쉐이크·돌체라떼·더블초코라떼(아이스) 구매 → 컴포즈 앱에서 쿠폰 발급 → 게임 입력 → 컴포즈 테마 가구·코스튬 도감 31종.</p></div>
+      <div class="card ig a-up d1">
+        <div class="loop">
+          <div class="ln"><b>사전등록</b><span>08.12~09.22<br>SNS 미션 → 기프티콘</span></div><i></i>
+          <div class="ln"><b>런칭</b><span>09.23<br>앱·홈 배너 · 매장 DID</span></div><i></i>
+          <div class="ln hi"><b>걸어서 컴포즈 투어</b><span>GPS 매장 근처 → 행운 상자<br>일 10개 · 매장당 1개</span></div><i></i>
+          <div class="ln"><b>콜라보 음료 구매</b><span>10.02~ 커피밀크쉐이크 · 돌체라떼 · 더블초코라떼</span></div><i></i>
+          <div class="ln"><b>쿠폰 → 게임 복귀</b><span>컴포즈 앱 발급 → 게임 입력<br>가구·코스튬 도감 31종</span></div>
+        </div>
+        <div class="loop-back">기프티콘 사용 → 다시 매장 방문 → 다시 게임</div>
       </div>
       <div class="grid2">
-        <div class="insight a-up d4" style="text-align:left"><strong>노출 채널</strong> — 컴포즈 앱 배너 4종·웹 2종·매장 디지털 4종 + 런칭 지류 포스터, 인스타그램 스토리·하이라이트, X · SNS는 8/26 Coming Soon → 9/23 콜라보 → 10/2 음료 3단계 게시</div>
-        <div class="insight a-up d4" style="text-align:left"><strong>기프티콘 운영</strong> — 초도 5만 장 선구매, 런칭 초반 14일에 집중되도록 일일 상한을 8,967 → 2,179 → 864 → 370장으로 체감 설계, 소진 후 인게임 재화로 자동 대체</div>
+        <div class="card ig a-up d2">
+          <div class="ig-h">기프티콘 일일 상한 — 런칭 초반 14일에 집중</div>
+          <div class="vbars">
+            <div><i style="height:100%"></i><b>8,967</b><span>D1</span></div>
+            <div><i style="height:24%"></i><b>2,179</b><span>D2</span></div>
+            <div><i style="height:10%"></i><b>864</b><span>D3~15</span></div>
+            <div><i style="height:5%"></i><b>435</b><span>D16</span></div>
+            <div><i style="height:4%"></i><b>370</b><span>D17~30</span></div>
+          </div>
+          <p class="ig-n">초도 5만 장 선구매 · 소진 후 인게임 재화로 자동 대체</p>
+        </div>
+        <div class="card ig a-up d3">
+          <div class="ig-h">노출 채널 — 컴포즈 쪽 구좌</div>
+          <div class="chips">
+            <span>앱 히어로 배너</span><span>앱 새소식</span><span>앱 기프트샵</span><span>앱 제휴</span><span>웹 배너 2종</span><span>키오스크</span><span>듀얼모니터</span><span>DID 영상</span><span>지류 포스터</span><span>인스타 스토리·하이라이트</span><span>X</span>
+          </div>
+          <p class="ig-n">SNS 3단계 게시: 8/26 Coming Soon → 9/23 콜라보 → 10/2 음료</p>
+        </div>
       </div>
     </div>
   </section>
@@ -362,27 +503,29 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <section class="slide" id="slide-9" data-n="9">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 협업</div>
-      <h2 class="s-title">누구와 무엇을 조율했는가 — <span class="hl">합의는 메일로 고정</span></h2>
+      <h2 class="s-title">내부 4개 팀 · 외부 5개 사 — <span class="hl">합의는 메일로 고정</span></h2>
     </header>
     <div class="s-body">
-      <div class="split fill" style="grid-template-columns:1.15fr 1fr">
-        <div class="card fbox a-up d1"><h5>컴포즈와의 협의</h5><ul>
-          <li><b>미팅</b> — 대면 3회(6/17 방향 · 7/1 세부 · 8/7 음료·스탬프) + 앱 개발사 화상 2회. 미팅 뒤 결정 사항을 우리가 먼저 메일로 정리해 합의를 문서로 고정.</li>
-          <li><b>상대 요구</b> — 사전예약 8월 말로 연기, 포스터에 CS 경로·쿠폰 방식·시작일 명시, 로고 가이드, 홍보물 3~4주 전 전달, 우리 SNS 사전 확인, 비용 부담 명문화. 모두 수용하되 기간이 밀리면 프로모션도 연장하는 조건을 붙임.</li>
-          <li><b>음료 선정</b> — 컴보 3종 제안 → 재료 수급으로 단일 요청 → 6종 재제안 → 3종 확정 → 9/11 판매량 기준 2종 교체 통보 → 당일 포스터 수정·앱사 일정 재확인.</li>
-          <li><b>계약</b> — 제작비 처리를 위해 업무 협약서를 먼저 제안해 초안 작성, 법무 검토에 맞춰 조항 수정 후 날인.</li>
-          <li><b>매장 데이터</b> — 매장명·주소·위경도·고유 ID 요청, 신규·폐점 반영을 위해 세 차례 갱신본 수령.</li>
-        </ul></div>
-        <div class="col">
-          <div class="card fbox a-up d2"><h5>내부</h5><ul>
-            <li><b>개발</b> — GPS POI·상자·일일 제한, 쿠폰 발급, 기프티콘 총량을 운영툴에서 조정하도록 세팅. 매장 좌표는 홈페이지 데이터 기준 + 네이버 지도 대조로 합의.</li>
-            <li><b>디자인</b> — 홍보물 10종·포스터·영상·썸네일·콜라보 가구·코스튬 전량 제작</li>
-            <li><b>운영/CS</b> — 카카오톡 채널, 점주 공지문·컴포즈 CS 답변서·유의사항 3종, 쿠폰 미지급 건별 절차</li>
-          </ul></div>
-          <div class="card fbox a-up d3"><h5>외부</h5><ul>
-            <li><b>컴포즈 앱 개발사</b> — 쿠폰 발급 페이지·CSV 100만 장 연동·앱 업데이트</li>
-            <li><b>기프티콘 발행사</b> — 발행 API·발급 기록 / <b>물류·인쇄</b> — 포스터 제작, 제주 제외 2,957개 매장 출고</li>
-          </ul></div>
+      <div class="grid2 fill" style="grid-template-columns:1.1fr 1fr">
+        <div class="card ig a-up d1">
+          <div class="spoke">
+            <div class="sp c"><b>사업 PM</b><span>컴포즈 실무 창구</span></div>
+            <div class="sp p1"><b>컴포즈 마케팅</b><span>노출·메뉴·매장 데이터</span></div>
+            <div class="sp p2"><b>컴포즈 앱 개발사</b><span>쿠폰 발급 · CSV 100만</span></div>
+            <div class="sp p3"><b>기프티콘 발행사 · 물류 · 인쇄</b><span>발행 API · 2,957개 매장 출고</span></div>
+            <div class="sp p4"><b>개발팀</b><span>GPS POI · 쿠폰 · 운영툴 총량</span></div>
+            <div class="sp p5"><b>디자인팀</b><span>홍보물 10종 · 영상 · 도감 31종</span></div>
+            <div class="sp p6"><b>운영/CS · 마케팅</b><span>점주 공지 · CS 답변서 · SNS</span></div>
+          </div>
+        </div>
+        <div class="card ig a-up d2">
+          <div class="ig-h">협의 방식</div>
+          <div class="kv3 v tight">
+            <div><b>미팅 3 + 2회</b><span>대면 6/17 · 7/1 · 8/7, 앱 개발사 화상 8/13 · 8/20 — 끝나면 결정 사항을 우리가 먼저 메일로 정리</span></div>
+            <div><b>요구 6건 수용 + 역조건 1건</b><span>일정 연기·CS 경로·로고·리드타임·SNS 사전 확인·비용 명문화 ← 기간이 밀리면 프로모션도 연장</span></div>
+            <div><b>음료 3종 확정까지 4번</b><span>컴보 3종 → 단일 요청 → 6종 재제안 → 확정 → 판매량 기준 2종 교체를 당일 반영</span></div>
+            <div><b>계약·데이터</b><span>업무 협약서를 먼저 제안해 초안 작성 · 매장 데이터 4항목 요청, 갱신본 3회</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -392,28 +535,33 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <section class="slide" id="slide-10" data-n="10">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 결과 · 이슈 대응</div>
-      <h2 class="s-title">전국 3,000개 매장 · 참여 <span class="hl">14.6만 명</span> · GPS 투어 27.9만 회</h2>
+      <h2 class="s-title">참여 <span class="hl">14.6만 명</span> · GPS 투어 27.9만 회 · 매장 3,000개</h2>
     </header>
     <div class="s-body">
       <div class="stat4 a-up d1">
-        <div class="stat hi"><div class="l">매장 노출 (홍보물 출고 2,957개)</div><div class="v dsp">3,000개</div></div>
         <div class="stat hi"><div class="l">콜라보 이벤트 참여자 (고유)</div><div class="v dsp">14.6만 명</div></div>
-        <div class="stat hi"><div class="l">GPS 투어 참여 · 음료 미션</div><div class="v dsp">278,836회 · 49,807잔</div></div>
+        <div class="stat hi"><div class="l">GPS 투어 참여 · 음료 미션</div><div class="v dsp">27.9만 회 · 4.98만 잔</div></div>
         <div class="stat hi"><div class="l">기프티콘 누적 발급 · 사용률</div><div class="v dsp">33,464장 · 59%</div></div>
+        <div class="stat hi"><div class="l">사전예약 순 등록 (부스팅 제외)</div><div class="v dsp">15.3만 명</div></div>
       </div>
-      <div class="grid2 fill">
-        <div class="card fbox a-up d2"><h5>그 밖의 결과</h5><ul>
-          <li>사전예약 순 등록 <b>15.3만 명</b>(부스팅 제외) · 사전예약 기프티콘 지급 약 6,300장</li>
-          <li>컴포즈 앱 기준 콜라보 쿠폰 발급 코드 51,561건 · 앱 오더 음료 판매 11,333잔(매장 판매 제외)</li>
-          <li>컴포즈 일 매장 방문자 약 10만 명 기준, 81일간 게임 노출 약 810만 회(내부 추정, 중복 포함)</li>
-          <li>GPS 콘텐츠 이용을 콜라보 기간 내내 컴포즈 투어가 이끌었고, 종료 후 CI를 뺀 스킨 재판매를 컴포즈와 합의. 같은 구조로 후속 브랜드 제안서 템플릿 확보</li>
-        </ul></div>
-        <div class="card fbox a-up d3"><h5>이슈 → 대응</h5><ul>
-          <li><b>9/23 시작일 없는 포스터</b>로 유저가 10/2 전 매장 방문 → 날짜 수정본을 당일 전 구좌 전달·반영</li>
-          <li><b>10/2 품절 미해제</b> — 신메뉴가 POS 기본 '품절'이라 점주가 직접 해제해야 했음 → 오전 재안내 요청, 15:10 가맹점 전체 재공지, 유저 제보 매장 목록 3차례(11 → 17+지역 4 → 45+지역 4) 전달, 반경 3km 20개점 직접 확인, 사과·안내 공지 당일 게시</li>
-          <li><b>매장 위치 오차</b> — 컴포즈 엑셀·홈페이지·실제 지도가 서로 달라 GPS 판정 어긋남 → 홈페이지 데이터 + 네이버 지도 좌표로 갱신, POI 누락 매장 별도 관리, 신규·폐점 반영, 10/30 버그 수정</li>
-          <li><b>쿠폰 미지급</b> — 키오스크 복합결제·번호 불일치 → 운영팀과 건별 확인 절차</li>
-        </ul></div>
+      <div class="grid2 fill" style="grid-template-columns:1.15fr 1fr">
+        <div class="card ig a-up d2">
+          <div class="ig-h">컴포즈 앱 쿠폰 발급 코드 — 10/2~10/31 일별 (합계 51,561건)</div>
+          <div class="spark">
+            <i style="height:100%"></i><i style="height:75%"></i><i style="height:72%"></i><i style="height:63%"></i><i style="height:48%"></i><i style="height:57%"></i><i style="height:58%"></i><i style="height:51%"></i><i style="height:54%"></i><i style="height:56%"></i><i style="height:47%"></i><i style="height:50%"></i><i style="height:45%"></i><i style="height:45%"></i><i style="height:46%"></i><i style="height:36%"></i><i style="height:40%"></i><i style="height:37%"></i><i style="height:36%"></i><i style="height:35%"></i><i style="height:33%"></i><i style="height:35%"></i><i style="height:36%"></i><i style="height:30%"></i><i style="height:28%"></i><i style="height:31%"></i><i style="height:27%"></i><i style="height:32%"></i><i style="height:31%"></i><i style="height:29%"></i>
+          </div>
+          <div class="spark-ax"><span>10/2 첫날 3,784</span><span>10/31 1,089</span></div>
+          <p class="ig-n">앱 오더 콜라보 음료 11,333잔(매장 판매 제외) · 컴포즈 일 매장 방문자 약 10만 명 기준 81일간 노출 약 810만 회(내부 추정)</p>
+        </div>
+        <div class="card ig a-up d3">
+          <div class="ig-h">이슈 → 대응</div>
+          <div class="iss">
+            <div><b>9/23 시작일 없는 포스터</b><span>유저가 10/2 전 매장 방문 → 날짜 수정본 당일 전 구좌 반영</span></div>
+            <div><b>10/2 품절 미해제</b><span>POS 기본 '품절' → 오전 재안내, 15:10 전 가맹점 재공지, 제보 매장 3차 전달, 반경 3km 20개점 직접 확인</span></div>
+            <div><b>매장 위치 오차</b><span>엑셀·홈페이지·지도 불일치 → 홈페이지 데이터 + 네이버 좌표 갱신, 누락 매장 별도 관리</span></div>
+            <div><b>쿠폰 미지급</b><span>복합결제·번호 불일치 → 운영팀과 건별 확인 절차</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
