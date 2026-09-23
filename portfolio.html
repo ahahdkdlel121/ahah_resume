@@ -116,6 +116,21 @@ b.n{color:var(--blue);font-weight:800}
 .bul li b{color:var(--ink)}
 .lbl{font-size:11.5px;font-weight:800;color:var(--blue);letter-spacing:.06em;margin-bottom:8px}
 
+
+/* ---------- Case timeline & judgment grid ---------- */
+.tline{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;position:relative;padding-top:10px}
+.tline::before{content:"";position:absolute;left:4%;right:4%;top:15px;height:2px;background:var(--wash-deep)}
+.tl-i{text-align:center;position:relative}
+.tl-i::before{content:"";display:block;width:10px;height:10px;border-radius:50%;background:var(--blue);margin:0 auto 8px;border:2px solid #fff;box-shadow:0 0 0 2px var(--wash-deep)}
+.tl-i b{display:block;font-size:13px;color:var(--ink);font-weight:800}
+.tl-i span{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.4}
+.jgrid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:12px}
+.jc{padding:16px 18px;position:relative;display:flex;flex-direction:column}
+.jc .jn{font-size:11px;font-weight:800;color:var(--blue);letter-spacing:.14em}
+.jc h4{font-size:15px;font-weight:800;color:var(--ink);margin-top:5px;line-height:1.4}
+.jc p{font-size:12.5px;color:var(--muted);margin-top:8px;line-height:1.6}
+.fbox li b{color:var(--ink)}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -415,37 +430,170 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </div>
   </section>
 
-  <!-- ==================== 9 · Case 3 Partnership ==================== -->
+  <!-- ==================== C1 · 컴포즈 케이스 · 개요 ==================== -->
   <section class="slide" id="slide-9" data-n="9">
     <header class="s-head">
-      <div class="eyebrow">Case 03 · 파트너십</div>
-      <h2 class="s-title">세계관을 연결고리로 만든 <span class="hl">브랜드 콜라보와 OST</span></h2>
-      <p class="s-sub">단순 광고가 아니라 게임 세계관과 파트너를 연결하는 방식으로, 두 건의 외부 협업을 제안 단계부터 직접 성사</p>
+      <div class="eyebrow">Case 01 · 컴포즈커피 × 아이러브커피 키우기 · 개요</div>
+      <h2 class="s-title">유료 광고 대신, <span class="hl">전국 3,000개 매장</span>을 유입 채널로 만든 콜라보</h2>
+      <p class="s-sub">2025.06 제안 → 06.20 확정 → 08.12 사전예약 → 09.23 런칭 → 10.02 콜라보 음료 → 10.31 종료 · 사전예약 포함 81일</p>
     </header>
     <div class="s-body">
-      <div class="split fill">
-        <div class="photo a-up d1">
-          <img src="image/compose.jpg" alt="컴포즈커피 × 아이러브커피 키우기 콜라보 현장">
-          <div class="cap">컴포즈커피 × 아이러브커피 키우기 — 전국 매장 키오스크·DID·메뉴판 적용</div>
-        </div>
+      <div class="tline a-up d1">
+        <div class="tl-i"><b>06.13</b><span>제안 첫 회신</span></div>
+        <div class="tl-i"><b>06.20</b><span>협업 확정 (7일)</span></div>
+        <div class="tl-i"><b>07~08</b><span>대면 3회 · 앱사 회의 2회</span></div>
+        <div class="tl-i"><b>08.12</b><span>사전예약 시작</span></div>
+        <div class="tl-i"><b>09.03</b><span>매장 디지털 송출</span></div>
+        <div class="tl-i"><b>09.23</b><span>런칭 · GPS 투어</span></div>
+        <div class="tl-i"><b>10.02</b><span>콜라보 음료 판매</span></div>
+        <div class="tl-i"><b>10.31</b><span>종료</span></div>
+      </div>
+      <div class="grid3">
+        <div class="card fc a-up d2"><div class="tag">서비스 맥락</div><h4>IP 리부트 신작의 첫 달 NRU 40만이 목표</h4><p>'아이러브커피'(누적 1,000만 DL) IP를 방치형 RPG로 재해석한 신작. 다른 게임에 없는 위치기반(GPS) 소셜 기능이 차별점이었습니다.</p></div>
+        <div class="card fc a-up d3"><div class="tag">역할 · 팀</div><h4>사업 PM — 기획부터 컴포즈 실무 창구까지</h4><p>브랜드 선정·제안서·시뮬레이션·이벤트 기획, 7월 중순부터 컴포즈 담당자와 1:1 실무 협의, 홍보물 10종·협약서·매장 데이터·라이브 이슈 대응. 초기 제안과 1·2차 미팅은 사업팀장 주도.</p></div>
+        <div class="card fc a-up d4"><div class="tag">함께 움직인 조직</div><h4>내부 4개 팀 + 외부 5개 사</h4><p>개발·디자인·운영/CS·마케팅 대행 / 컴포즈 마케팅팀, 컴포즈 앱 개발사, 기프티콘 발행사, 물류·인쇄 업체.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== C2 · 문제 정의 · 목표 ==================== -->
+  <section class="slide" id="slide-10" data-n="10">
+    <header class="s-head">
+      <div class="eyebrow">Case 01 · 문제 정의 · 목표</div>
+      <h2 class="s-title">UA만으로는 예산의 <span class="hl">1.4배</span>가 필요했습니다</h2>
+      <p class="s-sub">"유료 광고에 기대지 않고, 유저가 스스로 찾아오는 확산 구조를 런칭 전에 만들어야 한다"</p>
+    </header>
+    <div class="s-body">
+      <div class="grid2 fill">
+        <div class="card fbox a-up d1"><h5>문제 정의</h5><ul>
+          <li><b>현상</b> — 1년 목표 매출을 달성하려면 사전예약과 첫 달에 NRU 40만 명이 필요했습니다. UA만으로 채우면 배정 예산을 크게 넘었습니다.</li>
+          <li><b>근거</b> — 직전작 UA 성과(Non-Organic NRU 2.6만, 평균 CPI)로 40만 명 모객 비용을 산출하니 배정 예산의 약 1.4배.</li>
+          <li><b>왜 중요한가</b> — 메인 DAU는 2030 여성, 결제 코어는 2030 남성으로 갈려 UA만으로는 타깃과 ROAS가 함께 어긋납니다. 브랜드 인지 없이 UA를 늘리면 비용만 커지는 구조였습니다.</li>
+        </ul></div>
+        <div class="card fbox res a-up d2"><h5>목표 · 성공 기준</h5><ul>
+          <li><b>정량</b> — 총 NRU 40만 명을 UA 단독 대비 낮은 예산으로 확보. 브랜딩·바이럴로 채울 몫을 별도 계획으로.</li>
+          <li><b>정성</b> — 런칭 전 오프라인에서 게임 이름을 반복 노출해 "인식 → 각인 → 실전환"이 끊기지 않는 흐름.</li>
+          <li><b>성공 기준</b> — 사전예약 순 등록 수, 콜라보 이벤트 참여자 수, 기프티콘 사용률, 런칭 후 GPS 매장 방문 참여. 기프티콘 유입 유저의 6~7% 이상을 핵심 콘텐츠 이후까지 잔존시키는 것을 내부 기준으로.</li>
+        </ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== C3 · 분석 ==================== -->
+  <section class="slide" id="slide-11" data-n="11">
+    <header class="s-head">
+      <div class="eyebrow">Case 01 · 분석</div>
+      <h2 class="s-title">왜 컴포즈였나 — <span class="hl">세 가지 기준</span>과 겹치지 않는 타깃</h2>
+      <p class="s-sub">상대가 받을 가치를 먼저 숫자로 계산해 제안했고, 첫 접촉부터 확정까지 7일이 걸렸습니다</p>
+    </header>
+    <div class="s-body">
+      <div class="grid3 fill">
+        <div class="card fc a-up d1"><div class="tag">① 후보 브랜드 탐색</div><h4>국내 커피 프랜차이즈 순위 전체를 세 기준으로 비교</h4><p>1) 저가형 — 유저의 구매 부담이 낮아 '음료 → 게임 보상' 전환이 쉬움 2) 매장 수 — GPS와 결합할 접점의 수 3) 기존 콜라보 밀도 — 콜라보가 많은 곳은 우리 제안이 묻힘</p><div class="r">컴포즈: 가맹점 <b class="n">2,929개</b> · 앱 가입자 <b class="n">1,758만</b> · 8월 모델 프로모션 시기와 겹치는 타이밍</div></div>
+        <div class="card fc a-up d2"><div class="tag">② 타깃 겹침</div><h4>겹치지 않으면서 인접한 두 고객층</h4><p>컴포즈 고객은 2030 55%·여성 69%. 게임의 결제 코어는 3040 남성, 꾸미기·수집을 즐기는 2050 여성은 커피를 마시지 않아도 게임 유저. 각자 상대의 새 고객층을 얻는 구조가 가능했습니다.</p><div class="r">제안 논리 — "컴포즈는 게임 유저에게 인식과 구매력을, 우리는 방문자에게 브랜드 노출을 얻는다"</div></div>
+        <div class="card fc a-up d3"><div class="tag">③ 기대효과 시뮬레이션</div><h4>상대가 받을 가치를 먼저 계산</h4><p>매장 방문자 인지율 70%·유동 인구 인지율 2% 가정으로 월 약 2,230만 회 인지 노출, 리텐션 곡선(D0 60% → D7 20%)으로 인게임 매장 노출 D+7 누적 약 150만 회를 산출해 제안서에 넣었습니다.</p><div class="r">6/13 첫 회신 → 6/17 미팅·시뮬 전달 → <b class="n">6/20 협업 확정</b></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== C4 · 핵심 판단 ==================== -->
+  <section class="slide" id="slide-12" data-n="12">
+    <header class="s-head">
+      <div class="eyebrow">Case 01 · 핵심 판단</div>
+      <h2 class="s-title">선택지가 있었던 <span class="hl">여섯 번의 판단</span></h2>
+    </header>
+    <div class="s-body">
+      <div class="jgrid fill">
+        <div class="card jc a-up d1"><div class="jn">01</div><h4>굿즈 콜라보가 아니라 위치기반 상호작용을 축으로</h4><p>캐릭터 음료·스킨 판매(A) vs 매장 방문 자체를 게임 콘텐츠로(B). GPS는 우리만 줄 수 있는 차별점이고, 방문이 보상으로 이어져야 컴포즈 매출 기여가 생깁니다. A는 컴포즈가 이미 여러 번 해 본 방식.</p></div>
+        <div class="card jc a-up d1"><div class="jn">02</div><h4>사전예약 6주 + 라이브 4주를 한 흐름으로, 지류는 런칭에만</h4><p>기프티콘으로 등록을 모으고 같은 유저가 매장을 방문하게 연결. 프로모션 전 2주는 컴포즈 없이 돌려 효과를 분리 측정. 지류 포스터는 발주까지 4주라 사전예약은 디지털만.</p></div>
+        <div class="card jc a-up d2"><div class="jn">03</div><h4>상대가 망설인 MG와 리소스를 우리가 떠안기</h4><p>홍보물 10종 전량 내부 제작, 기프티콘 선구매, 인게임 단독 노출을 제시하고 대신 앱·홈페이지·SNS·전국 매장 노출을 받았습니다. 상대의 리스크를 흡수하고 우리가 가장 필요한 것을 받는 교환.</p></div>
+        <div class="card jc a-up d2"><div class="jn">04</div><h4>프리퀀시 시기를 10월 말 → 10월 초로</h4><p>10월 말이면 런칭 마케팅 예산이 소진돼 UA와 맞물리지 않습니다. 매장 전환 효과를 근거로 설득하고, 앱 메인 노출을 동시에 못 받는 조건은 수용해 10/2 시작으로 합의.</p></div>
+        <div class="card jc a-up d3"><div class="jn">05</div><h4>스탬프를 쿠폰으로, 지급 로직은 3·4·1</h4><p>컴포즈 앱 개발 부담을 줄이려 난수 쿠폰 CSV 100만 장을 우리가 넘기는 방식으로 변경. 1~9잔 3장, 10잔째 4장(도감 31종 완성), 이후 1장. 상대의 랜덤 지급안은 전자상거래법 확률 표기 부담을 근거로 반박.</p></div>
+        <div class="card jc a-up d3"><div class="jn">06</div><h4>라이브 중 확률·수량을 지표 보며 조정</h4><p>사전예약 기프티콘은 추첨 → 100% 지급, 일일 상한은 마케팅 집행량에 맞춰 매일 조정. GPS 투어는 참여 대비 당첨률(0.1%)이 낮아 10%로 올려 "쿠폰 → 매장 → 게임" 순환을 만들었습니다. 운영툴에서 총량을 바꿀 수 있게 미리 세팅해 둔 덕분.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== C5 · 실행 ==================== -->
+  <section class="slide" id="slide-13" data-n="13">
+    <header class="s-head">
+      <div class="eyebrow">Case 01 · 실행</div>
+      <h2 class="s-title">사전예약 → GPS 투어 → 콜라보 음료, <span class="hl">이벤트 3종</span>으로 잇기</h2>
+    </header>
+    <div class="s-body">
+      <div class="grid3 fill">
+        <div class="card fc a-up d1"><div class="tag">사전등록 기프티콘 · 08.12~09.22</div><h4>등록 → SNS 미션 → 익일 지급</h4><p>휴대폰 등록 → 인스타 팔로우·친구 멘션 → 마켓 사전등록 인증 → 익일 일괄 지급. 보상은 코어층(직원 뽑기권·가속권)과 감성층(인테리어 뽑기권·염료)으로 나누고, 퀘스트 완료까지 해야 의상 세트가 완성되게 해 바이럴 단계까지 유도.</p></div>
+        <div class="card fc a-up d2"><div class="tag">걸어서 컴포즈 투어 · 09.23~10.31 · GPS</div><h4>매장 근처에서 행운 상자 획득</h4><p>월드맵 해금 유저가 컴포즈 매장 근처로 이동하면 상자 획득. 황금 원두(이벤트 재화)와 아메리카노 기프티콘, 일일 10개·매장당 1개 제한으로 매일 다른 매장을 돌게 설계. 원두는 이벤트 상점에서 교환, 한정 테두리 지급.</p></div>
+        <div class="card fc a-up d3"><div class="tag">내 마음대로 플레이 컴포즈 · 10.02~10.31</div><h4>콜라보 음료 3종 → 쿠폰 → 도감 31종</h4><p>커피밀크쉐이크·돌체라떼·더블초코라떼(아이스) 구매 → 컴포즈 앱에서 쿠폰 발급 → 게임 입력 → 컴포즈 테마 가구·코스튬 도감 31종.</p></div>
+      </div>
+      <div class="grid2">
+        <div class="insight a-up d4" style="text-align:left"><strong>노출 채널</strong> — 컴포즈 앱 배너 4종·웹 2종·매장 디지털 4종 + 런칭 지류 포스터, 인스타그램 스토리·하이라이트, X · SNS는 8/26 Coming Soon → 9/23 콜라보 → 10/2 음료 3단계 게시</div>
+        <div class="insight a-up d4" style="text-align:left"><strong>기프티콘 운영</strong> — 초도 5만 장 선구매, 런칭 초반 14일에 집중되도록 일일 상한을 8,967 → 2,179 → 864 → 370장으로 체감 설계, 소진 후 인게임 재화로 자동 대체</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== C6 · 협업 ==================== -->
+  <section class="slide" id="slide-14" data-n="14">
+    <header class="s-head">
+      <div class="eyebrow">Case 01 · 협업</div>
+      <h2 class="s-title">누구와 무엇을 조율했는가 — <span class="hl">합의는 메일로 고정</span></h2>
+    </header>
+    <div class="s-body">
+      <div class="split fill" style="grid-template-columns:1.15fr 1fr">
+        <div class="card fbox a-up d1"><h5>컴포즈와의 협의</h5><ul>
+          <li><b>미팅</b> — 대면 3회(6/17 방향 · 7/1 세부 · 8/7 음료·스탬프) + 앱 개발사 화상 2회. 미팅 뒤 결정 사항을 우리가 먼저 메일로 정리해 합의를 문서로 고정.</li>
+          <li><b>상대 요구</b> — 사전예약 8월 말로 연기, 포스터에 CS 경로·쿠폰 방식·시작일 명시, 로고 가이드, 홍보물 3~4주 전 전달, 우리 SNS 사전 확인, 비용 부담 명문화. 모두 수용하되 기간이 밀리면 프로모션도 연장하는 조건을 붙임.</li>
+          <li><b>음료 선정</b> — 컴보 3종 제안 → 재료 수급으로 단일 요청 → 6종 재제안 → 3종 확정 → 9/11 판매량 기준 2종 교체 통보 → 당일 포스터 수정·앱사 일정 재확인.</li>
+          <li><b>계약</b> — 제작비 처리를 위해 업무 협약서를 먼저 제안해 초안 작성, 법무 검토에 맞춰 조항 수정 후 날인.</li>
+          <li><b>매장 데이터</b> — 매장명·주소·위경도·고유 ID 요청, 신규·폐점 반영을 위해 세 차례 갱신본 수령.</li>
+        </ul></div>
         <div class="col">
-          <div class="card fbox a-up d2"><h5>① 컴포즈커피 온·오프라인 콜라보 · 2025.08~10</h5><ul>
-            <li><b>탐색·제안</b> — 세계관 접점을 핵심 논거로 제안서·기대효과 시뮬레이션을 작성해 공식 제안, 협의 주도</li>
-            <li><b>운영</b> — 이벤트 3종(음료 쿠폰 → 스킨 / GPS 매장 방문 보상 / 기프티콘 사전등록), 전국 매장 포스터·키오스크·DID 노출 조율</li>
-            <li><b>성과</b> — 전국 <b class="n">3,000개 매장</b> + 홈페이지·앱 3개월 동시 전개 · 참여자 <b class="n">14.6만명</b></li>
+          <div class="card fbox a-up d2"><h5>내부</h5><ul>
+            <li><b>개발</b> — GPS POI·상자·일일 제한, 쿠폰 발급, 기프티콘 총량을 운영툴에서 조정하도록 세팅. 매장 좌표는 홈페이지 데이터 기준 + 네이버 지도 대조로 합의.</li>
+            <li><b>디자인</b> — 홍보물 10종·포스터·영상·썸네일·콜라보 가구·코스튬 전량 제작</li>
+            <li><b>운영/CS</b> — 카카오톡 채널, 점주 공지문·컴포즈 CS 답변서·유의사항 3종, 쿠폰 미지급 건별 절차</li>
           </ul></div>
-          <div class="card fbox a-up d3"><h5>② 음율 OST 크리에이터 협업 · 아이돌 키우기</h5><ul>
-            <li><b>세계관 핏 기준</b>으로 싱어송라이터 선정·제안 → 라이선스 계약 조율 → 음원 저작권 등록·유튜브뮤직·스포티파이·플로 배포까지 단독 진행</li>
-            <li><b>성과</b> — 유튜브 <b class="n">7.8만 뷰</b> · OST 공개 후 채널 구독자 <b class="n">10%+ 증가</b></li>
+          <div class="card fbox a-up d3"><h5>외부</h5><ul>
+            <li><b>컴포즈 앱 개발사</b> — 쿠폰 발급 페이지·CSV 100만 장 연동·앱 업데이트</li>
+            <li><b>기프티콘 발행사</b> — 발행 API·발급 기록 / <b>물류·인쇄</b> — 포스터 제작, 제주 제외 2,957개 매장 출고</li>
           </ul></div>
         </div>
       </div>
-      <div class="insight a-up d4">매장 지침 미전달·GPS 인식 오류 이슈를 정리해 <strong>차기 콜라보 운영 체계 개선안</strong>으로 남겼습니다.</div>
+    </div>
+  </section>
+
+  <!-- ==================== C7 · 결과 · 이슈 ==================== -->
+  <section class="slide" id="slide-15" data-n="15">
+    <header class="s-head">
+      <div class="eyebrow">Case 01 · 결과 · 이슈 대응</div>
+      <h2 class="s-title">전국 3,000개 매장 · 참여 <span class="hl">14.6만 명</span> · GPS 투어 27.9만 회</h2>
+    </header>
+    <div class="s-body">
+      <div class="stat4 a-up d1">
+        <div class="stat hi"><div class="l">매장 노출 (홍보물 출고 2,957개)</div><div class="v dsp">3,000개</div></div>
+        <div class="stat hi"><div class="l">콜라보 이벤트 참여자 (고유)</div><div class="v dsp">14.6만 명</div></div>
+        <div class="stat hi"><div class="l">GPS 투어 참여 · 음료 미션</div><div class="v dsp">278,836회 · 49,807잔</div></div>
+        <div class="stat hi"><div class="l">기프티콘 누적 발급 · 사용률</div><div class="v dsp">33,464장 · 59%</div></div>
+      </div>
+      <div class="grid2 fill">
+        <div class="card fbox a-up d2"><h5>그 밖의 결과</h5><ul>
+          <li>사전예약 순 등록 <b>15.3만 명</b>(부스팅 제외) · 사전예약 기프티콘 지급 약 6,300장</li>
+          <li>컴포즈 앱 기준 콜라보 쿠폰 발급 코드 51,561건 · 앱 오더 음료 판매 11,333잔(매장 판매 제외)</li>
+          <li>컴포즈 일 매장 방문자 약 10만 명 기준, 81일간 게임 노출 약 810만 회(내부 추정, 중복 포함)</li>
+          <li>GPS 콘텐츠 이용을 콜라보 기간 내내 컴포즈 투어가 이끌었고, 종료 후 CI를 뺀 스킨 재판매를 컴포즈와 합의. 같은 구조로 후속 브랜드 제안서 템플릿 확보</li>
+        </ul></div>
+        <div class="card fbox a-up d3"><h5>이슈 → 대응</h5><ul>
+          <li><b>9/23 시작일 없는 포스터</b>로 유저가 10/2 전 매장 방문 → 날짜 수정본을 당일 전 구좌 전달·반영</li>
+          <li><b>10/2 품절 미해제</b> — 신메뉴가 POS 기본 '품절'이라 점주가 직접 해제해야 했음 → 오전 재안내 요청, 15:10 가맹점 전체 재공지, 유저 제보 매장 목록 3차례(11 → 17+지역 4 → 45+지역 4) 전달, 반경 3km 20개점 직접 확인, 사과·안내 공지 당일 게시</li>
+          <li><b>매장 위치 오차</b> — 컴포즈 엑셀·홈페이지·실제 지도가 서로 달라 GPS 판정 어긋남 → 홈페이지 데이터 + 네이버 지도 좌표로 갱신, POI 누락 매장 별도 관리, 신규·폐점 반영, 10/30 버그 수정</li>
+          <li><b>쿠폰 미지급</b> — 키오스크 복합결제·번호 불일치 → 운영팀과 건별 확인 절차</li>
+        </ul></div>
+      </div>
     </div>
   </section>
 
   <!-- ==================== 10 · Case 4 Platform ==================== -->
-  <section class="slide" id="slide-10" data-n="10">
+  <section class="slide" id="slide-16" data-n="16">
     <header class="s-head">
       <div class="eyebrow">Case 04 · 프로젝트 L 웹 게임 플랫폼</div>
       <h2 class="s-title">정해진 절차가 없는 신규 플랫폼의 <span class="hl">오픈 요건을 직접 정의</span></h2>
@@ -469,7 +617,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 11 · Poker services ==================== -->
-  <section class="slide" id="slide-11" data-n="11">
+  <section class="slide" id="slide-17" data-n="17">
     <header class="s-head">
       <div class="eyebrow">Case 05 · 포커 서비스 3종</div>
       <h2 class="s-title">런칭 전에 <span class="hl">유저 풀과 운영 신뢰성</span>을 실전으로 검증</h2>
@@ -506,7 +654,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 12 · BM & Events ==================== -->
-  <section class="slide" id="slide-12" data-n="12">
+  <section class="slide" id="slide-18" data-n="18">
     <header class="s-head">
       <div class="eyebrow">Docs · BM · Events</div>
       <h2 class="s-title">패키지와 이벤트는 <span class="hl">"왜 이 구조인지"</span> 설명 가능한 형태로</h2>
@@ -542,7 +690,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 13 · Projects ==================== -->
-  <section class="slide" id="slide-13" data-n="13">
+  <section class="slide" id="slide-19" data-n="19">
     <header class="s-head">
       <div class="eyebrow">Appendix · Projects</div>
       <h2 class="s-title">참여 프로젝트 <span class="hl">3사 15종+</span> — 역할과 핵심 성과</h2>
@@ -563,7 +711,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 14 · Data basis ==================== -->
-  <section class="slide" id="slide-14" data-n="14">
+  <section class="slide" id="slide-20" data-n="20">
     <header class="s-head">
       <div class="eyebrow">Appendix · Data Basis</div>
       <h2 class="s-title">본문 숫자의 <span class="hl">기간 · 모수 · 정의</span></h2>
@@ -584,7 +732,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 15 · Closing ==================== -->
-  <section class="slide slide-dark" id="slide-15" data-n="15">
+  <section class="slide slide-dark" id="slide-21" data-n="21">
     <header class="s-head">
       <div class="eyebrow">Thank you</div>
       <h2 class="s-title">런칭 첫 달의 매출과 리텐션을 지키고,<br>지표가 빠지면 원인을 찾아 고치는 게임 사업 PM</h2>
@@ -607,14 +755,14 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <button class="arrow" id="prevBtn" aria-label="이전 슬라이드">‹</button>
     <button class="arrow" id="nextBtn" aria-label="다음 슬라이드">›</button>
   </div>
-  <div class="pgnum" id="pgnum"><strong>1</strong> / 15</div>
+  <div class="pgnum" id="pgnum"><strong>1</strong> / 21</div>
   <div class="kbd" id="kbd">← → 또는 스와이프로 이동</div>
 </div>
 
 <script>
 (function(){
-  var total=15,current=1,animating=false;
-  var titles=['표지','한눈에','분석력','추진력','기획력','케이스 1 런칭','케이스 1 하락 대응','케이스 2 수익화','케이스 3 파트너십','케이스 4 플랫폼','케이스 5 포커','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
+  var total=21,current=1,animating=false;
+  var titles=['표지','한눈에','분석력','추진력','기획력','케이스 1 런칭','케이스 1 하락 대응','케이스 2 수익화','컴포즈 개요','컴포즈 문제·목표','컴포즈 분석','컴포즈 핵심 판단','컴포즈 실행','컴포즈 협업','컴포즈 결과','케이스 4 플랫폼','케이스 5 포커','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
   var stage=document.getElementById('presentation'),progress=document.getElementById('progress'),pgnum=document.getElementById('pgnum'),dots=document.getElementById('dots'),kbd=document.getElementById('kbd');
   for(var i=1;i<=total;i++){var d=document.createElement('button');d.className='dot'+(i===1?' active':'');d.title=titles[i-1];d.setAttribute('aria-label',i+'. '+titles[i-1]);(function(n){d.addEventListener('click',function(){go(n);});})(i);dots.appendChild(d);}
   function chrome(){progress.style.width=(current/total*100)+'%';pgnum.innerHTML='<strong>'+current+'</strong> / '+total;var ds=dots.children;for(var i=0;i<ds.length;i++)ds[i].classList.toggle('active',i+1===current);var act=document.getElementById('slide-'+current);stage.classList.toggle('dark-chrome',act.classList.contains('slide-dark')||act.classList.contains('slide-cover'));}
