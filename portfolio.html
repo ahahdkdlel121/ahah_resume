@@ -230,6 +230,21 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .iss b{font-size:12.5px;color:var(--ink);line-height:1.4}
 .iss span{font-size:11.5px;color:var(--muted);line-height:1.45}
 
+
+.ig.wide{gap:12px}
+.hbar.lg{grid-template-columns:190px 1fr 70px;font-size:15px}
+.hbar.lg .hb-t{height:40px;border-radius:10px}
+.hbar.lg .hb-f{border-radius:10px;display:flex;align-items:center;padding-left:14px}
+.hbar.lg .hb-f span{color:#fff;font-size:13px;font-weight:700}
+.hbar.lg .hb-v{font-size:20px}
+.hb-foot{display:grid;grid-template-columns:1fr 1.4fr;gap:14px;font-size:12.5px;color:var(--muted);line-height:1.55;margin-top:4px}
+.goal-row{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;align-items:stretch}
+.goal-row .ch{padding:14px 14px}
+.goal-row .ch b{font-size:16px}
+.goal-row .ch span{font-size:12.5px}
+.goal-row .kv3 b{font-size:15px}
+.goal-row .kv3 span{font-size:12px}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -376,16 +391,16 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <h2 class="s-title">UA만으로 40만 명을 채우면 예산의 <span class="hl">1.4배</span></h2>
       <p class="s-sub">"유료 광고에 기대지 않고, 유저가 스스로 찾아오는 확산 구조를 런칭 전에 만들어야 한다"</p>
     </header>
-    <div class="s-body">
-      <div class="grid2 fill">
-        <div class="card ig a-up d1">
-          <div class="ig-h">문제 — 필요 예산 vs 배정 예산</div>
-          <div class="hbar"><div class="hb-l">UA만으로 NRU 40만</div><div class="hb-t"><div class="hb-f warn" style="width:100%"></div></div><div class="hb-v">1.4배</div></div>
-          <div class="hbar"><div class="hb-l">배정 예산</div><div class="hb-t"><div class="hb-f" style="width:71%"></div></div><div class="hb-v">1.0</div></div>
-          <p class="ig-n">직전작 UA 성과(Non-Organic NRU 2.6만·평균 CPI)로 산출. 메인 DAU는 2030 여성, 결제 코어는 2030 남성이라 UA만으로는 타깃과 ROAS가 함께 어긋납니다.</p>
-        </div>
-        <div class="card ig a-up d2">
-          <div class="ig-h">목표 — 끊기지 않는 세 단계</div>
+    <div class="s-body" style="gap:14px">
+      <div class="card ig wide a-up d1">
+        <div class="ig-h">문제 — UA만으로 NRU 40만 명을 채울 때 필요한 예산 vs 배정 예산</div>
+        <div class="hbar lg"><div class="hb-l">UA만으로 NRU 40만</div><div class="hb-t"><div class="hb-f warn" style="width:100%"><span>필요 예산 1.4배</span></div></div><div class="hb-v">1.4배</div></div>
+        <div class="hbar lg"><div class="hb-l">배정 예산</div><div class="hb-t"><div class="hb-f" style="width:71%"><span>기준 1.0</span></div></div><div class="hb-v">1.0</div></div>
+        <div class="hb-foot"><span>근거 — 직전작 UA 성과(Non-Organic NRU 2.6만 · 평균 CPI)로 산출</span><span>왜 중요한가 — 메인 DAU는 2030 여성, 결제 코어는 2030 남성이라 UA만으로는 타깃과 ROAS가 함께 어긋남</span></div>
+      </div>
+      <div class="card ig wide a-up d2">
+        <div class="ig-h">목표 — 끊기지 않는 세 단계와 성공 기준</div>
+        <div class="goal-row">
           <div class="chev">
             <div class="ch"><b>인식</b><span>매장·앱·SNS에서 반복 노출</span></div>
             <div class="ch"><b>각인</b><span>사전예약 + 기프티콘</span></div>
@@ -393,7 +408,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
           </div>
           <div class="kv3">
             <div><b>NRU 40만</b><span>UA 단독 대비 낮은 예산으로</span></div>
-            <div><b>참여 · 사용률</b><span>사전예약 순등록, 이벤트 참여, 기프티콘 사용률</span></div>
+            <div><b>참여 · 사용률</b><span>사전예약 순등록 · 이벤트 참여 · 기프티콘 사용률</span></div>
             <div><b>잔존 6~7%+</b><span>기프티콘 유입 유저의 핵심 콘텐츠 이후 잔존</span></div>
           </div>
         </div>
