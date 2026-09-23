@@ -408,9 +408,13 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 #slide-6 .mx th{padding:6px 4px}
 #slide-6 .mx td{padding:7px 4px}
 #slide-6 .mx td:nth-child(2){min-width:0}
-.tline.tl4::before{top:20px}
 .tline.tl4 .tl-i span{white-space:nowrap;font-size:11.5px}
 
+/* timeline line through dot centers (padding 8px + dot 14px/2 - line 1px) */
+.cs .tline,.cs .tline.tl4,.tline.tl4{padding-top:8px}
+.cs .tline::before,.tline.tl4::before{top:14px}
+#slide-6 .mx th:nth-child(2){text-align:left;padding-left:8px}
+#slide-6 .mx td:nth-child(2){padding-left:8px}
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
