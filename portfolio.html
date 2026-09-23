@@ -151,11 +151,11 @@ b.n{color:var(--blue);font-weight:800}
 .hb-f{height:100%;background:var(--blue);border-radius:6px}
 .hb-f.warn{background:var(--ink)}
 .hb-v{font-weight:800;color:var(--ink);text-align:right}
-.chev{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.chev{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .ch{background:var(--wash);border:1px solid var(--wash-deep);border-radius:8px;padding:10px 12px;position:relative}
 .ch b{display:block;font-size:14.5px;color:var(--blue-ink)}
 .ch span{display:block;font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.45}
-.ch:not(:last-child)::after{content:"›";position:absolute;right:-9px;top:50%;transform:translateY(-55%);font-size:20px;font-weight:800;color:var(--blue);background:#fff;line-height:1}
+.ch:not(:last-child)::after{content:"›";position:absolute;right:-14px;top:50%;transform:translateY(-55%);font-size:22px;font-weight:800;color:var(--blue);line-height:1;z-index:2;width:12px;text-align:center}
 .kv3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .kv3.v{grid-template-columns:1fr}
 .kv3 div{background:var(--bg-subtle);border:1px solid var(--border);border-radius:8px;padding:9px 11px}
