@@ -519,6 +519,12 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .rsum .stat{padding:16px 20px}
 .rsum .stat .v{font-size:26px}
 
+.mx.rs td:last-child{font-weight:600;color:var(--muted);text-align:left;font-size:12.5px}
+.mx.rs th:last-child{text-align:left}
+.mx.rs td:nth-child(2){font-weight:800;color:var(--blue)}
+.mx.rs td.dn{color:var(--ink)}
+.mx.rs tr.on td:nth-child(2){color:var(--blue-ink)}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -942,14 +948,14 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="tl-i"><b>09.23</b><span>한국 런칭</span></div><div class="tl-i"><b>10.07</b><span>3주차 · 하락 인지</span></div><div class="tl-i"><b>10.10</b><span>1차 분석 공유<br>이탈 · 재화</span></div><div class="tl-i"><b>10.13~17</b><span>v1.0.3 검수 · 배포</span></div><div class="tl-i on"><b>10.22</b><span>전후 분석 · 과제 9종</span></div><div class="tl-i"><b>10.29</b><span>v1.0.4<br>누적 결제 이벤트</span></div><div class="tl-i"><b>11월~</b><span>UA 축소 · 후속 과제</span></div>
       </div>
       <div class="stat4 a-up d2">
-        <div class="stat"><div class="l">분석 문서</div><div class="v dsp">2건</div></div>
+        <div class="stat"><div class="l">업데이트 → 전후 분석</div><div class="v dsp">5일</div></div>
         <div class="stat"><div class="l">도출한 개선 과제</div><div class="v dsp">9종</div></div>
         <div class="stat"><div class="l">반영 업데이트</div><div class="v dsp">v1.0.3 · v1.0.4</div></div>
         <div class="stat"><div class="l">하락 인지 → 1차 분석</div><div class="v dsp">3일</div></div>
       </div>
       <div class="grid2 a-up d3 fill s4b">
         <div class="card fc"><div class="tag">서비스 맥락</div><h4>첫 주 NRU 14.4만 이후 유입이 급감하는 런칭 곡선</h4><p>런칭 UA 축소가 예정된 시점이라 신규 유입으로 매출을 메꿀 수 없었고, 남은 유저의 결제 구조를 고쳐야 했습니다.</p></div>
-        <div class="card fc"><div class="tag">내 역할</div><h4>지표 조회 → 분석 문서 → 과제 · 이벤트 기획 → 검수 대응</h4><p>키바나 · Adjust 직접 조회, 분석 문서 2건 작성, 키바나 지표 추가 요청, 개선 과제 9종 · 이벤트 기획, v1.0.3 · 1.0.4 스토어 검수 신청과 재심사 대응.</p></div>
+        <div class="card fc"><div class="tag">내 역할</div><h4>지표 조회 → 분석 문서 → 과제 · 이벤트 기획 → 검수 대응</h4><p>키바나 · Adjust 직접 조회, 이탈 · 재화 분석과 업데이트 전후 분석 작성(이후 11 · 12월 이탈 분석으로 정례화), 키바나 지표 추가 요청, 개선 과제 9종 · 이벤트 기획, v1.0.3 · 1.0.4 스토어 검수 신청과 재심사 대응.</p></div>
       </div>
     </div>
   </section>
@@ -965,9 +971,9 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="grid2" style="grid-template-columns:1.35fr 1fr;gap:18px">
         <div class="card ig wide a-up d1">
           <div class="ig-h">지표별 하락 폭 — 결제 지표가 유저 지표보다 크게 빠짐</div>
-          <div class="hbar lg dn"><div class="hb-l">매출</div><div class="hb-t"><div class="hb-f warn" style="width:100%"><span>3.32억 → 1.95억</span></div></div><div class="hb-v">−41.5%</div></div>
-          <div class="hbar lg dn"><div class="hb-l">PU (결제 유저)</div><div class="hb-t"><div class="hb-f warn" style="width:92%"><span>4,823 → 2,992</span></div></div><div class="hb-v">−38.0%</div></div>
-          <div class="hbar lg dn"><div class="hb-l">DAU</div><div class="hb-t"><div class="hb-f" style="width:80%"><span>21,465 → 14,319</span></div></div><div class="hb-v">−33.3%</div></div>
+          <div class="hbar lg dn"><div class="hb-l">매출</div><div class="hb-t"><div class="hb-f warn" style="width:100%"><span></span></div></div><div class="hb-v">−41.5%</div></div>
+          <div class="hbar lg dn"><div class="hb-l">PU (결제 유저)</div><div class="hb-t"><div class="hb-f warn" style="width:92%"><span></span></div></div><div class="hb-v">−38.0%</div></div>
+          <div class="hbar lg dn"><div class="hb-l">DAU</div><div class="hb-t"><div class="hb-f" style="width:80%"><span></span></div></div><div class="hb-v">−33.3%</div></div>
           <div class="hbar lg dn"><div class="hb-l">ARPPU</div><div class="hb-t"><div class="hb-f" style="width:14%"><span></span></div></div><div class="hb-v">−5.6%</div></div>
           <div class="hb-foot one"><span>PU 감소 폭(−38%)이 DAU 감소 폭(−33%)보다 크고, 남은 결제 유저의 구매력(ARPPU)은 거의 그대로 → 유저가 빠져서가 아니라 <b>결제층이 먼저 빠지는 구조</b></span></div>
         </div>
@@ -1003,10 +1009,10 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         </div>
         <div class="card ig">
           <div class="ig-h">② PU 유형 — 헤비 매출 비중 20%에 그침</div>
-          <div class="hb-s"><span>소과금 (&lt;10만) 7,150명</span><i style="width:71%"></i><b>1.59억</b></div>
-          <div class="hb-s"><span>중과금 (10~50만) 1,054명</span><i style="width:100%"></i><b>2.23억</b></div>
-          <div class="hb-s"><span>고과금 (50~100만) 130명</span><i style="width:40%"></i><b>0.90억</b></div>
-          <div class="hb-s"><span>헤비 (100만+) 71명</span><i style="width:58%"></i><b>1.30억</b></div>
+          <div class="hb-s"><span>소과금 (&lt;10만) · 유저 85%</span><i style="width:71%"></i><b>매출 26%</b></div>
+          <div class="hb-s"><span>중과금 (10~50만) · 유저 13%</span><i style="width:100%"></i><b>매출 37%</b></div>
+          <div class="hb-s"><span>고과금 (50~100만) · 유저 1.5%</span><i style="width:40%"></i><b>매출 15%</b></div>
+          <div class="hb-s"><span>헤비 (100만+) · 유저 0.8%</span><i style="width:58%"></i><b>매출 22%</b></div>
           <div class="an-sum"><b>소 · 중과금이 매출의 63%</b> · 고과금 전환 트리거 없음</div>
           <p class="ig-n">판매 상위는 300%+ 고효율 · 에픽 직원 · 한정 꾸미기. 50만 원 이상은 남성 60%, 소 · 중은 2030 여성</p>
         </div>
@@ -1087,13 +1093,13 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card ig a-up d2">
           <div class="ig-h">v1.0.2 기간(9/30~10/5) → v1.0.3 기간(10/17~10/22)</div>
           <table class="mx rs">
-            <tr><th>지표</th><th>v1.0.2</th><th>v1.0.3</th><th>변동</th></tr>
-            <tr><td>평균 DAU</td><td>21,465</td><td>14,319</td><td class="dn">−33.3%</td></tr>
-            <tr><td>PU</td><td>4,823</td><td>2,992</td><td class="dn">−38.0%</td></tr>
-            <tr><td>매출</td><td>3.32억</td><td>1.95억</td><td class="dn">−41.5%</td></tr>
-            <tr><td>ARPPU</td><td>68,870</td><td>65,030</td><td>−5.6%</td></tr>
-            <tr><td>NPU 비중</td><td>35.2%</td><td>19.1%</td><td class="dn">−16.1%p</td></tr>
-            <tr class="on"><td>고과금 이상 매출 비중</td><td>28.7%</td><td>43.8%</td><td>+15.1%p</td></tr>
+            <tr><th>지표</th><th>변동</th><th>읽는 법</th></tr>
+            <tr><td>평균 DAU</td><td class="dn">−33.3%</td><td>유저 파이 축소</td></tr>
+            <tr><td>PU (결제 유저)</td><td class="dn">−38.0%</td><td>결제층이 유저보다 빨리 축소</td></tr>
+            <tr><td>매출</td><td class="dn">−41.5%</td><td>파이 × 구조가 겹친 결과</td></tr>
+            <tr><td>ARPPU</td><td>−5.6%</td><td>잔여 결제 유저의 구매력은 방어</td></tr>
+            <tr><td>NPU 비중</td><td class="dn">35.2 → 19.1%</td><td>신규 결제 유입 반토막</td></tr>
+            <tr class="on"><td>고과금 이상 매출 비중</td><td>28.7 → 43.8%</td><td>매출 구조가 고과금 중심으로 재편</td></tr>
           </table>
         </div>
         <div class="card ig a-up d3">
@@ -1430,7 +1436,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <tr><td class="k">사전예약 15만</td><td>2025.08.12~09.22 사전등록 캠페인 순 등록 153,740명. 부스팅 유입 36.9만은 제외한 값(총 등록 52.3만)</td><td>컴포즈 기프티콘 사전등록 지급 5,992건</td></tr>
         <tr><td class="k">런칭 당일 DAU 7만 · 1주 평균 4.1만</td><td>9/23 NRU+DAU 70,143 · 9/23~29 일 평균 DAU 41,012. 1주차 NRU 합 153,178</td><td>D+1 Retention 31.8% · D+3 20.2% · D+7 13.1%</td></tr>
         <tr><td class="k">D7 인앱 매출 5.1억 · ARPPU 3만원대</td><td>9/23~29 7일 IAP 합계 5.14억(IAA 포함 총매출 5.53억). 일 결제 유저 합 17,470명 · 일 ARPPU 2.97만~3.30만원</td><td>라이브 UA 대비 IAP 3.6배 · 사전예약 UA 포함 1.1배(집행 금액 비공개)</td></tr>
-        <tr><td class="k">DAU −33% · PU −38% · 매출 −41%</td><td>v1.0.2 기간(9/30~10/5) 대비 v1.0.3 기간(10/17~22) 일 평균 — DAU 21,465 → 14,319 · PU 4,823 → 2,992 · 매출 3.32억 → 1.95억. NPU 비중 35.2% → 19.1%</td><td>ARPPU 68,870 → 65,030(−5.6%) · 주간 평균 기준 W1 41,012 → W3 17,108</td></tr>
+        <tr><td class="k">DAU −33% · PU −38% · 매출 −41%</td><td>v1.0.2 기간(9/30~10/5) 대비 v1.0.3 기간(10/17~22) 일 평균 변동률. NPU 비중 35.2% → 19.1%(일 결제 유저 중 첫 결제 유저)</td><td>ARPPU −5.6% · 주간 평균 DAU 기준 1주차 → 3주차 −58%</td></tr>
         <tr><td class="k">고과금 매출 비중 28.7% → 43.8%</td><td>같은 기간 비교 · 고과금(50만 원 이상)·헤비 과금 유저 매출 비중. 10만 원 이상 상품 매출 비중 약 10배 · 멤버십 Lv9~19 유저 +90%</td><td>이탈 퍼널은 9/26 이후 진성 코호트 기준(꾸미기 해금 전 누적 37.87%). 런칭 전체 기준 첫 구간 26.5%는 부스팅 계정 오염으로 미사용</td></tr>
         <tr><td class="k">피크 DAU 138만 · 1개월 425만 DL</td><td>Water Sort Quest 2024.01.21 DAU 1,380,918 · 2023.12.12~2024.01.12 신규 유저(Game BI NRU) 누적 4,254,386</td><td>런칭 D+1 Retention 35.6% (같은 해 사내 런칭 3종 대비 +3.8~10.3%p) · 피처드 기간 D+1 39.7 → 48.4%</td></tr>
         <tr><td class="k">피크 월매출 2.3억 · 누적 1,621만 DL</td><td>2024.01 월 매출 $167K(광고 + 인앱), 당시 환율 ₩1,380 기준 · 2023.12~2024.07 신규 유저 누적 16,210,849</td><td>재직 기간 기준(~2024.07)</td></tr>
