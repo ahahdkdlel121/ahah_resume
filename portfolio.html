@@ -280,6 +280,96 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .vc.a{left:5%}.vc.b{right:5%}
 .vc b{font-size:13.5px}.vc span{font-size:12px}
 .vm{font-size:12px;padding:8px 13px}
+/* ---------- Case slides: generous spacing ---------- */
+.cs .s-body{gap:18px;padding-top:22px}
+.cs .ig{padding:22px 26px;gap:14px}
+.cs .ig-h{font-size:13px}
+.cs .ig-n{font-size:12.5px}
+.cs .stat{padding:20px 22px}
+.cs .stat .l{font-size:13px}
+.cs .stat .v{font-size:32px}
+.cs .fc{padding:22px 24px}
+.cs .fc h4{font-size:17px}
+.cs .fc p{font-size:14px}
+.cs .tline{padding:8px 0 6px}
+.cs .tl-i b{font-size:14px}
+.cs .tl-i span{font-size:12px}
+.cs .jgrid{gap:14px}
+.cs .jc{padding:20px 22px}
+.cs .jc h4{font-size:16px}
+.cs .jc p{font-size:13px}
+.cs .ab span{font-size:12.5px;padding:6px 10px}
+.cs .jtag{font-size:11px}
+.cs .ln{padding:16px 16px;min-height:104px}
+.cs .ln b{font-size:15px}
+.cs .ln span{font-size:12.5px}
+.cs .loop-back{font-size:13px;padding-top:12px;margin-top:8px}
+.cs .vbars{height:150px}
+.cs .vbars b{font-size:13px}
+.cs .vbars span{font-size:12px}
+.cs .chips{gap:8px}
+.cs .chips span{font-size:12.5px;padding:7px 12px}
+.cs .spoke{min-height:380px}
+.cs .sp{width:215px;padding:12px 14px}
+.cs .sp b{font-size:14px}
+.cs .sp span{font-size:12px}
+.cs .sp.c{width:160px}
+.cs .kv3.tight div{padding:13px 15px}
+.cs .kv3.tight b{font-size:14.5px}
+.cs .kv3.tight span{font-size:12.5px}
+.cs .spark{height:150px}
+.cs .spark-ax{font-size:12px}
+.cs .iss{gap:10px}
+.cs .iss div{padding:11px 13px;grid-template-columns:160px 1fr}
+.cs .iss b{font-size:13.5px}
+.cs .iss span{font-size:12.5px}
+.cs .grid2.grow{flex:1;min-height:0;align-items:stretch}
+.cs .grid2.grow .fc{justify-content:center;padding:26px 30px}
+.cs .grid2.grow .fc h4{font-size:19px}
+.cs .grid2.grow .fc p{font-size:15px;flex:0}
+.cs .grid2.grow .fc .tag{font-size:11.5px}
+.cs .jgrid{gap:16px}
+.cs .jc{padding:22px 24px}
+.cs .jc h4{font-size:17px}
+.cs .jc p{font-size:13.5px;margin-top:10px}
+.cs .ab{gap:6px;margin-top:10px}
+.cs .ab span{font-size:13px;padding:7px 11px}
+.cs .loop>.ln{min-height:122px;padding:18px 18px}
+.cs .ln b{font-size:16px}
+.cs .ln span{font-size:13px;margin-top:6px}
+.cs .sp{width:178px}
+.cs .sp.c{width:160px}
+.cs .spoke{min-height:400px}
+.cs .spark{height:175px}
+.cs .iss div{padding:13px 14px}
+
+/* slide 9 spoke → grid (no overlap) */
+.cs .spoke{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr auto 1fr;gap:22px 14px;min-height:0;height:100%;position:relative}
+.cs .sp,.cs .sp.c,.cs .sp.p1,.cs .sp.p2,.cs .sp.p3,.cs .sp.p4,.cs .sp.p5,.cs .sp.p6{position:relative;left:auto;right:auto;top:auto;bottom:auto;transform:none;width:auto;display:flex;flex-direction:column;justify-content:center;padding:14px 12px;z-index:1}
+.cs .sp b{font-size:14px}.cs .sp span{font-size:12px;margin-top:4px}
+.cs .sp.c{grid-column:2;grid-row:2;padding:18px 12px}
+.cs .sp.c b{font-size:16px}.cs .sp.c span{font-size:12px}
+.cs .sp.p1{grid-column:1;grid-row:1}.cs .sp.p2{grid-column:2;grid-row:1}.cs .sp.p3{grid-column:3;grid-row:1}
+.cs .sp.p4{grid-column:1;grid-row:3}.cs .sp.p5{grid-column:2;grid-row:3}.cs .sp.p6{grid-column:3;grid-row:3}
+.cs .spoke::before{top:10%;bottom:10%}.cs .spoke::after{left:6%;right:6%}
+.sp-lab{grid-row:2;align-self:center;justify-self:center;font-size:12px;font-weight:800;color:var(--blue-ink);background:#fff;border:1px solid var(--wash-deep);border-radius:999px;padding:5px 12px;z-index:1}
+.sp-lab.l1{grid-column:1}.sp-lab.l2{grid-column:3}
+/* slide 9 right card fills height */
+.cs .kv3.v{flex:1;min-height:0;gap:12px}
+.cs .kv3.v>div{display:flex;flex-direction:column;justify-content:center;padding:14px 16px}
+.cs .kv3.v b{font-size:15.5px}.cs .kv3.v span{font-size:13px;margin-top:4px;line-height:1.55}
+/* slide 4 bottom cards: larger type */
+.cs .grid2.grow .fc h4{font-size:21px;line-height:1.35}
+.cs .grid2.grow .fc p{font-size:16px;line-height:1.7;margin-top:12px}
+.cs .grid2.grow .fc .tag{font-size:12.5px;margin-bottom:12px}
+
+/* slide 4 vertical rhythm */
+#slide-4 .s-body{gap:26px;padding-top:10px}
+#slide-4 .tline{padding:16px 0 20px}
+#slide-4 .tl-i b{font-size:14px}#slide-4 .tl-i span{font-size:12px}
+#slide-4 .stat4 .stat{padding:24px 26px}
+#slide-4 .stat4 .stat .l{font-size:13px}
+#slide-4 .grid2.grow{gap:22px}
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -397,7 +487,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C1 · 컴포즈 케이스 · 개요 ==================== -->
-  <section class="slide" id="slide-4" data-n="4">
+  <section class="slide cs" id="slide-4" data-n="4">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 컴포즈커피 × 아이러브커피 키우기 · 개요</div>
       <h2 class="s-title">4월 제안부터 10월 종료까지 — <span class="hl">81일</span>의 콜라보 운영</h2>
@@ -412,7 +502,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="stat"><div class="l">이벤트 3종 · 홍보물 규격</div><div class="v dsp">3종 · 10종</div></div>
         <div class="stat"><div class="l">함께 움직인 조직</div><div class="v dsp">내부 4 · 외부 5</div></div>
       </div>
-      <div class="grid2 a-up d3">
+      <div class="grid2 a-up d3 fill grow">
         <div class="card fc"><div class="tag">서비스 맥락</div><h4>IP 리부트 신작, 첫 달 NRU 40만이 목표</h4><p>'아이러브커피'(누적 1,000만 DL)를 방치형 RPG로 재해석. 위치기반(GPS) 소셜 기능이 다른 게임에 없는 차별점.</p></div>
         <div class="card fc"><div class="tag">내 역할</div><h4>기획 → 컴포즈 실무 창구 → 라이브 대응</h4><p>브랜드 선정·제안서·시뮬레이션·이벤트 기획. 7월 중순부터 컴포즈 담당자와 1:1로 홍보물·음료·쿠폰·계약·데이터·이슈를 맡음. 초기 제안과 1·2차 미팅은 사업팀장.</p></div>
       </div>
@@ -452,7 +542,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C3 · 분석 ==================== -->
-  <section class="slide" id="slide-6" data-n="6">
+  <section class="slide cs" id="slide-6" data-n="6">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 분석</div>
       <h2 class="s-title">왜 컴포즈였나 — 4곳에 제안, <span class="hl">세 기준</span>으로 압축</h2>
@@ -494,7 +584,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C4 · 핵심 판단 ==================== -->
-  <section class="slide" id="slide-7" data-n="7">
+  <section class="slide cs" id="slide-7" data-n="7">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 핵심 판단</div>
       <h2 class="s-title">선택지가 있었던 <span class="hl">여섯 번의 판단</span></h2>
@@ -512,7 +602,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C5 · 실행 ==================== -->
-  <section class="slide" id="slide-8" data-n="8">
+  <section class="slide cs" id="slide-8" data-n="8">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 실행</div>
       <h2 class="s-title">사전예약에서 매장까지, <span class="hl">한 바퀴 도는 순환</span>으로 설계</h2>
@@ -552,7 +642,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C6 · 협업 ==================== -->
-  <section class="slide" id="slide-9" data-n="9">
+  <section class="slide cs" id="slide-9" data-n="9">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 협업</div>
       <h2 class="s-title">내부 4개 팀 · 외부 5개 사 — <span class="hl">합의는 메일로 고정</span></h2>
@@ -568,6 +658,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
             <div class="sp p4"><b>개발팀</b><span>GPS POI · 쿠폰 · 운영툴 총량</span></div>
             <div class="sp p5"><b>디자인팀</b><span>홍보물 10종 · 영상 · 도감 31종</span></div>
             <div class="sp p6"><b>운영/CS · 마케팅</b><span>점주 공지 · CS 답변서 · SNS</span></div>
+            <div class="sp-lab l1">▲ 외부 5개 사</div>
+            <div class="sp-lab l2">내부 4개 팀 ▼</div>
           </div>
         </div>
         <div class="card ig a-up d2">
@@ -584,7 +676,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C7 · 결과 · 이슈 ==================== -->
-  <section class="slide" id="slide-10" data-n="10">
+  <section class="slide cs" id="slide-10" data-n="10">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 결과 · 이슈 대응</div>
       <h2 class="s-title">참여 <span class="hl">14.6만 명</span> · GPS 투어 27.9만 회 · 매장 3,000개</h2>
