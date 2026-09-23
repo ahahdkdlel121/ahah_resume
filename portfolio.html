@@ -415,6 +415,15 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .cs .tline::before,.tline.tl4::before{top:14px}
 #slide-6 .mx th:nth-child(2){text-align:left;padding-left:8px}
 #slide-6 .mx td:nth-child(2){padding-left:8px}
+/* slide 10 funnel */
+.fun{display:grid;grid-template-columns:1fr 26px 1.2fr auto;align-items:center;gap:10px;padding:4px 2px 2px}
+.fn b{display:block;font-size:24px;font-weight:800;color:var(--ink);letter-spacing:-.01em;line-height:1.1}
+.fn span{display:block;font-size:12px;color:var(--muted);margin-top:4px}
+.fn.hi b{color:var(--blue-ink)}
+.fun i{font-style:normal;color:var(--blue);font-size:22px;font-weight:800;text-align:center}
+.fr{font-size:14px;font-weight:800;color:var(--blue-ink);background:var(--wash);border:1px solid var(--wash-deep);border-radius:999px;padding:6px 12px;white-space:nowrap}
+#slide-10 .spark{height:118px;margin-top:6px}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -734,17 +743,23 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <div class="s-body">
       <div class="stat4 a-up d1">
         <div class="stat hi"><div class="l">이벤트 참여자 (기간별 고유 합산)</div><div class="v dsp">14.6만 명</div></div>
-        <div class="stat hi"><div class="l">GPS 투어 참여 · 음료 미션</div><div class="v dsp">27.9만 회 · 4.98만 잔</div></div>
+        <div class="stat hi"><div class="l">걸어서 컴포즈 투어 참여</div><div class="v dsp">27.9만 회</div></div>
         <div class="stat hi"><div class="l">기프티콘 누적 발급 · 사용률</div><div class="v dsp">33,464장 · 59%</div></div>
         <div class="stat hi"><div class="l">사전예약 순 등록 (부스팅 제외)</div><div class="v dsp">15.3만 명</div></div>
       </div>
       <div class="grid2 fill" style="grid-template-columns:1.15fr 1fr">
         <div class="card ig a-up d2">
-          <div class="ig-h">컴포즈 앱 쿠폰 발급 51,561건 · 앱 오더 음료 11,333잔 — 10/2~10/31 일별</div>
+          <div class="ig-h">콜라보 음료 퍼널 — 컴포즈 앱 쿠폰 발급 → 게임 입력 (10/2~10/31)</div>
+          <div class="fun">
+            <div class="fn"><b>51,561</b><span>컴포즈 앱 쿠폰 발급</span></div>
+            <i>→</i>
+            <div class="fn hi"><b>49,807</b><span>게임 입력 · 음료 미션 완료</span></div>
+            <div class="fr">96.6%</div>
+          </div>
           <div class="spark">
             <i style="height:100%"></i><i style="height:75%"></i><i style="height:72%"></i><i style="height:63%"></i><i style="height:48%"></i><i style="height:57%"></i><i style="height:58%"></i><i style="height:51%"></i><i style="height:54%"></i><i style="height:56%"></i><i style="height:47%"></i><i style="height:50%"></i><i style="height:45%"></i><i style="height:45%"></i><i style="height:46%"></i><i style="height:36%"></i><i style="height:40%"></i><i style="height:37%"></i><i style="height:36%"></i><i style="height:35%"></i><i style="height:33%"></i><i style="height:35%"></i><i style="height:36%"></i><i style="height:30%"></i><i style="height:28%"></i><i style="height:31%"></i><i style="height:27%"></i><i style="height:32%"></i><i style="height:31%"></i><i style="height:29%"></i>
           </div>
-          <div class="spark-ax"><span>10/2 첫날 3,784</span><span>10/31 1,089</span></div>
+          <div class="spark-ax"><span>일별 발급 · 10/2 첫날 3,784</span><span>10/31 1,089</span></div>
         </div>
         <div class="card ig a-up d3">
           <div class="ig-h">이슈 → 대응</div>
