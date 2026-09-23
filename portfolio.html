@@ -425,6 +425,23 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 #slide-10 .spark{height:118px;margin-top:6px}
 
 #slide-9 .kv3.v span{white-space:nowrap;font-size:12.5px}
+/* slide 11 retro */
+.goalbar .hbar.lg{grid-template-columns:130px 1fr 60px}
+.goalbar .hb-f{position:relative;overflow:hidden}
+.goalbar .hb-f span{position:relative;z-index:1}
+.hb-seg{position:absolute;left:0;top:0;bottom:0;background:var(--blue-ink);opacity:.55;border-radius:10px 0 0 10px}
+.hb-foot.one{grid-template-columns:1fr;font-size:13px}
+.hb-foot.one b{color:var(--blue-ink)}
+.retro{display:grid;grid-template-columns:1fr 1fr;gap:20px;flex:1;min-height:0}
+.rcol{display:flex;flex-direction:column;gap:12px}
+.rlab{font-size:12.5px;font-weight:800;letter-spacing:.04em;padding:0 2px}
+.rlab.ok{color:var(--blue)} .rlab.re{color:var(--ink)}
+.rc{padding:18px 22px;flex:1;display:flex;flex-direction:column;justify-content:center}
+.rc h4{font-size:16px;font-weight:800;color:var(--ink);line-height:1.4}
+.rc p{font-size:13px;color:var(--muted);line-height:1.6;margin-top:8px}
+.rcol:first-child .rc{background:var(--wash);border-color:var(--wash-deep)}
+.rcol:first-child .rc h4{color:var(--blue-ink)}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -536,7 +553,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <h2 class="s-title a-up d2">컴포즈커피 × 아이러브커피 키우기<br>전국 3,000개 매장을 유입 채널로 만든 콜라보</h2>
       <p class="s-sub a-up d3">유료 광고만으로는 첫 달 목표 NRU 40만을 채울 수 없었습니다. 브랜드 4곳에 제안해 컴포즈커피와 7일 만에 협업을 확정하고, 위치기반 기능을 축으로 사전예약 → 매장 방문 → 게임 복귀의 순환을 설계해 81일간 운영했습니다.</p>
       <div class="chap a-up d4">
-        <span>01 개요</span><span>02 문제 · 목표</span><span>03 분석</span><span>04 핵심 판단</span><span>05 실행</span><span>06 협업</span><span>07 결과 · 이슈</span>
+        <span>01 개요</span><span>02 문제 · 목표</span><span>03 분석</span><span>04 핵심 판단</span><span>05 실행</span><span>06 협업</span><span>07 결과 · 이슈</span><span>08 회고</span>
       </div>
     </div>
   </section>
@@ -774,8 +791,36 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </div>
   </section>
 
+  <!-- ==================== C8 · 회고 ==================== -->
+  <section class="slide cs" id="slide-11" data-n="11">
+    <header class="s-head">
+      <div class="eyebrow">Core Case 01 · 회고</div>
+      <h2 class="s-title">첫 달 NRU 18.4만, 목표의 46% — 남긴 설계와 <span class="hl">빠뜨린 설계</span></h2>
+    </header>
+    <div class="s-body">
+      <div class="card ig wide a-up d1 goalbar">
+        <div class="ig-h">목표 대비 실적 — 첫 달(9/23~10/22) NRU</div>
+        <div class="hbar lg"><div class="hb-l">목표 40만</div><div class="hb-t"><div class="hb-f warn" style="width:100%"><span>40만</span></div></div><div class="hb-v">100%</div></div>
+        <div class="hbar lg"><div class="hb-l">실적 18.4만</div><div class="hb-t"><div class="hb-f" style="width:46%"><span>첫 주 14.4만</span><i class="hb-seg" style="width:78%"></i></div></div><div class="hb-v">46%</div></div>
+        <div class="hb-foot one"><span>첫 주가 첫 달 유입의 78%. 이후 급감의 원인과 대응은 <b>Core Case 02</b>에서</span></div>
+      </div>
+      <div class="retro a-up d2">
+        <div class="rcol">
+          <div class="rlab ok">✓ 잘 된 것 — 다음에도</div>
+          <div class="card rc"><h4>상대 리스크를 흡수하는 교환 설계 → 회신 7일 만에 확정</h4><p>상대가 잃을 게 없는 제안이 첫 제안의 기준. 같은 구조가 후속 브랜드 제안서 템플릿으로 남음</p></div>
+          <div class="card rc"><h4>우리만 줄 수 있는 GPS를 축으로 → 투어 27.9만 회</h4><p>다만 이용은 콜라보가 이끌었고 종료 후 자생 설계는 없었음. 다음엔 "끝난 뒤 이 기능은 뭘로 돌아가는가"를 시작 단계에서 함께 설계</p></div>
+        </div>
+        <div class="rcol">
+          <div class="rlab re">↻ 다시 한다면</div>
+          <div class="card rc"><h4>본사 합의와 별개로 현장 검증</h4><p>가맹점 전달에는 시차와 누락이 있음. 판매 시작 전날 표본 매장 확인과 미해제 대응 절차(제보 → 본사 → SV → 매장)를 미리 정함</p></div>
+          <div class="card rc"><h4>측정 기준은 설계 단계에서 확정</h4><p>성공 기준으로 세운 기프티콘 유입 유저 잔존은 경로 구분이 없어 측정하지 못함. 지표 · 데이터 공유 범위 · 검증 방법을 협약과 개발 요건에 함께 넣음</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== 3 · Strength 1 ==================== -->
-  <section class="slide" id="slide-11" data-n="11">
+  <section class="slide" id="slide-12" data-n="12">
     <header class="s-head">
       <div class="eyebrow">Strength 01 · 분석력</div>
       <h2 class="s-title">지표가 빠지면 <span class="hl">원인을 찾아</span> 고칩니다</h2>
@@ -807,7 +852,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 4 · Strength 2 ==================== -->
-  <section class="slide" id="slide-12" data-n="12">
+  <section class="slide" id="slide-13" data-n="13">
     <header class="s-head">
       <div class="eyebrow">Strength 02 · 추진력</div>
       <h2 class="s-title">제안부터 <span class="hl">계약·운영까지</span> 직접 끝냅니다</h2>
@@ -845,7 +890,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 5 · Strength 3 ==================== -->
-  <section class="slide" id="slide-13" data-n="13">
+  <section class="slide" id="slide-14" data-n="14">
     <header class="s-head">
       <div class="eyebrow">Strength 03 · 기획력</div>
       <h2 class="s-title">런칭과 BM을 <span class="hl">구조로</span> 설계합니다</h2>
@@ -883,7 +928,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 6 · Case 1 Launch ==================== -->
-  <section class="slide" id="slide-14" data-n="14">
+  <section class="slide" id="slide-15" data-n="15">
     <header class="s-head">
       <div class="eyebrow">Summary · 아이러브커피 키우기 런칭</div>
       <h2 class="s-title">IP 장르 전환 리스크를 <span class="hl">FGT·피처링·콜라보</span>로 돌파</h2>
@@ -907,7 +952,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 7 · Case 1 Drop ==================== -->
-  <section class="slide" id="slide-15" data-n="15">
+  <section class="slide" id="slide-16" data-n="16">
     <header class="s-head">
       <div class="eyebrow">Summary · 런칭 3주차 하락 대응</div>
       <h2 class="s-title">매출 −41%를 <span class="hl">이탈 퍼널·과금 코호트</span>로 진단해 방어</h2>
@@ -940,7 +985,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 8 · Case 2 ==================== -->
-  <section class="slide" id="slide-16" data-n="16">
+  <section class="slide" id="slide-17" data-n="17">
     <header class="s-head">
       <div class="eyebrow">Summary · 아이돌 키우기</div>
       <h2 class="s-title">데이터로 <span class="hl">수익화 구조를 재설계</span>하고 신서버로 전환</h2>
@@ -971,7 +1016,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 
 
   <!-- ==================== 10 · Case 4 Platform ==================== -->
-  <section class="slide" id="slide-17" data-n="17">
+  <section class="slide" id="slide-18" data-n="18">
     <header class="s-head">
       <div class="eyebrow">Summary · 프로젝트 L 웹 게임 플랫폼</div>
       <h2 class="s-title">정해진 절차가 없는 신규 플랫폼의 <span class="hl">오픈 요건을 직접 정의</span></h2>
@@ -995,7 +1040,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 11 · Poker services ==================== -->
-  <section class="slide" id="slide-18" data-n="18">
+  <section class="slide" id="slide-19" data-n="19">
     <header class="s-head">
       <div class="eyebrow">Summary · 포커 서비스 3종</div>
       <h2 class="s-title">런칭 전에 <span class="hl">유저 풀과 운영 신뢰성</span>을 실전으로 검증</h2>
@@ -1032,7 +1077,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 12 · BM & Events ==================== -->
-  <section class="slide" id="slide-19" data-n="19">
+  <section class="slide" id="slide-20" data-n="20">
     <header class="s-head">
       <div class="eyebrow">Docs · BM · Events</div>
       <h2 class="s-title">패키지와 이벤트는 <span class="hl">"왜 이 구조인지"</span> 설명 가능한 형태로</h2>
@@ -1068,7 +1113,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 13 · Projects ==================== -->
-  <section class="slide" id="slide-20" data-n="20">
+  <section class="slide" id="slide-21" data-n="21">
     <header class="s-head">
       <div class="eyebrow">Appendix · Projects</div>
       <h2 class="s-title">참여 프로젝트 <span class="hl">3사 15종+</span> — 역할과 핵심 성과</h2>
@@ -1089,7 +1134,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 14 · Data basis ==================== -->
-  <section class="slide" id="slide-21" data-n="21">
+  <section class="slide" id="slide-22" data-n="22">
     <header class="s-head">
       <div class="eyebrow">Appendix · Data Basis</div>
       <h2 class="s-title">본문 숫자의 <span class="hl">기간 · 모수 · 정의</span></h2>
@@ -1110,7 +1155,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 15 · Closing ==================== -->
-  <section class="slide slide-dark" id="slide-22" data-n="22">
+  <section class="slide slide-dark" id="slide-23" data-n="23">
     <header class="s-head">
       <div class="eyebrow">Thank you</div>
       <h2 class="s-title">런칭 첫 달의 매출과 리텐션을 지키고,<br>지표가 빠지면 원인을 찾아 고치는 게임 사업 PM</h2>
@@ -1139,8 +1184,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 
 <script>
 (function(){
-  var total=22,current=1,animating=false;
-  var titles=['표지','한눈에','컴포즈 케이스','컴포즈 개요','컴포즈 문제·목표','컴포즈 분석','컴포즈 핵심 판단','컴포즈 실행','컴포즈 협업','컴포즈 결과','분석력','추진력','기획력','요약 · 런칭','요약 · 하락 대응','요약 · 아이돌','요약 · 프로젝트 L','요약 · 포커','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
+  var total=23,current=1,animating=false;
+  var titles=['표지','한눈에','컴포즈 케이스','컴포즈 개요','컴포즈 문제·목표','컴포즈 분석','컴포즈 핵심 판단','컴포즈 실행','컴포즈 협업','컴포즈 결과','컴포즈 회고','분석력','추진력','기획력','요약 · 런칭','요약 · 하락 대응','요약 · 아이돌','요약 · 프로젝트 L','요약 · 포커','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
   var stage=document.getElementById('presentation'),progress=document.getElementById('progress'),pgnum=document.getElementById('pgnum'),dots=document.getElementById('dots'),kbd=document.getElementById('kbd');
   for(var i=1;i<=total;i++){var d=document.createElement('button');d.className='dot'+(i===1?' active':'');d.title=titles[i-1];d.setAttribute('aria-label',i+'. '+titles[i-1]);(function(n){d.addEventListener('click',function(){go(n);});})(i);dots.appendChild(d);}
   function chrome(){progress.style.width=(current/total*100)+'%';pgnum.innerHTML='<strong>'+current+'</strong> / '+total;var ds=dots.children;for(var i=0;i<ds.length;i++)ds[i].classList.toggle('active',i+1===current);var act=document.getElementById('slide-'+current);stage.classList.toggle('dark-chrome',act.classList.contains('slide-dark')||act.classList.contains('slide-cover'));}
