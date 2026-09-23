@@ -453,6 +453,26 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .gi img{width:100%;height:100%;object-fit:cover;display:block}
 .gi figcaption{position:absolute;left:10px;right:10px;bottom:10px;font-size:11.5px;font-weight:700;color:#fff;background:rgba(15,23,42,.72);border-radius:8px;padding:6px 10px;line-height:1.35;backdrop-filter:blur(2px)}
 
+/* slide 9 gallery v2 — natural aspect ratios (no crop) */
+.gal2{display:flex;gap:14px;justify-content:center;align-items:flex-start;height:470px}
+.g2{position:relative;margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--bg-subtle);flex:none}
+.g2 img{width:100%;height:100%;object-fit:contain;display:block}
+.g2 figcaption{position:absolute;left:8px;right:8px;bottom:8px;font-size:11px;font-weight:700;color:#fff;background:rgba(15,23,42,.72);border-radius:7px;padding:5px 9px;line-height:1.35}
+.g2.ph{width:217px;height:470px}
+.g2r{display:flex;flex-direction:column;gap:14px;width:510px;flex:none}
+.g2.hp{width:510px;height:247px}
+.g2b{display:flex;gap:14px}
+.g2.st{width:286px;height:209px}
+.g2.re{width:210px;height:209px}
+/* slide 8 vertical fit after GPS line */
+#slide-8 .s-body{gap:16px;justify-content:flex-start;padding-top:14px}
+#slide-8 .loop>.ln{min-height:104px;padding:14px 16px}
+#slide-8 .loop-back{margin-top:2px;padding-top:6px}
+#slide-8 .lbs{margin-top:8px;padding-top:8px}
+#slide-8 .vbars.v5{height:128px;padding-top:20px}
+#slide-8 .cn{min-height:130px;padding:12px 8px 10px}
+#slide-8 .cn svg{width:26px;height:26px;margin-bottom:6px}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -736,16 +756,19 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 실행 · 제작물</div>
       <h2 class="s-title">매장 · 앱 · 홈페이지 · 인게임, <span class="hl">한 톤</span>으로 동시 노출</h2>
-      <p class="s-sub">홍보물 10종 규격과 컴포즈 브랜드 가이드(로고 · 컬러 · 실제 판매 메뉴)를 정리해 디자인팀에 전달, 문구를 덜어낸 안으로 채택</p>
+      <p class="s-sub">홍보물 10종 규격과 컴포즈 브랜드 가이드(로고 · 컬러 · 실제 판매 메뉴)를 정리해 디자인팀에 전달</p>
     </header>
     <div class="s-body">
-      <div class="gal a-up d1">
-        <figure class="gi w2"><img src="image/compose/hp.jpg" alt="컴포즈 홈페이지 상단 이벤트 페이지" style="object-position:50% 40%"><figcaption>컴포즈 홈페이지 상단 — 이벤트 2종 · 음료 3종 · 도감 31종</figcaption></figure>
-        <figure class="gi"><img src="image/compose/app.jpg" alt="컴포즈 앱 히어로 배너" style="object-position:50% 4%"><figcaption>컴포즈 앱 히어로 배너</figcaption></figure>
-        <figure class="gi"><img src="image/compose/ingame.jpg" alt="인게임 걸어서 컴포즈 투어 화면" style="object-position:50% 0%"><figcaption>인게임 — 걸어서 컴포즈 투어</figcaption></figure>
-        <figure class="gi w2"><img src="image/compose.jpg" alt="컴포즈 매장 키오스크·DID·계산대 모니터 노출" style="object-position:50% 30%"><figcaption>전국 매장 — 키오스크 · DID · 계산대 모니터 · A2 포스터</figcaption></figure>
-        <figure class="gi"><img src="image/compose/ad.jpg" alt="온라인 광고 소재" style="object-position:50% 50%"><figcaption>온라인 광고 소재 — 10/2~10/31 음료 프로모션</figcaption></figure>
-        <figure class="gi"><img src="image/compose/reaction.jpg" alt="유저 커뮤니티 반응" style="object-position:50% 45%"><figcaption>유저 반응 — 컴포즈 스킨으로 꾸민 매장 게시글</figcaption></figure>
+      <div class="gal2 a-up d1">
+        <figure class="g2 ph"><img src="image/compose/app.jpg" alt="컴포즈 앱 히어로 배너"><figcaption>컴포즈 앱 히어로 배너</figcaption></figure>
+        <figure class="g2 ph"><img src="image/compose/ingame.jpg" alt="인게임 걸어서 컴포즈 투어 화면"><figcaption>인게임 — 걸어서 컴포즈 투어</figcaption></figure>
+        <div class="g2r">
+          <figure class="g2 hp"><img src="image/compose/hp.jpg" alt="컴포즈 홈페이지 상단 이벤트 페이지"><figcaption>컴포즈 홈페이지 상단 — 이벤트 2종 · 음료 3종 · 도감 31종</figcaption></figure>
+          <div class="g2b">
+            <figure class="g2 st"><img src="image/compose.jpg" alt="컴포즈 매장 키오스크·DID·계산대 모니터 노출"><figcaption>전국 매장 — 키오스크 · DID · 계산대 모니터</figcaption></figure>
+            <figure class="g2 re"><img src="image/compose/reaction.jpg" alt="유저 커뮤니티 반응"><figcaption>유저 반응 — 컴포즈 스킨 매장</figcaption></figure>
+          </div>
+        </div>
       </div>
     </div>
   </section>
