@@ -479,6 +479,46 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 #slide-8 .cn{min-height:130px;padding:12px 8px 10px}
 #slide-8 .cn svg{width:26px;height:26px;margin-bottom:6px}
 
+/* ---------- Case 2 components ---------- */
+.tline.tl7{grid-template-columns:repeat(7,1fr)}
+.tline.tl7::before{left:7%;right:7%}
+.hbar.lg.dn .hb-v{color:var(--ink)}
+.npu{background:var(--wash);border:1px solid var(--wash-deep);border-radius:12px;padding:16px 18px;text-align:center}
+.npu b{display:block;font-size:30px;font-weight:800;color:var(--blue-ink);letter-spacing:-.02em;line-height:1.1}
+.npu b i{font-style:normal;color:var(--blue);font-size:22px;margin:0 6px}
+.npu span{display:block;font-size:12px;color:var(--muted);margin-top:6px}
+.an3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;flex:1;min-height:0}
+.an3 .ig{gap:6px}
+.hb-s{display:grid;grid-template-columns:1fr 110px 62px;align-items:center;gap:10px;font-size:12.5px;color:var(--text);padding:5px 0;border-bottom:1px solid var(--border-soft,#F1F5F9)}
+.hb-s i{display:block;height:10px;background:var(--blue);border-radius:5px;opacity:.85;justify-self:start}
+.hb-s b{text-align:right;color:var(--ink);font-size:13px}
+.an-sum{margin-top:10px;font-size:13.5px;color:var(--blue-ink);background:var(--wash);border:1px solid var(--wash-deep);border-radius:8px;padding:8px 12px;line-height:1.45}
+.an3 .ig-n{margin-top:8px}
+.loop.l5{grid-template-columns:1fr 18px 1fr 18px 1.15fr 18px 1fr 18px 1fr}
+.task9{display:grid;grid-template-columns:1.25fr 1.25fr 1fr 1fr 1fr;gap:12px}
+.tk{background:var(--bg-subtle);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.tk b{display:block;font-size:13px;color:var(--ink);margin-bottom:6px}
+.tk span{display:block;font-size:12px;color:var(--muted);line-height:1.5;padding:2px 0}
+.tk span.done{color:var(--blue-ink);font-weight:700}
+.mx.rs{table-layout:fixed}
+.mx.rs th{padding:7px 8px;font-size:11.5px}
+.mx.rs td{font-size:13.5px;color:var(--text);padding:9px 8px;text-align:center;font-weight:600;min-width:0;white-space:normal}
+.mx.rs td:first-child{text-align:left;color:var(--ink)}
+.mx.rs td:last-child{font-weight:800;color:var(--blue)}
+.mx.rs td.dn{color:var(--ink)}
+.mx.rs tr.on td{background:var(--wash);color:var(--blue-ink)}
+.kv3 .lim{border-color:var(--wash-deep);background:#fff}
+.kv3 .lim b{color:var(--ink)}
+.cs .lbs{margin-top:0;padding-top:0;border-top:0}
+
+.an3 .hb-s{padding:11px 0;font-size:13.5px;grid-template-columns:1fr 120px 64px}
+.an3 .hb-s i{height:14px;border-radius:7px}
+.an3 .an-sum{margin-top:16px;font-size:14px;padding:11px 14px}
+.an3 .ig-n{margin-top:14px;font-size:12.5px}
+.an3 .ig{padding:20px 22px}
+.rsum .stat{padding:16px 20px}
+.rsum .stat .v{font-size:26px}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -570,7 +610,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="kpis">
         <div class="card kpi a-up d1"><div class="v dsp">5.1억</div><div class="l">런칭 후 7일 인앱 매출 · 아이러브커피 키우기 (2025)</div></div>
         <div class="card kpi a-up d1"><div class="v dsp">3,000개 매장</div><div class="l">컴포즈커피 온·오프라인 콜라보 · 이벤트 참여 14.6만명</div></div>
-        <div class="card kpi a-up d2"><div class="v dsp">26.5 → 8.6%</div><div class="l">온보딩 구간 이탈률 · 원인 분석 → 튜토리얼 개선</div></div>
+        <div class="card kpi a-up d2"><div class="v dsp">28.7 → 43.8%</div><div class="l">고과금 매출 비중 · 3주차 하락 원인 진단 → 상품 구조 개편 (2025)</div></div>
         <div class="card kpi a-up d2"><div class="v dsp">138만</div><div class="l">피크 DAU · Water Sort Quest 런칭 주도 (2024)</div></div>
         <div class="card kpi a-up d3"><div class="v dsp">15만</div><div class="l">사전예약 · SNS 참여형 캠페인 + 브랜드 콜라보</div></div>
         <div class="card kpi a-up d3"><div class="v dsp">대회 26회</div><div class="l">온·오프라인 포커 대회 기획·운영 · 참여 2,000명+</div></div>
@@ -879,8 +919,225 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </div>
   </section>
 
+  <!-- ==================== D0 · 하락 대응 케이스 간지 ==================== -->
+  <section class="slide slide-dark slide-div" id="slide-13" data-n="13">
+    <div class="div-wrap">
+      <div class="eyebrow a-up d1">Core Case 02 · Live Ops & Monetization</div>
+      <h2 class="s-title a-up d2">아이러브커피 키우기 런칭 3주차<br>매출 −41%의 원인을 결제 구조에서 찾다</h2>
+      <p class="s-sub a-up d3">런칭 3주 만에 DAU가 33%, 매출이 41% 빠졌습니다. 마케팅 탓으로 두는 대신 PU가 DAU보다 빨리 빠진다는 점에서 결제 구조 문제로 재정의하고, 상품 구조를 바꿔 ARPPU를 지키면서 개선 과제 9종을 다음 업데이트로 이어갔습니다.</p>
+      <div class="chap a-up d4">
+        <span>01 개요</span><span>02 문제 정의</span><span>03 분석</span><span>04 핵심 판단</span><span>05 실행 · 협업</span><span>06 결과</span><span>07 회고</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== D1 · 개요 ==================== -->
+  <section class="slide cs" id="slide-14" data-n="14">
+    <header class="s-head">
+      <div class="eyebrow">Core Case 02 · 아이러브커피 키우기 · 개요</div>
+      <h2 class="s-title">하락 인지에서 다음 업데이트까지 — <span class="hl">3주</span>의 대응</h2>
+    </header>
+    <div class="s-body">
+      <div class="tline tl7 a-up d1">
+        <div class="tl-i"><b>09.23</b><span>한국 런칭</span></div><div class="tl-i"><b>10.07</b><span>3주차 · 하락 인지</span></div><div class="tl-i"><b>10.10</b><span>1차 분석 공유<br>이탈 · 재화</span></div><div class="tl-i"><b>10.13~17</b><span>v1.0.3 검수 · 배포</span></div><div class="tl-i on"><b>10.22</b><span>전후 분석 · 과제 9종</span></div><div class="tl-i"><b>10.29</b><span>v1.0.4<br>누적 결제 이벤트</span></div><div class="tl-i"><b>11월~</b><span>UA 축소 · 후속 과제</span></div>
+      </div>
+      <div class="stat4 a-up d2">
+        <div class="stat"><div class="l">분석 문서</div><div class="v dsp">2건</div></div>
+        <div class="stat"><div class="l">도출한 개선 과제</div><div class="v dsp">9종</div></div>
+        <div class="stat"><div class="l">반영 업데이트</div><div class="v dsp">v1.0.3 · v1.0.4</div></div>
+        <div class="stat"><div class="l">하락 인지 → 1차 분석</div><div class="v dsp">3일</div></div>
+      </div>
+      <div class="grid2 a-up d3 fill s4b">
+        <div class="card fc"><div class="tag">서비스 맥락</div><h4>첫 주 NRU 14.4만 이후 유입이 급감하는 런칭 곡선</h4><p>런칭 UA 축소가 예정된 시점이라 신규 유입으로 매출을 메꿀 수 없었고, 남은 유저의 결제 구조를 고쳐야 했습니다.</p></div>
+        <div class="card fc"><div class="tag">내 역할</div><h4>지표 조회 → 분석 문서 → 과제 · 이벤트 기획 → 검수 대응</h4><p>키바나 · Adjust 직접 조회, 분석 문서 2건 작성, 키바나 지표 추가 요청, 개선 과제 9종 · 이벤트 기획, v1.0.3 · 1.0.4 스토어 검수 신청과 재심사 대응.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== D2 · 문제 정의 ==================== -->
+  <section class="slide cs" id="slide-15" data-n="15">
+    <header class="s-head">
+      <div class="eyebrow">Core Case 02 · 문제 정의</div>
+      <h2 class="s-title">PU가 DAU보다 빨리 빠졌다 — <span class="hl">유저 파이가 아니라 결제 구조</span></h2>
+      <p class="s-sub">v1.0.2 기간(9/30~10/5) 대비 v1.0.3 기간(10/17~10/22) 평균</p>
+    </header>
+    <div class="s-body">
+      <div class="grid2" style="grid-template-columns:1.35fr 1fr;gap:18px">
+        <div class="card ig wide a-up d1">
+          <div class="ig-h">지표별 하락 폭 — 결제 지표가 유저 지표보다 크게 빠짐</div>
+          <div class="hbar lg dn"><div class="hb-l">매출</div><div class="hb-t"><div class="hb-f warn" style="width:100%"><span>3.32억 → 1.95억</span></div></div><div class="hb-v">−41.5%</div></div>
+          <div class="hbar lg dn"><div class="hb-l">PU (결제 유저)</div><div class="hb-t"><div class="hb-f warn" style="width:92%"><span>4,823 → 2,992</span></div></div><div class="hb-v">−38.0%</div></div>
+          <div class="hbar lg dn"><div class="hb-l">DAU</div><div class="hb-t"><div class="hb-f" style="width:80%"><span>21,465 → 14,319</span></div></div><div class="hb-v">−33.3%</div></div>
+          <div class="hbar lg dn"><div class="hb-l">ARPPU</div><div class="hb-t"><div class="hb-f" style="width:14%"><span></span></div></div><div class="hb-v">−5.6%</div></div>
+          <div class="hb-foot one"><span>PU 감소 폭(−38%)이 DAU 감소 폭(−33%)보다 크고, 남은 결제 유저의 구매력(ARPPU)은 거의 그대로 → 유저가 빠져서가 아니라 <b>결제층이 먼저 빠지는 구조</b></span></div>
+        </div>
+        <div class="card ig a-up d2">
+          <div class="ig-h">신규 결제 유입이 반토막</div>
+          <div class="npu"><b>35.2% <i>→</i> 19.1%</b><span>NPU 비중 · 일 결제 유저 중 첫 결제 유저</span></div>
+          <div class="kv3 v tight" style="margin-top:12px">
+            <div><b>처음 정의: "DAU가 빠진다"</b><span>마케팅·시장 요인 → 할 수 있는 게 UA 증액뿐</span></div>
+            <div><b>다시 정의: "결제층이 축소된다"</b><span>NPU 급감 + 소·중과금 이탈 → 상품·과금 구조로 대응 가능</span></div>
+            <div><b>왜 지금인가</b><span>11월 UA 축소 예정 → 신규 유입으로 못 메꿈, 남은 유저의 결제 구조를 고쳐야 방어</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== D3 · 분석 ==================== -->
+  <section class="slide cs" id="slide-16" data-n="16">
+    <header class="s-head">
+      <div class="eyebrow">Core Case 02 · 분석 (10/10 이탈 · 재화 분석)</div>
+      <h2 class="s-title">세 축으로 뜯어본 원인 — <span class="hl">이탈 구간 · 과금 유형 · 재화 흐름</span></h2>
+    </header>
+    <div class="s-body">
+      <div class="an3 a-up d1">
+        <div class="card ig">
+          <div class="ig-h">① 이탈 퍼널 — 꾸미기 해금 전에 몰림</div>
+          <div class="hb-s"><span>계정 생성 → 머지 튜토리얼</span><i style="width:36%"></i><b>5.7%</b></div>
+          <div class="hb-s"><span>머지 → 교육 튜토리얼</span><i style="width:62%"></i><b>10%</b></div>
+          <div class="hb-s"><span>직원 뽑기 → 배치</span><i style="width:100%"></i><b>16%</b></div>
+          <div class="hb-s"><span>배치 → 자동 꾸미기</span><i style="width:38%"></i><b>6%</b></div>
+          <div class="an-sum"><b>꾸미기 해금 전 누적 37.87%</b> · 이후 구간별 평균 2%</div>
+          <p class="ig-n">가이드 5번까지 머지만 노출 → "머지 게임"으로 오인(리뷰에서도 확인). 9/26 이후 진성 코호트 기준</p>
+        </div>
+        <div class="card ig">
+          <div class="ig-h">② PU 유형 — 헤비 매출 비중 20%에 그침</div>
+          <div class="hb-s"><span>소과금 (&lt;10만) 7,150명</span><i style="width:71%"></i><b>1.59억</b></div>
+          <div class="hb-s"><span>중과금 (10~50만) 1,054명</span><i style="width:100%"></i><b>2.23억</b></div>
+          <div class="hb-s"><span>고과금 (50~100만) 130명</span><i style="width:40%"></i><b>0.90억</b></div>
+          <div class="hb-s"><span>헤비 (100만+) 71명</span><i style="width:58%"></i><b>1.30억</b></div>
+          <div class="an-sum"><b>소 · 중과금이 매출의 63%</b> · 고과금 전환 트리거 없음</div>
+          <p class="ig-n">판매 상위는 300%+ 고효율 · 에픽 직원 · 한정 꾸미기. 50만 원 이상은 남성 60%, 소 · 중은 2030 여성</p>
+        </div>
+        <div class="card ig">
+          <div class="ig-h">③ 재화 소진율 — 인플레 없음, 편중 있음</div>
+          <div class="hb-s"><span>캐시</span><i style="width:77%"></i><b>77%</b></div>
+          <div class="hb-s"><span>골드</span><i style="width:88%"></i><b>88%</b></div>
+          <div class="hb-s"><span>실버</span><i style="width:92%"></i><b>92%</b></div>
+          <div class="hb-s"><span>뽑기권 3종</span><i style="width:93%"></i><b>92~95%</b></div>
+          <div class="an-sum"><b>획득 대비 약 90% 소진</b> · 캐시 소모의 45%가 직원 뽑기</div>
+          <p class="ig-n">상품 효율을 올려도 흡수할 여력이 있다는 근거이자, 소비처를 분산해야 한다는 근거</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== D4 · 핵심 판단 ==================== -->
+  <section class="slide cs" id="slide-17" data-n="17">
+    <header class="s-head">
+      <div class="eyebrow">Core Case 02 · 핵심 판단</div>
+      <h2 class="s-title"><span class="hl">여섯 번</span>의 판단</h2>
+    </header>
+    <div class="s-body">
+      <div class="jbig a-up d1">
+        <div class="card jc big"><div class="jtop"><span class="jtag">문제 재정의</span><span class="jrep">대표 판단</span></div><h4>"DAU 하락"이 아니라 <em>"결제층 축소"</em>로 문제를 바꿔 잡기</h4><div class="ab"><span class="x">DAU 하락 → 마케팅 · 시장 탓 → UA 증액 요청</span><span class="o">PU −38% &gt; DAU −33%, NPU 35→19% → 상품 · 과금 구조로 대응</span></div><p>같은 −41%라도 원인을 어디에 두느냐에 따라 할 수 있는 일이 달라짐. UA 축소가 예정된 시점이라 구조 쪽이 유일한 선택지</p></div>
+        <div class="card jc big"><div class="jtop"><span class="jtag">지표 기반 의사결정</span><span class="jrep">대표 판단</span></div><h4>상품 효율 <em>100~200% 상향</em>, 인플레 반론은 소진율로 닫기</h4><div class="ab"><span class="x">"재화를 더 주면 인플레가 온다"</span><span class="o">획득 대비 소진율 90% → 흡수 여력 확인 후 진행, 업데이트 후 같은 지표로 재검증(골드 제외 90% 유지)</span></div><p>고과금 대상 신규 상품(스텝업 1~3단계 · 11.9만 원대)을 함께 추가해 9,900원 중심 → 5만 원대 이상 중심으로 판매 구조 이동</p></div>
+      </div>
+      <div class="jsm a-up d2">
+        <div class="card jc sm"><span class="jtag">우선순위 판단</span><h4>온보딩 재배치보다 <em>상품 구조</em>부터</h4><p>튜토리얼 재배치는 공수 크고 검증 어려움 → 제안으로 남기고 빠르게 측정 가능한 상품부터</p></div>
+        <div class="card jc sm"><span class="jtag">BM 설계</span><h4>NPU 회복은 할인이 아니라 <em>초회 결제 보너스</em></h4><p>결제 후 3일 · 7일차 재방문 시 보너스(리텐션 연동형)로 첫 결제와 잔존을 함께</p></div>
+        <div class="card jc sm"><span class="jtag">보상 설계</span><h4>누적 결제 이벤트 <em>보상률 8~10.9%</em> 상한</h4><p>5천 · 10만 · 40만 · 50만 원 구간 = NPU 전환 → 뽑기권 → 패키지 전체 → 고과금 전환 유도</p></div>
+        <div class="card jc sm"><span class="jtag">효과 검증</span><h4>멤버십 상점은 <em>후속 과제</em>로 강등</h4><p>소모처 분산 목적이었지만 전체 캐시의 약 1% → 직원 외 콘텐츠 성장 과제로 승격</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== D5 · 실행 · 협업 ==================== -->
+  <section class="slide cs" id="slide-18" data-n="18">
+    <header class="s-head">
+      <div class="eyebrow">Core Case 02 · 실행 · 협업</div>
+      <h2 class="s-title">분석 → 업데이트 → 전후 검증 → <span class="hl">과제 9종</span> → 다음 업데이트</h2>
+    </header>
+    <div class="s-body">
+      <div class="card ig a-up d1">
+        <div class="loop l5">
+          <div class="ln"><b>10.10 1차 분석</b><span>이탈 퍼널 · PU 유형 · 재화 소진율<br>키바나 지표 추가 요청(PU UID 구매액)</span></div><i></i>
+          <div class="ln"><b>10.17 v1.0.3</b><span>상품 효율 상향 · 고과금 신규 상품<br>멤버십 상점 · 일일 기념품 패키지</span></div><i></i>
+          <div class="ln hi"><b>10.22 전후 분석</b><span>PU 유형 · 매출 · 재화 · 소모처 4축<br>비교 기간을 문서에 먼저 고정</span></div><i></i>
+          <div class="ln"><b>개선 과제 9종</b><span>목적 5개 × 벤치마크 타이틀 명시<br>KPI 기대효과 열 포함</span></div><i></i>
+          <div class="ln"><b>10.29 v1.0.4</b><span>누적 결제 이벤트 반영<br>캐시 소모 이벤트 상세 기획 전달</span></div>
+        </div>
+      </div>
+      <div class="task9 a-up d2">
+        <div class="tk"><b>캐시 소모 편중 완화</b><span>① 캐시 누적 소모 이벤트</span><span>② 직원 외 콘텐츠 성장성</span><span>③ 피팅룸 리소스 다양화</span></div>
+        <div class="tk"><b>중 → 고과금 전환</b><span>④ 컨셉별 조건 패키지</span><span>⑤ 시즌 랭킹 이벤트</span><span class="done">⑥ 누적 결제 이벤트 · v1.0.4 반영</span></div>
+        <div class="tk"><b>고과금 유지</b><span>⑦ 멤버십 전용 과시 시스템</span></div>
+        <div class="tk"><b>결제 행동 유도</b><span>⑧ 신규 메인 패키지 팝업</span></div>
+        <div class="tk"><b>NPU 회복</b><span>⑨ 초회 결제 보너스(리텐션 연동)</span></div>
+      </div>
+      <div class="lbs a-up d3"><span class="lbs-k">협업</span>사업팀장 방향 합의 · 개발팀 키바나 지표 추가 · 운영툴 로그 · 상품 테이블 · QA 검수 · Google/Apple 심사(iOS 재심사) — 분석 문서에 "필요 데이터 · 회신 상태" 열을 두고 추적</div>
+    </div>
+  </section>
+
+  <!-- ==================== D6 · 결과 ==================== -->
+  <section class="slide cs" id="slide-19" data-n="19">
+    <header class="s-head">
+      <div class="eyebrow">Core Case 02 · 결과</div>
+      <h2 class="s-title">DAU −33% 속에서 ARPPU를 지키고 <span class="hl">고과금 매출 비중 28.7 → 43.8%</span></h2>
+    </header>
+    <div class="s-body">
+      <div class="stat4 a-up d1">
+        <div class="stat hi"><div class="l">고과금 이상 매출 비중</div><div class="v dsp">28.7 → 43.8%</div></div>
+        <div class="stat hi"><div class="l">10만 원 이상 상품 매출 비중</div><div class="v dsp">약 10배</div></div>
+        <div class="stat hi"><div class="l">멤버십 Lv9~19 유저</div><div class="v dsp">+90%</div></div>
+        <div class="stat hi"><div class="l">ARPPU (DAU −33% 구간)</div><div class="v dsp">−5.6%</div></div>
+      </div>
+      <div class="grid2 fill" style="grid-template-columns:1.2fr 1fr;gap:18px">
+        <div class="card ig a-up d2">
+          <div class="ig-h">v1.0.2 기간(9/30~10/5) → v1.0.3 기간(10/17~10/22)</div>
+          <table class="mx rs">
+            <tr><th>지표</th><th>v1.0.2</th><th>v1.0.3</th><th>변동</th></tr>
+            <tr><td>평균 DAU</td><td>21,465</td><td>14,319</td><td class="dn">−33.3%</td></tr>
+            <tr><td>PU</td><td>4,823</td><td>2,992</td><td class="dn">−38.0%</td></tr>
+            <tr><td>매출</td><td>3.32억</td><td>1.95억</td><td class="dn">−41.5%</td></tr>
+            <tr><td>ARPPU</td><td>68,870</td><td>65,030</td><td>−5.6%</td></tr>
+            <tr><td>NPU 비중</td><td>35.2%</td><td>19.1%</td><td class="dn">−16.1%p</td></tr>
+            <tr class="on"><td>고과금 이상 매출 비중</td><td>28.7%</td><td>43.8%</td><td>+15.1%p</td></tr>
+          </table>
+        </div>
+        <div class="card ig a-up d3">
+          <div class="ig-h">읽는 법 — 무엇을 지켰고 무엇을 못 막았나</div>
+          <div class="kv3 v tight">
+            <div><b>지킨 것</b><span>판매 구조가 9,900원 중심 → 5만 원대 이상 중심으로 이동, 재화 소진율 90% 유지(인플레 없음), 캐시 소모처 일부 분산</span></div>
+            <div><b>이어간 것</b><span>과제 9종 중 누적 결제 이벤트(v1.0.4) · 캐시 소모 이벤트 기획 실행, 초회 결제 보너스 · 조건 패키지는 이후 업데이트로</span></div>
+            <div class="lim"><b>못 막은 것</b><span>전체 매출 −41.5%와 유저 파이 축소. 고과금 비중도 아직 50% 미만 — 문서 결론 그대로 "구조는 바뀌었지만 파이가 작아 안정성 낮음"</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== D7 · 회고 ==================== -->
+  <section class="slide cs" id="slide-20" data-n="20">
+    <header class="s-head">
+      <div class="eyebrow">Core Case 02 · 회고</div>
+      <h2 class="s-title">구조는 고쳤지만 파이는 못 지켰다 — <span class="hl">남긴 기준과 빠뜨린 설계</span></h2>
+    </header>
+    <div class="s-body">
+      <div class="stat4 a-up d1 rsum">
+        <div class="stat hi"><div class="l">지킨 것 · ARPPU</div><div class="v dsp">−5.6%</div></div>
+        <div class="stat hi"><div class="l">지킨 것 · 고과금 매출 비중</div><div class="v dsp">+15.1%p</div></div>
+        <div class="stat"><div class="l">못 막은 것 · DAU</div><div class="v dsp">−33%</div></div>
+        <div class="stat"><div class="l">못 막은 것 · 매출</div><div class="v dsp">−41.5%</div></div>
+      </div>
+      <div class="retro a-up d2">
+        <div class="rcol">
+          <div class="rlab ok">✓ 잘 된 것 — 다음에도</div>
+          <div class="card rc"><h4>매출 지표는 "파이 × 구조"로 나눠 본다</h4><p>−41% 하나로 보면 마케팅 탓이 되지만, PU 감소 폭이 DAU를 앞지른다는 한 줄이 상품 구조 문제를 드러냈고 할 수 있는 일을 만들었음</p></div>
+          <div class="card rc"><h4>반론은 같은 지표로 닫고, 같은 지표로 재검증한다</h4><p>효율 상향의 인플레 우려를 소진율 90%로 닫고, 업데이트 5일 뒤 같은 지표로 다시 확인. 비교 기간을 문서에 먼저 박아 둔 것이 전후 분석 속도를 만들었음</p></div>
+        </div>
+        <div class="rcol">
+          <div class="rlab re">↻ 다시 한다면</div>
+          <div class="card rc"><h4>온보딩 지표는 코호트부터 정제한다</h4><p>런칭 주 부스팅 계정이 섞인 채로 보면 첫 구간 이탈이 26.5%로 보였지만, 진성 코호트로는 5.7%. 정제 없이 썼다면 "튜토리얼 개선 효과"라는 잘못된 결론을 냈을 것</p></div>
+          <div class="card rc"><h4>UA 축소 시점과 BM 개편을 같이 설계한다</h4><p>유저 파이 축소는 BM으로 못 막는 요인. 다음엔 UA를 줄이는 주에 맞춰 신규 결제 유도 장치(초회 결제 보너스)를 먼저 넣고 축소</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== 3 · Strength 1 ==================== -->
-  <section class="slide" id="slide-13" data-n="13">
+  <section class="slide" id="slide-21" data-n="21">
     <header class="s-head">
       <div class="eyebrow">Strength 01 · 분석력</div>
       <h2 class="s-title">지표가 빠지면 <span class="hl">원인을 찾아</span> 고칩니다</h2>
@@ -890,9 +1147,9 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="grid3 fill">
         <div class="card fc a-up d1">
           <div class="tag">아이러브커피 키우기 · 2025.10</div>
-          <h4>매출 −41%의 원인을 이탈 구간과 과금 구조로 특정</h4>
-          <p>런칭 3주차 DAU −33%·매출 −41%, 신규 결제 비중 35→19%. 이탈 퍼널에서 꾸미기 해금 전 구간의 37.87% 이탈을, 과금 코호트에서 고과금 편중(28.7→43.8%)을 확인해 개선 과제 9종 설계.</p>
-          <div class="r">튜토리얼 개선 → 온보딩 이탈률 <b class="n">26.5% → 8.6%</b></div>
+          <h4>매출 −41%의 원인을 결제층 축소로 특정</h4>
+          <p>런칭 3주차 DAU −33%·PU −38%·매출 −41%, 신규 결제 비중 35→19%. 이탈 퍼널·PU 유형·재화 소진율을 뜯어 원인을 결제 구조로 재정의하고 상품 효율·고과금 라인업을 개편, 전후 분석으로 개선 과제 9종 설계.</p>
+          <div class="r">DAU −33% 속 ARPPU −5.6% 방어 · 고과금 매출 비중 <b class="n">28.7% → 43.8%</b></div>
         </div>
         <div class="card fc a-up d2">
           <div class="tag">아이돌 키우기 · 2025.03</div>
@@ -912,7 +1169,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 4 · Strength 2 ==================== -->
-  <section class="slide" id="slide-14" data-n="14">
+  <section class="slide" id="slide-22" data-n="22">
     <header class="s-head">
       <div class="eyebrow">Strength 02 · 추진력</div>
       <h2 class="s-title">제안부터 <span class="hl">계약·운영까지</span> 직접 끝냅니다</h2>
@@ -950,7 +1207,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 5 · Strength 3 ==================== -->
-  <section class="slide" id="slide-15" data-n="15">
+  <section class="slide" id="slide-23" data-n="23">
     <header class="s-head">
       <div class="eyebrow">Strength 03 · 기획력</div>
       <h2 class="s-title">런칭과 BM을 <span class="hl">구조로</span> 설계합니다</h2>
@@ -973,8 +1230,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card fc a-up d3">
           <div class="tag">아이러브커피 · 아이돌 키우기 이벤트 · 2025</div>
           <h4>이벤트마다 목적과 검증 지표를 붙여 설계</h4>
-          <p>진단 과제(NPU 회복·재화 소모·중→고과금 전환)별로 출석·레벨 달성·데일리 패스·타임딜·복귀 5종을 설계. 신서버 오픈은 이전 리워드·LMS 쿠폰 6,680명·시즌 경쟁으로 구성.</p>
-          <div class="r">온보딩 이탈률 <b class="n">26.5 → 8.6%</b> · 신서버 2일차 DAU <b class="n">401 → 1,305</b></div>
+          <p>진단 과제(NPU 회복·재화 소모·중→고과금 전환)별로 누적 결제·캐시 소모·초회 결제 보너스 등 과제 9종을 목적 → 대상 → 검증 지표로 설계. 신서버 오픈은 이전 리워드·LMS 쿠폰 6,680명·시즌 경쟁으로 구성.</p>
+          <div class="r">누적 결제 이벤트 <b class="n">v1.0.4 반영</b> · 신서버 2일차 DAU <b class="n">401 → 1,305</b></div>
         </div>
         <div class="card fc a-up d4">
           <div class="tag">프로젝트 L · 2026</div>
@@ -988,7 +1245,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 6 · Case 1 Launch ==================== -->
-  <section class="slide" id="slide-16" data-n="16">
+  <section class="slide" id="slide-24" data-n="24">
     <header class="s-head">
       <div class="eyebrow">Summary · 아이러브커피 키우기 런칭</div>
       <h2 class="s-title">IP 장르 전환 리스크를 <span class="hl">FGT·피처링·콜라보</span>로 돌파</h2>
@@ -1011,41 +1268,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </div>
   </section>
 
-  <!-- ==================== 7 · Case 1 Drop ==================== -->
-  <section class="slide" id="slide-17" data-n="17">
-    <header class="s-head">
-      <div class="eyebrow">Summary · 런칭 3주차 하락 대응</div>
-      <h2 class="s-title">매출 −41%를 <span class="hl">이탈 퍼널·과금 코호트</span>로 진단해 방어</h2>
-      <p class="s-sub">런칭 3주 후 DAU −33%·매출 −41%, 신규 결제 유저(NPU) 비중 35% → 19%. 표면 지표가 아니라 구조를 찾아야 했습니다</p>
-    </header>
-    <div class="s-body">
-      <div class="stat4 a-up d1">
-        <div class="stat"><div class="l">DAU (런칭 주 대비)</div><div class="v dsp">−33%</div></div>
-        <div class="stat"><div class="l">매출 (런칭 주 대비)</div><div class="v dsp">−41%</div></div>
-        <div class="stat"><div class="l">이탈 집중 구간 (꾸미기 해금 전)</div><div class="v dsp">37.87%</div></div>
-        <div class="stat"><div class="l">고과금 매출 비중 편중</div><div class="v dsp">28.7 → 43.8%</div></div>
-      </div>
-      <div class="flow fill">
-        <div class="card fbox a-up d2"><h5>진단</h5><ul>
-          <li>이탈 퍼널 — 꾸미기 콘텐츠 해금 전 구간에 이탈 집중, 온보딩 퍼널 '플레이어 생성 → 튜토리얼 시작' 이탈 26.5%</li>
-          <li>과금 코호트 — 고과금 편중, 소·중과금 이탈로 NPU 급감</li>
-        </ul></div>
-        <div class="card fbox a-up d3"><h5>조치</h5><ul>
-          <li>개선 과제 9종 — NPU 회복 · 재화 소모 · 중→고과금 전환</li>
-          <li>튜토리얼 개선 제안 → 개발 반영</li>
-          <li>이벤트 5종 — 출석 · 레벨 달성 · 데일리 패스 · 타임딜 · 복귀</li>
-        </ul></div>
-        <div class="card fbox res a-up d4"><h5>결과</h5><ul>
-          <li>온보딩 이탈률 <b class="n">26.5% → 8.6%</b> (10월 신규 유저 기준)</li>
-          <li>꾸미기 해금 전 누적 이탈 54.3% → 44.3% · 30스테이지 도달률 24.5% → 28.8%</li>
-          <li>무료 광고 제거 3일권 → D3 Retention +0.4%p · 업데이트 전후 Retention 교차 검증</li>
-        </ul></div>
-      </div>
-    </div>
-  </section>
-
   <!-- ==================== 8 · Case 2 ==================== -->
-  <section class="slide" id="slide-18" data-n="18">
+  <section class="slide" id="slide-25" data-n="25">
     <header class="s-head">
       <div class="eyebrow">Summary · 아이돌 키우기</div>
       <h2 class="s-title">데이터로 <span class="hl">수익화 구조를 재설계</span>하고 신서버로 전환</h2>
@@ -1076,7 +1300,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 
 
   <!-- ==================== 10 · Case 4 Platform ==================== -->
-  <section class="slide" id="slide-19" data-n="19">
+  <section class="slide" id="slide-26" data-n="26">
     <header class="s-head">
       <div class="eyebrow">Summary · 프로젝트 L 웹 게임 플랫폼</div>
       <h2 class="s-title">정해진 절차가 없는 신규 플랫폼의 <span class="hl">오픈 요건을 직접 정의</span></h2>
@@ -1100,7 +1324,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 11 · Poker services ==================== -->
-  <section class="slide" id="slide-20" data-n="20">
+  <section class="slide" id="slide-27" data-n="27">
     <header class="s-head">
       <div class="eyebrow">Summary · 포커 서비스 3종</div>
       <h2 class="s-title">런칭 전에 <span class="hl">유저 풀과 운영 신뢰성</span>을 실전으로 검증</h2>
@@ -1137,7 +1361,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 12 · BM & Events ==================== -->
-  <section class="slide" id="slide-21" data-n="21">
+  <section class="slide" id="slide-28" data-n="28">
     <header class="s-head">
       <div class="eyebrow">Docs · BM · Events</div>
       <h2 class="s-title">패키지와 이벤트는 <span class="hl">"왜 이 구조인지"</span> 설명 가능한 형태로</h2>
@@ -1157,7 +1381,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
           <div class="tbl-note">가격대 9,900·14,900원 · 효율 400~500% → D7 인앱 매출 5.1억 · ARPPU 3만원대</div>
         </div>
         <div>
-          <div class="lbl">아이러브커피 키우기 — 런칭 3주차 지표 하락 대응 이벤트 5종 (2025.10)</div>
+          <div class="lbl">아이러브커피 키우기 — 신규·복귀 유저 지원 이벤트 5종 (2026.01 업데이트)</div>
           <table class="a-up d2">
             <tr><th>이벤트</th><th>목적 (진단 과제)</th><th>대상</th><th>검증 지표</th></tr>
             <tr><td class="k">출석</td><td>재방문 유도 · 이탈 완화</td><td>전체</td><td>D3·D7 Retention</td></tr>
@@ -1166,14 +1390,14 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
             <tr><td class="k">타임딜</td><td>재화 소모 촉진 · 중→고과금 전환</td><td>소·중과금</td><td>ARPPU · 상품별 판매</td></tr>
             <tr><td class="k">복귀</td><td>이탈 유저 재유입</td><td>휴면</td><td>복귀율 · 복귀 후 잔존</td></tr>
           </table>
-          <div class="tbl-note">결과 — 튜토리얼 개선과 병행해 온보딩 이탈률 26.5% → 8.6% · 무료 광고 제거 3일권으로 D3 Retention +0.4%p</div>
+          <div class="tbl-note">결과 — 업데이트 전후 비교: D3까지 Retention +0.4%p · 마켓 전환율 +0.88%p, D4 이후 이탈 확대는 확인해 후속 과제로</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==================== 13 · Projects ==================== -->
-  <section class="slide" id="slide-22" data-n="22">
+  <section class="slide" id="slide-29" data-n="29">
     <header class="s-head">
       <div class="eyebrow">Appendix · Projects</div>
       <h2 class="s-title">참여 프로젝트 <span class="hl">3사 15종+</span> — 역할과 핵심 성과</h2>
@@ -1194,7 +1418,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 14 · Data basis ==================== -->
-  <section class="slide" id="slide-23" data-n="23">
+  <section class="slide" id="slide-30" data-n="30">
     <header class="s-head">
       <div class="eyebrow">Appendix · Data Basis</div>
       <h2 class="s-title">본문 숫자의 <span class="hl">기간 · 모수 · 정의</span></h2>
@@ -1206,8 +1430,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <tr><td class="k">사전예약 15만</td><td>2025.08.12~09.22 사전등록 캠페인 순 등록 153,740명. 부스팅 유입 36.9만은 제외한 값(총 등록 52.3만)</td><td>컴포즈 기프티콘 사전등록 지급 5,992건</td></tr>
         <tr><td class="k">런칭 당일 DAU 7만 · 1주 평균 4.1만</td><td>9/23 NRU+DAU 70,143 · 9/23~29 일 평균 DAU 41,012. 1주차 NRU 합 153,178</td><td>D+1 Retention 31.8% · D+3 20.2% · D+7 13.1%</td></tr>
         <tr><td class="k">D7 인앱 매출 5.1억 · ARPPU 3만원대</td><td>9/23~29 7일 IAP 합계 5.14억(IAA 포함 총매출 5.53억). 일 결제 유저 합 17,470명 · 일 ARPPU 2.97만~3.30만원</td><td>라이브 UA 대비 IAP 3.6배 · 사전예약 UA 포함 1.1배(집행 금액 비공개)</td></tr>
-        <tr><td class="k">DAU −33% · 매출 −41%</td><td>런칭 1주차(9/23~29) 대비 3주차(10/7~13) 일 평균. 신규 결제 유저(NPU) 비중 35% → 19%</td><td>고과금 매출 비중 28.7% → 43.8%</td></tr>
-        <tr><td class="k">온보딩 이탈률 26.5% → 8.6%</td><td>'플레이어 생성 → 튜토리얼 시작' 구간. 런칭 후 누적(플레이어 생성 202,974명) 26.5% → 10월 신규 유저(43,769명) 8.6%</td><td>꾸미기 해금 전 누적 이탈 54.3% → 44.3% · 30스테이지 도달률 24.5% → 28.8%</td></tr>
+        <tr><td class="k">DAU −33% · PU −38% · 매출 −41%</td><td>v1.0.2 기간(9/30~10/5) 대비 v1.0.3 기간(10/17~22) 일 평균 — DAU 21,465 → 14,319 · PU 4,823 → 2,992 · 매출 3.32억 → 1.95억. NPU 비중 35.2% → 19.1%</td><td>ARPPU 68,870 → 65,030(−5.6%) · 주간 평균 기준 W1 41,012 → W3 17,108</td></tr>
+        <tr><td class="k">고과금 매출 비중 28.7% → 43.8%</td><td>같은 기간 비교 · 고과금(50만 원 이상)·헤비 과금 유저 매출 비중. 10만 원 이상 상품 매출 비중 약 10배 · 멤버십 Lv9~19 유저 +90%</td><td>이탈 퍼널은 9/26 이후 진성 코호트 기준(꾸미기 해금 전 누적 37.87%). 런칭 전체 기준 첫 구간 26.5%는 부스팅 계정 오염으로 미사용</td></tr>
         <tr><td class="k">피크 DAU 138만 · 1개월 425만 DL</td><td>Water Sort Quest 2024.01.21 DAU 1,380,918 · 2023.12.12~2024.01.12 신규 유저(Game BI NRU) 누적 4,254,386</td><td>런칭 D+1 Retention 35.6% (같은 해 사내 런칭 3종 대비 +3.8~10.3%p) · 피처드 기간 D+1 39.7 → 48.4%</td></tr>
         <tr><td class="k">피크 월매출 2.3억 · 누적 1,621만 DL</td><td>2024.01 월 매출 $167K(광고 + 인앱), 당시 환율 ₩1,380 기준 · 2023.12~2024.07 신규 유저 누적 16,210,849</td><td>재직 기간 기준(~2024.07)</td></tr>
       </table>
@@ -1215,7 +1439,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 15 · Closing ==================== -->
-  <section class="slide slide-dark" id="slide-24" data-n="24">
+  <section class="slide slide-dark" id="slide-31" data-n="31">
     <header class="s-head">
       <div class="eyebrow">Thank you</div>
       <h2 class="s-title">런칭 첫 달의 매출과 리텐션을 지키고,<br>지표가 빠지면 원인을 찾아 고치는 게임 사업 PM</h2>
@@ -1244,8 +1468,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 
 <script>
 (function(){
-  var total=24,current=1,animating=false;
-  var titles=['표지','한눈에','컴포즈 케이스','컴포즈 개요','컴포즈 문제·목표','컴포즈 분석','컴포즈 핵심 판단','컴포즈 실행','컴포즈 제작물','컴포즈 협업','컴포즈 결과','컴포즈 회고','분석력','추진력','기획력','요약 · 런칭','요약 · 하락 대응','요약 · 아이돌','요약 · 프로젝트 L','요약 · 포커','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
+  var total=31,current=1,animating=false;
+  var titles=['표지','한눈에','컴포즈 케이스','컴포즈 개요','컴포즈 문제·목표','컴포즈 분석','컴포즈 핵심 판단','컴포즈 실행','컴포즈 제작물','컴포즈 협업','컴포즈 결과','컴포즈 회고','하락 대응 케이스','하락 개요','하락 문제','하락 분석','하락 핵심 판단','하락 실행','하락 결과','하락 회고','분석력','추진력','기획력','요약 · 런칭','요약 · 아이돌','요약 · 프로젝트 L','요약 · 포커','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
   var stage=document.getElementById('presentation'),progress=document.getElementById('progress'),pgnum=document.getElementById('pgnum'),dots=document.getElementById('dots'),kbd=document.getElementById('kbd');
   for(var i=1;i<=total;i++){var d=document.createElement('button');d.className='dot'+(i===1?' active':'');d.title=titles[i-1];d.setAttribute('aria-label',i+'. '+titles[i-1]);(function(n){d.addEventListener('click',function(){go(n);});})(i);dots.appendChild(d);}
   function chrome(){progress.style.width=(current/total*100)+'%';pgnum.innerHTML='<strong>'+current+'</strong> / '+total;var ds=dots.children;for(var i=0;i<ds.length;i++)ds[i].classList.toggle('active',i+1===current);var act=document.getElementById('slide-'+current);stage.classList.toggle('dark-chrome',act.classList.contains('slide-dark')||act.classList.contains('slide-cover'));}
