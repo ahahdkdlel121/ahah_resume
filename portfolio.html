@@ -403,6 +403,14 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 #slide-10 .iss div{flex:1;align-items:center;padding:14px 16px}
 .sp.c b small{font-size:11px;font-weight:700;color:#DCE7FE;margin-left:2px}
 
+/* slide 6 fixes */
+#slide-6 table.mx{table-layout:fixed}
+#slide-6 .mx th{padding:6px 4px}
+#slide-6 .mx td{padding:7px 4px}
+#slide-6 .mx td:nth-child(2){min-width:0}
+.tline.tl4::before{top:20px}
+.tline.tl4 .tl-i span{white-space:nowrap;font-size:11.5px}
+
 /* ---------- Tables ---------- */
 table{width:100%;border-collapse:collapse;font-size:13px}
 th,td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border);line-height:1.5}
@@ -585,6 +593,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card ig a-up d1">
           <div class="ig-h">① 후보 브랜드 × 세 기준 (4/9 협업 요청)</div>
           <table class="mx">
+            <colgroup><col style="width:21%"><col style="width:31%"><col style="width:13%"><col style="width:13%"><col style="width:13%"><col style="width:9%"></colgroup>
             <tr><th>브랜드</th><th>매장 수</th><th>저가형</th><th>매장 규모</th><th>콜라보 밀도 낮음</th><th>충족</th></tr>
             <tr class="on"><td>컴포즈</td><td><span>2,901</span><i style="width:55px"></i></td><td>●</td><td>●</td><td>●</td><td><b>3/3</b></td></tr>
             <tr><td>메가커피</td><td><span>3,718</span><i style="width:70px"></i></td><td>●</td><td>●</td><td>○</td><td>2/3</td></tr>
@@ -610,7 +619,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
             <div><b>2,230만 회 / 월</b><span>인지 노출 — 매장 방문자 인지율 70% · 유동 인구 인지율 2% 가정</span></div>
             <div><b>150만 회</b><span>D+7 누적 인게임 매장 노출 — 리텐션 곡선 D0 60% → D7 20%</span></div>
           </div>
-          <div class="tline tl4"><div class="tl-i"><b>04.09</b><span>브랜드 4곳 제안</span></div><div class="tl-i"><b>06.13</b><span>컴포즈 회신</span></div><div class="tl-i"><b>06.17</b><span>1차 미팅 · 시뮬 전달</span></div><div class="tl-i on"><b>06.20</b><span>협업 확정 — 회신 후 7일</span></div></div>
+          <div class="tline tl4"><div class="tl-i"><b>04.09</b><span>브랜드 4곳 제안</span></div><div class="tl-i"><b>06.13</b><span>컴포즈 회신</span></div><div class="tl-i"><b>06.17</b><span>1차 미팅 · 시뮬 전달</span></div><div class="tl-i on"><b>06.20</b><span>협업 확정 (회신 후 7일)</span></div></div>
         </div>
       </div>
     </div>
@@ -663,7 +672,6 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
             <div><i style="height:5%"></i><b>435</b><span>D16</span></div>
             <div><i style="height:4%"></i><b>370</b><span>D17~30</span></div>
           </div>
-          <p class="ig-n">초도 5만 장 선구매 · 소진 후 인게임 재화로 자동 대체 · 상한은 운영툴에서 집행량에 맞춰 매일 조정</p>
         </div>
         <div class="card ig a-up d3">
           <div class="ig-h">노출 채널 — 컴포즈 쪽 5개 매체 · 13개 구좌</div>
@@ -733,7 +741,6 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
             <i style="height:100%"></i><i style="height:75%"></i><i style="height:72%"></i><i style="height:63%"></i><i style="height:48%"></i><i style="height:57%"></i><i style="height:58%"></i><i style="height:51%"></i><i style="height:54%"></i><i style="height:56%"></i><i style="height:47%"></i><i style="height:50%"></i><i style="height:45%"></i><i style="height:45%"></i><i style="height:46%"></i><i style="height:36%"></i><i style="height:40%"></i><i style="height:37%"></i><i style="height:36%"></i><i style="height:35%"></i><i style="height:33%"></i><i style="height:35%"></i><i style="height:36%"></i><i style="height:30%"></i><i style="height:28%"></i><i style="height:31%"></i><i style="height:27%"></i><i style="height:32%"></i><i style="height:31%"></i><i style="height:29%"></i>
           </div>
           <div class="spark-ax"><span>10/2 첫날 3,784</span><span>10/31 1,089</span></div>
-          <p class="ig-n">매장 방문자 일 10만 명 기준 81일 노출 약 810만 회 (내부 추정)</p>
         </div>
         <div class="card ig a-up d3">
           <div class="ig-h">이슈 → 대응</div>
