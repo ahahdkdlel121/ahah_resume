@@ -574,71 +574,85 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   .slide::after{content:attr(data-n);position:absolute;right:40px;bottom:22px;font-size:11px;color:var(--faint)}
   .slide-dark::after{color:#94A3B8}
 }
-/* ---------- Case 2 layout: fill height, larger type (2026-09-28) ---------- */
-#slide-14 .s-body{justify-content:flex-start;gap:24px;padding-top:26px}
-#slide-14 .tline.tl7{padding:14px 0 10px}
+/* ---------- Case 2 layout (2026-09-28 v2): 항목 나열형 ---------- */
+.bl{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.bl li{display:grid;grid-template-columns:6px auto 1fr;align-items:baseline;gap:10px;font-size:14px;line-height:1.5;color:var(--muted)}
+.bl li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);align-self:center}
+.bl li b{color:var(--ink);font-weight:700;white-space:nowrap}
+.bl li:not(:has(b)){grid-template-columns:6px 1fr}
+.bl.s{gap:6px}.bl.s li{font-size:12.5px;line-height:1.45}
+.bign{display:flex;align-items:baseline;gap:10px;margin:6px 0 4px}
+.bign b{font-size:34px;font-weight:800;color:var(--blue-ink);letter-spacing:-.03em;line-height:1.1}
+.bign span{font-size:13px;color:var(--muted)}
+#slide-14 .s-body{justify-content:flex-start;gap:22px;padding-top:24px}
 #slide-14 .stat4{gap:16px}
-#slide-14 .stat4 .stat{padding:24px 24px}
+#slide-14 .stat4 .stat{padding:22px 24px}
 #slide-14 .grid2.s4b{flex:1;min-height:0;gap:18px}
-#slide-14 .grid2.s4b .fc{display:flex;flex-direction:column;justify-content:center;padding:28px 30px}
-#slide-14 .grid2.s4b .fc h4{font-size:19px;line-height:1.4}
-#slide-14 .grid2.s4b .fc p{font-size:15px;line-height:1.75;margin-top:12px}
+#slide-14 .grid2.s4b .fc{display:flex;flex-direction:column;justify-content:center;padding:24px 28px;gap:0}
+#slide-14 .grid2.s4b .fc h4{font-size:18px;line-height:1.4;margin-bottom:14px}
 #slide-15 .s-body{justify-content:flex-start;padding-top:22px}
 #slide-15 .grid2{flex:1;min-height:0}
 #slide-15 .card.ig{display:flex;flex-direction:column}
 #slide-15 .card.ig.wide{justify-content:space-between}
-#slide-15 .hbar.lg{grid-template-columns:170px 1fr 80px;gap:14px}
-#slide-15 .hbar.lg .hb-t{height:54px;border-radius:12px}
-#slide-15 .hbar.lg .hb-l{font-size:16px;font-weight:700}
-#slide-15 .hbar.lg .hb-v{font-size:22px}
-#slide-15 .hb-foot.one{font-size:14.5px;line-height:1.6;margin-top:6px;padding-top:14px;border-top:1px solid var(--border)}
-#slide-15 .npu{padding:22px 18px}
-#slide-15 .npu b{font-size:36px}
-#slide-15 .npu span{font-size:12.5px;margin-top:8px}
-#slide-16 .an3 .ig{padding:24px 24px}
-#slide-16 .an3 .hb-s{padding:17px 0;font-size:14px}
-#slide-16 .an3 .hb-s i{height:16px;border-radius:8px}
-#slide-16 .an3 .an-sum{margin-top:20px;font-size:14.5px;padding:13px 15px}
-#slide-16 .an3 .ig-n{margin-top:16px;font-size:13px;line-height:1.6}
+#slide-15 .hbar.lg{grid-template-columns:150px 1fr 76px;gap:14px}
+#slide-15 .hbar.lg .hb-t{height:42px}
+#slide-15 .hbar.lg .hb-l{font-size:15px;font-weight:700}
+#slide-15 .hbar.lg .hb-v{font-size:21px}
+#slide-15 .bl{margin-top:8px;padding-top:16px;border-top:1px solid var(--border)}
+#slide-15 .npu{padding:20px 18px}
+#slide-15 .npu b{font-size:34px}
+#slide-16 .an3 .ig{padding:22px 24px;gap:0;display:flex;flex-direction:column}
+#slide-16 .an3 .hb-s{padding:9px 0;font-size:13px;grid-template-columns:1.35fr 92px 60px}
+#slide-16 .an3 .hb-s i{height:12px;border-radius:6px}
+#slide-16 .an3 .rows{margin-top:12px}
+#slide-16 .an3 .bl{margin-top:auto;padding-top:14px;border-top:1px solid var(--border)}
+#slide-16 .an3 .bl li{font-size:13px}
 #slide-17 .s-body{justify-content:flex-start;padding-top:24px;gap:20px}
 #slide-17 .jbig{gap:20px}
-#slide-17 .jc.big{padding:28px 30px}
-#slide-17 .jc.big h4{font-size:21px}
-#slide-17 .jc.big p{font-size:14.5px;line-height:1.65}
-#slide-17 .jsm{gap:16px;flex:1;min-height:0}
-#slide-17 .jc.sm{padding:22px 20px}
-#slide-17 .jc.sm h4{font-size:16px}
+#slide-17 .jc.big{padding:26px 28px}
+#slide-17 .jc.big h4{font-size:20px}
+#slide-17 .jsm{gap:16px}
+#slide-17 .jc.sm{padding:20px 20px}
+#slide-17 .jc.sm h4{font-size:15.5px}
 #slide-17 .jc.sm p{font-size:13px;line-height:1.6}
-#slide-18 .s-body{justify-content:flex-start;padding-top:26px;gap:20px}
-#slide-18 .card.ig{padding:26px 28px}
-#slide-18 .loop.l5 .ln{padding:18px 18px;min-height:110px}
-#slide-18 .ln b{font-size:16.5px}
-#slide-18 .ln span{font-size:13px;margin-top:8px;line-height:1.55}
-#slide-18 .task9{grid-template-columns:repeat(5,1fr);gap:14px;flex:1;min-height:0}
-#slide-18 .tk{padding:18px 18px;display:flex;flex-direction:column}
-#slide-18 .tk b{font-size:14.5px;margin-bottom:8px}
-#slide-18 .tk span{font-size:13px;line-height:1.55;padding:3px 0}
-#slide-18 .lbs{font-size:13px}
-#slide-19 .mx.rs td{padding:11px 8px;font-size:14px}
-#slide-19 .mx.rs td:last-child{font-size:13px}
-#slide-20 .rc{padding:24px 28px}
-#slide-20 .rc h4{font-size:17.5px}
-#slide-20 .rc p{font-size:14px;line-height:1.7;margin-top:10px}
+#slide-18 .s-body{justify-content:center;gap:22px}
 #slide-18 .loop.l5{align-items:stretch}
 #slide-18 .loop.l5>i{align-self:center}
-#slide-18 .task9{grid-template-columns:1fr 1fr 1fr;grid-template-rows:repeat(3,1fr);gap:14px}
-#slide-18 .task9 .tk:nth-child(1),#slide-18 .task9 .tk:nth-child(2){grid-row:1/4;justify-content:center}
-#slide-18 .task9 .tk:nth-child(n+3){grid-column:3;flex-direction:row;align-items:center;gap:14px}
-#slide-18 .task9 .tk:nth-child(n+3) b{margin-bottom:0;flex:0 0 118px}
+#slide-18 .loop.l5 .ln{padding:16px 16px}
+#slide-18 .ln b{font-size:16px}
+#slide-18 .ln span{font-size:13px;margin-top:8px;line-height:1.55}
+#slide-18 .task9{grid-template-columns:1fr 1fr 1fr;grid-template-rows:repeat(3,auto);gap:12px}
+#slide-18 .task9 .tk:nth-child(1),#slide-18 .task9 .tk:nth-child(2){grid-row:1/4;display:flex;flex-direction:column;justify-content:center}
+#slide-18 .task9 .tk:nth-child(n+3){grid-column:3;display:flex;flex-direction:row;align-items:center;gap:14px}
+#slide-18 .task9 .tk:nth-child(n+3) b{margin-bottom:0;flex:0 0 112px}
 #slide-18 .task9 .tk:nth-child(n+3) span{padding:0}
-#slide-18 .tk b{font-size:15px}
+#slide-18 .tk{padding:16px 18px}
+#slide-18 .tk b{font-size:14.5px;margin-bottom:8px}
 #slide-18 .tk span{font-size:13.5px;padding:5px 0}
-#slide-16 .an3 .ig{display:flex;flex-direction:column;justify-content:space-between}
-#slide-16 .an3 .an-sum{margin-top:0}
-#slide-16 .an3 .ig-n{margin-top:0}
-#slide-16 .an3 .ig:nth-child(2) .hb-s{grid-template-columns:1.45fr 96px 70px}
-#slide-20 .rc h4{font-size:19px}
-#slide-20 .rc p{font-size:15px;line-height:1.7;margin-top:12px}
+#slide-19 .mx.rs td{padding:11px 8px;font-size:14px}
+#slide-19 .mx.rs td:last-child{font-size:13px}
+#slide-19 .kv3.v>div{justify-content:flex-start}
+#slide-19 .kv3.v b{margin-bottom:8px}
+#slide-20 .rc{padding:22px 26px}
+#slide-20 .rc h4{font-size:18px;margin-bottom:12px}
+#slide-20 .rc .bl li{font-size:14px}
+#slide-14 .grid2.s4b .fc{justify-content:flex-start;padding-top:26px}
+#slide-16 .an3 .ig{justify-content:space-between}
+#slide-16 .an3 .bl{margin-top:0}
+#slide-16 .an3 .rows{margin-top:0}
+#slide-16 .an3 .hb-s{padding:12px 0}
+#slide-16 .bign b{font-size:38px}
+#slide-19 .s-body{justify-content:flex-start;padding-top:18px;gap:16px}
+#slide-19 .grid2.fill{flex:1;min-height:0}
+#slide-19 .card.ig{padding:18px 22px;min-height:0;overflow:hidden}
+#slide-19 .mx.rs td{padding:8px 8px;font-size:13.5px}
+#slide-19 .mx.rs td:last-child{font-size:12.5px}
+#slide-19 .kv3.v{gap:10px}
+#slide-19 .kv3.v>div{padding:12px 14px}
+#slide-19 .kv3.v b{font-size:14.5px;margin-bottom:6px}
+#slide-19 .bl.s{gap:5px}
+#slide-19 .stat4 .stat{padding:16px 20px}
+#slide-19 .stat4 .stat .v{font-size:28px}
 </style>
 </head>
 <body>
@@ -1019,8 +1033,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="stat"><div class="l">하락 인지 → 1차 분석</div><div class="v dsp">3일</div></div>
       </div>
       <div class="grid2 a-up d3 fill s4b">
-        <div class="card fc"><div class="tag">서비스 맥락</div><h4>첫 주 NRU 14.4만 이후 유입이 급감하는 런칭 곡선</h4><p>런칭 UA 축소가 예정된 시점이라 신규 유입으로 매출을 메꿀 수 없었고, 남은 유저의 결제 구조를 고쳐야 했습니다.</p></div>
-        <div class="card fc"><div class="tag">내 역할</div><h4>지표 조회 → 분석 문서 → 상품 · 이벤트 기획 → 개발 전달 · 검수 대응</h4><p>키바나 · Adjust 직접 조회, 이탈 · 재화 분석과 업데이트 전후 분석 작성(이후 11 · 12월 이탈 분석으로 정례화), v1.0.3 상품 개편 4종(효율 상향 · 고과금 신규 상품 · 멤버십 상점 · 일일 기념품 패키지) 기획서 작성 후 개발팀 전달, 개선 과제 9종 · 이벤트 기획, v1.0.3 · 1.0.4 스토어 검수 신청과 재심사 대응.</p></div>
+        <div class="card fc"><div class="tag">서비스 맥락</div><h4>첫 주 NRU 14.4만 → 이후 유입 급감</h4><ul class="bl"><li><b>첫 주</b>첫 달 유입의 78%</li><li><b>11월</b>런칭 UA 축소 예정 → 신규 유입으로 매출 보전 불가</li><li><b>남은 레버</b>잔여 유저의 결제 구조</li></ul></div>
+        <div class="card fc"><div class="tag">내 역할</div><h4>분석부터 검수까지 실무 전담</h4><ul class="bl"><li><b>지표</b>키바나 · Adjust 직접 조회</li><li><b>분석</b>이탈 · 재화 분석, 업데이트 전후 분석 (11 · 12월 이탈 분석으로 정례화)</li><li><b>기획</b>v1.0.3 상품 4종 · 개선 과제 9종 · 이벤트 → 개발팀 전달</li><li><b>검수</b>v1.0.3 · 1.0.4 스토어 심사 신청, iOS 재심사 대응</li></ul></div>
       </div>
     </div>
   </section>
@@ -1040,15 +1054,15 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
           <div class="hbar lg dn"><div class="hb-l">매출</div><div class="hb-t"><div class="hb-f warn" style="width:97%"><span></span></div></div><div class="hb-v">−36%</div></div>
           <div class="hbar lg dn"><div class="hb-l">DAU</div><div class="hb-t"><div class="hb-f" style="width:54%"><span></span></div></div><div class="hb-v">−20%</div></div>
           <div class="hbar lg dn"><div class="hb-l">ARPPU</div><div class="hb-t"><div class="hb-f" style="width:5%"><span></span></div></div><div class="hb-v">+2%</div></div>
-          <div class="hb-foot one"><span>PU 감소 폭(−37%)이 DAU 감소 폭(−20%)의 두 배 가까이 되고, 남은 결제 유저의 구매력(ARPPU)은 그대로 → 유저가 빠져서가 아니라 <b>결제층이 먼저 빠지는 구조</b></span></div>
+          <ul class="bl"><li><b>PU −37% vs DAU −20%</b>결제층이 두 배 속도로 축소</li><li><b>ARPPU +2%</b>남은 결제 유저의 구매력은 그대로 → 유저 파이가 아니라 결제 구조</li></ul>
         </div>
         <div class="card ig a-up d2">
           <div class="ig-h">신규 결제 유입이 반토막</div>
           <div class="npu"><b>NPU <i>−47%</i></b><span>신규 결제 유저 일평균 · 2주차 → 3주차 (업데이트 후 NPU 비중 35 → 19%로 확정)</span></div>
           <div class="kv3 v tight" style="margin-top:12px">
-            <div><b>처음 정의: "DAU가 빠진다"</b><span>마케팅·시장 요인 → 할 수 있는 게 UA 증액뿐</span></div>
-            <div><b>다시 정의: "결제층이 축소된다"</b><span>NPU 급감 + 소·중과금 이탈 → 상품·과금 구조로 대응 가능</span></div>
-            <div><b>왜 지금인가</b><span>11월 UA 축소 예정 → 신규 유입으로 못 메꿈, 남은 유저의 결제 구조를 고쳐야 방어</span></div>
+            <div><b>처음 정의: "DAU가 빠진다"</b><span>마케팅 · 시장 요인 → 대응은 UA 증액뿐</span></div>
+            <div><b>다시 정의: "결제층이 축소된다"</b><span>NPU 급감 + 소 · 중과금 이탈 → 상품 · 과금 구조로 대응</span></div>
+            <div><b>왜 지금인가</b><span>11월 UA 축소 예정 → 남은 유저의 결제 구조가 유일한 방어선</span></div>
           </div>
         </div>
       </div>
@@ -1064,31 +1078,37 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <div class="s-body">
       <div class="an3 a-up d1">
         <div class="card ig">
-          <div class="ig-h">① 이탈 퍼널 — 꾸미기 해금 전에 몰림</div>
+          <div class="ig-h">① 이탈 구간 — 꾸미기 해금 전에 몰림</div>
+          <div class="bign"><b>37.87%</b><span>꾸미기 해금 전 누적 이탈 · 이후 구간별 2%</span></div>
+          <div class="rows">
           <div class="hb-s"><span>계정 생성 → 머지 튜토리얼</span><i style="width:36%"></i><b>5.7%</b></div>
           <div class="hb-s"><span>머지 → 교육 튜토리얼</span><i style="width:62%"></i><b>10%</b></div>
           <div class="hb-s"><span>직원 뽑기 → 배치</span><i style="width:100%"></i><b>16%</b></div>
           <div class="hb-s"><span>배치 → 자동 꾸미기</span><i style="width:38%"></i><b>6%</b></div>
-          <div class="an-sum"><b>꾸미기 해금 전 누적 37.87%</b> · 이후 구간별 평균 2%</div>
-          <p class="ig-n">가이드 5번까지 머지만 노출 → "머지 게임"으로 오인(리뷰에서도 확인). 9/26 이후 진성 코호트 기준</p>
+          </div>
+          <ul class="bl"><li>가이드 5번까지 머지만 노출 → "머지 게임"으로 오인</li><li>9/26 이후 진성 코호트 기준</li></ul>
         </div>
         <div class="card ig">
-          <div class="ig-h">② PU 유형(9/23~30 누적 결제) — 헤비 매출 비중 20%에 그침</div>
-          <div class="hb-s"><span>소과금 (&lt;10만) · 유저 85%</span><i style="width:71%"></i><b>매출 26%</b></div>
-          <div class="hb-s"><span>중과금 (10~50만) · 유저 13%</span><i style="width:100%"></i><b>매출 37%</b></div>
-          <div class="hb-s"><span>고과금 (50~100만) · 유저 1.5%</span><i style="width:40%"></i><b>매출 15%</b></div>
-          <div class="hb-s"><span>헤비 (100만+) · 유저 0.8%</span><i style="width:58%"></i><b>매출 22%</b></div>
-          <div class="an-sum"><b>소 · 중과금이 매출의 63%</b> · 고과금 전환 트리거 없음</div>
-          <p class="ig-n">판매 상위는 300%+ 고효율 · 에픽 직원 · 한정 꾸미기. 50만 원 이상은 남성 60%, 소 · 중은 2030 여성</p>
+          <div class="ig-h">② 과금 유형 — 헤비 과금 매출 비중이 낮음</div>
+          <div class="bign"><b>20%</b><span>헤비 과금(100만+) 매출 비중 · 유저 0.8%</span></div>
+          <div class="rows">
+          <div class="hb-s"><span>소과금 &lt;10만 · 유저 85%</span><i style="width:71%"></i><b>26%</b></div>
+          <div class="hb-s"><span>중과금 10~50만 · 유저 13%</span><i style="width:100%"></i><b>37%</b></div>
+          <div class="hb-s"><span>고과금 50~100만 · 유저 1.5%</span><i style="width:40%"></i><b>15%</b></div>
+          <div class="hb-s"><span>헤비 100만+ · 유저 0.8%</span><i style="width:58%"></i><b>22%</b></div>
+          </div>
+          <ul class="bl"><li>소 · 중과금이 매출 63% → 고과금 전환 트리거 없음</li><li>판매 상위 = 300%+ 고효율 · 에픽 직원 · 한정 꾸미기</li></ul>
         </div>
         <div class="card ig">
-          <div class="ig-h">③ 재화 소진율 — 인플레 없음, 편중 있음</div>
+          <div class="ig-h">③ 재화 흐름 — 인플레 없음, 편중 있음</div>
+          <div class="bign"><b>90%</b><span>주요 재화 획득 대비 소진율</span></div>
+          <div class="rows">
           <div class="hb-s"><span>캐시</span><i style="width:77%"></i><b>77%</b></div>
           <div class="hb-s"><span>골드</span><i style="width:88%"></i><b>88%</b></div>
           <div class="hb-s"><span>실버</span><i style="width:92%"></i><b>92%</b></div>
           <div class="hb-s"><span>뽑기권 3종</span><i style="width:93%"></i><b>92~95%</b></div>
-          <div class="an-sum"><b>획득 대비 약 90% 소진</b> · 캐시 소모의 54%가 직원 뽑기</div>
-          <p class="ig-n">상품 효율을 올려도 흡수할 여력이 있다는 근거이자, 소비처를 분산해야 한다는 근거</p>
+          </div>
+          <ul class="bl"><li>인플레 없음 → 상품 효율을 올릴 여력</li><li>캐시 소모의 54%가 직원 뽑기 → 소비처 분산 필요</li></ul>
         </div>
       </div>
     </div>
@@ -1117,7 +1137,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <!-- ==================== D5 · 실행 · 협업 ==================== -->
   <section class="slide cs" id="slide-18" data-n="18">
     <header class="s-head">
-      <div class="eyebrow">Core Case 02 · 실행 · 협업</div>
+      <div class="eyebrow">Core Case 02 · 실행</div>
       <h2 class="s-title">분석 → 업데이트 → 전후 검증 → <span class="hl">과제 9종</span> → 다음 업데이트</h2>
     </header>
     <div class="s-body">
@@ -1137,7 +1157,6 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="tk"><b>결제 행동 유도</b><span>⑧ 신규 메인 패키지 팝업</span></div>
         <div class="tk"><b>NPU 회복</b><span>⑨ 초회 결제 보너스(리텐션 연동)</span></div>
       </div>
-      <div class="lbs a-up d3"><span class="lbs-k">협업</span>사업 방향 합의 · 개발팀 키바나 지표 추가 · 운영툴 로그 · 상품 테이블 · QA 검수 · Google/Apple 심사(iOS 재심사) — 분석 문서에 "필요 데이터 · 회신 상태" 열을 두고 추적</div>
     </div>
   </section>
 
@@ -1158,7 +1177,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card ig a-up d2">
           <div class="ig-h">v1.0.2 기간(9/30~10/5) → v1.0.3 기간(10/17~10/22)</div>
           <table class="mx rs">
-            <tr><th>지표</th><th>변동</th><th>읽는 법</th></tr>
+            <tr><th>지표</th><th>변동</th><th>의미</th></tr>
             <tr><td>평균 DAU</td><td class="dn">−33.3%</td><td>유저 파이 축소</td></tr>
             <tr><td>PU (결제 유저)</td><td class="dn">−38.0%</td><td>결제층이 유저보다 빨리 축소</td></tr>
             <tr><td>매출</td><td class="dn">−41.5%</td><td>파이 × 구조가 겹친 결과</td></tr>
@@ -1168,11 +1187,11 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
           </table>
         </div>
         <div class="card ig a-up d3">
-          <div class="ig-h">읽는 법 — 무엇을 지켰고 무엇을 못 막았나</div>
+          <div class="ig-h">무엇을 지켰고 무엇을 못 막았나</div>
           <div class="kv3 v tight">
-            <div><b>지킨 것</b><span>판매 구조가 9,900원 중심 → 5만 원대 이상 중심으로 이동, 재화 소진율 90% 유지(인플레 없음), 캐시 소모처 일부 분산(직원 뽑기 54 → 45%)</span></div>
-            <div><b>이어간 것</b><span>과제 9종 중 누적 결제 이벤트(v1.0.4) · 캐시 소모 이벤트 기획 실행, 조건 달성 패키지 · 첫 결제 이벤트(단순형, 리텐션 연동은 미반영)는 이후 업데이트에 반영, 시즌 랭킹은 미반영</span></div>
-            <div class="lim"><b>못 막은 것</b><span>전체 매출 −41.5%와 유저 파이 축소. 고과금 비중도 아직 50% 미만 — 문서 결론 그대로 "구조는 바뀌었지만 파이가 작아 안정성 낮음"</span></div>
+            <div><b>지킨 것</b><ul class="bl s"><li>판매 구조 9,900원 → 5만 원대 이상 중심</li><li>재화 소진율 90% 유지 · 인플레 없음</li><li>캐시 소모처 분산 · 직원 뽑기 54 → 45%</li></ul></div>
+            <div><b>이어간 것</b><ul class="bl s"><li>누적 결제 이벤트 v1.0.4 · 캐시 소모 이벤트 기획</li><li>조건 달성 패키지 · 첫 결제 이벤트(단순형) 이후 반영</li><li>시즌 랭킹 · 리텐션 연동형 보너스는 미반영</li></ul></div>
+            <div class="lim"><b>못 막은 것</b><ul class="bl s"><li>전체 매출 −41.5% · 유저 파이 축소</li><li>고과금 비중 43.8%, 아직 50% 미만 → "파이가 작아 안정성 낮음"</li></ul></div>
           </div>
         </div>
       </div>
@@ -1195,13 +1214,13 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="retro a-up d2">
         <div class="rcol">
           <div class="rlab ok">✓ 잘 된 것 — 다음에도</div>
-          <div class="card rc"><h4>매출 지표는 "파이 × 구조"로 나눠 본다</h4><p>−41% 하나로 보면 마케팅 탓이 되지만, PU 감소 폭이 DAU를 앞지른다는 한 줄이 상품 구조 문제를 드러냈고 할 수 있는 일을 만들었음</p></div>
-          <div class="card rc"><h4>반론은 같은 지표로 닫고, 같은 지표로 재검증한다</h4><p>효율 상향의 인플레 우려를 소진율 90%로 닫고, 업데이트 5일 뒤 같은 지표로 다시 확인. 비교 기간을 문서에 먼저 박아 둔 것이 전후 분석 속도를 만들었음</p></div>
+          <div class="card rc"><h4>매출 지표는 "파이 × 구조"로 나눠 본다</h4><ul class="bl"><li>−41% 하나로 보면 마케팅 탓으로 끝남</li><li>PU 감소 &gt; DAU 감소 한 줄이 상품 구조 문제를 드러냄</li></ul></div>
+          <div class="card rc"><h4>반론은 같은 지표로 닫고, 같은 지표로 재검증한다</h4><ul class="bl"><li>인플레 우려 → 소진율 90%로 닫음</li><li>비교 기간을 문서에 먼저 고정 → 업데이트 5일 만에 전후 분석</li></ul></div>
         </div>
         <div class="rcol">
           <div class="rlab re">↻ 다시 한다면</div>
-          <div class="card rc"><h4>온보딩 지표는 코호트부터 정제한다</h4><p>런칭 주 부스팅 계정이 섞인 채로 보면 첫 구간 이탈이 26.5%로 보였지만, 진성 코호트로는 5.7%. 정제 없이 썼다면 "튜토리얼 개선 효과"라는 잘못된 결론을 냈을 것</p></div>
-          <div class="card rc"><h4>UA 축소 시점과 BM 개편을 같이 설계한다</h4><p>유저 파이 축소는 BM으로 못 막는 요인. 다음엔 UA를 줄이는 주에 맞춰 신규 결제 유도 장치(초회 결제 보너스)를 먼저 넣고 축소</p></div>
+          <div class="card rc"><h4>온보딩 지표는 코호트부터 정제한다</h4><ul class="bl"><li>부스팅 계정 포함 26.5% vs 진성 코호트 5.7%</li><li>정제 없이 썼다면 "튜토리얼 개선 효과"라는 오답</li></ul></div>
+          <div class="card rc"><h4>UA 축소 시점과 BM 개편을 같이 설계한다</h4><ul class="bl"><li>유저 파이 축소는 BM으로 못 막는 요인</li><li>UA를 줄이는 주에 맞춰 신규 결제 유도 장치를 먼저 배치</li></ul></div>
         </div>
       </div>
     </div>
