@@ -728,6 +728,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 #slide-29 .hb-s i{height:12px;border-radius:6px}
 #slide-29 .hb-s.warn i{background:var(--blue-ink)}
 #slide-29 .hb-s.warn span{color:var(--ink);font-weight:700}
+#slide-29 .hb-s.ref i{background:#c9d2e3}
+#slide-29 .hb-s.ref span,#slide-29 .hb-s.ref b{color:var(--muted)}
 #slide-29 .bl.im{margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
 #slide-29 .bl.im li{font-size:13px}
 #slide-29 .kv3.v{display:flex;flex-direction:column;gap:10px;flex:1;min-height:0}
@@ -1494,7 +1496,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <div class="div-wrap">
       <div class="eyebrow a-up d1">Sub Case 04 · Staged Launch</div>
       <h2 class="s-title a-up d2">Water Sort Quest 단계 런칭<br>UA 없이 먼저 열어 확인하고, 7일 이탈 분석으로 고친 뒤 키우다</h2>
-      <p class="s-sub a-up d3">사전등록 7만이 모인 캐주얼 타이틀을 팀 방침대로 마케팅 없이 먼저 오픈하고, 첫 주 D+1 35.6%를 사내 런칭 3종과 비교해 검증한 뒤 8일째 UA로 넘어갔습니다. 첫 7일 이탈 분석으로 이탈 5구역(난이도 3곳 · 호환성 · 초반 호감도)을 특정해 v1.0.4에 반영했고, 피처드 기간 D+1 39.7 → 48.4%, 피크 DAU 138만에 닿았습니다.</p>
+      <p class="s-sub a-up d3">사전등록 7만이 모인 캐주얼 타이틀을 팀 방침대로 마케팅 없이 먼저 오픈하고, 첫 주 D+1 Retention 35.6%를 사내 런칭 3종과 비교해 검증한 뒤 8일째 UA로 넘어갔습니다. 첫 7일 이탈 분석으로 이탈 5구역(난이도 3곳 · 호환성 · 초반 호감도)을 특정해 v1.0.4에 반영했고, 피처드 기간 D+1 39.7 → 48.4%, 피크 DAU 138만에 닿았습니다.</p>
       <div class="chap a-up d4">
         <span>01 판단 · 개요</span><span>02 분석 · 실행</span><span>03 결과 · 회고</span>
       </div>
@@ -1518,13 +1520,13 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="tl-i"><b>01.11</b><span>구글 피처드<br>01.21 피크 DAU</span></div>
       </div>
       <div class="stat4 a-up d2">
-        <div class="stat"><div class="l">런칭 첫 주 D+1</div><div class="v dsp">35.6%</div></div>
+        <div class="stat"><div class="l">런칭 첫 주 D+1 Retention</div><div class="v dsp">35.6%</div></div>
         <div class="stat"><div class="l">UA 개시</div><div class="v dsp">D+8</div></div>
         <div class="stat"><div class="l">이탈 분석 공유</div><div class="v dsp">D+9</div></div>
         <div class="stat"><div class="l">개선 반영</div><div class="v dsp">D+28</div></div>
       </div>
       <div class="jbig a-up d3">
-        <div class="card jc big"><div class="jtop"><span class="jtag">첫 주 검증 기준</span><span class="jrep">대표 판단</span></div><h4>UA 전 첫 주 오가닉을 <em>사내 런칭 3종 D+1과 비교</em>해 검증</h4><div class="ab"><span class="x">D+1 하나만 보고 "괜찮다" — 비교 기준 없는 판단</span><span class="o">사내 3종 대비 +3.8~10.3%p로 검증 → 예정대로 D+8 UA 개시(구글 → 메타)</span></div></div>
+        <div class="card jc big"><div class="jtop"><span class="jtag">첫 주 검증 기준</span><span class="jrep">대표 판단</span></div><h4>첫 주 오가닉 <em>D+1 Retention을 사내 3종과 비교</em>해 검증</h4><div class="ab"><span class="x">Retention 하나만 보고 "괜찮다" — 비교 기준 없는 판단</span><span class="o">사내 3종 대비 +3.8~10.3%p로 검증 → 예정대로 D+8 UA 개시(구글 → 메타)</span></div></div>
         <div class="card jc big"><div class="jtop"><span class="jtag">개선 범위</span><span class="jrep">대표 판단</span></div><h4>피드백 전면 개편 대신 <em>이탈 5구역만</em> 고쳐 다음 업데이트로</h4><div class="ab"><span class="x">FGT · 리뷰 의견을 모두 반영 — 개발사 일정상 피처드 전 불가</span><span class="o">첫 7일 잔존율에서 난이도 3구간 + 호환성 + 초반 호감도만 특정 → v1.0.4</span></div></div>
       </div>
     </div>
@@ -1539,26 +1541,24 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <div class="s-body">
       <div class="grid2 fill w2" style="grid-template-columns:1.15fr 1fr;gap:18px">
         <div class="card ig a-up d1">
-          <div class="ig-h">50 스테이지 이내 잔존율 · 12/12~18 · 1스테이지 진입 = 100</div>
-          <div class="bign"><b>5구역</b><span>주요 이탈 구간 · 컬러 수가 늘어나는 11 · 31, 그리고 50</span></div>
+          <div class="ig-h">구간별 이탈폭 · 스테이지 1개를 지날 때 빠지는 유저 비율(%p) · 12/12~18</div>
+          <div class="bign"><b>5구역</b><span>그 외 구간(평균 1.5%p)보다 크게 빠지는 곳 · 막대가 길수록 많이 빠짐</span></div>
           <div class="rows">
-          <div class="hb-s"><span>1 스테이지 클리어</span><i style="width:80%"></i><b>80</b></div>
-          <div class="hb-s"><span>3 스테이지</span><i style="width:66%"></i><b>66</b></div>
-          <div class="hb-s"><span>5 스테이지</span><i style="width:60%"></i><b>60</b></div>
-          <div class="hb-s"><span>10 스테이지</span><i style="width:44%"></i><b>44</b></div>
-          <div class="hb-s warn"><span>11 스테이지 · 컬러 7종</span><i style="width:38%"></i><b>38</b></div>
-          <div class="hb-s"><span>20 스테이지</span><i style="width:26%"></i><b>26</b></div>
-          <div class="hb-s"><span>30 스테이지</span><i style="width:21%"></i><b>21</b></div>
-          <div class="hb-s warn"><span>31 스테이지 · 컬러 9종</span><i style="width:17%"></i><b>17</b></div>
+          <div class="hb-s"><span>앱 실행 → 첫 화면 · 호환성</span><i style="width:67%"></i><b>7.6</b></div>
+          <div class="hb-s"><span>1~3 스테이지 · 초반 호감도</span><i style="width:100%"></i><b>11.4</b></div>
+          <div class="hb-s warn"><span>11 스테이지 · 컬러 7종</span><i style="width:52%"></i><b>5.9</b></div>
+          <div class="hb-s warn"><span>31 스테이지 · 컬러 9종</span><i style="width:32%"></i><b>3.6</b></div>
+          <div class="hb-s warn"><span>50 스테이지 · 주변 0.3</span><i style="width:17%"></i><b>1.9</b></div>
+          <div class="hb-s ref"><span>그 외 구간 평균 (4~10 · 12~30)</span><i style="width:13%"></i><b>1.5</b></div>
           </div>
-          <ul class="bl im"><li>10 → 11에서 −5.9%p, 30 → 31에서 −3.6%p · 50은 주변 평균 −0.3%p 대비 −1.9%p</li><li>앱 실행 → 첫 화면 사이 −7.6% · 비정상 종료 · ANR 약 300건 = 호환성</li></ul>
+          <ul class="bl im"><li>11 · 31은 컬러 수가 늘어 난이도가 뛰는 스테이지, 50은 주변의 6배 · 앞뒤 구간은 1~2%p씩만 빠짐</li><li>앱 실행 → 첫 화면 −7.6% · 비정상 종료 · ANR 약 300건 = 호환성</li></ul>
         </div>
         <div class="card ig a-up d2">
           <div class="ig-h">원인 → v1.0.4 반영 → 확인</div>
           <div class="kv3 v tight">
             <div><b>원인</b><ul class="bl s"><li>난이도 패턴 "낮음-높음-높음" → 낮음에서 높음으로 바뀌는 순간 이탈</li><li>1~3 스테이지는 초반 호감도 · 튜토리얼</li><li>106MB · Min SDK 24 → 저사양 단말 비정상 종료</li></ul></div>
             <div><b>v1.0.4 (1/9)</b><ul class="bl s"><li>다시 하기 시 컵 추가 아이템 유지 · ANR −1.3%p</li><li>전면 광고 조건 · 최초 클리어 결과창 광고 제거 UI</li><li>난이도 "낮음-중간-높음" 순차 패턴 · 콘솔 메타데이터 수정</li></ul></div>
-            <div class="lim"><b>확인 · 피처드와 분리</b><ul class="bl s"><li>D+1 업데이트 전 38% (1/1~8) → 후 47% (1/9~10, 피처드 전)</li><li>17~19 스테이지 잔존 +4.6%p · 50 스테이지 +3%p</li></ul></div>
+            <div class="lim"><b>확인 · 피처드와 분리</b><ul class="bl s"><li>D+1 Retention 업데이트 전 38% (1/1~8) → 후 47% (1/9~10, 피처드 전)</li><li>17~19 스테이지 잔존 +4.6%p · 50 스테이지 +3%p</li></ul></div>
           </div>
         </div>
       </div>
@@ -1569,12 +1569,12 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <section class="slide cs" id="slide-30" data-n="30">
     <header class="s-head">
       <div class="eyebrow">Sub Case 04 · 결과 · 회고</div>
-      <h2 class="s-title">피크 DAU 138만 · D+1 38 → 47% — <span class="hl">순서를 지켜 얻은 것과 늦게 안 것</span></h2>
+      <h2 class="s-title">피크 DAU 138만 · D+1 Retention 38 → 47% — <span class="hl">순서를 지켜 얻은 것과 늦게 안 것</span></h2>
     </header>
     <div class="s-body">
       <div class="stat4 a-up d1">
         <div class="stat hi"><div class="l">피크 DAU · 01.21</div><div class="v dsp">138만</div></div>
-        <div class="stat hi"><div class="l">D+1 · v1.0.4 전후</div><div class="v dsp">38 → 47%</div></div>
+        <div class="stat hi"><div class="l">D+1 Retention · v1.0.4 전후</div><div class="v dsp">38 → 47%</div></div>
         <div class="stat"><div class="l">런칭 1개월 NRU</div><div class="v dsp">425만</div></div>
         <div class="stat"><div class="l">피처드 기간 총매출</div><div class="v dsp">+52%</div></div>
       </div>
@@ -1582,7 +1582,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card ig a-up d2">
           <div class="ig-h">무엇을 얻었고 무엇을 늦게 알았나</div>
           <div class="kv3 v tight">
-            <div><b>얻은 것</b><ul class="bl s"><li>UA 전 오가닉 D+1 35.6% → 사내 런칭 3종 대비 +3.8~10.3%p</li><li>개선 효과를 피처드 전 이틀에서 분리 확인</li><li>피처드 기간 D+1 39.7 → 48.4% · 광고 매출 +53%</li></ul></div>
+            <div><b>얻은 것</b><ul class="bl s"><li>UA 전 오가닉 D+1 Retention 35.6% → 사내 런칭 3종 대비 +3.8~10.3%p</li><li>개선 효과를 피처드 전 이틀에서 분리 확인</li><li>피처드 기간 D+1 Retention 39.7 → 48.4% · 광고 매출 +53%</li></ul></div>
             <div class="lim"><b>늦게 안 것</b><ul class="bl s"><li>피처드 기간 NRU +42%는 UA 확대 포함 · 마케팅 제외 −24%, 전환율 −9%p</li><li>전면 광고가 50 스테이지(D4~5)라 UA 회수 느림 · ARPDAU 낮음</li></ul></div>
           </div>
         </div>
@@ -1863,7 +1863,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <tr><td class="k">DAU −33% · PU −38% · 매출 −41.5%</td><td>v1.0.2 기간(9/30~10/5) 대비 v1.0.3 기간(10/17~22) 일 평균 변동률. NPU 비중 35.2% → 19.1%(일 결제 유저 중 첫 결제 유저)</td><td>업데이트 전후 확정 수치 · ARPPU −5.6% · 고과금 이상 매출 비중 28.7 → 43.8% · 직원 뽑기 캐시 소모 비중 54 → 45%</td></tr>
         <tr><td class="k">고과금 매출 비중 28.7% → 43.8%</td><td>같은 기간 비교 · 고과금(50만 원 이상)·헤비 과금 유저 매출 비중. 10만 원 이상 상품 매출 비중 약 10배 · 멤버십 Lv9~19 유저 +90%</td><td>이탈 퍼널은 9/26 이후 진성 코호트 기준(꾸미기 해금 전 누적 37.87%). 런칭 전체 기준 첫 구간 26.5%는 부스팅 계정 오염으로 미사용</td></tr>
         <tr><td class="k">신서버 DAU 약 3배 · PUR 3.5 → 4~5%</td><td>아이돌 키우기 · 5/10 Adjust Organic DAU ÷ 5/9 = 약 2.9배(전체 2.8배) · PUR 3.5% = 3월 첫 12일 PU 합 ÷ DAU 합 · 4~5%대 = 5/13 상품 재구성 후 5/16~26 같은 방식 4.4%</td><td>밸런스 2차 직후(4/17~24) 5.9% · 6월 3%대 회귀 · 과금 유저 보상은 기획 기준 과금액 10%</td></tr>
-        <tr><td class="k">피크 DAU 138만 · 1개월 425만 DL</td><td>Water Sort Quest 2024.01.21 DAU 약 138만 · 2023.12.12~2024.01.12 신규 유저(Game BI NRU) 누적 약 425만</td><td>런칭 D+1 35.6%(사내 런칭 3종 대비 +3.8~10.3%p) · v1.0.4 전후 38 → 47%(1/1~8 vs 1/9~10) · 피처드 39.7 → 48.4%</td></tr>
+        <tr><td class="k">피크 DAU 138만 · 1개월 425만 DL</td><td>Water Sort Quest 2024.01.21 DAU 약 138만 · 2023.12.12~2024.01.12 신규 유저(Game BI NRU) 누적 약 425만</td><td>런칭 D+1 Retention 35.6% · v1.0.4 전후 38 → 47%(1/1~8 vs 1/9~10) · 피처드 39.7 → 48.4%</td></tr>
         <tr><td class="k">피크 월매출 2.3억 · 누적 1,621만 DL</td><td>2024.01 월 매출(광고 + 인앱) 약 2.3억, 당시 환율 기준 원화 환산 · 2023.12~2024.07 신규 유저 누적 약 1,621만</td><td>재직 기간 기준(~2024.07)</td></tr>
       </table>
     </div>
