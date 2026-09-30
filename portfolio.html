@@ -1542,21 +1542,20 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="grid2 fill w2" style="grid-template-columns:1.15fr 1fr;gap:18px">
         <div class="card ig a-up d1">
           <div class="ig-h">구간별 이탈폭 · 스테이지 1개를 지날 때 빠지는 유저 비율(%p) · 12/12~18</div>
-          <div class="bign"><b>5구역</b><span>그 외 구간(평균 1.5%p)보다 크게 빠지는 곳 · 막대가 길수록 많이 빠짐</span></div>
+          <div class="bign"><b>4곳</b><span>5구역 중 초반 3판(취향 영역)을 뺀, 고칠 수 있는 곳 · 막대가 길수록 많이 빠짐</span></div>
           <div class="rows">
-          <div class="hb-s"><span>앱 실행 → 첫 화면 · 호환성</span><i style="width:67%"></i><b>7.6</b></div>
-          <div class="hb-s"><span>1~3 스테이지 · 초반 호감도</span><i style="width:100%"></i><b>11.4</b></div>
-          <div class="hb-s warn"><span>11 스테이지 · 컬러 7종</span><i style="width:52%"></i><b>5.9</b></div>
-          <div class="hb-s warn"><span>31 스테이지 · 컬러 9종</span><i style="width:32%"></i><b>3.6</b></div>
-          <div class="hb-s warn"><span>50 스테이지 · 주변 0.3</span><i style="width:17%"></i><b>1.9</b></div>
-          <div class="hb-s ref"><span>그 외 구간 평균 (4~10 · 12~30)</span><i style="width:13%"></i><b>1.5</b></div>
+          <div class="hb-s"><span>앱 실행 → 첫 화면 · 호환성</span><i style="width:100%"></i><b>7.6</b></div>
+          <div class="hb-s warn"><span>11 스테이지 · 컬러 7종</span><i style="width:78%"></i><b>5.9</b></div>
+          <div class="hb-s warn"><span>31 스테이지 · 컬러 9종</span><i style="width:47%"></i><b>3.6</b></div>
+          <div class="hb-s warn"><span>50 스테이지 · 주변 0.3</span><i style="width:25%"></i><b>1.9</b></div>
+          <div class="hb-s ref"><span>그 외 구간 평균 (4~10 · 12~30)</span><i style="width:20%"></i><b>1.5</b></div>
           </div>
           <ul class="bl im"><li>11 · 31은 컬러 수가 늘어 난이도가 뛰는 스테이지, 50은 주변의 6배 · 앞뒤 구간은 1~2%p씩만 빠짐</li><li>앱 실행 → 첫 화면 −7.6% · 비정상 종료 · ANR 약 300건 = 호환성</li></ul>
         </div>
         <div class="card ig a-up d2">
           <div class="ig-h">원인 → v1.0.4 반영 → 확인</div>
           <div class="kv3 v tight">
-            <div><b>원인</b><ul class="bl s"><li>난이도 패턴 "낮음-높음-높음" → 낮음에서 높음으로 바뀌는 순간 이탈</li><li>1~3 스테이지는 초반 호감도 · 튜토리얼</li><li>106MB · Min SDK 24 → 저사양 단말 비정상 종료</li></ul></div>
+            <div><b>원인</b><ul class="bl s"><li>난이도 패턴 "낮음-높음-높음" → 낮음에서 높음으로 바뀌는 순간 이탈</li><li>1~3 스테이지 이탈은 초반 호감도(취향) 영역 → 개선 대상에서 제외</li><li>106MB · Min SDK 24 → 저사양 단말 비정상 종료</li></ul></div>
             <div><b>v1.0.4 (1/9)</b><ul class="bl s"><li>다시 하기 시 컵 추가 아이템 유지 → 재시도 부담 완화</li><li>유니티 버전 업 · API 호출 조정 → ANR −1.3%p</li><li>난이도 "낮음-중간-높음" 패턴 · 100 스테이지 밸런스는 제안으로 남음</li></ul></div>
             <div class="lim"><b>확인 · 피처드와 분리</b><ul class="bl s"><li>D+1 Retention 업데이트 전 38% (1/1~8) → 후 47% (1/9~10, 피처드 전)</li><li>17~19 스테이지 잔존 +4.6%p · 50 스테이지 +3%p</li></ul></div>
           </div>
