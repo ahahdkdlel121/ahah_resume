@@ -785,21 +785,22 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 #slide-35 .bl{gap:14px}
 #slide-35 .bl li{font-size:13.5px;line-height:1.55}
 /* 3 케이스 한눈에 */
-#slide-3 .s-body{justify-content:center;padding-top:22px}
-#slide-3 .grid2.ov2{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:16px;flex:1;min-height:0}
-#slide-3 .card.ov{display:flex;flex-direction:column;gap:14px;padding:20px 22px 18px;min-height:0;border-top:3px solid var(--border)}
-#slide-3 .card.ov.core{border-top-color:var(--blue)}
-#slide-3 .ovtag{display:block;font-size:11px;font-weight:800;color:var(--blue);letter-spacing:.03em}
-#slide-3 .ovh h4{font-size:18px;font-weight:800;color:var(--ink);line-height:1.35;margin-top:6px}
-#slide-3 .ovf{display:grid;grid-template-columns:1fr 1.2fr 1.3fr;gap:10px;flex:1;min-height:0}
-#slide-3 .st{position:relative;background:var(--bg-subtle);border:1px solid var(--border);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;justify-content:center}
-#slide-3 .st b{display:block;font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.04em;margin-bottom:4px}
-#slide-3 .st p{margin:0;font-size:13px;line-height:1.5;color:var(--text)}
-#slide-3 .st:not(:last-child)::after{content:"→";position:absolute;right:-11px;top:50%;transform:translateY(-50%);font-size:12px;color:var(--faint);font-weight:800;z-index:1}
-#slide-3 .st.res{background:var(--wash);border-color:var(--wash-deep)}
-#slide-3 .st.res b{color:var(--blue-ink)}
-#slide-3 .st.res p{color:var(--ink);font-weight:600}
-#slide-3 .st.res .n{color:var(--blue);font-weight:800}
+#slide-3 .s-body{justify-content:center;padding-top:18px}
+#slide-3 .ovt{display:grid;grid-template-columns:1.55fr 0.95fr 1.2fr 1.1fr;grid-auto-rows:auto;column-gap:0;row-gap:0;flex:1;min-height:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:#fff}
+#slide-3 .ovt-h{background:var(--ink);color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.04em;padding:10px 16px}
+#slide-3 .ovt-h.res{background:var(--blue-ink)}
+#slide-3 .ovt-r{display:contents}
+#slide-3 .ovt-r>div{padding:14px 16px;border-top:1px solid var(--border);display:flex;flex-direction:column;justify-content:center;min-height:0}
+#slide-3 .ovt-r.core>.c0{box-shadow:inset 4px 0 0 var(--blue)}
+#slide-3 .ovt-r>.c0{background:var(--bg-subtle)}
+#slide-3 .ovtag{display:block;font-size:10.5px;font-weight:800;color:var(--blue);letter-spacing:.02em;line-height:1.4}
+#slide-3 .ovt-r h4{font-size:15.5px;font-weight:800;color:var(--ink);line-height:1.4;margin-top:5px}
+#slide-3 .ovt-r .c p{margin:0;font-size:13.5px;line-height:1.55;color:var(--text)}
+#slide-3 .ovt-r .c+.c{border-left:1px dashed var(--border)}
+#slide-3 .ovt-r>.res{background:var(--wash);border-left:1px solid var(--wash-deep)}
+#slide-3 .ovt-r>.res p{color:var(--ink);font-weight:600}
+#slide-3 .ovt-r>.res .n{color:var(--blue);font-weight:800}
+
 
 
 </style>
@@ -864,38 +865,32 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <h2 class="s-title">케이스 4개 — <span class="hl">문제를 다시 정의하고</span>, 판단하고, 전후로 확인한 기록</h2>
     </header>
     <div class="s-body">
-      <div class="grid2 ov2">
-        <div class="card ov core a-up d1">
-          <div class="ovh"><span class="ovtag">Core 01 · 브랜드 콜라보 · 나트리스 · 2025.04~10</span><h4>유료 광고 대신 전국 3,000개 매장을 유입 채널로</h4></div>
-          <div class="ovf">
-            <div class="st"><b>문제</b><p>UA만으로 첫 달 NRU 40만을 채우면 예산의 1.4배</p></div>
-            <div class="st"><b>판단</b><p>상대 리스크를 떠안는 교환 설계로 회신 7일 만에 확정 · GPS 매장 방문 → 게임 복귀 순환</p></div>
-            <div class="st res"><b>결과</b><p>참여 <span class="n">14.6만</span> · GPS 투어 <span class="n">27.9만 회</span><br>첫 달 NRU 목표의 46%</p></div>
-          </div>
+      <div class="ovt a-up d1">
+        <div class="ovt-h c0">케이스</div><div class="ovt-h">문제</div><div class="ovt-h">판단</div><div class="ovt-h res">결과</div>
+
+        <div class="ovt-r core">
+          <div class="c0"><span class="ovtag">Core 01 · 브랜드 콜라보 · 나트리스 · 2025.04~10</span><h4>유료 광고 대신 전국 3,000개 매장을 유입 채널로</h4></div>
+          <div class="c"><p>UA만으로 첫 달 NRU 40만을 채우면 예산의 1.4배</p></div>
+          <div class="c"><p>상대 리스크를 떠안는 교환 설계로 회신 7일 만에 확정 · GPS 매장 방문 → 게임 복귀 순환</p></div>
+          <div class="c res"><p>참여 <span class="n">14.6만</span> · GPS 투어 <span class="n">27.9만 회</span><br>첫 달 NRU 목표의 46%</p></div>
         </div>
-        <div class="card ov core a-up d2">
-          <div class="ovh"><span class="ovtag">Core 02 · 런칭 3주차 하락 대응 · 나트리스 · 2025.10</span><h4>DAU 하락이 아니라 결제층 축소로 문제를 바꿔 잡기</h4></div>
-          <div class="ovf">
-            <div class="st"><b>문제</b><p>주간 DAU −20% 동안 결제 유저 −37%</p></div>
-            <div class="st"><b>판단</b><p>마케팅 탓 대신 결제 구조로 재정의 · 상품 4종 개편 → 전후 비교 → 과제 9종</p></div>
-            <div class="st res"><b>결과</b><p>DAU −33% 속 ARPPU <span class="n">−5.6%</span> 방어<br>고과금 매출 비중 <span class="n">28.7 → 43.8%</span></p></div>
-          </div>
+        <div class="ovt-r core">
+          <div class="c0"><span class="ovtag">Core 02 · 런칭 3주차 하락 대응 · 나트리스 · 2025.10</span><h4>DAU 하락이 아니라 결제층 축소로 문제를 바꿔 잡기</h4></div>
+          <div class="c"><p>주간 DAU −20% 동안 결제 유저 −37%</p></div>
+          <div class="c"><p>마케팅 탓 대신 결제 구조로 재정의 · 상품 4종 개편 → 전후 비교 → 과제 9종</p></div>
+          <div class="c res"><p>DAU −33% 속 ARPPU <span class="n">−5.6%</span> 방어<br>고과금 매출 비중 <span class="n">28.7 → 43.8%</span></p></div>
         </div>
-        <div class="card ov a-up d3">
-          <div class="ovh"><span class="ovtag">Sub 03 · 아이돌 키우기 수익화 재설계 · 나트리스 · 2025.03~05</span><h4>결제는 하는데 더 살 이유가 없는 구조를 다시 설계</h4></div>
-          <div class="ovf">
-            <div class="st"><b>문제</b><p>PUR은 정상인데 결제 유저가 더 사지 않음</p></div>
-            <div class="st"><b>판단</b><p>리텐션 문제가 아니라 재화 가치 산정 오류 · 목표 지점 역산 → 신서버에서 검증</p></div>
-            <div class="st res"><b>결과</b><p>1차 개선 <span class="n">D+8</span> 반영 · 신서버 DAU <span class="n">약 3배</span><br>PUR 3.5 → 4~5%</p></div>
-          </div>
+        <div class="ovt-r">
+          <div class="c0"><span class="ovtag">Sub 03 · 아이돌 키우기 수익화 재설계 · 나트리스 · 2025.03~05</span><h4>결제는 하는데 더 살 이유가 없는 구조를 다시 설계</h4></div>
+          <div class="c"><p>PUR은 정상인데 결제 유저가 더 사지 않음</p></div>
+          <div class="c"><p>리텐션 문제가 아니라 재화 가치 산정 오류 · 목표 지점 역산 → 신서버에서 검증</p></div>
+          <div class="c res"><p>1차 개선 <span class="n">D+8</span> 반영 · 신서버 DAU <span class="n">약 3배</span><br>PUR 3.5 → 4~5%</p></div>
         </div>
-        <div class="card ov a-up d4">
-          <div class="ovh"><span class="ovtag">Sub 04 · Water Sort Quest 단계 런칭 · 모비릭스 · 2023.12~2024.01</span><h4>먼저 열어 확인하고, 7일 이탈 분석으로 고친 뒤 키우기</h4></div>
-          <div class="ovf">
-            <div class="st"><b>문제</b><p>마케팅 없이 오픈한 첫 주, UA로 넘어가도 되는가</p></div>
-            <div class="st"><b>판단</b><p>사내 런칭 3종 D+1과 비교해 검증 → UA · 첫 7일 이탈 4곳 특정 → v1.0.4</p></div>
-            <div class="st res"><b>결과</b><p>D+1 Retention <span class="n">38 → 47%</span><br>피크 DAU <span class="n">138만</span></p></div>
-          </div>
+        <div class="ovt-r">
+          <div class="c0"><span class="ovtag">Sub 04 · Water Sort Quest 단계 런칭 · 모비릭스 · 2023.12~2024.01</span><h4>먼저 열어 확인하고, 7일 이탈 분석으로 고친 뒤 키우기</h4></div>
+          <div class="c"><p>마케팅 없이 오픈한 첫 주, UA로 넘어가도 되는가</p></div>
+          <div class="c"><p>사내 런칭 3종 D+1과 비교해 검증 → UA · 첫 7일 이탈 4곳 특정 → v1.0.4</p></div>
+          <div class="c res"><p>D+1 Retention <span class="n">38 → 47%</span><br>피크 DAU <span class="n">138만</span></p></div>
         </div>
       </div>
     </div>
