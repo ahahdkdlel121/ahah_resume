@@ -9,14 +9,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
 <style>
 :root{
   --blue:#2563EB; --blue-deep:#1D4ED8; --blue-ink:#1E3A8A; --wash:#EFF4FF; --wash-deep:#DCE7FE;
   --ink:#0F172A; --text:#1E293B; --muted:#64748B; --faint:#94A3B8; --border:#E2E8F0; --bg:#FFFFFF; --bg-subtle:#F8FAFC;
   --shadow:0 1px 2px rgba(15,23,42,.05),0 8px 24px rgba(37,99,235,.06);
-  --f-kr:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
-  --f-dsp:"Manrope","Pretendard Variable",Pretendard,system-ui,sans-serif;
+  --f-kr:"Pretendard",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
+  --f-dsp:"Manrope","Pretendard",Pretendard,system-ui,sans-serif;
   --r:14px; --r-sm:10px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -365,16 +365,16 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .cs .grid2.grow .fc .tag{font-size:12.5px;margin-bottom:12px}
 
 /* slide 4 vertical rhythm */
-#slide-4 .s-body{gap:26px;padding-top:10px}
-#slide-4 .tl-i b{font-size:14px}#slide-4 .tl-i span{font-size:12px}
-#slide-4 .stat4 .stat{padding:20px 22px}
-#slide-4 .stat4 .stat .l{font-size:13px}
-#slide-4 .grid2.grow{gap:22px}
+#slide-5 .s-body{gap:26px;padding-top:10px}
+#slide-5 .tl-i b{font-size:14px}#slide-5 .tl-i span{font-size:12px}
+#slide-5 .stat4 .stat{padding:20px 22px}
+#slide-5 .stat4 .stat .l{font-size:13px}
+#slide-5 .grid2.grow{gap:22px}
 /* slide 4 bottom cards natural height */
-#slide-4 .s4b{gap:20px}
-#slide-4 .s4b .fc{padding:24px 28px}
-#slide-4 .s4b .fc h4{font-size:19px;line-height:1.4}
-#slide-4 .s4b .fc p{font-size:15px;line-height:1.7;margin-top:10px;flex:0}
+#slide-5 .s4b{gap:20px}
+#slide-5 .s4b .fc{padding:24px 28px}
+#slide-5 .s4b .fc h4{font-size:19px;line-height:1.4}
+#slide-5 .s4b .fc p{font-size:15px;line-height:1.7;margin-top:10px;flex:0}
 /* slide 7: 2 big + 4 compact */
 .jbig{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .jsm{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
@@ -400,22 +400,22 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .cn span{display:block;font-size:11px;color:var(--muted);margin-top:6px;line-height:1.45}
 .s8g{gap:16px}
 
-#slide-11 .iss{flex:1;min-height:0;gap:12px}
-#slide-11 .iss div{flex:1;align-items:center;padding:14px 16px}
+#slide-12 .iss{flex:1;min-height:0;gap:12px}
+#slide-12 .iss div{flex:1;align-items:center;padding:14px 16px}
 .sp.c b small{font-size:11px;font-weight:700;color:#DCE7FE;margin-left:2px}
 
 /* slide 6 fixes */
-#slide-6 table.mx{table-layout:fixed}
-#slide-6 .mx th{padding:6px 4px}
-#slide-6 .mx td{padding:7px 4px}
-#slide-6 .mx td:nth-child(2){min-width:0}
+#slide-7 table.mx{table-layout:fixed}
+#slide-7 .mx th{padding:6px 4px}
+#slide-7 .mx td{padding:7px 4px}
+#slide-7 .mx td:nth-child(2){min-width:0}
 .tline.tl4 .tl-i span{white-space:nowrap;font-size:11.5px}
 
 /* timeline line through dot centers (padding 8px + dot 14px/2 - line 1px) */
 .cs .tline,.cs .tline.tl4,.tline.tl4{padding-top:8px}
 .cs .tline::before,.tline.tl4::before{top:14px}
-#slide-6 .mx th:nth-child(2){text-align:left;padding-left:8px}
-#slide-6 .mx td:nth-child(2){padding-left:8px}
+#slide-7 .mx th:nth-child(2){text-align:left;padding-left:8px}
+#slide-7 .mx td:nth-child(2){padding-left:8px}
 /* slide 10 funnel */
 .fun{display:grid;grid-template-columns:1fr 26px 1.2fr auto;align-items:center;gap:10px;padding:4px 2px 2px}
 .fn b{display:block;font-size:24px;font-weight:800;color:var(--ink);letter-spacing:-.01em;line-height:1.1}
@@ -423,9 +423,9 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .fn.hi b{color:var(--blue-ink)}
 .fun i{font-style:normal;color:var(--blue);font-size:22px;font-weight:800;text-align:center}
 .fr{font-size:14px;font-weight:800;color:var(--blue-ink);background:var(--wash);border:1px solid var(--wash-deep);border-radius:999px;padding:6px 12px;white-space:nowrap}
-#slide-11 .spark{height:118px;margin-top:6px}
+#slide-12 .spark{height:118px;margin-top:6px}
 
-#slide-10 .kv3.v span{white-space:nowrap;font-size:12.5px}
+#slide-11 .kv3.v span{white-space:nowrap;font-size:12.5px}
 /* slide 11 retro */
 .goalbar .hbar.lg{grid-template-columns:130px 1fr 60px}
 .goalbar .hb-f{position:relative;overflow:hidden}
@@ -447,7 +447,7 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .lbs-k{font-size:11px;font-weight:800;color:var(--blue);background:var(--wash);border:1px solid var(--wash-deep);border-radius:999px;padding:3px 9px;white-space:nowrap}
 
 /* slide 9 gallery */
-#slide-9 .s-body{padding-top:8px}
+#slide-10 .s-body{padding-top:8px}
 .gal{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:14px;flex:1;min-height:0;height:100%}
 .gi{position:relative;margin:0;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--bg-subtle);min-height:0}
 .gi.w2{grid-column:span 2}
@@ -466,19 +466,19 @@ table.mx{width:100%;border-collapse:collapse;font-size:12.5px}
 .g2.st{width:286px;height:209px}
 .g2.re{width:210px;height:209px}
 /* slide 8 vertical fit after GPS line */
-#slide-8 .s-body{gap:16px;justify-content:flex-start;padding-top:14px}
-#slide-8 .loop>.ln{min-height:104px;padding:14px 16px}
-#slide-8 .loop-back{margin-top:2px;padding-top:6px}
-#slide-8 .lbs{margin-top:8px;padding-top:8px}
-#slide-8 .vbars.v5{flex:1;height:auto;min-height:140px;padding-top:22px;border-bottom:1px solid var(--border)}
-#slide-8 .vbars span{margin-top:6px}
-#slide-8 .chan{align-items:stretch}
-#slide-8 .cn{display:flex;flex-direction:column;justify-content:center}
-#slide-8 .grid2.s8g>.card{min-height:236px}
+#slide-9 .s-body{gap:16px;justify-content:flex-start;padding-top:14px}
+#slide-9 .loop>.ln{min-height:104px;padding:14px 16px}
+#slide-9 .loop-back{margin-top:2px;padding-top:6px}
+#slide-9 .lbs{margin-top:8px;padding-top:8px}
+#slide-9 .vbars.v5{flex:1;height:auto;min-height:140px;padding-top:22px;border-bottom:1px solid var(--border)}
+#slide-9 .vbars span{margin-top:6px}
+#slide-9 .chan{align-items:stretch}
+#slide-9 .cn{display:flex;flex-direction:column;justify-content:center}
+#slide-9 .grid2.s8g>.card{min-height:236px}
 .loop>i{z-index:2}
 .loop>.ln{position:relative;z-index:1}
-#slide-8 .cn{min-height:130px;padding:12px 8px 10px}
-#slide-8 .cn svg{width:26px;height:26px;margin-bottom:6px}
+#slide-9 .cn{min-height:130px;padding:12px 8px 10px}
+#slide-9 .cn svg{width:26px;height:26px;margin-bottom:6px}
 
 /* ---------- Case 2 components ---------- */
 .tline.tl7{grid-template-columns:repeat(7,1fr)}
@@ -585,205 +585,214 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 .bign{display:flex;align-items:baseline;gap:10px;margin:6px 0 4px}
 .bign b{font-size:34px;font-weight:800;color:var(--blue-ink);letter-spacing:-.03em;line-height:1.1}
 .bign span{font-size:13px;color:var(--muted)}
-#slide-14 .s-body{justify-content:flex-start;gap:22px;padding-top:24px}
-#slide-14 .stat4{gap:16px}
-#slide-14 .stat4 .stat{padding:22px 24px}
-#slide-14 .grid2.s4b{flex:1;min-height:0;gap:18px}
-#slide-14 .grid2.s4b .fc{display:flex;flex-direction:column;justify-content:center;padding:24px 28px;gap:0}
-#slide-14 .grid2.s4b .fc h4{font-size:18px;line-height:1.4;margin-bottom:14px}
-#slide-15 .s-body{justify-content:flex-start;padding-top:22px}
-#slide-15 .grid2{flex:1;min-height:0}
-#slide-15 .card.ig{display:flex;flex-direction:column}
-#slide-15 .card.ig.wide{justify-content:space-between}
-#slide-15 .hbar.lg{grid-template-columns:150px 1fr 76px;gap:14px}
-#slide-15 .hbar.lg .hb-t{height:42px}
-#slide-15 .hbar.lg .hb-l{font-size:15px;font-weight:700}
-#slide-15 .hbar.lg .hb-v{font-size:21px}
-#slide-15 .bl{margin-top:8px;padding-top:16px;border-top:1px solid var(--border)}
-#slide-15 .npu{padding:20px 18px}
-#slide-15 .npu b{font-size:34px}
-#slide-16 .an3 .ig{padding:22px 24px;gap:0;display:flex;flex-direction:column}
-#slide-16 .an3 .hb-s{padding:9px 0;font-size:13px;grid-template-columns:1.35fr 92px 60px}
-#slide-16 .an3 .hb-s i{height:12px;border-radius:6px}
-#slide-16 .an3 .rows{margin-top:12px}
-#slide-16 .an3 .bl{margin-top:auto;padding-top:14px;border-top:1px solid var(--border)}
-#slide-16 .an3 .bl li{font-size:13px}
-#slide-17 .s-body{justify-content:center;padding-top:0;gap:24px}
-#slide-17 .jbig{gap:20px}
-#slide-17 .jc.big{padding:26px 28px}
-#slide-17 .jc.big h4{font-size:20px}
-#slide-17 .jsm{gap:16px}
-#slide-17 .jc.sm{padding:20px 20px}
-#slide-17 .jc.sm h4{font-size:15.5px}
-#slide-17 .jc.sm p{font-size:13px;line-height:1.6}
-#slide-18 .s-body{justify-content:center;gap:22px}
-#slide-18 .loop.l5{align-items:stretch}
-#slide-18 .loop.l5>i{align-self:center}
-#slide-18 .loop.l5 .ln{padding:16px 16px;display:flex;flex-direction:column;justify-content:center}
-#slide-18 .ln b{font-size:16px}
-#slide-18 .ln span{font-size:13px;margin-top:8px;line-height:1.55}
-#slide-18 .task9{grid-template-columns:1fr 1fr 1fr;grid-template-rows:repeat(3,auto);gap:12px}
-#slide-18 .task9 .tk:nth-child(1),#slide-18 .task9 .tk:nth-child(2){grid-row:1/4;display:flex;flex-direction:column;justify-content:center}
-#slide-18 .task9 .tk:nth-child(n+3){grid-column:3;display:flex;flex-direction:row;align-items:center;gap:14px}
-#slide-18 .task9 .tk:nth-child(n+3) b{margin-bottom:0;flex:0 0 112px}
-#slide-18 .task9 .tk:nth-child(n+3) span{padding:0}
-#slide-18 .tk{padding:16px 18px}
-#slide-18 .tk b{font-size:14.5px;margin-bottom:8px}
-#slide-18 .tk span{font-size:13.5px;padding:5px 0}
-#slide-19 .mx.rs td{padding:11px 8px;font-size:14px}
-#slide-19 .mx.rs td:last-child{font-size:13px}
-#slide-19 .kv3.v>div{justify-content:flex-start}
-#slide-19 .kv3.v b{margin-bottom:8px}
-#slide-20 .rc{padding:22px 26px}
-#slide-20 .rc h4{font-size:18px;margin-bottom:12px}
-#slide-20 .rc .bl li{font-size:14px}
-#slide-14 .grid2.s4b .fc{justify-content:flex-start;padding-top:26px}
-#slide-16 .an3 .ig{justify-content:space-between}
-#slide-16 .an3 .bl{margin-top:0}
-#slide-16 .an3 .rows{margin-top:0}
-#slide-16 .an3 .hb-s{padding:12px 0}
-#slide-16 .bign b{font-size:38px}
-#slide-19 .s-body{justify-content:flex-start;padding-top:18px;gap:16px}
-#slide-19 .grid2.fill{flex:1;min-height:0}
-#slide-19 .card.ig{padding:18px 22px;min-height:0;overflow:hidden}
-#slide-19 .mx.rs td{padding:8px 8px;font-size:13.5px}
-#slide-19 .mx.rs td:last-child{font-size:12.5px}
-#slide-19 .kv3.v{gap:10px}
-#slide-19 .kv3.v>div{padding:12px 14px}
-#slide-19 .kv3.v b{font-size:14.5px;margin-bottom:6px}
-#slide-19 .bl.s{gap:5px}
-#slide-19 .stat4 .stat{padding:16px 20px}
-#slide-19 .stat4 .stat .v{font-size:28px}
+#slide-15 .s-body{justify-content:flex-start;gap:22px;padding-top:24px}
+#slide-15 .stat4{gap:16px}
+#slide-15 .stat4 .stat{padding:22px 24px}
+#slide-15 .grid2.s4b{flex:1;min-height:0;gap:18px}
+#slide-15 .grid2.s4b .fc{display:flex;flex-direction:column;justify-content:center;padding:24px 28px;gap:0}
+#slide-15 .grid2.s4b .fc h4{font-size:18px;line-height:1.4;margin-bottom:14px}
+#slide-16 .s-body{justify-content:flex-start;padding-top:22px}
+#slide-16 .grid2{flex:1;min-height:0}
+#slide-16 .card.ig{display:flex;flex-direction:column}
+#slide-16 .card.ig.wide{justify-content:space-between}
+#slide-16 .hbar.lg{grid-template-columns:150px 1fr 76px;gap:14px}
+#slide-16 .hbar.lg .hb-t{height:42px}
+#slide-16 .hbar.lg .hb-l{font-size:15px;font-weight:700}
+#slide-16 .hbar.lg .hb-v{font-size:21px}
+#slide-16 .bl{margin-top:8px;padding-top:16px;border-top:1px solid var(--border)}
+#slide-16 .npu{padding:20px 18px}
+#slide-16 .npu b{font-size:34px}
+#slide-17 .an3 .ig{padding:22px 24px;gap:0;display:flex;flex-direction:column}
+#slide-17 .an3 .hb-s{padding:9px 0;font-size:13px;grid-template-columns:1.35fr 92px 60px}
+#slide-17 .an3 .hb-s i{height:12px;border-radius:6px}
+#slide-17 .an3 .rows{margin-top:12px}
+#slide-17 .an3 .bl{margin-top:auto;padding-top:14px;border-top:1px solid var(--border)}
+#slide-17 .an3 .bl li{font-size:13px}
+#slide-18 .s-body{justify-content:center;padding-top:0;gap:24px}
+#slide-18 .jbig{gap:20px}
+#slide-18 .jc.big{padding:26px 28px}
+#slide-18 .jc.big h4{font-size:20px}
+#slide-18 .jsm{gap:16px}
+#slide-18 .jc.sm{padding:20px 20px}
+#slide-18 .jc.sm h4{font-size:15.5px}
+#slide-18 .jc.sm p{font-size:13px;line-height:1.6}
+#slide-19 .s-body{justify-content:center;gap:22px}
+#slide-19 .loop.l5{align-items:stretch}
+#slide-19 .loop.l5>i{align-self:center}
+#slide-19 .loop.l5 .ln{padding:16px 16px;display:flex;flex-direction:column;justify-content:center}
+#slide-19 .ln b{font-size:16px}
+#slide-19 .ln span{font-size:13px;margin-top:8px;line-height:1.55}
+#slide-19 .task9{grid-template-columns:1fr 1fr 1fr;grid-template-rows:repeat(3,auto);gap:12px}
+#slide-19 .task9 .tk:nth-child(1),#slide-19 .task9 .tk:nth-child(2){grid-row:1/4;display:flex;flex-direction:column;justify-content:center}
+#slide-19 .task9 .tk:nth-child(n+3){grid-column:3;display:flex;flex-direction:row;align-items:center;gap:14px}
+#slide-19 .task9 .tk:nth-child(n+3) b{margin-bottom:0;flex:0 0 112px}
+#slide-19 .task9 .tk:nth-child(n+3) span{padding:0}
+#slide-19 .tk{padding:16px 18px}
+#slide-19 .tk b{font-size:14.5px;margin-bottom:8px}
+#slide-19 .tk span{font-size:13.5px;padding:5px 0}
+#slide-20 .mx.rs td{padding:11px 8px;font-size:14px}
+#slide-20 .mx.rs td:last-child{font-size:13px}
+#slide-20 .kv3.v>div{justify-content:flex-start}
+#slide-20 .kv3.v b{margin-bottom:8px}
+#slide-21 .rc{padding:22px 26px}
+#slide-21 .rc h4{font-size:18px;margin-bottom:12px}
+#slide-21 .rc .bl li{font-size:14px}
+#slide-15 .grid2.s4b .fc{justify-content:flex-start;padding-top:26px}
+#slide-17 .an3 .ig{justify-content:space-between}
+#slide-17 .an3 .bl{margin-top:0}
+#slide-17 .an3 .rows{margin-top:0}
+#slide-17 .an3 .hb-s{padding:12px 0}
+#slide-17 .bign b{font-size:38px}
+#slide-20 .s-body{justify-content:flex-start;padding-top:18px;gap:16px}
+#slide-20 .grid2.fill{flex:1;min-height:0}
+#slide-20 .card.ig{padding:18px 22px;min-height:0;overflow:hidden}
+#slide-20 .mx.rs td{padding:8px 8px;font-size:13.5px}
+#slide-20 .mx.rs td:last-child{font-size:12.5px}
+#slide-20 .kv3.v{gap:10px}
+#slide-20 .kv3.v>div{padding:12px 14px}
+#slide-20 .kv3.v b{font-size:14.5px;margin-bottom:6px}
+#slide-20 .bl.s{gap:5px}
+#slide-20 .stat4 .stat{padding:16px 20px}
+#slide-20 .stat4 .stat .v{font-size:28px}
 .cs .ln span,.cs .tk span,.npu span,.bign span,.hb-s span,.cs .jc h4,.cs .jc p,.cs .kv3 span,.bl li,.cs .fc h4,.cs .stat .l,.tl-i span{word-break:keep-all;overflow-wrap:break-word;text-wrap:pretty}
-#slide-16 .an3 .hb-s{grid-template-columns:1.7fr 78px 54px;font-size:12.5px}
-#slide-15 .npu span{line-height:1.55}
+#slide-17 .an3 .hb-s{grid-template-columns:1.7fr 78px 54px;font-size:12.5px}
+#slide-16 .npu span{line-height:1.55}
 /* ---------- Case 3 (아이돌) ---------- */
-#slide-22 .s-body{justify-content:flex-start;gap:22px;padding-top:24px}
-#slide-22 .stat4{gap:16px}
-#slide-22 .stat4 .stat{padding:22px 24px}
-#slide-22 .grid2.s4b{flex:1;min-height:0;gap:18px}
-#slide-22 .grid2.s4b .fc{display:flex;flex-direction:column;justify-content:flex-start;padding:26px 28px 24px;gap:0}
-#slide-22 .grid2.s4b .fc h4{font-size:18px;line-height:1.4;margin-bottom:14px}
-#slide-23 .s-body{justify-content:center;padding-top:0}
-#slide-23 .an3{flex:0 0 auto;gap:16px}
-#slide-23 .an3 .ig{padding:22px 24px;gap:0;display:flex;flex-direction:column;justify-content:flex-start}
-#slide-23 .an3 .bign{margin:8px 0 4px}
-#slide-23 .an3 .bign b{font-size:40px}
-#slide-23 .an3 .rows{margin-top:10px}
-#slide-23 .an3 .hb-s{padding:9px 0;font-size:13px;grid-template-columns:1.35fr 92px 56px}
-#slide-23 .an3 .hb-s i{height:12px;border-radius:6px}
-#slide-23 .an3 .bl{gap:9px;margin-top:14px}
-#slide-23 .an3 .bl li{font-size:13px}
-#slide-23 .an3 .bl.im{margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
-#slide-24 .s-body{justify-content:center;padding-top:0;gap:24px}
-#slide-24 .jbig{gap:20px}
-#slide-24 .jc.big{padding:26px 28px}
-#slide-24 .jc.big h4{font-size:20px}
-#slide-24 .jsm.j3{grid-template-columns:repeat(3,1fr);gap:16px}
-#slide-24 .jc.sm{padding:20px 20px}
-#slide-24 .jc.sm h4{font-size:15.5px}
-#slide-24 .jc.sm p{font-size:13px;line-height:1.6}
-#slide-25 .s-body{justify-content:center;gap:22px}
-#slide-25 .loop.l5{align-items:stretch}
-#slide-25 .loop.l5>i{align-self:center}
-#slide-25 .loop.l5 .ln{padding:16px 16px;display:flex;flex-direction:column;justify-content:center}
-#slide-25 .ln b{font-size:16px}
-#slide-25 .ln span{font-size:13px;margin-top:8px;line-height:1.55}
-#slide-25 .grid3.ex3{gap:16px}
-#slide-25 .grid3.ex3 .fc{padding:20px 22px}
-#slide-25 .grid3.ex3 .fc .tag{margin-bottom:12px}
-#slide-25 .grid3.ex3 .bl li{font-size:13.5px}
-#slide-26 .s-body{justify-content:flex-start;padding-top:16px;gap:14px}
-#slide-26 .stat4 .stat{padding:16px 20px}
-#slide-26 .kv3.v>div{padding:8px 12px}
-#slide-26 .kv3.v .bl.s{gap:9px}
-#slide-26 .kv3.v .bl.s li{font-size:12.5px;line-height:1.5}
-#slide-26 .grid2.r2{flex:1;min-height:0}
-#slide-26 .card.ig{padding:16px 22px;min-height:0;overflow:hidden;display:flex;flex-direction:column}
-#slide-26 .kv3.v{display:flex;flex-direction:column;gap:10px;flex:1;min-height:0}
-#slide-26 .kv3.v>div{justify-content:center;flex:1}
-#slide-26 .kv3.v b{margin-bottom:6px}
-#slide-26 .rcol2{display:flex;flex-direction:column;gap:12px;min-height:0}
-#slide-26 .rcol2 .rc{padding:18px 24px;flex:1;justify-content:center}
-#slide-26 .rcol2 .rc.ok{background:var(--wash);border-color:var(--wash-deep)}
-#slide-26 .rcol2 .rc.ok h4{color:var(--blue-ink)}
-#slide-26 .rcol2 .rlab{margin-bottom:8px}
-#slide-26 .rcol2 .rc h4{font-size:17px;margin-bottom:10px}
-#slide-26 .rcol2 .rc .bl li{font-size:13.5px}
-#slide-39 table{font-size:12px}
-#slide-39 table td,#slide-39 table th{padding-top:6px;padding-bottom:6px}
+#slide-23 .s-body{justify-content:flex-start;gap:22px;padding-top:24px}
+#slide-23 .stat4{gap:16px}
+#slide-23 .stat4 .stat{padding:22px 24px}
+#slide-23 .grid2.s4b{flex:1;min-height:0;gap:18px}
+#slide-23 .grid2.s4b .fc{display:flex;flex-direction:column;justify-content:flex-start;padding:26px 28px 24px;gap:0}
+#slide-23 .grid2.s4b .fc h4{font-size:18px;line-height:1.4;margin-bottom:14px}
+#slide-24 .s-body{justify-content:center;padding-top:0}
+#slide-24 .an3{flex:0 0 auto;gap:16px}
+#slide-24 .an3 .ig{padding:22px 24px;gap:0;display:flex;flex-direction:column;justify-content:flex-start}
+#slide-24 .an3 .bign{margin:8px 0 4px}
+#slide-24 .an3 .bign b{font-size:40px}
+#slide-24 .an3 .rows{margin-top:10px}
+#slide-24 .an3 .hb-s{padding:9px 0;font-size:13px;grid-template-columns:1.35fr 92px 56px}
+#slide-24 .an3 .hb-s i{height:12px;border-radius:6px}
+#slide-24 .an3 .bl{gap:9px;margin-top:14px}
+#slide-24 .an3 .bl li{font-size:13px}
+#slide-24 .an3 .bl.im{margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
+#slide-25 .s-body{justify-content:center;padding-top:0;gap:24px}
+#slide-25 .jbig{gap:20px}
+#slide-25 .jc.big{padding:26px 28px}
+#slide-25 .jc.big h4{font-size:20px}
+#slide-25 .jsm.j3{grid-template-columns:repeat(3,1fr);gap:16px}
+#slide-25 .jc.sm{padding:20px 20px}
+#slide-25 .jc.sm h4{font-size:15.5px}
+#slide-25 .jc.sm p{font-size:13px;line-height:1.6}
+#slide-26 .s-body{justify-content:center;gap:22px}
+#slide-26 .loop.l5{align-items:stretch}
+#slide-26 .loop.l5>i{align-self:center}
+#slide-26 .loop.l5 .ln{padding:16px 16px;display:flex;flex-direction:column;justify-content:center}
+#slide-26 .ln b{font-size:16px}
+#slide-26 .ln span{font-size:13px;margin-top:8px;line-height:1.55}
+#slide-26 .grid3.ex3{gap:16px}
+#slide-26 .grid3.ex3 .fc{padding:20px 22px}
+#slide-26 .grid3.ex3 .fc .tag{margin-bottom:12px}
+#slide-26 .grid3.ex3 .bl li{font-size:13.5px}
+#slide-27 .s-body{justify-content:flex-start;padding-top:16px;gap:14px}
+#slide-27 .stat4 .stat{padding:16px 20px}
+#slide-27 .kv3.v>div{padding:8px 12px}
+#slide-27 .kv3.v .bl.s{gap:9px}
+#slide-27 .kv3.v .bl.s li{font-size:12.5px;line-height:1.5}
+#slide-27 .grid2.r2{flex:1;min-height:0}
+#slide-27 .card.ig{padding:16px 22px;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+#slide-27 .kv3.v{display:flex;flex-direction:column;gap:10px;flex:1;min-height:0}
+#slide-27 .kv3.v>div{justify-content:center;flex:1}
+#slide-27 .kv3.v b{margin-bottom:6px}
+#slide-27 .rcol2{display:flex;flex-direction:column;gap:12px;min-height:0}
+#slide-27 .rcol2 .rc{padding:18px 24px;flex:1;justify-content:center}
+#slide-27 .rcol2 .rc.ok{background:var(--wash);border-color:var(--wash-deep)}
+#slide-27 .rcol2 .rc.ok h4{color:var(--blue-ink)}
+#slide-27 .rcol2 .rlab{margin-bottom:8px}
+#slide-27 .rcol2 .rc h4{font-size:17px;margin-bottom:10px}
+#slide-27 .rcol2 .rc .bl li{font-size:13.5px}
+#slide-40 table{font-size:12px}
+#slide-40 table td,#slide-40 table th{padding-top:6px;padding-bottom:6px}
 /* ---------- Case 4 (WSQ) ---------- */
-#slide-28 .s-body{justify-content:center;gap:22px;padding-top:0}
-#slide-28 .stat4{gap:16px}
-#slide-28 .stat4 .stat{padding:18px 22px}
-#slide-28 .jbig{gap:20px;flex:0 0 auto}
-#slide-28 .jc.big{padding:24px 26px;justify-content:center}
-#slide-28 .jc.big h4{font-size:19px}
-#slide-29 .s-body{justify-content:center;padding-top:0}
-#slide-29 .grid2.w2{flex:0 0 auto}
-#slide-29 .card.ig{padding:20px 24px;display:flex;flex-direction:column;min-height:0;overflow:hidden}
-#slide-29 .bign{margin:6px 0 8px}
-#slide-29 .bign b{font-size:36px}
-#slide-29 .rows{margin-top:6px}
-#slide-29 .hb-s{padding:8px 0;font-size:13px;grid-template-columns:1.4fr 150px 44px}
-#slide-29 .hb-s i{height:12px;border-radius:6px}
-#slide-29 .hb-s.warn i{background:var(--blue-ink)}
-#slide-29 .hb-s.warn span{color:var(--ink);font-weight:700}
-#slide-29 .hb-s.ref i{background:#c9d2e3}
-#slide-29 .hb-s.ref span,#slide-29 .hb-s.ref b{color:var(--muted)}
-#slide-29 .bl.im{margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
-#slide-29 .bl.im li{font-size:13px}
-#slide-29 .kv3.v{display:flex;flex-direction:column;gap:10px;flex:1;min-height:0}
-#slide-29 .kv3.v>div{justify-content:center;flex:1;padding:8px 12px}
-#slide-29 .kv3.v b{margin-bottom:6px}
-#slide-29 .kv3.v .bl.s{gap:7px}
-#slide-29 .kv3.v .bl.s li{font-size:12.5px;line-height:1.45}
-#slide-30 .s-body{justify-content:flex-start;padding-top:16px;gap:14px}
-#slide-30 .stat4 .stat{padding:16px 20px}
-#slide-30 .grid2.r2{flex:1;min-height:0}
-#slide-30 .card.ig{padding:16px 22px;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+#slide-29 .s-body{justify-content:center;gap:22px;padding-top:0}
+#slide-29 .stat4{gap:16px}
+#slide-29 .stat4 .stat{padding:18px 22px}
+#slide-29 .jbig{gap:20px;flex:0 0 auto}
+#slide-29 .jc.big{padding:24px 26px;justify-content:center}
+#slide-29 .jc.big h4{font-size:19px}
+#slide-30 .s-body{justify-content:center;padding-top:0}
+#slide-30 .grid2.w2{flex:0 0 auto}
+#slide-30 .card.ig{padding:20px 24px;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+#slide-30 .bign{margin:6px 0 8px}
+#slide-30 .bign b{font-size:36px}
+#slide-30 .rows{margin-top:6px}
+#slide-30 .hb-s{padding:8px 0;font-size:13px;grid-template-columns:1.4fr 150px 44px}
+#slide-30 .hb-s i{height:12px;border-radius:6px}
+#slide-30 .hb-s.warn i{background:var(--blue-ink)}
+#slide-30 .hb-s.warn span{color:var(--ink);font-weight:700}
+#slide-30 .hb-s.ref i{background:#c9d2e3}
+#slide-30 .hb-s.ref span,#slide-30 .hb-s.ref b{color:var(--muted)}
+#slide-30 .bl.im{margin-top:16px;padding-top:14px;border-top:1px solid var(--border)}
+#slide-30 .bl.im li{font-size:13px}
 #slide-30 .kv3.v{display:flex;flex-direction:column;gap:10px;flex:1;min-height:0}
 #slide-30 .kv3.v>div{justify-content:center;flex:1;padding:8px 12px}
 #slide-30 .kv3.v b{margin-bottom:6px}
-#slide-30 .kv3.v .bl.s{gap:9px}
-#slide-30 .kv3.v .bl.s li{font-size:12.5px;line-height:1.5}
-#slide-30 .rcol2{display:flex;flex-direction:column;gap:12px;min-height:0}
-#slide-30 .rcol2 .rc{padding:18px 24px;flex:1;justify-content:center}
-#slide-30 .rcol2 .rc.ok{background:var(--wash);border-color:var(--wash-deep)}
-#slide-30 .rcol2 .rc.ok h4{color:var(--blue-ink)}
-#slide-30 .rcol2 .rlab{margin-bottom:8px}
-#slide-30 .rcol2 .rc h4{font-size:17px;margin-bottom:10px}
-#slide-30 .rcol2 .rc .bl li{font-size:13.5px}
+#slide-30 .kv3.v .bl.s{gap:7px}
+#slide-30 .kv3.v .bl.s li{font-size:12.5px;line-height:1.45}
+#slide-31 .s-body{justify-content:flex-start;padding-top:16px;gap:14px}
+#slide-31 .stat4 .stat{padding:16px 20px}
+#slide-31 .grid2.r2{flex:1;min-height:0}
+#slide-31 .card.ig{padding:16px 22px;min-height:0;overflow:hidden;display:flex;flex-direction:column}
+#slide-31 .kv3.v{display:flex;flex-direction:column;gap:10px;flex:1;min-height:0}
+#slide-31 .kv3.v>div{justify-content:center;flex:1;padding:8px 12px}
+#slide-31 .kv3.v b{margin-bottom:6px}
+#slide-31 .kv3.v .bl.s{gap:9px}
+#slide-31 .kv3.v .bl.s li{font-size:12.5px;line-height:1.5}
+#slide-31 .rcol2{display:flex;flex-direction:column;gap:12px;min-height:0}
+#slide-31 .rcol2 .rc{padding:18px 24px;flex:1;justify-content:center}
+#slide-31 .rcol2 .rc.ok{background:var(--wash);border-color:var(--wash-deep)}
+#slide-31 .rcol2 .rc.ok h4{color:var(--blue-ink)}
+#slide-31 .rcol2 .rlab{margin-bottom:8px}
+#slide-31 .rcol2 .rc h4{font-size:17px;margin-bottom:10px}
+#slide-31 .rcol2 .rc .bl li{font-size:13.5px}
 /* 31 판단 원칙 */
-#slide-32 .s-body{justify-content:center;padding-top:0;gap:16px}
-#slide-32 table.pr{font-size:13px}
-#slide-32 table.pr th,#slide-32 table.pr td{padding:10px 12px;line-height:1.5}
-/* 33 현재 진행 */
 #slide-33 .s-body{justify-content:center;padding-top:0;gap:16px}
-#slide-33 .grid2.now{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-#slide-33 .card.ig{padding:18px 20px}
-#slide-33 .ig-h{font-size:13px;font-weight:800;color:var(--blue-ink);margin-bottom:10px}
-#slide-33 .kv3.v{gap:8px}
-#slide-33 .kv3.v>div{padding:10px 12px}
-#slide-33 .kv3.v b{font-size:14px}
-#slide-33 .kv3.v span{font-size:12.5px;line-height:1.5;margin-top:3px}
+#slide-33 table.pr{font-size:13px}
+#slide-33 table.pr th,#slide-33 table.pr td{padding:10px 12px;line-height:1.5}
+/* 33 현재 진행 */
+#slide-34 .s-body{justify-content:center;padding-top:0;gap:16px}
+#slide-34 .grid2.now{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#slide-34 .card.ig{padding:18px 20px}
+#slide-34 .ig-h{font-size:13px;font-weight:800;color:var(--blue-ink);margin-bottom:10px}
+#slide-34 .kv3.v{gap:8px}
+#slide-34 .kv3.v>div{padding:10px 12px}
+#slide-34 .kv3.v b{font-size:14px}
+#slide-34 .kv3.v span{font-size:12.5px;line-height:1.5;margin-top:3px}
 /* 37 커리어 방향 */
-#slide-35 .s-body{justify-content:center;padding-top:0;gap:16px}
-#slide-35 .grid3.career .fc p{font-size:14px;line-height:1.65}
-#slide-35 .card.next{padding:16px 22px;background:var(--wash);border-color:var(--wash-deep)}
-#slide-35 .card.next .ig-h{font-size:13px;font-weight:800;color:var(--blue-ink);margin-bottom:8px}
-#slide-35 .card.next .bl li{font-size:13.5px}
+#slide-36 .s-body{justify-content:center;padding-top:0;gap:16px}
+#slide-36 .grid3.career .fc p{font-size:14px;line-height:1.65}
+#slide-36 .card.next{padding:16px 22px;background:var(--wash);border-color:var(--wash-deep)}
+#slide-36 .card.next .ig-h{font-size:13px;font-weight:800;color:var(--blue-ink);margin-bottom:8px}
+#slide-36 .card.next .bl li{font-size:13.5px}
 /* 34 AI 활용 */
-#slide-34 .s-body{justify-content:center;padding-top:0;gap:26px}
-#slide-34 .tline.tl5{grid-template-columns:repeat(5,1fr);padding-top:14px}
-#slide-34 .tline.tl5::before{left:10%;right:10%;top:19px}
-#slide-34 .tl-i span{font-size:12px;line-height:1.45}
-#slide-34 .grid3.ai{gap:14px}
-#slide-34 .card.ig{padding:22px 24px;display:flex;flex-direction:column;justify-content:center}
-#slide-34 .grid3.ai{align-items:stretch}
-#slide-34 .ig-h{font-size:13px;font-weight:800;color:var(--blue-ink);margin-bottom:12px}
-#slide-34 .bl{gap:14px}
-#slide-34 .bl li{font-size:13.5px;line-height:1.55}
+#slide-35 .s-body{justify-content:center;padding-top:0;gap:26px}
+#slide-35 .tline.tl5{grid-template-columns:repeat(5,1fr);padding-top:14px}
+#slide-35 .tline.tl5::before{left:10%;right:10%;top:19px}
+#slide-35 .tl-i span{font-size:12px;line-height:1.45}
+#slide-35 .grid3.ai{gap:14px}
+#slide-35 .card.ig{padding:22px 24px;display:flex;flex-direction:column;justify-content:center}
+#slide-35 .grid3.ai{align-items:stretch}
+#slide-35 .ig-h{font-size:13px;font-weight:800;color:var(--blue-ink);margin-bottom:12px}
+#slide-35 .bl{gap:14px}
+#slide-35 .bl li{font-size:13.5px;line-height:1.55}
+/* 3 케이스 한눈에 */
+#slide-3 .s-body{justify-content:center;padding-top:0}
+#slide-3 .grid4.ov{gap:14px;align-items:stretch}
+#slide-3 .grid4.ov .fc{padding:20px 20px;display:flex;flex-direction:column}
+#slide-3 .grid4.ov .fc .tag{font-size:10px;line-height:1.4}
+#slide-3 .grid4.ov .fc h4{font-size:16px;line-height:1.4;margin-top:8px}
+#slide-3 .grid4.ov .fc p{font-size:13px;line-height:1.65;margin-top:12px;flex:1}
+#slide-3 .grid4.ov .fc p b{color:var(--blue-ink);font-weight:800;margin-right:4px}
+#slide-3 .grid4.ov .fc .r{font-size:13px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -806,7 +815,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <div class="cover-r">
       <div class="cover-eyebrow a-up d2">Portfolio · Business PM</div>
       <h1 class="cover-msg a-up d3">런칭 첫 달의 매출과 리텐션을 지키고,<br>지표가 빠지면 <span class="hl">원인을 찾아 고치는</span><br>게임 사업 PM입니다.</h1>
-      <p class="cover-tag a-up d4">퍼블리셔에서 캐주얼 13종을 글로벌 런칭·운영하고, 개발사에서 신규 IP 2종의 런칭과 수익화를 맡았으며,<br>지금은 웹 게임 플랫폼의 심의·결제·정산·POC까지 오픈 요건을 직접 만들고 있습니다.</p>
+      <p class="cover-tag a-up d4">퍼블리셔에서 캐주얼·방치형 13종을 글로벌 런칭·운영하고, 개발사에서 방치형 RPG 신규 IP 2종의 한국 런칭과 수익화를 맡았으며,<br>지금은 웹 게임 플랫폼의 심의·결제·정산·POC까지 오픈 요건을 직접 만들고 있습니다.</p>
       <div class="cover-kv a-up d5">
         <div>분석력<strong>지표가 빠지면 원인을 찾아 고칩니다</strong></div>
         <div>추진력<strong>제안부터 계약·운영까지 직접 끝냅니다</strong></div>
@@ -839,8 +848,24 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </div>
   </section>
 
+  <!-- ==================== 2b · 케이스 한눈에 ==================== -->
+  <section class="slide" id="slide-3" data-n="3">
+    <header class="s-head">
+      <div class="eyebrow">Cases · 핵심 2 + 보조 2</div>
+      <h2 class="s-title">케이스 4개 — <span class="hl">문제를 다시 정의하고</span>, 판단하고, 전후로 확인한 기록</h2>
+    </header>
+    <div class="s-body">
+      <div class="grid4 ov">
+        <div class="card fc a-up d1"><div class="tag">Core 01 · 컴포즈커피 콜라보 · 나트리스 · 2025.04~10</div><h4>유료 광고 대신 전국 3,000개 매장을 유입 채널로</h4><p><b>문제</b> UA만으로 첫 달 NRU 40만을 채우면 예산의 1.4배<br><b>판단</b> 상대 리스크를 떠안는 교환 설계로 회신 7일 만에 확정 · GPS 매장 방문 → 게임 복귀 순환</p><div class="r">참여 <b class="n">14.6만</b> · GPS 투어 <b class="n">27.9만 회</b> · 첫 달 NRU 목표의 46%</div></div>
+        <div class="card fc a-up d2"><div class="tag">Core 02 · 런칭 3주차 하락 대응 · 나트리스 · 2025.10</div><h4>DAU 하락이 아니라 결제층 축소로 문제를 바꿔 잡기</h4><p><b>문제</b> 주간 DAU −20% 동안 결제 유저 −37%<br><b>판단</b> 마케팅 탓 대신 결제 구조로 재정의 · 상품 4종 개편 → 전후 비교 → 과제 9종</p><div class="r">DAU −33% 속 ARPPU <b class="n">−5.6%</b> 방어 · 고과금 매출 비중 <b class="n">28.7 → 43.8%</b></div></div>
+        <div class="card fc a-up d3"><div class="tag">Sub 03 · 아이돌 키우기 수익화 재설계 · 나트리스 · 2025.03~05</div><h4>결제는 하는데 더 살 이유가 없는 구조를 다시 설계</h4><p><b>문제</b> PUR은 정상인데 결제 유저가 더 사지 않음<br><b>판단</b> 리텐션 문제가 아니라 재화 가치 산정 오류 · 목표 지점 역산 → 신서버에서 검증</p><div class="r">1차 개선 <b class="n">D+8</b> 반영 · 신서버 DAU <b class="n">약 3배</b> · PUR 3.5 → 4~5%</div></div>
+        <div class="card fc a-up d4"><div class="tag">Sub 04 · Water Sort Quest 단계 런칭 · 모비릭스 · 2023.12~2024.01</div><h4>먼저 열어 확인하고, 7일 이탈 분석으로 고친 뒤 키우기</h4><p><b>문제</b> 마케팅 없이 오픈한 첫 주, UA로 넘어가도 되는가<br><b>판단</b> 사내 런칭 3종 D+1과 비교해 검증 → UA · 첫 7일 이탈 4곳 특정 → v1.0.4</p><div class="r">D+1 Retention <b class="n">38 → 47%</b> · 피크 DAU <b class="n">138만</b></div></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== C0 · 컴포즈 케이스 간지 ==================== -->
-  <section class="slide slide-dark slide-div" id="slide-3" data-n="3">
+  <section class="slide slide-dark slide-div" id="slide-4" data-n="4">
     <div class="div-wrap">
       <div class="eyebrow a-up d1">Core Case 01 · Brand Partnership</div>
       <h2 class="s-title a-up d2">컴포즈커피 × 아이러브커피 키우기<br>전국 3,000개 매장을 유입 채널로 만든 콜라보</h2>
@@ -852,7 +877,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C1 · 컴포즈 케이스 · 개요 ==================== -->
-  <section class="slide cs" id="slide-4" data-n="4">
+  <section class="slide cs" id="slide-5" data-n="5">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 컴포즈커피 × 아이러브커피 키우기 · 개요</div>
       <h2 class="s-title">4월 제안부터 10월 종료까지 — <span class="hl">81일</span>의 콜라보 운영</h2>
@@ -875,7 +900,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C2 · 문제 정의 · 목표 ==================== -->
-  <section class="slide roomy" id="slide-5" data-n="5">
+  <section class="slide roomy" id="slide-6" data-n="6">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 문제 정의 · 목표</div>
       <h2 class="s-title">UA만으로 40만 명을 채우면 예산의 <span class="hl">1.4배</span></h2>
@@ -907,7 +932,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C3 · 분석 ==================== -->
-  <section class="slide cs" id="slide-6" data-n="6">
+  <section class="slide cs" id="slide-7" data-n="7">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 분석</div>
       <h2 class="s-title">왜 컴포즈였나 — 4곳에 제안, <span class="hl">세 기준</span>으로 압축</h2>
@@ -950,7 +975,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C4 · 핵심 판단 ==================== -->
-  <section class="slide cs" id="slide-7" data-n="7">
+  <section class="slide cs" id="slide-8" data-n="8">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 핵심 판단</div>
       <h2 class="s-title"><span class="hl">여섯 번</span>의 판단</h2>
@@ -970,7 +995,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C5 · 실행 ==================== -->
-  <section class="slide cs" id="slide-8" data-n="8">
+  <section class="slide cs" id="slide-9" data-n="9">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 실행</div>
       <h2 class="s-title">사전예약 → 매장 방문 → 게임 복귀, <span class="hl">순환</span>으로 설계</h2>
@@ -1014,7 +1039,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C5b · 제작물 ==================== -->
-  <section class="slide cs" id="slide-9" data-n="9">
+  <section class="slide cs" id="slide-10" data-n="10">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 실행 · 제작물</div>
       <h2 class="s-title">매장 · 앱 · 홈페이지 · 인게임, <span class="hl">한 톤</span>으로 동시 노출</h2>
@@ -1036,7 +1061,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C6 · 협업 ==================== -->
-  <section class="slide cs" id="slide-10" data-n="10">
+  <section class="slide cs" id="slide-11" data-n="11">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 협업</div>
       <h2 class="s-title">내부 4개 팀 · 외부 3개 사 — <span class="hl">합의는 메일로 고정</span></h2>
@@ -1069,7 +1094,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C7 · 결과 · 이슈 ==================== -->
-  <section class="slide cs" id="slide-11" data-n="11">
+  <section class="slide cs" id="slide-12" data-n="12">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 결과 · 이슈 대응</div>
       <h2 class="s-title">참여 <span class="hl">14.6만 명</span> · GPS 투어 27.9만 회 · 매장 3,000개</h2>
@@ -1108,7 +1133,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== C8 · 회고 ==================== -->
-  <section class="slide cs" id="slide-12" data-n="12">
+  <section class="slide cs" id="slide-13" data-n="13">
     <header class="s-head">
       <div class="eyebrow">Core Case 01 · 회고</div>
       <h2 class="s-title">첫 달 NRU 18.4만, 목표의 46% — 남긴 설계와 <span class="hl">빠뜨린 설계</span></h2>
@@ -1136,7 +1161,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== D0 · 하락 대응 케이스 간지 ==================== -->
-  <section class="slide slide-dark slide-div" id="slide-13" data-n="13">
+  <section class="slide slide-dark slide-div" id="slide-14" data-n="14">
     <div class="div-wrap">
       <div class="eyebrow a-up d1">Core Case 02 · Live Ops & Monetization</div>
       <h2 class="s-title a-up d2">아이러브커피 키우기 런칭 3주차<br>매출 하락의 원인을 결제 구조에서 찾다</h2>
@@ -1148,7 +1173,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== D1 · 개요 ==================== -->
-  <section class="slide cs" id="slide-14" data-n="14">
+  <section class="slide cs" id="slide-15" data-n="15">
     <header class="s-head">
       <div class="eyebrow">Core Case 02 · 아이러브커피 키우기 · 개요</div>
       <h2 class="s-title">하락 인지에서 다음 업데이트까지 — <span class="hl">3주</span>의 대응</h2>
@@ -1171,7 +1196,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== D2 · 문제 정의 ==================== -->
-  <section class="slide cs" id="slide-15" data-n="15">
+  <section class="slide cs" id="slide-16" data-n="16">
     <header class="s-head">
       <div class="eyebrow">Core Case 02 · 문제 정의</div>
       <h2 class="s-title">PU가 DAU보다 빨리 빠졌다 — <span class="hl">유저 파이가 아니라 결제 구조</span></h2>
@@ -1201,7 +1226,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== D3 · 분석 ==================== -->
-  <section class="slide cs" id="slide-16" data-n="16">
+  <section class="slide cs" id="slide-17" data-n="17">
     <header class="s-head">
       <div class="eyebrow">Core Case 02 · 분석 (10/10 이탈 · 재화 분석)</div>
       <h2 class="s-title">세 축으로 나눈 원인 — <span class="hl">이탈 구간 · 과금 유형 · 재화 흐름</span></h2>
@@ -1246,7 +1271,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== D4 · 핵심 판단 ==================== -->
-  <section class="slide cs" id="slide-17" data-n="17">
+  <section class="slide cs" id="slide-18" data-n="18">
     <header class="s-head">
       <div class="eyebrow">Core Case 02 · 핵심 판단</div>
       <h2 class="s-title"><span class="hl">여섯 번</span>의 판단</h2>
@@ -1266,7 +1291,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== D5 · 실행 · 협업 ==================== -->
-  <section class="slide cs" id="slide-18" data-n="18">
+  <section class="slide cs" id="slide-19" data-n="19">
     <header class="s-head">
       <div class="eyebrow">Core Case 02 · 실행</div>
       <h2 class="s-title">분석 → 업데이트 → 전후 검증 → <span class="hl">과제 9종</span> → 다음 업데이트</h2>
@@ -1292,7 +1317,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== D6 · 결과 ==================== -->
-  <section class="slide cs" id="slide-19" data-n="19">
+  <section class="slide cs" id="slide-20" data-n="20">
     <header class="s-head">
       <div class="eyebrow">Core Case 02 · 결과</div>
       <h2 class="s-title">DAU −33% 속에서 ARPPU를 지키고 <span class="hl">고과금 매출 비중 28.7 → 43.8%</span></h2>
@@ -1330,7 +1355,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== D7 · 회고 ==================== -->
-  <section class="slide cs" id="slide-20" data-n="20">
+  <section class="slide cs" id="slide-21" data-n="21">
     <header class="s-head">
       <div class="eyebrow">Core Case 02 · 회고</div>
       <h2 class="s-title">구조는 고쳤지만 파이는 못 지켰다 — <span class="hl">남긴 기준과 빠뜨린 설계</span></h2>
@@ -1358,7 +1383,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== I0 · 아이돌 케이스 간지 ==================== -->
-  <section class="slide slide-dark slide-div" id="slide-21" data-n="21">
+  <section class="slide slide-dark slide-div" id="slide-22" data-n="22">
     <div class="div-wrap">
       <div class="eyebrow a-up d1">Sub Case 03 · Monetization Redesign</div>
       <h2 class="s-title a-up d2">아이돌 키우기 수익화 재설계<br>재화 가치를 다시 매기고 신서버로 검증하다</h2>
@@ -1370,7 +1395,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== I1 · 아이돌 개요 · 문제 ==================== -->
-  <section class="slide cs" id="slide-22" data-n="22">
+  <section class="slide cs" id="slide-23" data-n="23">
     <header class="s-head">
       <div class="eyebrow">Sub Case 03 · 아이돌 키우기 · 개요 · 문제 정의</div>
       <h2 class="s-title">PUR은 나오는데 매출이 안 나온다 — 원인은 <span class="hl">재화 가치 산정</span></h2>
@@ -1392,14 +1417,14 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="stat"><div class="l">신서버 오픈</div><div class="v dsp">D+50</div></div>
       </div>
       <div class="grid2 a-up d3 fill s4b">
-        <div class="card fc"><div class="tag">무엇이 문제였나</div><h4>결제 전환은 되는데 결제 유저가 더 사지 않음</h4><ul class="bl"><li><b>PUR 3.4%</b>결제 전환율은 정상 범위</li><li><b>D+1 19%</b>재방문 저조 · 성장 체감 더딤</li><li><b>소액 편중</b>첫 결제 상품 효율 과다 → 다음 상품이 비싸 보임</li><li><b>구매 제한</b>고과금 상한을 막는 구매 횟수 제한</li></ul></div>
+        <div class="card fc"><div class="tag">무엇이 문제였나</div><h4>결제 전환은 되는데 결제 유저가 더 사지 않음</h4><ul class="bl"><li><b>PUR 3.5%</b>결제 전환율은 정상 범위</li><li><b>D+1 19%</b>재방문 저조 · 성장 체감 더딤</li><li><b>소액 편중</b>첫 결제 상품 효율 과다 → 다음 상품이 비싸 보임</li><li><b>구매 제한</b>고과금 상한을 막는 구매 횟수 제한</li></ul></div>
         <div class="card fc"><div class="tag">내 역할</div><h4>지표 확인부터 재화 재산정 · 신서버 기획까지</h4><ul class="bl"><li><b>지표</b>키바나 · Adjust · BI 직접 조회, 일일 보고</li><li><b>재화</b>기획자와 전투력 기준 재화 가치 재산정</li><li><b>기획</b>신서버 이벤트 4종 · 상품 재구성 → 개발 전달</li><li><b>운영</b>LMS 문구 · 쿠폰 발행 · 스토어 이벤트 게시 요청</li></ul></div>
       </div>
     </div>
   </section>
 
   <!-- ==================== I2 · 분석 ==================== -->
-  <section class="slide cs" id="slide-23" data-n="23">
+  <section class="slide cs" id="slide-24" data-n="24">
     <header class="s-head">
       <div class="eyebrow">Sub Case 03 · 분석 (2025.03~05)</div>
       <h2 class="s-title">결제는 하는데 더 살 이유가 없다 — <span class="hl">재화 가치 · 허들 · 상품</span> 세 축</h2>
@@ -1434,7 +1459,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 
         <div class="card ig">
           <div class="ig-h">③ 상품 — 첫 결제가 기준점이 됨</div>
-          <div class="bign"><b>3.4%</b><span>PUR · 3월 누적</span></div>
+          <div class="bign"><b>3.5%</b><span>PUR · 3월 첫 12일</span></div>
           <div class="rows">
           <div class="hb-s"><span>챕터 클리어 상자 · 소액</span><i style="width:100%"></i><b>31%</b></div>
           <div class="hb-s"><span>꾸미기 패키지 · 소액</span><i style="width:62%"></i><b>19%</b></div>
@@ -1450,7 +1475,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== I3 · 핵심 판단 ==================== -->
-  <section class="slide cs" id="slide-24" data-n="24">
+  <section class="slide cs" id="slide-25" data-n="25">
     <header class="s-head">
       <div class="eyebrow">Sub Case 03 · 핵심 판단</div>
       <h2 class="s-title"><span class="hl">다섯 번</span>의 판단</h2>
@@ -1469,7 +1494,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== I4 · 실행 ==================== -->
-  <section class="slide cs" id="slide-25" data-n="25">
+  <section class="slide cs" id="slide-26" data-n="26">
     <header class="s-head">
       <div class="eyebrow">Sub Case 03 · 실행</div>
       <h2 class="s-title">재화 재산정 → 밸런스 · BM 리뉴얼 → <span class="hl">신서버 오픈</span> → 상품 재구성</h2>
@@ -1493,7 +1518,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== I5 · 결과 · 회고 ==================== -->
-  <section class="slide cs" id="slide-26" data-n="26">
+  <section class="slide cs" id="slide-27" data-n="27">
     <header class="s-head">
       <div class="eyebrow">Sub Case 03 · 결과 · 회고</div>
       <h2 class="s-title">신서버 DAU 약 3배 · PUR 4~5%대 — <span class="hl">구조는 검증했지만 유입은 못 만들었다</span></h2>
@@ -1509,7 +1534,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card ig a-up d2">
           <div class="ig-h">무엇을 검증했고 무엇을 못 만들었나</div>
           <div class="kv3 v tight">
-            <div><b>검증한 것</b><ul class="bl s"><li>재산정 · BM 리뉴얼 직후 PUR 3.4 → 5.9% (4/17~24)</li><li>리턴 마케팅만으로 오픈 후 DAU 약 3배</li><li>서버 대항전 · 주간 랭킹으로 재방문 동기</li></ul></div>
+            <div><b>검증한 것</b><ul class="bl s"><li>밸런스 2차 직후 PUR 5.9% (4/17~24) · 3월 3.5% 대비</li><li>리턴 마케팅만으로 오픈 후 DAU 약 3배</li><li>서버 대항전 · 주간 랭킹으로 재방문 동기</li></ul></div>
             <div><b>이어간 것</b><ul class="bl s"><li>5/12 상품 재구성 5종 기획 → 개발 전달 · 5/15 페스타 패키지 4종</li><li>5/21 신서버 현황 · 이탈 분석으로 후속 점검</li></ul></div>
             <div class="lim"><b>못 만든 것</b><ul class="bl s"><li>반등이 일시적 → UA 조기 축소</li><li>1년 운영 후 서비스 종료</li></ul></div>
           </div>
@@ -1523,7 +1548,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== W0 · WSQ 간지 ==================== -->
-  <section class="slide slide-dark slide-div" id="slide-27" data-n="27">
+  <section class="slide slide-dark slide-div" id="slide-28" data-n="28">
     <div class="div-wrap">
       <div class="eyebrow a-up d1">Sub Case 04 · Staged Launch</div>
       <h2 class="s-title a-up d2">Water Sort Quest 단계 런칭<br>UA 없이 먼저 열어 확인하고, 7일 이탈 분석으로 고친 뒤 키우다</h2>
@@ -1535,7 +1560,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== W1 · 판단 · 개요 ==================== -->
-  <section class="slide cs" id="slide-28" data-n="28">
+  <section class="slide cs" id="slide-29" data-n="29">
     <header class="s-head">
       <div class="eyebrow">Sub Case 04 · Water Sort Quest · 판단 · 개요</div>
       <h2 class="s-title"><span class="hl">확인 → UA → 개선 → 피처드</span> — 단계마다 지표로 다음을 정했다</h2>
@@ -1564,7 +1589,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== W2 · 분석 · 실행 ==================== -->
-  <section class="slide cs" id="slide-29" data-n="29">
+  <section class="slide cs" id="slide-30" data-n="30">
     <header class="s-head">
       <div class="eyebrow">Sub Case 04 · 분석 · 실행 (12.21 이탈 분석 → 01.09 v1.0.4)</div>
       <h2 class="s-title">첫 7일 이탈 5구역 — <span class="hl">난이도가 갑자기 뛰는 곳</span>에서 빠진다</h2>
@@ -1596,7 +1621,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== W3 · 결과 · 회고 ==================== -->
-  <section class="slide cs" id="slide-30" data-n="30">
+  <section class="slide cs" id="slide-31" data-n="31">
     <header class="s-head">
       <div class="eyebrow">Sub Case 04 · 결과 · 회고</div>
       <h2 class="s-title">피크 DAU 138만 · D+1 Retention 38 → 47% — <span class="hl">순서를 지켜 얻은 것과 늦게 안 것</span></h2>
@@ -1625,7 +1650,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== P0 · 역량·방향 간지 ==================== -->
-  <section class="slide slide-dark slide-div" id="slide-31" data-n="31">
+  <section class="slide slide-dark slide-div" id="slide-32" data-n="32">
     <div class="div-wrap">
       <div class="eyebrow a-up d1">Part 2 · Principles &amp; Direction</div>
       <h2 class="s-title a-up d2">네 케이스에서 반복한 판단 기준,<br>지금 하는 일, 다음에 가고 싶은 곳</h2>
@@ -1637,7 +1662,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== P · 판단 원칙 ==================== -->
-  <section class="slide" id="slide-32" data-n="32">
+  <section class="slide" id="slide-33" data-n="33">
     <header class="s-head">
       <div class="eyebrow">Principles · 요구 역량 × 판단 원칙</div>
       <h2 class="s-title">사업 PM 요구 역량 6개와 <span class="hl">저의 판단 원칙</span></h2>
@@ -1646,7 +1671,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <table class="pr a-up d1">
         <tr><th style="width:16%">요구 역량</th><th style="width:36%">판단 원칙</th><th>증명 · 숫자</th></tr>
         <tr><td class="k">협업 · 조율</td><td>합의는 메일과 문서로 남기고, 개선안은 개발팀이 바로 실행할 수 있는 형태로 넘깁니다</td><td>컴포즈 콜라보 합의 고정 방식 3(결정 당일 메일 정리 · 협약서 초안 선제 작성 · 요구는 조건 붙여 수용) · 하락 대응 개선 과제 9종을 직접 기획해 개발 전달 · 13종 동시 운영에서 개발사·QA·마케팅·스토어 조율</td></tr>
-        <tr><td class="k">데이터로 방향 제시</td><td>표면 지표에서 멈추지 않고 코호트·구간까지 파헤쳐 원인을 찾습니다</td><td>3주차 하락 → 결제층 축소 특정 → 고과금 매출 비중 28.7 → 43.8% · 아이돌 재화 가치 재산정 D+8 → PUR 3.4 → 5.9% · WSQ 첫 7일 이탈 4곳 특정</td></tr>
+        <tr><td class="k">데이터로 방향 제시</td><td>표면 지표에서 멈추지 않고 코호트·구간까지 파헤쳐 원인을 찾습니다</td><td>3주차 하락 → 결제층 축소 특정 → 고과금 매출 비중 28.7 → 43.8% · 아이돌 재화 가치 재산정 D+8 → PUR 3.5 → 4~5% · WSQ 첫 7일 이탈 4곳 특정</td></tr>
         <tr><td class="k">일정 · 리스크 관리</td><td>빠른 판단과 확정이 필요한 일에 우선순위를 두고, 추후 변경이 가능한 일은 여유 기간을 길게 잡습니다</td><td>컴포즈 지류는 런칭에만, 디지털 8주 · 프로모션 전 2주는 효과 분리 측정 · 13종 킥오프~오픈 마스터플랜 · 2주 단위 마일스톤 점검 · 웹 플랫폼은 심의·PG를 설계 단계에 선반영</td></tr>
         <tr><td class="k">BM · 결제 지표</td><td>월정액 위에 조건부·데일리 한정 패키지를 겹쳐 첫 결제 문턱을 낮추고, 이벤트는 목적 → 대상 → 검증 지표를 먼저 정합니다</td><td>메인 BM 위 조건부·데일리 한정 → D7 인앱 매출 5.1억 · ARPPU 3만원대 · 상품 재구성 후 PUR 3.5 → 4~5%</td></tr>
         <tr><td class="k">런칭 풀사이클 · 글로벌</td><td>첫 주 지표를 먼저 확인하고, 심의·스토어·피처링·사전예약을 한 흐름으로 관리합니다</td><td>한국 3종 + 글로벌 13종 · FGT 35명 → 출시 전 80% 반영 · 사전예약 15만 · 양대 마켓 피처링 · WSQ 첫 주 검증 후 UA</td></tr>
@@ -1657,7 +1682,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== N · 현재 진행 ==================== -->
-  <section class="slide" id="slide-33" data-n="33">
+  <section class="slide" id="slide-34" data-n="34">
     <header class="s-head">
       <div class="eyebrow">Now · 오지스 · 2026.06 ~</div>
       <h2 class="s-title">지금은 웹 플랫폼과 포커 서비스 3종의 <span class="hl">오픈 요건과 유저 풀</span>을 만들고 있습니다</h2>
@@ -1692,7 +1717,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== AI · AI 활용 ==================== -->
-  <section class="slide" id="slide-34" data-n="34">
+  <section class="slide" id="slide-35" data-n="35">
     <header class="s-head">
       <div class="eyebrow">AI · 사내 PMO 툴 · 2026.07 ~</div>
       <h2 class="s-title">비개발자가 AI 코딩으로 만든 PMO 툴, <span class="hl">35일 만에 팀 표준 도구</span>로</h2>
@@ -1724,7 +1749,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== K · 커리어 방향 ==================== -->
-  <section class="slide" id="slide-35" data-n="35">
+  <section class="slide" id="slide-36" data-n="36">
     <header class="s-head">
       <div class="eyebrow">Career · 퍼블리셔 → 개발사 → 플랫폼</div>
       <h2 class="s-title">세 자리에서 쌓은 것을 <span class="hl">더 큰 라이브 서비스</span>에서 쓰고 싶습니다</h2>
@@ -1744,7 +1769,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 6 · Case 1 Launch ==================== -->
-  <section class="slide" id="slide-36" data-n="36">
+  <section class="slide" id="slide-37" data-n="37">
     <header class="s-head">
       <div class="eyebrow">Appendix · 아이러브커피 키우기 런칭 준비</div>
       <h2 class="s-title">런칭 준비 — <span class="hl">FGT 검증에서 수익화까지</span></h2>
@@ -1768,7 +1793,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 12 · BM & Events ==================== -->
-  <section class="slide" id="slide-37" data-n="37">
+  <section class="slide" id="slide-38" data-n="38">
     <header class="s-head">
       <div class="eyebrow">Appendix · BM · Events</div>
       <h2 class="s-title">패키지와 이벤트는 <span class="hl">"왜 이 구조인지"</span> 설명 가능한 형태로</h2>
@@ -1804,7 +1829,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 13 · Projects ==================== -->
-  <section class="slide" id="slide-38" data-n="38">
+  <section class="slide" id="slide-39" data-n="39">
     <header class="s-head">
       <div class="eyebrow">Appendix · Projects</div>
       <h2 class="s-title">참여 프로젝트 <span class="hl">3사 15종+</span> — 역할과 핵심 성과</h2>
@@ -1825,7 +1850,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 14 · Data basis ==================== -->
-  <section class="slide" id="slide-39" data-n="39">
+  <section class="slide" id="slide-40" data-n="40">
     <header class="s-head">
       <div class="eyebrow">Appendix · Data Basis</div>
       <h2 class="s-title">본문 숫자의 <span class="hl">기간 · 모수 · 정의</span></h2>
@@ -1849,7 +1874,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   </section>
 
   <!-- ==================== 15 · Closing ==================== -->
-  <section class="slide slide-dark" id="slide-40" data-n="40">
+  <section class="slide slide-dark" id="slide-41" data-n="41">
     <header class="s-head">
       <div class="eyebrow">Thank you</div>
       <h2 class="s-title">런칭 첫 달의 매출과 리텐션을 지키고,<br>지표가 빠지면 원인을 찾아 고치는 게임 사업 PM</h2>
@@ -1878,8 +1903,8 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 
 <script>
 (function(){
-  var total=40,current=1,animating=false;
-  var titles=['표지','한눈에','컴포즈 케이스','컴포즈 개요','컴포즈 문제·목표','컴포즈 분석','컴포즈 핵심 판단','컴포즈 실행','컴포즈 제작물','컴포즈 협업','컴포즈 결과','컴포즈 회고','하락 대응 케이스','하락 개요','하락 문제','하락 분석','하락 핵심 판단','하락 실행','하락 결과','하락 회고','아이돌 케이스','아이돌 개요','아이돌 분석','아이돌 핵심 판단','아이돌 실행','아이돌 결과·회고','WSQ 케이스','WSQ 판단','WSQ 분석','WSQ 결과·회고','역량·방향','판단 원칙','현재 진행','AI 활용','커리어 방향','런칭 준비','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
+  var total=41,current=1,animating=false;
+  var titles=['표지','한눈에','케이스 한눈에','컴포즈 케이스','컴포즈 개요','컴포즈 문제·목표','컴포즈 분석','컴포즈 핵심 판단','컴포즈 실행','컴포즈 제작물','컴포즈 협업','컴포즈 결과','컴포즈 회고','하락 대응 케이스','하락 개요','하락 문제','하락 분석','하락 핵심 판단','하락 실행','하락 결과','하락 회고','아이돌 케이스','아이돌 개요','아이돌 분석','아이돌 핵심 판단','아이돌 실행','아이돌 결과·회고','WSQ 케이스','WSQ 판단','WSQ 분석','WSQ 결과·회고','역량·방향','판단 원칙','현재 진행','AI 활용','커리어 방향','런칭 준비','BM·이벤트','프로젝트 총괄','수치 기준','마무리'];
   var stage=document.getElementById('presentation'),progress=document.getElementById('progress'),pgnum=document.getElementById('pgnum'),dots=document.getElementById('dots'),kbd=document.getElementById('kbd');
   for(var i=1;i<=total;i++){var d=document.createElement('button');d.className='dot'+(i===1?' active':'');d.title=titles[i-1];d.setAttribute('aria-label',i+'. '+titles[i-1]);(function(n){d.addEventListener('click',function(){go(n);});})(i);dots.appendChild(d);}
   function chrome(){progress.style.width=(current/total*100)+'%';pgnum.innerHTML='<strong>'+current+'</strong> / '+total;var ds=dots.children;for(var i=0;i<ds.length;i++)ds[i].classList.toggle('active',i+1===current);var act=document.getElementById('slide-'+current);stage.classList.toggle('dark-chrome',act.classList.contains('slide-dark')||act.classList.contains('slide-cover'));}
