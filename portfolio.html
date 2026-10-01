@@ -785,14 +785,17 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 #slide-35 .bl{gap:14px}
 #slide-35 .bl li{font-size:13.5px;line-height:1.55}
 /* 3 케이스 한눈에 */
-#slide-3 .s-body{justify-content:center;padding-top:0}
-#slide-3 .grid4.ov{gap:14px;align-items:stretch}
-#slide-3 .grid4.ov .fc{padding:20px 20px;display:flex;flex-direction:column}
-#slide-3 .grid4.ov .fc .tag{font-size:10px;line-height:1.4}
-#slide-3 .grid4.ov .fc h4{font-size:16px;line-height:1.4;margin-top:8px}
-#slide-3 .grid4.ov .fc p{font-size:13px;line-height:1.65;margin-top:12px;flex:1}
-#slide-3 .grid4.ov .fc p b{color:var(--blue-ink);font-weight:800;margin-right:4px}
-#slide-3 .grid4.ov .fc .r{font-size:13px;line-height:1.5}
+#slide-3 .s-body{justify-content:center;padding-top:22px}
+#slide-3 .grid2.ov2{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:16px;flex:1;min-height:0}
+#slide-3 .card.ov{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:22px 26px;align-items:center;min-height:0}
+#slide-3 .ovl .tag{font-size:11px;font-weight:800;color:var(--blue);letter-spacing:.03em;line-height:1.45}
+#slide-3 .ovl h4{font-size:18px;font-weight:800;color:var(--ink);line-height:1.4;margin-top:8px}
+#slide-3 .ovr{display:grid;grid-template-columns:38px 1fr;gap:10px 12px;align-content:center;margin:0;border-left:1px solid var(--border);padding-left:18px}
+#slide-3 .ovr dt{font-size:13px;font-weight:800;color:var(--blue-ink);padding-top:1px}
+#slide-3 .ovr dd{margin:0;font-size:14px;line-height:1.55;color:var(--muted)}
+#slide-3 .ovr dd.res{color:var(--ink);font-weight:600}
+#slide-3 .ovr dd.res .n{color:var(--blue);font-weight:800}
+
 </style>
 </head>
 <body>
@@ -855,11 +858,23 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <h2 class="s-title">케이스 4개 — <span class="hl">문제를 다시 정의하고</span>, 판단하고, 전후로 확인한 기록</h2>
     </header>
     <div class="s-body">
-      <div class="grid4 ov">
-        <div class="card fc a-up d1"><div class="tag">Core 01 · 컴포즈커피 콜라보 · 나트리스 · 2025.04~10</div><h4>유료 광고 대신 전국 3,000개 매장을 유입 채널로</h4><p><b>문제</b> UA만으로 첫 달 NRU 40만을 채우면 예산의 1.4배<br><b>판단</b> 상대 리스크를 떠안는 교환 설계로 회신 7일 만에 확정 · GPS 매장 방문 → 게임 복귀 순환</p><div class="r">참여 <b class="n">14.6만</b> · GPS 투어 <b class="n">27.9만 회</b> · 첫 달 NRU 목표의 46%</div></div>
-        <div class="card fc a-up d2"><div class="tag">Core 02 · 런칭 3주차 하락 대응 · 나트리스 · 2025.10</div><h4>DAU 하락이 아니라 결제층 축소로 문제를 바꿔 잡기</h4><p><b>문제</b> 주간 DAU −20% 동안 결제 유저 −37%<br><b>판단</b> 마케팅 탓 대신 결제 구조로 재정의 · 상품 4종 개편 → 전후 비교 → 과제 9종</p><div class="r">DAU −33% 속 ARPPU <b class="n">−5.6%</b> 방어 · 고과금 매출 비중 <b class="n">28.7 → 43.8%</b></div></div>
-        <div class="card fc a-up d3"><div class="tag">Sub 03 · 아이돌 키우기 수익화 재설계 · 나트리스 · 2025.03~05</div><h4>결제는 하는데 더 살 이유가 없는 구조를 다시 설계</h4><p><b>문제</b> PUR은 정상인데 결제 유저가 더 사지 않음<br><b>판단</b> 리텐션 문제가 아니라 재화 가치 산정 오류 · 목표 지점 역산 → 신서버에서 검증</p><div class="r">1차 개선 <b class="n">D+8</b> 반영 · 신서버 DAU <b class="n">약 3배</b> · PUR 3.5 → 4~5%</div></div>
-        <div class="card fc a-up d4"><div class="tag">Sub 04 · Water Sort Quest 단계 런칭 · 모비릭스 · 2023.12~2024.01</div><h4>먼저 열어 확인하고, 7일 이탈 분석으로 고친 뒤 키우기</h4><p><b>문제</b> 마케팅 없이 오픈한 첫 주, UA로 넘어가도 되는가<br><b>판단</b> 사내 런칭 3종 D+1과 비교해 검증 → UA · 첫 7일 이탈 4곳 특정 → v1.0.4</p><div class="r">D+1 Retention <b class="n">38 → 47%</b> · 피크 DAU <b class="n">138만</b></div></div>
+      <div class="grid2 ov2">
+        <div class="card ov a-up d1">
+          <div class="ovl"><div class="tag">Core 01 · 브랜드 콜라보<br>나트리스 · 2025.04~10</div><h4>유료 광고 대신 전국 3,000개 매장을 유입 채널로</h4></div>
+          <dl class="ovr"><dt>문제</dt><dd>UA만으로 첫 달 NRU 40만을 채우면 예산의 1.4배</dd><dt>판단</dt><dd>상대 리스크를 떠안는 교환 설계로 회신 7일 만에 확정 · GPS 매장 방문 → 게임 복귀 순환</dd><dt>결과</dt><dd class="res">참여 <b class="n">14.6만</b> · GPS 투어 <b class="n">27.9만 회</b> · 첫 달 NRU 목표의 46%</dd></dl>
+        </div>
+        <div class="card ov a-up d2">
+          <div class="ovl"><div class="tag">Core 02 · 런칭 3주차 하락 대응<br>나트리스 · 2025.10</div><h4>DAU 하락이 아니라 결제층 축소로 문제를 바꿔 잡기</h4></div>
+          <dl class="ovr"><dt>문제</dt><dd>주간 DAU −20% 동안 결제 유저 −37%</dd><dt>판단</dt><dd>마케팅 탓 대신 결제 구조로 재정의 · 상품 4종 개편 → 전후 비교 → 과제 9종</dd><dt>결과</dt><dd class="res">DAU −33% 속 ARPPU <b class="n">−5.6%</b> 방어 · 고과금 매출 비중 <b class="n">28.7 → 43.8%</b></dd></dl>
+        </div>
+        <div class="card ov a-up d3">
+          <div class="ovl"><div class="tag">Sub 03 · 아이돌 키우기 수익화 재설계<br>나트리스 · 2025.03~05</div><h4>결제는 하는데 더 살 이유가 없는 구조를 다시 설계</h4></div>
+          <dl class="ovr"><dt>문제</dt><dd>PUR은 정상인데 결제 유저가 더 사지 않음</dd><dt>판단</dt><dd>리텐션 문제가 아니라 재화 가치 산정 오류 · 목표 지점 역산 → 신서버에서 검증</dd><dt>결과</dt><dd class="res">1차 개선 <b class="n">D+8</b> 반영 · 신서버 DAU <b class="n">약 3배</b> · PUR 3.5 → 4~5%</dd></dl>
+        </div>
+        <div class="card ov a-up d4">
+          <div class="ovl"><div class="tag">Sub 04 · Water Sort Quest 단계 런칭<br>모비릭스 · 2023.12~2024.01</div><h4>먼저 열어 확인하고, 7일 이탈 분석으로 고친 뒤 키우기</h4></div>
+          <dl class="ovr"><dt>문제</dt><dd>마케팅 없이 오픈한 첫 주, UA로 넘어가도 되는가</dd><dt>판단</dt><dd>사내 런칭 3종 D+1과 비교해 검증 → UA · 첫 7일 이탈 4곳 특정 → v1.0.4</dd><dt>결과</dt><dd class="res">D+1 Retention <b class="n">38 → 47%</b> · 피크 DAU <b class="n">138만</b></dd></dl>
+        </div>
       </div>
     </div>
   </section>
