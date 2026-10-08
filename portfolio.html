@@ -552,6 +552,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 .dot.active{background:var(--blue);width:22px;border-radius:5px}
 .dark-chrome .dot{background:rgba(255,255,255,.22)}.dark-chrome .dot.active{background:#93B4FC}
 .arrows{position:absolute;right:28px;bottom:14px;display:flex;gap:6px;z-index:10}
+.arrow.fs{font-size:15px;margin-right:6px}
 .arrow{width:34px;height:34px;border-radius:50%;border:1px solid var(--border);background:#fff;cursor:pointer;font-size:16px;color:var(--ink);display:flex;align-items:center;justify-content:center}
 .arrow:hover{background:var(--wash);border-color:var(--wash-deep)}
 .dark-chrome .arrow{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:#fff}
@@ -786,15 +787,15 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 #slide-35 .bl li{font-size:12.5px;line-height:1.5}
 /* 3 케이스 한눈에 */
 #slide-3 .s-body{justify-content:center;padding-top:18px}
-#slide-3 .ovt{display:grid;grid-template-columns:1.55fr 0.95fr 1.2fr 1.1fr;grid-template-rows:auto 1fr 1fr 1fr 1fr;column-gap:0;row-gap:0;flex:1;min-height:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:#fff}
+#slide-3 .ovt{display:grid;grid-template-columns:1.55fr 0.95fr 1.2fr 1.1fr;grid-template-rows:auto 1fr 1fr 1fr 1fr 1fr;column-gap:0;row-gap:0;flex:1;min-height:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;background:#fff}
 #slide-3 .ovt-h{background:var(--ink);color:#fff;font-size:12.5px;font-weight:800;letter-spacing:.04em;padding:10px 16px}
 #slide-3 .ovt-h.res{background:var(--blue-ink)}
 #slide-3 .ovt-r{display:contents}
-#slide-3 .ovt-r>div{padding:14px 16px;border-top:1px solid var(--border);display:flex;flex-direction:column;justify-content:center;min-height:0}
+#slide-3 .ovt-r>div{padding:10px 16px;border-top:1px solid var(--border);display:flex;flex-direction:column;justify-content:center;min-height:0}
 #slide-3 .ovt-r>.c0{background:var(--bg-subtle)}
 #slide-3 .ovtag{display:block;font-size:10.5px;font-weight:800;color:var(--blue);letter-spacing:.02em;line-height:1.4}
-#slide-3 .ovt-r h4{font-size:15.5px;font-weight:800;color:var(--ink);line-height:1.4;margin-top:5px}
-#slide-3 .ovt-r .c p{margin:0;font-size:13.5px;line-height:1.55;color:var(--text)}
+#slide-3 .ovt-r h4{font-size:14.5px;font-weight:800;color:var(--ink);line-height:1.4;margin-top:5px}
+#slide-3 .ovt-r .c p{margin:0;font-size:13px;line-height:1.5;color:var(--text)}
 #slide-3 .ovt-r .c+.c{border-left:1px dashed var(--border)}
 #slide-3 .ovt-r>.res{background:var(--wash);border-left:1px solid var(--wash-deep)}
 #slide-3 .ovt-r>.res p{color:var(--ink);font-weight:600}
@@ -828,7 +829,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="cover-kv a-up d5">
         <div>분석력<strong>지표가 빠지면 원인을 찾아 고칩니다</strong></div>
         <div>추진력<strong>제안부터 계약·운영까지 직접 끝냅니다</strong></div>
-        <div>기획력<strong>런칭과 BM을 구조로 설계합니다</strong></div>
+        <div>기획력<strong>런칭·BM·이벤트를 구조로 설계합니다</strong></div>
       </div>
     </div>
   </section>
@@ -850,7 +851,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="card kpi a-up d3"><div class="v dsp">대회 26회</div><div class="l">온·오프라인 포커 대회 기획·운영 · 참여 2,000명+</div></div>
       </div>
       <div class="timeline a-up d4">
-        <div class="tl"><div class="co">오지스 · 웹 플랫폼</div><div class="dt">2026.06 ~ 현재</div><div class="ds">웹 게임·플랫폼 5종의 오픈 요건(심의·결제·정산)·파트너·대회 운영</div></div>
+        <div class="tl"><div class="co">오지스(구 나트리스) · 웹 플랫폼</div><div class="dt">2026.06 ~ 현재</div><div class="ds">웹 게임·플랫폼 5종의 오픈 요건(심의·결제·정산)·파트너·대회 운영</div></div>
         <div class="tl"><div class="co">(주)나트리스 · 개발사</div><div class="dt">2024.12 ~ 2026.05</div><div class="ds">신규 IP 2종 한국 런칭·수익화·브랜드 콜라보</div></div>
         <div class="tl"><div class="co">(주)모비릭스 · 퍼블리셔</div><div class="dt">2022.12 ~ 2024.07</div><div class="ds">캐주얼·방치형 13종 글로벌 런칭·라이브 운영, Water Sort Quest 런칭 주도</div></div>
       </div>
@@ -860,13 +861,19 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <!-- ==================== 2b · 케이스 한눈에 ==================== -->
   <section class="slide" id="slide-3" data-n="3">
     <header class="s-head">
-      <div class="eyebrow">Cases · 핵심 2 + 보조 2</div>
-      <h2 class="s-title">케이스 4개 — <span class="hl">문제를 다시 정의하고</span>, 판단하고, 전후로 확인한 기록</h2>
+      <div class="eyebrow">Cases · 진행 중 1 + 핵심 2 + 보조 2</div>
+      <h2 class="s-title">지금 하는 일과 케이스 4개 — <span class="hl">문제를 다시 정의하고</span>, 판단하고, 전후로 확인한 기록</h2>
     </header>
     <div class="s-body">
       <div class="ovt a-up d1">
         <div class="ovt-h c0">케이스</div><div class="ovt-h">문제</div><div class="ovt-h">판단</div><div class="ovt-h res">결과</div>
 
+        <div class="ovt-r">
+          <div class="c0"><span class="ovtag">Now · 오지스(구 나트리스) · 2026.02~ · 진행 중</span><h4>웹 게임 플랫폼 · 포커 3종 — 선례 없는 오픈 요건을 정의하고, 런칭 전에 유저 풀을 검증하다</h4></div>
+          <div class="c"><p>앱 마켓이 아닌 웹 서비스, 심의·결제·정산 선례 없음</p></div>
+          <div class="c"><p>심의·PG·정산을 설계 단계에 선반영 · 런칭 전 대회·POC로 유저 풀과 운영 검증</p></div>
+          <div class="c res"><p>전체이용가 · PG 심사 통과<br>대회 <span class="n">26회</span> · 9월 서비스 <span class="n">2종</span> 런칭</p></div>
+        </div>
         <div class="ovt-r">
           <div class="c0"><span class="ovtag">Core 01 · 나트리스 · 2025.04~10</span><h4>아이러브커피 키우기 × 컴포즈커피 — 3,000개 매장을 런칭 유입 채널로</h4></div>
           <div class="c"><p>UA만으로 첫 달 NRU 40만을 채우면 예산의 1.4배</p></div>
@@ -876,7 +883,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         <div class="ovt-r">
           <div class="c0"><span class="ovtag">Core 02 · 나트리스 · 2025.10</span><h4>아이러브커피 키우기 — 런칭 3주차 매출 하락을 상품 구조 개편으로 방어</h4></div>
           <div class="c"><p>주간 DAU −20% 동안 결제 유저 −37%</p></div>
-          <div class="c"><p>마케팅 탓 대신 결제 구조로 재정의 · 상품 4종 개편 → 전후 비교 → 과제 9종</p></div>
+          <div class="c"><p>유입 감소로 두는 대신 결제 구조로 재정의 · 상품 4종 개편 → 전후 비교 → 과제 9종</p></div>
           <div class="c res"><p>DAU −33% 속 ARPPU <span class="n">−5.6%</span> 방어<br>고과금 매출 비중 <span class="n">28.7 → 43.8%</span></p></div>
         </div>
         <div class="ovt-r">
@@ -1196,7 +1203,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <div class="div-wrap">
       <div class="eyebrow a-up d1">Core Case 02 · Live Ops & Monetization</div>
       <h2 class="s-title a-up d2">아이러브커피 키우기 런칭 3주차<br>매출 하락의 원인을 결제 구조에서 찾다</h2>
-      <p class="s-sub a-up d3">런칭 3주차, 주간 DAU가 20% 빠지는 동안 결제 유저는 37% 빠졌습니다. 마케팅 탓으로 두는 대신 결제 구조 문제로 재정의하고, 상품 구조를 바꿔 유저가 더 줄어드는 구간에서도 ARPPU를 지키면서 개선 과제 9종을 다음 업데이트로 이어갔습니다.</p>
+      <p class="s-sub a-up d3">런칭 3주차, 주간 DAU가 20% 빠지는 동안 결제 유저는 37% 빠졌습니다. 유입 감소로 두는 대신 결제 구조 문제로 재정의하고, 상품 구조를 바꿔 유저가 더 줄어드는 구간에서도 ARPPU를 지키면서 개선 과제 9종을 다음 업데이트로 이어갔습니다.</p>
       <div class="chap a-up d4">
         <span>01 개요</span><span>02 문제 정의</span><span>03 분석</span><span>04 핵심 판단</span><span>05 실행 · 협업</span><span>06 결과</span><span>07 회고</span>
       </div>
@@ -1309,7 +1316,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </header>
     <div class="s-body">
       <div class="jbig a-up d1">
-        <div class="card jc big"><div class="jtop"><span class="jtag">문제 재정의</span><span class="jrep">대표 판단</span></div><h4>"DAU 하락"이 아니라 <em>"결제층 축소"</em>로 문제를 바꿔 잡기</h4><div class="ab"><span class="x">DAU 하락 → 마케팅 · 시장 탓 → UA 증액 요청</span><span class="o">3주차 PU −37% &gt; DAU −20%, NPU −47% → 상품 · 과금 구조로 대응</span></div><p>같은 하락이라도 원인을 어디에 두느냐에 따라 할 수 있는 일이 달라짐. UA 축소가 예정된 시점이라 구조 쪽이 유일한 선택지</p></div>
+        <div class="card jc big"><div class="jtop"><span class="jtag">문제 재정의</span><span class="jrep">대표 판단</span></div><h4>"DAU 하락"이 아니라 <em>"결제층 축소"</em>로 문제를 바꿔 잡기</h4><div class="ab"><span class="x">DAU 하락 → 유입 · 시장 요인 → UA 증액 요청</span><span class="o">3주차 PU −37% &gt; DAU −20%, NPU −47% → 상품 · 과금 구조로 대응</span></div><p>같은 하락이라도 원인을 어디에 두느냐에 따라 할 수 있는 일이 달라짐. UA 축소가 예정된 시점이라 구조 쪽이 유일한 선택지</p></div>
         <div class="card jc big"><div class="jtop"><span class="jtag">지표 기반 의사결정</span><span class="jrep">대표 판단</span></div><h4>상품 효율 <em>100~200% 상향</em>, 인플레 반론은 소진율로 닫기</h4><div class="ab"><span class="x">"재화를 더 주면 인플레가 온다"</span><span class="o">획득 대비 소진율 90% → 흡수 여력 확인 후 진행, 업데이트 후 같은 지표로 재검증(골드 제외 90% 유지)</span></div><p>고과금 대상 신규 상품(스텝업 1~3단계 · 11.9만 원대)을 함께 추가해 9,900원 중심 → 5만 원대 이상 중심으로 판매 구조 이동</p></div>
       </div>
       <div class="jsm a-up d2">
@@ -1402,7 +1409,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="retro a-up d2">
         <div class="rcol">
           <div class="rlab ok">✓ 잘 된 것 — 다음에도</div>
-          <div class="card rc"><h4>매출 지표는 "파이 × 구조"로 나눠 본다</h4><ul class="bl"><li>−41% 하나로 보면 마케팅 탓으로 끝남</li><li>PU 감소 &gt; DAU 감소 한 줄이 상품 구조 문제를 드러냄</li></ul></div>
+          <div class="card rc"><h4>매출 지표는 "파이 × 구조"로 나눠 본다</h4><ul class="bl"><li>−41% 하나로 보면 유입 감소로 끝남</li><li>PU 감소 &gt; DAU 감소 한 줄이 상품 구조 문제를 드러냄</li></ul></div>
           <div class="card rc"><h4>반론은 같은 지표로 닫고, 같은 지표로 재검증한다</h4><ul class="bl"><li>인플레 우려 → 소진율 90%로 닫음</li><li>비교 기간을 문서에 먼저 고정 → 업데이트 5일 만에 전후 분석</li></ul></div>
         </div>
         <div class="rcol">
@@ -1716,7 +1723,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <!-- ==================== N · 현재 진행 ==================== -->
   <section class="slide" id="slide-34" data-n="34">
     <header class="s-head">
-      <div class="eyebrow">Now · 오지스 · 2026.06 ~</div>
+      <div class="eyebrow">Now · 오지스(구 나트리스) · 2026.06 ~</div>
       <h2 class="s-title">지금은 웹 플랫폼과 포커 서비스 3종의 <span class="hl">오픈 요건과 유저 풀</span>을 만들고 있습니다</h2>
       <p class="s-sub">앱 마켓이 아닌 웹 서비스라 심의·결제·정산을 처음부터 정의하고, 런칭 전에 대회와 POC로 실전 검증합니다</p>
     </header>
@@ -1791,7 +1798,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <div class="grid3 career">
         <div class="card fc a-up d1"><div class="tag">2022.12 ~ 2024.07 · (주)모비릭스 · 퍼블리셔</div><h4>13종을 동시에 보며 지표로 판단하는 법</h4><p>캐주얼·방치형 13종의 글로벌 런칭·라이브를 동시에 운영하며 D+14 보고서·주간 보고로 지표를 읽고, 광고 수익화와 스토어 피처링을 반복해 익혔습니다.</p><div class="r">글로벌 런칭 <b class="n">13종</b> · WSQ 피크 DAU <b class="n">138만</b></div></div>
         <div class="card fc a-up d2"><div class="tag">2024.12 ~ 2026.05 · (주)나트리스 · 개발사</div><h4>한 타이틀을 처음부터 끝까지 책임지는 법</h4><p>신규 IP 2종의 한국 런칭을 FGT·사전예약·심의·피처링·BM·콜라보까지 맡았고, 런칭 직후 지표가 흔들릴 때 원인을 찾아 상품 구조를 바꿨습니다.</p><div class="r">D7 인앱 매출 <b class="n">5.1억</b> · 고과금 비중 <b class="n">28.7 → 43.8%</b></div></div>
-        <div class="card fc a-up d3"><div class="tag">2026.06 ~ 현재 · 오지스 · 웹 플랫폼</div><h4>정해진 절차가 없는 서비스를 여는 법</h4><p>웹 게임 플랫폼의 심의·결제·정산을 처음부터 정의하고, 파트너 제안·POC와 대회 운영으로 런칭 전에 유저 풀과 운영 신뢰성을 검증하고 있습니다.</p><div class="r">전체이용가 · PG 심사 통과 · 대회 <b class="n">26회</b></div></div>
+        <div class="card fc a-up d3"><div class="tag">2026.06 ~ 현재 · 오지스(구 나트리스) · 웹 플랫폼</div><h4>정해진 절차가 없는 서비스를 여는 법</h4><p>웹 게임 플랫폼의 심의·결제·정산을 처음부터 정의하고, 파트너 제안·POC와 대회 운영으로 런칭 전에 유저 풀과 운영 신뢰성을 검증하고 있습니다.</p><div class="r">전체이용가 · PG 심사 통과 · 대회 <b class="n">26회</b></div></div>
       </div>
       <div class="card next a-up d4">
         <div class="ig-h">다음에 하고 싶은 것 — 더 큰 규모의 라이브 서비스와 더 다양한 장르에서</div>
@@ -1926,6 +1933,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   <div class="progress" id="progress"></div>
   <div class="dots" id="dots"></div>
   <div class="arrows">
+    <button class="arrow fs" id="fsBtn" aria-label="전체 화면" title="전체 화면 (F)">⛶</button>
     <button class="arrow" id="prevBtn" aria-label="이전 슬라이드">‹</button>
     <button class="arrow" id="nextBtn" aria-label="다음 슬라이드">›</button>
   </div>
@@ -1947,11 +1955,13 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
   function next(){go(current+1);}function prev(){go(current-1);}
   document.getElementById('nextBtn').addEventListener('click',next);document.getElementById('prevBtn').addEventListener('click',prev);
   document.addEventListener('keydown',function(e){if(e.key===' '&&e.target&&e.target.closest&&e.target.closest('button, a'))return;
-    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();next();}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev();}else if(e.key==='Home'){e.preventDefault();go(1);}else if(e.key==='End'){e.preventDefault();go(total);}});
+    if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();next();}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev();}else if(e.key==='f'||e.key==='F'){e.preventDefault();toggleFS();}else if(e.key==='Home'){e.preventDefault();go(1);}else if(e.key==='End'){e.preventDefault();go(total);}});
   var tx=null,ty=null;document.addEventListener('touchstart',function(e){if(e.touches.length>1){tx=ty=null;return;}tx=e.changedTouches[0].clientX;ty=e.changedTouches[0].clientY;},{passive:true});
   document.addEventListener('touchend',function(e){if(tx===null)return;var t=e.changedTouches[0],dx=t.clientX-tx,dy=t.clientY-ty;if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>50){if(dx<0)next();else prev();}tx=ty=null;},{passive:true});
   function scale(){var s=Math.min(window.innerWidth/1280,window.innerHeight/720);stage.style.transform='scale('+s+')';stage.style.left=((window.innerWidth-1280*s)/2)+'px';stage.style.top=((window.innerHeight-720*s)/2)+'px';}
   window.addEventListener('resize',scale);window.addEventListener('load',scale);scale();
+  function toggleFS(){var d=document.documentElement;if(!document.fullscreenElement&&!document.webkitFullscreenElement){if(d.requestFullscreen)d.requestFullscreen();else if(d.webkitRequestFullscreen)d.webkitRequestFullscreen();}else{if(document.exitFullscreen)document.exitFullscreen();else if(document.webkitExitFullscreen)document.webkitExitFullscreen();}}
+  var fsBtn=document.getElementById('fsBtn');if(fsBtn)fsBtn.addEventListener('click',toggleFS);document.addEventListener('fullscreenchange',scale);document.addEventListener('webkitfullscreenchange',scale);
   setTimeout(function(){kbd.style.opacity='0';},4500);
   chrome();
 })();
