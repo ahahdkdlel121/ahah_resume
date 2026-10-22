@@ -579,7 +579,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
 /* ---------- Case 2 layout (2026-09-28 v2): 항목 나열형 ---------- */
 .bl{list-style:none;margin:0;padding:0;display:grid;gap:9px}
 .bl li{display:grid;grid-template-columns:6px auto 1fr;align-items:baseline;gap:10px;font-size:14px;line-height:1.5;color:var(--muted)}
-.bl li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);align-self:center}
+.bl li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--blue);align-self:start;margin-top:calc(.75em - 3px)}
 .bl li b{color:var(--ink);font-weight:700;white-space:nowrap}
 .bl li:not(:has(b)){grid-template-columns:6px 1fr}
 .bl.s{gap:6px}.bl.s li{font-size:12.5px;line-height:1.45}
@@ -1191,7 +1191,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         </div>
         <div class="rcol">
           <div class="rlab re">↻ 다시 한다면</div>
-          <div class="card rc"><h4>본사 합의와 별개로 현장 검증</h4><p>가맹점 전달에는 시차와 누락이 있음. 판매 시작 전날 표본 매장 확인과 미해제 대응 절차(제보 → 본사 → SV → 매장)를 미리 정함</p></div>
+          <div class="card rc"><h4>본사 합의와 별개로 현장 검증</h4><p>가맹점 전달에는 시차와 누락이 있음. 판매 시작 전날 표본 매장 확인과 미해제 대응 절차(제보&nbsp;→&nbsp;본사&nbsp;→&nbsp;SV&nbsp;→&nbsp;매장)를 미리 정함</p></div>
           <div class="card rc"><h4>측정 기준은 설계 단계에서 확정</h4><p>기프티콘 유입 유저의 잔존과 콜라보의 NRU 기여 범위를 사전에 정하지 않아 런칭 UA 효과와 분리하지 못함. 지표 · 데이터 공유 범위 · 검증 방법을 협약과 개발 요건에 함께 넣음</p></div>
         </div>
       </div>
@@ -1710,11 +1710,11 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
       <table class="pr a-up d1">
         <tr><th style="width:16%">요구 역량</th><th style="width:36%">판단 원칙</th><th>증명 · 숫자</th></tr>
         <tr><td class="k">협업 · 조율</td><td>합의는 메일과 문서로 남기고, 개선안은 개발팀이 바로 실행할 수 있는 형태로 넘깁니다</td><td>컴포즈 콜라보 합의 고정 방식 3(결정 당일 메일 정리 · 협약서 초안 선제 작성 · 요구는 조건 붙여 수용) · 하락 대응 개선 과제 9종을 직접 기획해 개발 전달 · 13종 동시 운영에서 개발사·QA·마케팅·스토어 조율</td></tr>
-        <tr><td class="k">데이터로 방향 제시</td><td>표면 지표에서 멈추지 않고 코호트·구간까지 파헤쳐 원인을 찾습니다</td><td>3주차 하락 → 결제층 축소 특정 → 고과금 매출 비중 28.7 → 43.8% · 아이돌 재화 가치 재산정 D+8 → PUR 3.5 → 4~5% · WSQ 첫 7일 이탈 4곳 특정</td></tr>
+        <tr><td class="k">데이터로 방향 제시</td><td>표면 지표에서 멈추지 않고 코호트·구간까지 파헤쳐 원인을 찾습니다</td><td>3주차 하락&nbsp;→&nbsp;결제층 축소 특정&nbsp;→&nbsp;고과금 매출 비중 28.7&nbsp;→&nbsp;43.8% · 아이돌 재화 가치 재산정 D+8&nbsp;→&nbsp;PUR&nbsp;3.5&nbsp;→&nbsp;4~5% · WSQ 첫 7일 이탈 4곳 특정</td></tr>
         <tr><td class="k">일정 · 리스크 관리</td><td>빠른 판단과 확정이 필요한 일에 우선순위를 두고, 추후 변경이 가능한 일은 여유 기간을 길게 잡습니다</td><td>컴포즈 지류는 런칭에만, 디지털 8주 · 프로모션 전 2주는 효과 분리 측정 · 13종 킥오프~오픈 마스터플랜 · 2주 단위 마일스톤 점검 · 웹 플랫폼은 심의·PG를 설계 단계에 선반영</td></tr>
-        <tr><td class="k">BM · 결제 지표</td><td>월정액 위에 조건부·데일리 한정 패키지를 겹쳐 첫 결제 문턱을 낮추고, 이벤트는 목적 → 대상 → 검증 지표를 먼저 정합니다</td><td>메인 BM 위 조건부·데일리 한정 → D7 인앱 매출 5.1억 · ARPPU 3만원대 · 상품 재구성 후 PUR 3.5 → 4~5%</td></tr>
-        <tr><td class="k">런칭 풀사이클 · 글로벌</td><td>첫 주 지표를 먼저 확인하고, 심의·스토어·피처링·사전예약을 한 흐름으로 관리합니다</td><td>런칭 13종(글로벌 10 · 한국 3) · 글로벌 13종 동시 운영 · FGT 35명 → 출시 전 80% 반영 · 사전예약 15만 · 양대 마켓 피처링 · WSQ 첫 주 검증 후 UA</td></tr>
-        <tr><td class="k">정해진 절차가 없는 일</td><td>절차가 없으면 정의하고, 검증이 필요하면 직접 엽니다</td><td>게임물 심의 전체이용가 · PG 심사 · 정산 정책 수립 · 대회 26회 · 프리롤 POC 엔트리 약 100명 · OST 계약 → 배포</td></tr>
+        <tr><td class="k">BM · 결제 지표</td><td>월정액 위에 조건부·데일리 한정 패키지를 겹쳐 첫 결제 문턱을 낮추고, 이벤트는 목적&nbsp;→&nbsp;대상&nbsp;→&nbsp;검증 지표를 먼저 정합니다</td><td>메인 BM 위 조건부·데일리 한정&nbsp;→&nbsp;D7 인앱 매출 5.1억 · ARPPU 3만원대 · 상품 재구성 후 PUR&nbsp;3.5&nbsp;→&nbsp;4~5%</td></tr>
+        <tr><td class="k">런칭 풀사이클 · 글로벌</td><td>첫 주 지표를 먼저 확인하고, 심의·스토어·피처링·사전예약을 한 흐름으로 관리합니다</td><td>런칭 13종(글로벌 10 · 한국 3) · 글로벌 13종 동시 운영 · FGT 35명&nbsp;→&nbsp;출시 전 80% 반영 · 사전예약 15만 · 양대 마켓 피처링 · WSQ 첫 주 검증 후 UA</td></tr>
+        <tr><td class="k">정해진 절차가 없는 일</td><td>절차가 없으면 정의하고, 검증이 필요하면 직접 엽니다</td><td>게임물 심의 전체이용가 · PG 심사 · 정산 정책 수립 · 대회 26회 · 프리롤 POC 엔트리 약 100명 · OST 계약&nbsp;→&nbsp;배포</td></tr>
       </table>
       <div class="insight a-up d2">공통 기준 — <strong>판단의 근거는 숫자와 문서로 남기고</strong>, 결과는 전후 비교로 확인합니다.</div>
     </div>
@@ -1781,7 +1781,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
         </div>
         <div class="card ig a-up d4">
           <div class="ig-h">그 외 AI 활용</div>
-          <ul class="bl"><li><b>제안서 · 소개서</b>스트리머 제안서, 광고 상품 소개를 웹페이지로 만들어 링크로 공유</li><li><b>운영 매뉴얼</b>프리롤 POC 현장 운영 교육을 역할별 웹 문서로</li><li><b>벤치마크</b>Sales Projection 시장 조사 · SOOP/치지직 후원 데이터 수집 스크립트 + 요일 × 시간대 대시보드를 AI로(공개 데이터 · 집계값만 저장), 가정 · 계산은 직접</li><li><b>지표 분석</b>쿠폰 발급 로그의 텍스트 캠페인명을 규칙으로 분해 집계 · 3회 추출에 같은 기준 재사용(파일 기준)</li><li><b>KPI 자동 수집</b>Kibana 지표를 시트에 매일 자동 기록 · 전일 · 전 7일 대비 증감(API만 개발팀 요청, 구현은 Claude Code)</li></ul>
+          <ul class="bl"><li><b>제안서 · 소개서</b>스트리머 제안서, 광고 상품 소개를 웹페이지로 만들어 링크로 공유</li><li><b>운영 매뉴얼</b>프리롤 POC 현장 운영 교육을 역할별 웹 문서로</li><li><b>벤치마크</b>Sales Projection 시장 조사 · SOOP/치지직 후원 데이터 수집 스크립트 + 요일 × 시간대 대시보드를 AI로(공개 데이터 · 집계값만 저장), 가정 · 계산은 직접</li><li><b>지표 분석</b>쿠폰 발급 로그의 텍스트 캠페인명을 규칙으로 분해 집계 · 3회 추출에 같은 기준 재사용(파일 기준)</li><li><b>KPI 자동 수집</b>Kibana 지표를 시트에 매일 자동 기록 · 전일 · 전 7일 대비 증감(API만 개발팀 요청, 구현은&nbsp;Claude&nbsp;Code)</li></ul>
         </div>
       </div>
     </div>
@@ -1796,7 +1796,7 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     </header>
     <div class="s-body">
       <div class="grid3 career">
-        <div class="card fc a-up d1"><div class="tag">2022.12 ~ 2024.07 · (주)모비릭스 · 퍼블리셔</div><h4>13종을 동시에 보며 지표로 판단하는 법</h4><p>캐주얼·방치형 13종의 글로벌 런칭·라이브를 동시에 운영하며 D+14 보고서·주간 보고로 지표를 읽고, 광고 수익화와 스토어 피처링을 반복해 익혔습니다.</p><div class="r">글로벌 런칭 <b class="n">10종</b> · 운영 <b class="n">13종</b> · WSQ 피크 DAU <b class="n">138만</b></div></div>
+        <div class="card fc a-up d1"><div class="tag">2022.12 ~ 2024.07 · (주)모비릭스 · 퍼블리셔</div><h4>13종을 동시에 보며 지표로 판단하는 법</h4><p>캐주얼·방치형 13종의 글로벌 런칭·라이브를 동시에 운영하며 D+14 보고서·주간 보고로 지표를 읽고, 광고 수익화와 스토어 피처링을 반복해 익혔습니다.</p><div class="r">글로벌 런칭 <b class="n">10종</b> · 운영 <b class="n">13종</b> · <span style="white-space:nowrap">WSQ 피크 DAU <b class="n">138만</b></span></div></div>
         <div class="card fc a-up d2"><div class="tag">2024.12 ~ 2026.05 · (주)나트리스 · 개발사</div><h4>한 타이틀을 처음부터 끝까지 책임지는 법</h4><p>신규 IP 2종의 한국 런칭을 FGT·사전예약·심의·피처링·BM·콜라보까지 맡았고, 런칭 직후 지표가 흔들릴 때 원인을 찾아 상품 구조를 바꿨습니다.</p><div class="r">D7 인앱 매출 <b class="n">5.1억</b> · 고과금 비중 <b class="n">28.7 → 43.8%</b></div></div>
         <div class="card fc a-up d3"><div class="tag">2026.06 ~ 현재 · 오지스(구 나트리스) · 웹 플랫폼</div><h4>정해진 절차가 없는 서비스를 여는 법</h4><p>웹 게임 플랫폼의 심의·결제·정산을 처음부터 정의하고, 파트너 제안·POC와 대회 운영으로 런칭 전에 유저 풀과 운영 신뢰성을 검증하고 있습니다.</p><div class="r">전체이용가 · PG 심사 통과 · 대회 <b class="n">26회</b></div></div>
       </div>
@@ -1898,15 +1898,15 @@ td.k{font-weight:800;color:var(--ink);white-space:nowrap}
     <div class="s-body" style="justify-content:flex-start">
       <table class="a-up d1">
         <tr><th>본문 숫자</th><th>기간 · 모수 · 정의</th><th>함께 보는 값</th></tr>
-        <tr><td class="k">3,000개 매장 · 참여 14.6만</td><td>컴포즈커피 가맹점 약 3,000개(홍보물 출고 2,957개 · 제안 시점 2,901개) · 참여 14.6만 명 = 사전예약 이벤트 · GPS 투어 · 음료 쿠폰 참여자를 기간별 고유 집계 후 합산</td><td>GPS 투어 27.9만 회 · 기프티콘 사용률 59% · 쿠폰 발급 → 게임 입력 96.6%</td></tr>
+        <tr><td class="k">3,000개 매장 · 참여 14.6만</td><td>컴포즈커피 가맹점 약 3,000개(홍보물 출고 2,957개 · 제안 시점 2,901개) · 참여 14.6만 명 = 사전예약 이벤트 · GPS 투어 · 음료 쿠폰 참여자를 기간별 고유 집계 후 합산</td><td>GPS 투어 27.9만 회 · 기프티콘 사용률 59% · 쿠폰 발급&nbsp;→&nbsp;게임 입력 96.6%</td></tr>
         <tr><td class="k">사전예약 15만</td><td>2025.08.12~09.22 사전등록 캠페인 순 등록 약 15.4만. 부스팅 유입(약 37만)은 제외한 값</td><td>컴포즈 기프티콘 사전등록 지급 약 6,000건</td></tr>
         <tr><td class="k">런칭 당일 DAU 7만 · 1주 평균 4.1만</td><td>9/23 DAU 약 7만(런칭일 NRU와 동일) · 9/23~29 일 평균 DAU 약 4.1만 · 1주차 NRU 약 14.4만(첫 달 약 18.4만의 78%)</td><td>D+1 Retention 31.8% · D+3 20.2% · D+7 13.1%</td></tr>
         <tr><td class="k">D7 인앱 매출 5.1억 · ARPPU 3만원대</td><td>9/23~29 7일 IAP 합계 약 5.1억(IAA 제외) · 일 ARPPU 3만 원 안팎</td><td>라이브 UA 대비 IAP 3.6배 · 사전예약 UA 포함 1.1배(집행 금액 비공개)</td></tr>
-        <tr><td class="k">3주차 PU −37% · DAU −20% · NPU −47%</td><td>3주차(10/7~13) 일평균 vs 2주차(9/30~10/6) 일평균, 런칭 데일리 리포트(키바나) 기준. 매출 −36%, ARPPU +2%</td><td>10/10 분석 시점의 4일치(10/7~10)로도 PU −33% &gt; DAU −16% · 1주차 → 3주차 DAU −58%</td></tr>
-        <tr><td class="k">DAU −33% · PU −38% · 매출 −41.5%</td><td>v1.0.2 기간(9/30~10/5) 대비 v1.0.3 기간(10/17~22) 일 평균 변동률. NPU 비중 35.2% → 19.1%(일 결제 유저 중 첫 결제 유저)</td><td>업데이트 전후 확정 수치 · ARPPU −5.6% · 고과금 이상 매출 비중 28.7 → 43.8% · 직원 뽑기 캐시 소모 비중 54 → 45%</td></tr>
-        <tr><td class="k">고과금 매출 비중 28.7% → 43.8%</td><td>같은 기간 비교 · 고과금(50만 원 이상)·헤비 과금 유저 매출 비중. 10만 원 이상 상품 매출 비중 약 10배 · 멤버십 Lv9~19 유저 +90%</td><td>이탈 퍼널은 9/26 이후 진성 코호트 기준(꾸미기 해금 전 누적 37.87%). 런칭 전체 기준 첫 구간 26.5%는 부스팅 계정 오염으로 미사용</td></tr>
-        <tr><td class="k">신서버 DAU 약 3배 · PUR 3.5 → 4~5%</td><td>아이돌 키우기 · 5/10 Adjust Organic DAU ÷ 5/9 = 약 2.9배(전체 2.8배) · PUR 3.5% = 3월 첫 12일 PU 합 ÷ DAU 합 · 4~5%대 = 5/13 상품 재구성 후 5/16~26 같은 방식 4.4%</td><td>밸런스 2차 직후(4/17~24) 5.9% · 6월 3%대 회귀 · 과금 유저 보상은 기획 기준 과금액 10%</td></tr>
-        <tr><td class="k">피크 DAU 138만 · 1개월 425만 DL</td><td>Water Sort Quest 2024.01.21 DAU 약 138만 · 2023.12.12~2024.01.12 신규 유저(Game BI NRU) 누적 약 425만</td><td>런칭 D+1 Retention 35.6% · v1.0.4 전후 38 → 47%(1/1~8 vs 1/9~10) · 피처드 39.7 → 48.4%</td></tr>
+        <tr><td class="k">3주차 PU −37% · DAU −20% · NPU −47%</td><td>3주차(10/7~13) 일평균 vs 2주차(9/30~10/6) 일평균, 런칭 데일리 리포트(키바나) 기준. 매출 −36%, ARPPU +2%</td><td>10/10 분석 시점의 4일치(10/7~10)로도 PU −33% &gt; DAU −16% · 1주차&nbsp;→&nbsp;3주차 DAU −58%</td></tr>
+        <tr><td class="k">DAU −33% · PU −38% · 매출 −41.5%</td><td>v1.0.2 기간(9/30~10/5) 대비 v1.0.3 기간(10/17~22) 일 평균 변동률. NPU 비중 35.2%&nbsp;→&nbsp;19.1%(일 결제 유저 중 첫 결제 유저)</td><td>업데이트 전후 확정 수치 · ARPPU −5.6% · 고과금 이상 매출 비중 28.7&nbsp;→&nbsp;43.8% · 직원 뽑기 캐시 소모 비중 54&nbsp;→&nbsp;45%</td></tr>
+        <tr><td class="k">고과금 매출 비중 28.7%&nbsp;→&nbsp;43.8%</td><td>같은 기간 비교 · 고과금(50만 원 이상)·헤비 과금 유저 매출 비중. 10만 원 이상 상품 매출 비중 약 10배 · 멤버십 Lv9~19 유저 +90%</td><td>이탈 퍼널은 9/26 이후 진성 코호트 기준(꾸미기 해금 전 누적 37.87%). 런칭 전체 기준 첫 구간 26.5%는 부스팅 계정 오염으로 미사용</td></tr>
+        <tr><td class="k">신서버 DAU 약 3배 · PUR&nbsp;3.5&nbsp;→&nbsp;4~5%</td><td>아이돌 키우기 · 5/10 Adjust Organic DAU ÷ 5/9 = 약 2.9배(전체 2.8배) · PUR 3.5% = 3월 첫 12일 PU 합 ÷ DAU 합 · 4~5%대 = 5/13 상품 재구성 후 5/16~26 같은 방식 4.4%</td><td>밸런스 2차 직후(4/17~24) 5.9% · 6월 3%대 회귀 · 과금 유저 보상은 기획 기준 과금액 10%</td></tr>
+        <tr><td class="k">피크 DAU 138만 · 1개월 425만 DL</td><td>Water Sort Quest 2024.01.21 DAU 약 138만 · 2023.12.12~2024.01.12 신규 유저(Game BI NRU) 누적 약 425만</td><td>런칭 D+1 Retention 35.6% · v1.0.4 전후 38&nbsp;→&nbsp;47%(1/1~8 vs 1/9~10) · 피처드 39.7&nbsp;→&nbsp;48.4%</td></tr>
         <tr><td class="k">피크 월매출 2.3억 · 누적 1,621만 DL</td><td>2024.01 월 매출(광고 + 인앱) 약 2.3억, 당시 환율 기준 원화 환산 · 2023.12~2024.07 신규 유저 누적 약 1,621만</td><td>재직 기간 기준(~2024.07)</td></tr>
       </table>
     </div>
